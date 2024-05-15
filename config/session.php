@@ -18,7 +18,7 @@ return [
     |
     */
 
-    // 'driver' => env('SESSION_DRIVER', 'database'),
+    'driver' => env('SESSION_DRIVER', 'database'),
 
     /*
     |--------------------------------------------------------------------------
@@ -86,7 +86,7 @@ return [
     |
     */
 
-    // 'table' => env('SESSION_TABLE', 'sessions'),
+    'table' => env('SESSION_TABLE', 'sessions'),
 
     /*
     |--------------------------------------------------------------------------
@@ -101,7 +101,7 @@ return [
     |
     */
 
-    // 'store' => env('SESSION_STORE'),
+    'store' => env('SESSION_STORE'),
 
     /*
     |--------------------------------------------------------------------------
