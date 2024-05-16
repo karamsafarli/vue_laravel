@@ -10,17 +10,19 @@ const speed = ref(5);
 const direction = ref(1);
 const playMode = ref('bounce');
 
-// import 'vue3-carousel/dist/carousel.css'
-// import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
+const isMenuOpen = ref(window.innerWidth >= 991 ? true : false);
+const isCalcOpen = ref(false);
 
-// export default {
-//   components: {
-//     Carousel,
-//     Slide,
-//     Pagination,
-//     Navigation,
-//   },
-// }
+window.addEventListener("resize", () => isMenuOpen.value = window.innerWidth >= 991)
+
+const toggleMenu = () => {
+    isMenuOpen.value = !isMenuOpen.value
+}
+
+const toggleCalc = () => {
+    isCalcOpen.value = !isCalcOpen.value;
+}
+
 </script>
 
 
@@ -32,10 +34,10 @@ const playMode = ref('bounce');
             <a href="/">
                 <img src="../assets/image/logo.svg" class="logo" alt="Logo"> </a>
             <div class="menu_bar_right">
-                <button type="buttons" class="open_menu_btn">
+                <button type="buttons" class="open_menu_btn" @click="toggleMenu">
                     <img src="../assets/image/hamburgerIcon-v3.svg" alt="hamburgerIcon-v3.svg">
                 </button>
-                <div class="menu_ul_wrapper">
+                <div class="menu_ul_wrapper" v-if="isMenuOpen">
                     <ul class="menu_ul">
                         <li>
                             <a href="#">
@@ -50,8 +52,8 @@ const playMode = ref('bounce');
                             </a>
                         </li>
                         <li class="drop_li" id="loan_li">
-                            <a href="javascript:void(0)">Calculators <i class="fas fa-angle-down"></i></a>
-                            <div class="menu_drop" id="loan_drop">
+                            <a href="javascript:void(0)" @click="toggleCalc">Calculators <i class="fas fa-angle-down"></i></a>
+                            <div class="menu_drop" id="loan_drop" v-if="isCalcOpen">
                                 <ul>
                                     <li><a href="#">Personal Loan</a></li>
                                     <li><a href="#">Educational Loan</a></li>
@@ -65,7 +67,7 @@ const playMode = ref('bounce');
                             </div>
                         </li>
                         <li><a href="#">Contact Us</a></li>
-                        <button class="close_menu_btn" type="button">
+                        <button class="close_menu_btn" type="button" @click="toggleMenu">
                             <img src="../assets/image/blackCloseIcon.svg" alt="blackCloseIcon.svg">
                         </button>
                     </ul>
@@ -101,7 +103,7 @@ const playMode = ref('bounce');
     <div class="container">
         <h5>DIGITSATHI PRODUCTS</h5>
         <div class="row">
-            <div class="col-6">
+            <div class="col-lg-6">
                 <a href="#" class="product_item green">
                     <div class="product_item_top">
                         <div class="product_item_title">
@@ -128,7 +130,7 @@ const playMode = ref('bounce');
                     </div>
                 </a>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6">
                 <a href="#" class="product_item redis">
                     <div class="product_item_top">
                         <div class="product_item_title">
