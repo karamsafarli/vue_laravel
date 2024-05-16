@@ -959,6 +959,7 @@ body {
 .footer_quote {
     padding: 40px 0;
     background-color: #4d4f56;
+    padding-bottom: 150px;
 }
 
 .footer_quote h4 {
@@ -990,7 +991,7 @@ body {
     background-color: #ffe5db;
     padding: 20px 24px;
     z-index: 99;
-    display: none;
+    /* display: none; */
 }
 
 .app_download_in p {

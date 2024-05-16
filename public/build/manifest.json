@@ -13,7 +13,7 @@
     ]
   },
   "node_modules/@dotlottie/player-component/dist/dotlottie-state-machine-manager-2E7RUGJG-NTQ25VSR.mjs": {
-    "file": "assets/dotlottie-state-machine-manager-2E7RUGJG-NTQ25VSR-BpomNwQV.js",
+    "file": "assets/dotlottie-state-machine-manager-2E7RUGJG-NTQ25VSR-Ci-boc8w.js",
     "name": "dotlottie-state-machine-manager-2E7RUGJG-NTQ25VSR",
     "src": "node_modules/@dotlottie/player-component/dist/dotlottie-state-machine-manager-2E7RUGJG-NTQ25VSR.mjs",
     "isDynamicEntry": true,
@@ -91,6 +91,10 @@
   "resources/assets/image/blackCloseIcon.svg": {
     "file": "assets/blackCloseIcon-CCbgOhGd.svg",
     "src": "resources/assets/image/blackCloseIcon.svg"
+  },
+  "resources/assets/image/burger_green.svg": {
+    "file": "assets/burger_green-DPeCiDyH.svg",
+    "src": "resources/assets/image/burger_green.svg"
   },
   "resources/assets/image/customer-review-section-desktop.webp": {
     "file": "assets/customer-review-section-desktop-7Mt9XHle.webp",
@@ -176,6 +180,10 @@
     "file": "assets/logo-DP54FC5u.svg",
     "src": "resources/assets/image/logo.svg"
   },
+  "resources/assets/image/mv-green-logo-v3Compressed.svg": {
+    "file": "assets/mv-green-logo-v3Compressed-3fGeF12I.svg",
+    "src": "resources/assets/image/mv-green-logo-v3Compressed.svg"
+  },
   "resources/assets/image/plProductCardRsIcon.webp": {
     "file": "assets/plProductCardRsIcon-E72fCDGr.webp",
     "src": "resources/assets/image/plProductCardRsIcon.webp"
@@ -186,7 +194,7 @@
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-CJQ0Y2g3.js",
+    "file": "assets/app-Wm7U-aW_.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -202,10 +210,12 @@
       "node_modules/@dotlottie/player-component/dist/lottie_html-X3TYKVQI-L6774NQS.mjs"
     ],
     "css": [
-      "assets/app-CkB52ZO0.css"
+      "assets/app-BQFqt86N.css"
     ],
     "assets": [
+      "assets/mv-green-logo-v3Compressed-3fGeF12I.svg",
       "assets/logo-DP54FC5u.svg",
+      "assets/burger_green-DPeCiDyH.svg",
       "assets/hamburgerIcon-v3-CfaIBnJ0.svg",
       "assets/ic-personal-loan-product-B_TrgkUP.webp",
       "assets/CT_ProductIconDesktop-0fBRoUYZ.webp",

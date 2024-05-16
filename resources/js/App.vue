@@ -1,6 +1,6 @@
 <script setup>
 import '@dotlottie/player-component';
-import { ref } from 'vue';
+import { ref,onMounted, onBeforeUnmount } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -13,7 +13,7 @@ const playMode = ref('bounce');
 const isMenuOpen = ref(window.innerWidth >= 991 ? true : false);
 const isCalcOpen = ref(false);
 
-window.addEventListener("resize", () => isMenuOpen.value = window.innerWidth >= 991)
+window.addEventListener("resize", () => isMenuOpen.value = window.innerWidth >= 991);
 
 const toggleMenu = () => {
     isMenuOpen.value = !isMenuOpen.value
@@ -23,36 +23,58 @@ const toggleCalc = () => {
     isCalcOpen.value = !isCalcOpen.value;
 }
 
+
+const isScrolled = ref(false);
+
+const handleScroll = () => {
+    const sectionBottom = heroSection.value.clientHeight
+    console.log(sectionBottom);
+  isScrolled.value = window.scrollY > sectionBottom; 
+};
+
+const heroSection = ref(null);
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', handleScroll);
+});
+
 </script>
 
 
 <template>
 <!-- ======== menu bar ============-->
-<div class="menu_bar">
+<div class="menu_bar" :class="{'scrolled': isScrolled}">
     <div class="container">
         <div class="menu_bar_in">
             <a href="/">
-                <img src="../assets/image/logo.svg" class="logo" alt="Logo"> </a>
+                <img v-if="isScrolled" src="../assets/image/mv-green-logo-v3Compressed.svg" class="logo" alt="Logo">
+                <img v-else src="../assets/image/logo.svg" class="logo" alt="Logo"> 
+            </a>
             <div class="menu_bar_right">
                 <button type="buttons" class="open_menu_btn" @click="toggleMenu">
-                    <img src="../assets/image/hamburgerIcon-v3.svg" alt="hamburgerIcon-v3.svg">
+                    <img v-if="isScrolled" src="../assets/image/burger_green.svg" alt="icon">
+                    <img v-else src="../assets/image/hamburgerIcon-v3.svg" alt="hamburgerIcon-v3.svg">
                 </button>
                 <div class="menu_ul_wrapper" v-if="isMenuOpen">
                     <ul class="menu_ul">
                         <li>
-                            <a href="#">
+                            <a href="#" :class="{'scrolled_text': isScrolled}">
                                 <img src="../assets/image/ic-personal-loan-product.webp" alt="ic-personal-loan-product.webp">
                                 Personal Loan
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#" :class="{'scrolled_text': isScrolled}">
                                 <img src="../assets/image/CT_ProductIconDesktop.webp" alt="image/CT_ProductIconDesktop.webp">
                                 Credit Tracker
                             </a>
                         </li>
                         <li class="drop_li" id="loan_li">
-                            <a href="javascript:void(0)" @click="toggleCalc">Calculators <i class="fas fa-angle-down"></i></a>
+                            <a href="javascript:void(0)" :class="{'scrolled_text': isScrolled}" @click="toggleCalc">Calculators <i class="fas fa-angle-down"></i></a>
                             <div class="menu_drop" id="loan_drop" v-if="isCalcOpen">
                                 <ul>
                                     <li><a href="#">Personal Loan</a></li>
@@ -66,7 +88,7 @@ const toggleCalc = () => {
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#" :class="{'scrolled_text': isScrolled}">Contact Us</a></li>
                         <button class="close_menu_btn" type="button" @click="toggleMenu">
                             <img src="../assets/image/blackCloseIcon.svg" alt="blackCloseIcon.svg">
                         </button>
@@ -78,7 +100,7 @@ const toggleCalc = () => {
 </div>
 <!-- ======== /menu bar ============-->
 <!-- ========== hero ============ -->
-<section class="hero">
+<section class="hero" ref="heroSection">
     <div class="container">
         <div class="row align-items-end">
             <div class="col-md-6">
@@ -394,25 +416,7 @@ const toggleCalc = () => {
     </div>
 </section>
 
-<!-- 
-<script>
-$('.owl-carousel').owlCarousel({
-    loop: true,
-    margin: 20,
-    nav: false,
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 1
-        },
-        768: {
-            items: 2
-        }
-    }
-})
-</script> -->
+
 <!-- ========== /testimonial ============-->
 <!-- ========== faq ============-->
 <section class="faq">
@@ -611,7 +615,7 @@ $('.owl-carousel').owlCarousel({
 <!-- ========== /faq ============-->
 
 <!-- ========== apply now  ============-->
-<section class="app_download">
+<section class="app_download" v-if="isScrolled">
     <div class="app_download_in">
         <p>Take control of your finances <a href="#" class="cmn_btn">Apply Now</a></p>
     </div>
@@ -716,6 +720,16 @@ $('.owl-carousel').owlCarousel({
 </section>
 <!-- ========== /footer quote ============-->
 
+<!-- <section class="app_download">
+    <div class="container-fluid bottom-sheet hideStickyFooterWithClass" style="display: flex;"> 
+              
+              <div class="homePageFooter">
+                <span class="homePageFooterText">Take control of your finances</span>
+                <a class="homePageFooterAnchor home_page_footer_download_app_cta" href="https://mvlm.onelink.me/XvhQ/rvqkhtay" target="_blank"> <button class="homePageFooterBtn">Download app</button> </a>
+              </div>
+            </div>
+</section> -->
+
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
 </template>
 
@@ -728,6 +742,15 @@ $('.owl-carousel').owlCarousel({
 .swiper {
     width: 100%;
     height: 100%;
+}
+
+.scrolled {
+    background-color: #fff !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.scrolled_text {
+    color: rgb(20, 72, 53) !important;
 }
 
 
