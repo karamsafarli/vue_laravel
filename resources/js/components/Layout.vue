@@ -1,5 +1,6 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, computed  } from 'vue';
+import { useRoute } from 'vue-router'
 
 const isMenuOpen = ref(window.innerWidth >= 991 ? true : false);
 const isCalcOpen = ref(false);
@@ -21,15 +22,36 @@ const handleScroll = (newVal) => {
 };
 
 
+const route = useRoute();
+console.log(route.path)
+
+const headerBgClass = computed(() => {
+  switch (route.path) {
+    case '/about':
+      return 'about_nav';
+    default:
+      return;
+  }
+});
+const textWhite = computed(() => {
+  switch (route.path) {
+    case '/about':
+      return 'scrolled_text';
+    default:
+      return;
+  }
+});
+
+
 </script>
 
 
 <template>
-    <div class="menu_bar" :class="{'scrolled': isScrolled}">
+    <div class="menu_bar" :class="[headerBgClass, { 'scrolled': isScrolled }]">
     <div class="container">
         <div class="menu_bar_in">
             <a href="/">
-                <img v-if="isScrolled" src="../../assets/image/mv-green-logo-v3Compressed.svg" class="logo" alt="Logo">
+                <img v-if="isScrolled || route.path === '/about'" src="../../assets/image/mv-green-logo-v3Compressed.svg" class="logo" alt="Logo">
                 <img v-else src="../../assets/image/logo.svg" class="logo" alt="Logo"> 
             </a>
             <div class="menu_bar_right">
@@ -40,19 +62,19 @@ const handleScroll = (newVal) => {
                 <div class="menu_ul_wrapper" v-if="isMenuOpen">
                     <ul class="menu_ul">
                         <li>
-                            <a href="#" :class="{'scrolled_text': isScrolled}">
+                            <a href="#" :class="[textWhite, { 'scrolled_text': isScrolled }]">
                                 <img src="../../assets/image/ic-personal-loan-product.webp" alt="ic-personal-loan-product.webp">
                                 Personal Loan
                             </a>
                         </li>
                         <li>
-                            <a href="#" :class="{'scrolled_text': isScrolled}">
+                            <a href="#" :class="[textWhite, { 'scrolled_text': isScrolled }]">
                                 <img src="../../assets/image/CT_ProductIconDesktop.webp" alt="image/CT_ProductIconDesktop.webp">
                                 Credit Tracker
                             </a>
                         </li>
                         <li class="drop_li" id="loan_li">
-                            <a href="javascript:void(0)" :class="{'scrolled_text': isScrolled}" @click="toggleCalc">Calculators <i class="fas fa-angle-down"></i></a>
+                            <a href="javascript:void(0)" :class="[textWhite, { 'scrolled_text': isScrolled }]" @click="toggleCalc">Calculators <i class="fas fa-angle-down"></i></a>
                             <div class="menu_drop" id="loan_drop" v-if="isCalcOpen">
                                 <ul>
                                     <li><a href="#">Personal Loan</a></li>
@@ -66,7 +88,7 @@ const handleScroll = (newVal) => {
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="#" :class="{'scrolled_text': isScrolled}">Contact Us</a></li>
+                        <li><a href="#" :class="[textWhite, { 'scrolled_text': isScrolled }]">Contact Us</a></li>
                         <button class="close_menu_btn" type="button" @click="toggleMenu">
                             <img src="../../assets/image/blackCloseIcon.svg" alt="blackCloseIcon.svg">
                         </button>
@@ -91,7 +113,7 @@ const handleScroll = (newVal) => {
                     <div class="footer_item">
                         <h4>THE COMPANY</h4>
                         <ul>
-                            <li><a href="#">About</a></li>
+                            <li><router-link to="/about">About</router-link></li>
 
                             <li><a href="#">Security</a></li>
                             <li><a href="#">Careers</a></li>
@@ -186,6 +208,11 @@ const handleScroll = (newVal) => {
 .scrolled {
     background-color: #fff !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+
+.about_nav {
+    background-color: #fff !important;
 }
 
 .scrolled_text {
