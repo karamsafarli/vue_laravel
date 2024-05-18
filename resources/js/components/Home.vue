@@ -1,14 +1,10 @@
 <script setup>
 import '@dotlottie/player-component';
-import { ref,onMounted, onBeforeUnmount } from 'vue';
+import { ref,onMounted, onBeforeUnmount, watch } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-
-const speed = ref(5);
-const direction = ref(1);
-const playMode = ref('bounce');
 
 const isMenuOpen = ref(window.innerWidth >= 991 ? true : false);
 const isCalcOpen = ref(false);
@@ -28,8 +24,7 @@ const isScrolled = ref(false);
 
 const handleScroll = () => {
     const sectionBottom = heroSection.value.clientHeight
-    console.log(sectionBottom);
-  isScrolled.value = window.scrollY > sectionBottom; 
+    isScrolled.value = window.scrollY > sectionBottom; 
 };
 
 const heroSection = ref(null);
@@ -42,12 +37,17 @@ onBeforeUnmount(() => {
   window.removeEventListener('scroll', handleScroll);
 });
 
+const emit = defineEmits(['updateScrolled']);
+watch(isScrolled, (newValue) => {
+  emit('updateScrolled', newValue);
+});
+
 </script>
 
 
 <template>
 <!-- ======== menu bar ============-->
-<div class="menu_bar" :class="{'scrolled': isScrolled}">
+<!-- <div class="menu_bar" :class="{'scrolled': isScrolled}">
     <div class="container">
         <div class="menu_bar_in">
             <a href="/">
@@ -97,7 +97,7 @@ onBeforeUnmount(() => {
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- ======== /menu bar ============-->
 <!-- ========== hero ============ -->
 <section class="hero" ref="heroSection">
@@ -622,7 +622,7 @@ onBeforeUnmount(() => {
 </section>
 <!-- ========== /apply now ============-->
 <!-- ========== footer ============-->
-<section class="footer">
+<!-- <section class="footer">
     <div class="container">
         <div class="footer_in">
             <div class="footer_item">
@@ -704,11 +704,11 @@ onBeforeUnmount(() => {
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!-- ========== /footer ============-->
 <!-- ========== /footer quote ============-->
-<section class="footer_quote">
+<!-- <section class="footer_quote">
     <div class="container">
         <h4>DigitSathi: Personalized Finance Plans for Every Need </h4>
         <p><span>Personal Loans:</span> DigitSathi, your digital lending partner, offers hassle-free personal
@@ -717,7 +717,7 @@ onBeforeUnmount(() => {
         <p><span>Credit Tracker:</span> Track your credit score and behavior with our credit tracker and stay on
             top of your finances around the clock!</p>
     </div>
-</section>
+</section> -->
 <!-- ========== /footer quote ============-->
 
 <!-- <section class="app_download">
