@@ -84,6 +84,18 @@
       "_chunk-HDDX7F4A-Ctccelsq.js"
     ]
   },
+  "resources/assets/font/AtAero-Bold.otf": {
+    "file": "assets/AtAero-Bold-D07cU31S.otf",
+    "src": "resources/assets/font/AtAero-Bold.otf"
+  },
+  "resources/assets/font/AtAero-Retina.otf": {
+    "file": "assets/AtAero-Retina-_T3YqkIc.otf",
+    "src": "resources/assets/font/AtAero-Retina.otf"
+  },
+  "resources/assets/font/AtAero-Semibold.otf": {
+    "file": "assets/AtAero-Semibold-BFTvGbhd.otf",
+    "src": "resources/assets/font/AtAero-Semibold.otf"
+  },
   "resources/assets/image/CT_ProductIconDesktop.webp": {
     "file": "assets/CT_ProductIconDesktop-0fBRoUYZ.webp",
     "src": "resources/assets/image/CT_ProductIconDesktop.webp"
@@ -191,6 +203,11 @@
   "resources/css/app.css": {
     "file": "assets/app-CIEE2oNB.css",
     "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/css/styles.css": {
+    "file": "assets/styles-BY_boBl2.css",
+    "src": "resources/css/styles.css",
     "isEntry": true
   },
   "resources/js/app.js": {
