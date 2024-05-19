@@ -6,6 +6,8 @@ import Login from './components/Login.vue';
 import DigitalLeadPartners from './components/DigitalLeadPartners.vue';
 import DebtCollectionAgencies from './components/DebtCollectionAgencies.vue';
 import BusinessPart from './components/BusinessPart.vue';
+import Grievance from './components/Grievance.vue';
+import MediaCoverages from './components/MediaCoverages.vue';
 
 
 const routes = [
@@ -36,6 +38,14 @@ const routes = [
             {
                 path: '/business-partner',
                 component: BusinessPart
+            },
+            {
+                path: '/grievance',
+                component: Grievance
+            },
+            {
+                path: '/media-coverages',
+                component: MediaCoverages
             },
         ]
     },

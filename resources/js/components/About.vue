@@ -1376,7 +1376,7 @@ src = "https://www.facebook.com/tr?id=1094686184251880&amp;ev=PageView&amp;noscr
 </template>
 
 
-<style>
+<style scoped>
     .paddingInline0 {
         padding-left: 0px;
         padding-right: 0px;
