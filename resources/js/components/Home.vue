@@ -47,58 +47,7 @@ watch(isScrolled, (newValue) => {
 
 <template>
 <!-- ======== menu bar ============-->
-<!-- <div class="menu_bar" :class="{'scrolled': isScrolled}">
-    <div class="container">
-        <div class="menu_bar_in">
-            <a href="/">
-                <img v-if="isScrolled" src="../../assets/image/mv-green-logo-v3Compressed.svg" class="logo" alt="Logo">
-                <img v-else src="../../assets/image/logo.svg" class="logo" alt="Logo"> 
-            </a>
-            <div class="menu_bar_right">
-                <button type="buttons" class="open_menu_btn" @click="toggleMenu">
-                    <img v-if="isScrolled" src="../../assets/image/burger_green.svg" alt="icon">
-                    <img v-else src="../../assets/image/hamburgerIcon-v3.svg" alt="hamburgerIcon-v3.svg">
-                </button>
-                <div class="menu_ul_wrapper" v-if="isMenuOpen">
-                    <ul class="menu_ul">
-                        <li>
-                            <a href="#" :class="{'scrolled_text': isScrolled}">
-                                <img src="../../assets/image/ic-personal-loan-product.webp" alt="ic-personal-loan-product.webp">
-                                Personal Loan
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" :class="{'scrolled_text': isScrolled}">
-                                <img src="../../assets/image/CT_ProductIconDesktop.webp" alt="image/CT_ProductIconDesktop.webp">
-                                Credit Tracker
-                            </a>
-                        </li>
-                        <li class="drop_li" id="loan_li">
-                            <a href="javascript:void(0)" :class="{'scrolled_text': isScrolled}" @click="toggleCalc">Calculators <i class="fas fa-angle-down"></i></a>
-                            <div class="menu_drop" id="loan_drop" v-if="isCalcOpen">
-                                <ul>
-                                    <li><a href="#">Personal Loan</a></li>
-                                    <li><a href="#">Educational Loan</a></li>
-                                    <li><a href="#">Bike Loan</a></li>
-                                    <li><a href="#">Car Loan</a></li>
-                                    <li><a href="#">Business Loan</a></li>
-                                    <li><a href="#">Home Loan</a></li>
-                                    <li><a href="#">Mortgage Loan</a></li>
-                                    <li><a href="#">Gold Loan</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="#" :class="{'scrolled_text': isScrolled}">Contact Us</a></li>
-                        <button class="close_menu_btn" type="button" @click="toggleMenu">
-                            <img src="../../assets/image/blackCloseIcon.svg" alt="blackCloseIcon.svg">
-                        </button>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-<!-- ======== /menu bar ============-->
+
 <!-- ========== hero ============ -->
 <section class="hero" ref="heroSection">
     <div class="container">
@@ -406,11 +355,6 @@ watch(isScrolled, (newValue) => {
                     </div>
 
                 </SwiperSlide>
-
-                <!-- <template #addons>
-                    <Navigation />
-                    <Pagination />
-                </template> -->
 
             </Swiper>
     </div>

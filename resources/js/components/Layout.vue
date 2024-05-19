@@ -27,7 +27,7 @@ console.log(route.path)
 
 const headerBgClass = computed(() => {
   switch (route.path) {
-    case '/about':
+    case '/about-us':
       return 'about_nav';
     default:
       return;
@@ -35,7 +35,7 @@ const headerBgClass = computed(() => {
 });
 const textWhite = computed(() => {
   switch (route.path) {
-    case '/about':
+    case '/about-us':
       return 'scrolled_text';
     default:
       return;
@@ -51,7 +51,7 @@ const textWhite = computed(() => {
     <div class="container">
         <div class="menu_bar_in">
             <a href="/">
-                <img v-if="isScrolled || route.path === '/about'" src="../../assets/image/mv-green-logo-v3Compressed.svg" class="logo" alt="Logo">
+                <img v-if="isScrolled || route.path === '/about-us'" src="../../assets/image/mv-green-logo-v3Compressed.svg" class="logo" alt="Logo">
                 <img v-else src="../../assets/image/logo.svg" class="logo" alt="Logo"> 
             </a>
             <div class="menu_bar_right">
@@ -113,7 +113,7 @@ const textWhite = computed(() => {
                     <div class="footer_item">
                         <h4>THE COMPANY</h4>
                         <ul>
-                            <li><router-link to="/about">About</router-link></li>
+                            <li><router-link to="/about-us">About</router-link></li>
 
                             <li><a href="#">Security</a></li>
                             <li><a href="#">Careers</a></li>

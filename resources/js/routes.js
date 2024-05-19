@@ -1,8 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from './components/Home.vue';
 import About from './components/About.vue';
-import Test from './components/Test.vue';
 import Layout from './components/Layout.vue';
+import Login from './components/Login.vue';
+import DigitalLeadPartners from './components/DigitalLeadPartners.vue';
+import DebtCollectionAgencies from './components/DebtCollectionAgencies.vue';
+import BusinessPart from './components/BusinessPart.vue';
 
 
 const routes = [
@@ -15,12 +18,24 @@ const routes = [
                 component: Home
             },
             {
-                path: '/about',
+                path: '/about-us',
                 component: About
             },
             {
-                path: '/test',
-                component: Test
+                path: '/credit-score/login',
+                component: Login
+            },
+            {
+                path: '/digital-lead-partners',
+                component: DigitalLeadPartners
+            },
+            {
+                path: '/debt-collection-agencies',
+                component: DebtCollectionAgencies
+            },
+            {
+                path: '/business-partner',
+                component: BusinessPart
             },
         ]
     },

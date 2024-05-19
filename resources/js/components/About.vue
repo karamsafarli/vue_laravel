@@ -1391,7 +1391,7 @@ src = "https://www.facebook.com/tr?id=1094686184251880&amp;ev=PageView&amp;noscr
         .our-mission {
             width: 100%;
             height: 180px;
-            /* margin-top: 62px; */
+            margin-top: 32px;
             background-image: url('https://moneyview.in/images/home_banner_mobile.png');
             background-color: #453456;
             background-position: right;
