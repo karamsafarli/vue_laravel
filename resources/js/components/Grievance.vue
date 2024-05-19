@@ -1,55 +1,65 @@
 <template>
-<section>
-    <h1 class="typography_h1">Happy to help you!</h1>
-    <div class="faq-section">
-        <div class="row d-flex margin0">
-            <div class="faq-sub-section faq-border col-12 col-sm-6">
-                <h3 class="typography_h3">FAQs</h3>
-                <p class="typography-paragraph">
-                    Please visit FAQs for the loan related queries
-                </p>
-                <a href="../../loans-faq-en" class="view-faq-button">View FAQs</a>
-            </div>
-            <div class="faq-sub-section col-12 col-sm-6">
-                <h6 class="typography_h3">Customer support</h6>
-                <p class="typography-paragraph">
-                    If you have already raised a support request to our customer support
-                    team, then please check the status of your query on the moneyview
-                    app or the registered email ID
-                </p>
+    <section>
+        <h1 class="typography_h1">Happy to help you!</h1>
+        <div class="faq-section">
+            <div class="row d-flex margin0">
+                <div class="faq-sub-section faq-border col-12 col-sm-6">
+                    <h3 class="typography_h3">FAQs</h3>
+                    <p class="typography-paragraph">
+                        Please visit FAQs for the loan related queries
+                    </p>
+                    <a href="../../loans-faq-en" class="view-faq-button"
+                        >View FAQs</a
+                    >
+                </div>
+                <div class="faq-sub-section col-12 col-sm-6">
+                    <h6 class="typography_h3">Customer support</h6>
+                    <p class="typography-paragraph">
+                        If you have already raised a support request to our
+                        customer support team, then please check the status of
+                        your query on the moneyview app or the registered email
+                        ID
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="write-to-us-section">
-        <p class="typography-paragraph">
-            If you are not happy with the solution provided,
-        </p>
-        <a class="write-to-us-button" data-toggle="modal" data-target="#writeToUs">
-            Write to us
-        </a>
-        <p class="typography-paragraph margin-bottom-24px">
-            Or reach out to
-            <br class="mobile-break" />
-            <a href="#" class="grievance-officer" data-toggle="modal" data-target="#grievanceOfficerModal">
-                Grievance Officer
+        <div class="write-to-us-section">
+            <p class="typography-paragraph">
+                If you are not happy with the solution provided,
+            </p>
+            <a
+                class="write-to-us-button"
+                data-toggle="modal"
+                data-target="#writeToUs"
+            >
+                Write to us
             </a>
-        </p>
-        <p class="typography-paragraph">
-            <b>Note:</b> The issue can be escalated to the Grievance Officer only
-            after 7 days of raising it
-        </p>
-    </div>
-</section>
+            <p class="typography-paragraph margin-bottom-24px">
+                Or reach out to
+                <br class="mobile-break" />
+                <a
+                    href="#"
+                    class="grievance-officer"
+                    data-toggle="modal"
+                    data-target="#grievanceOfficerModal"
+                >
+                    Grievance Officer
+                </a>
+            </p>
+            <p class="typography-paragraph">
+                <b>Note:</b> The issue can be escalated to the Grievance Officer
+                only after 7 days of raising it
+            </p>
+        </div>
+    </section>
 </template>
 
-  
 <script>
 export default {
-    name: 'SupportSection',
+    name: "SupportSection",
 };
 </script>
 
-  
 <style scoped>
 ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -71,7 +81,7 @@ section {
 }
 
 @media (max-width: 959px) {
-    body>div:first-of-type {
+    body > div:first-of-type {
         padding-top: 0px;
     }
 }
@@ -216,7 +226,7 @@ textarea {
 
 .grievanceOfficerNote {
     padding-top: 8px;
-    color: #34353A !important;
+    color: #34353a !important;
 }
 
 .grievanceOfficerHeader {
@@ -321,21 +331,21 @@ button:focus {
 }
 
 .form-control.valid {
-    border-color: #09733E;
+    border-color: #09733e;
 }
 
 .form-control.invalid {
-    border-color: #E12B1D;
+    border-color: #e12b1d;
 }
 
-.form-control+small {
-    color: #E12B1D;
+.form-control + small {
+    color: #e12b1d;
     opacity: 0;
     height: 0;
     transition: opacity 0.4s ease-out;
 }
 
-.form-control.invalid+small {
+.form-control.invalid + small {
     opacity: 1;
     height: auto;
     transition: opacity 0.4s ease-out;
@@ -438,6 +448,8 @@ button:focus {
     }
 }
 
+
+
 .successContent {
     max-width: 480px;
     height: 265px;
@@ -496,7 +508,7 @@ button:focus {
 
 .writeToUsNote {
     margin-bottom: 24px;
-    color: #34353A !important;
+    color: #34353a !important;
 }
 
 .grievanceOfficerModal {
@@ -508,13 +520,13 @@ button:focus {
     width: 100%;
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
     section {
         margin: 45px 60px 60px;
     }
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
     section {
         margin: 45px 30px 40px;
     }
