@@ -29,6 +29,18 @@ const headerBgClass = computed(() => {
   switch (route.path) {
     case '/about-us':
       return 'about_nav';
+    case '/credit-score/login':
+      return 'about_nav';
+    case '/digital-lead-partners':
+      return 'about_nav';
+    case '/debt-collection-agencies':
+      return 'about_nav';
+    case '/business-partner':
+      return 'about_nav';
+    case '/grievance':
+      return 'about_nav';
+    case '/media-coverages':
+      return 'about_nav';
     default:
       return;
   }
@@ -37,11 +49,32 @@ const textWhite = computed(() => {
   switch (route.path) {
     case '/about-us':
       return 'scrolled_text';
+    case '/credit-score/login':
+      return 'scrolled_text';
+    case '/digital-lead-partners':
+      return 'scrolled_text';
+    case '/debt-collection-agencies':
+      return 'scrolled_text';
+    case '/business-partner':
+      return 'scrolled_text';
+    case '/grievance':
+      return 'scrolled_text';
+    case '/media-coverages':
+      return 'scrolled_text';
     default:
       return;
   }
 });
 
+const whiteNavList = [
+    '/about-us',
+     '/credit-score/login', 
+     '/digital-lead-partners',
+     '/debt-collection-agencies',
+     '/business-partner',
+     '/grievance',
+     '/media-coverages'
+]
 
 </script>
 
@@ -51,8 +84,8 @@ const textWhite = computed(() => {
     <div class="container">
         <div class="menu_bar_in">
             <a href="/">
-                <img v-if="isScrolled || route.path === '/about-us'" src="../../assets/image/mv-green-logo-v3Compressed.svg" class="logo" alt="Logo">
-                <img v-else src="../../assets/image/logo.svg" class="logo" alt="Logo"> 
+                <img v-if="isScrolled || whiteNavList.includes(route.path)" src="../../assets/image/logo.svg" class="logo" alt="Logo">
+                <img v-else src="../../assets/image/white-logo.svg" class="logo" alt="Logo"> 
             </a>
             <div class="menu_bar_right">
                 <button type="buttons" class="open_menu_btn" @click="toggleMenu">
