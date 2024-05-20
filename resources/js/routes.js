@@ -8,6 +8,7 @@ import DebtCollectionAgencies from './components/DebtCollectionAgencies.vue';
 import BusinessPart from './components/BusinessPart.vue';
 import Grievance from './components/Grievance.vue';
 import MediaCoverages from './components/MediaCoverages.vue';
+import SecurityMoney from './components/SecurityMoney.vue';
 
 
 const routes = [
@@ -46,6 +47,10 @@ const routes = [
             {
                 path: '/media-coverages',
                 component: MediaCoverages
+            },
+            {
+                path: '/security-money-view-app',
+                component: SecurityMoney
             },
         ]
     },

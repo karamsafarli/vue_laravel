@@ -41,6 +41,8 @@ const headerBgClass = computed(() => {
       return 'about_nav';
     case '/media-coverages':
       return 'about_nav';
+    case '/security-money-view-app':
+      return 'about_nav';
     default:
       return;
   }
@@ -61,6 +63,8 @@ const textWhite = computed(() => {
       return 'scrolled_text';
     case '/media-coverages':
       return 'scrolled_text';
+    case '/security-money-view-app':
+      return 'scrolled_text';
     default:
       return;
   }
@@ -73,7 +77,8 @@ const whiteNavList = [
      '/debt-collection-agencies',
      '/business-partner',
      '/grievance',
-     '/media-coverages'
+     '/media-coverages',
+     '/security-money-view-app'
 ]
 
 </script>
@@ -89,7 +94,7 @@ const whiteNavList = [
             </a>
             <div class="menu_bar_right">
                 <button type="buttons" class="open_menu_btn" @click="toggleMenu">
-                    <img v-if="isScrolled" src="../../assets/image/burger_green.svg" alt="icon">
+                    <img v-if="isScrolled || whiteNavList.includes(route.path)" src="../../assets/image/burger_green.svg" alt="icon">
                     <img v-else src="../../assets/image/hamburgerIcon-v3.svg" alt="hamburgerIcon-v3.svg">
                 </button>
                 <div class="menu_ul_wrapper" v-if="isMenuOpen">
@@ -246,6 +251,7 @@ const whiteNavList = [
 
 .about_nav {
     background-color: #fff !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
 }
 
 .scrolled_text {
