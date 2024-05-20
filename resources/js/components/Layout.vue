@@ -194,7 +194,7 @@ const whiteNavList = [
                     <div class="footer_item grievance_info">
                         <h4>GRIEVANCE REDRESSAL</h4>
                         <ul>
-                            <li><a href="#">Loan Grievance Redressal</a></li>
+                            <li><router-link to="/grievance">Loan Grievance Redressal</router-link></li>
                             <li><a href="#">Banking Grievance Redressal</a></li>
 
                         </ul>
