@@ -153,7 +153,7 @@ const whiteNavList = [
                         <ul>
                             <li><router-link to="/about-us">About</router-link></li>
 
-                            <li><a href="#">Security</a></li>
+                            <li><router-link to="/security-money-view-app">Security</router-link></li>
                             <li><a href="#">Careers</a></li>
                         </ul>
                     </div>
@@ -170,9 +170,9 @@ const whiteNavList = [
                         <ul>
 
                             <li><a href="#">Banking Partners</a></li>
-                            <li><a href="#">Business Partners</a></li>
-                            <li><a href="#">Digital Lead Partners</a></li>
-                            <li><a href="#">Collection Agencies</a></li>
+                            <li><router-link to="/business-partner">Business Partners</router-link></li>
+                            <li><router-link to="/digital-lead-partners">Digital Lead Partners</router-link></li>
+                            <li><router-link to="/debt-collection-agencies">Collection Agencies</router-link></li>
                         </ul>
                     </div>
                     <div class="footer_item">
@@ -188,7 +188,7 @@ const whiteNavList = [
                         <h4>RESOURCES</h4>
                         <ul>
                             <li><a href="#">Blogs</a></li>
-                            <li><a href="#">Media Coverage</a></li>
+                            <li><router-link to="/media-coverages">Media Coverage</router-link></li>
                         </ul>
                     </div>
                     <div class="footer_item grievance_info">

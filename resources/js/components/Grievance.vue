@@ -1,57 +1,88 @@
 <template>
-    <section>
-        <h1 class="typography_h1">Happy to help you!</h1>
-        <div class="faq-section">
-            <div class="row d-flex margin0">
-                <div class="faq-sub-section faq-border col-12 col-sm-6">
-                    <h3 class="typography_h3">FAQs</h3>
-                    <p class="typography-paragraph">
-                        Please visit FAQs for the loan related queries
-                    </p>
-                    <a href="../../loans-faq-en" class="view-faq-button"
-                        >View FAQs</a
-                    >
-                </div>
-                <div class="faq-sub-section col-12 col-sm-6">
-                    <h6 class="typography_h3">Customer support</h6>
-                    <p class="typography-paragraph">
-                        If you have already raised a support request to our
-                        customer support team, then please check the status of
-                        your query on the moneyview app or the registered email
-                        ID
-                    </p>
-                </div>
+<section>
+    <h1 class="typography_h1">Happy to help you!</h1>
+    <div class="faq-section">
+        <div class="row d-flex margin0">
+            <div class="faq-sub-section faq-border col-12 col-sm-6">
+                <h3 class="typography_h3">FAQs</h3>
+                <p class="typography-paragraph">
+                    Please visit FAQs for the loan related queries
+                </p>
+                <a href="../../loans-faq-en" class="view-faq-button">View FAQs</a>
+            </div>
+            <div class="faq-sub-section col-12 col-sm-6">
+                <h6 class="typography_h3">Customer support</h6>
+                <p class="typography-paragraph">
+                    If you have already raised a support request to our
+                    customer support team, then please check the status of
+                    your query on the moneyview app or the registered email
+                    ID
+                </p>
             </div>
         </div>
-        <div class="write-to-us-section">
-            <p class="typography-paragraph">
-                If you are not happy with the solution provided,
-            </p>
-            <a
-                class="write-to-us-button"
-                data-toggle="modal"
-                data-target="#writeToUs"
-            >
-                Write to us
+    </div>
+    <div class="write-to-us-section">
+        <p class="typography-paragraph">
+            If you are not happy with the solution provided,
+        </p>
+        <a class="write-to-us-button" data-toggle="modal" data-target="#writeToUs">
+            Write to us
+        </a>
+        <p class="typography-paragraph margin-bottom-24px">
+            Or reach out to
+            <br class="mobile-break" />
+            <a href="#" class="grievance-officer" data-toggle="modal" data-target="#grievanceOfficerModal">
+                Grievance Officer
             </a>
-            <p class="typography-paragraph margin-bottom-24px">
-                Or reach out to
-                <br class="mobile-break" />
-                <a
-                    href="#"
-                    class="grievance-officer"
-                    data-toggle="modal"
-                    data-target="#grievanceOfficerModal"
-                >
-                    Grievance Officer
-                </a>
-            </p>
-            <p class="typography-paragraph">
-                <b>Note:</b> The issue can be escalated to the Grievance Officer
-                only after 7 days of raising it
-            </p>
+        </p>
+        <p class="typography-paragraph">
+            <b>Note:</b> The issue can be escalated to the Grievance Officer
+            only after 7 days of raising it
+        </p>
+    </div>
+</section>
+
+<div class="modal fade grievanceOfficerModal" id="grievanceOfficerModal" role="dialog" aria-labelledby="exampleModalCenterTitle" tabindex="-1" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered grievanceOfficerModalContent" role="document">
+        <div class="modal-content grievanceOfficerContent">
+            <div class="modal-header grievanceOfficerHeader">
+                <h5 class="modal-title grievanceOfficerTitle" id="exampleModalLongTitle">Grievance officer details</h5>
+                <button type="button" class="close modal-btn-close" data-dismiss="modal" aria-label="Close"> <img src="https://dugtmg0pklp2w.cloudfront.net/ic-close-v2.svg" class="grievanceOfficerClose"> </button>
+            </div>
+            <div class="modal-body grievanceOfficerBody">
+                <p class="mv-why-us text-left">Name: Mr. Venkatraman Narayan</p>
+                <p class="mv-why-us text-left">Address: No. 17, 3rd Floor, Survey, 1A, Dr Puneeth Rajkumar Rd, Kadubeesanahalli, Bellandur, Bengaluru, Karnataka 560087</p>
+                <p class="mv-why-us text-left">Phone number: 080 6939 0476</p>
+                <p class="mv-why-us text-left">Timings: 9:00AM to 6:00PM (Monday to Friday - Excluding public holidays)</p>
+                <p class="mv-why-us text-left">Email ID: grievance@moneyview.in</p>
+                <p class="grievanceOfficerNote"><span class="bold600">Note:</span> We strongly recommend to mention the loan ID in the email for faster resolution</p>
+            </div>
+            <div class="modal-footer grievanceOfficerFooter"><button type="button" class="btn cta_button grievanceOfficerButton" data-dismiss="modal">Got it</button></div>
         </div>
-    </section>
+    </div>
+</div>
+
+<div class="modal fade grievanceOfficerModal" id="writeToUs" role="dialog" aria-labelledby="exampleModalLabel" tabindex="-1" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered grievanceOfficerModalContent" role="document">
+        <div class="modal-content grievanceOfficerContent">
+            <div class="modal-header grievanceOfficerHeader">
+                <h5 class="modal-title grievanceOfficerTitle" id="exampleModalLabel">Write to us</h5>
+                <button type="button" class="close modal-btn-close" data-dismiss="modal" aria-label="Close"> <img src="https://dugtmg0pklp2w.cloudfront.net/ic-close-v2.svg" class="grievanceOfficerClose"> </button>
+            </div>
+            <div class="modal-body writeToUsBody">
+                <div class="alert alert-danger writeToUsError" role="alert">
+                    <p id="writeToUsErrorText">We’re sorry! We could not save your data due to some technical issue. Please retry</p>
+                </div>
+                <form class="writeToUsForm needs-validation" novalidate="" id="grievanceForm">
+                    <div class="form-group"><input type="text" class="form-control invalid writeToUsEmail" id="email" placeholder="Your registered email ID" value="" required="" autocomplete="off"> <small id="emailHelp" class="form-text errorHelperText">Email ID is required</small></div>
+                    <div class="form-group"><textarea class="form-control invalid writeToUsTextBox" id="message-text" placeholder="Explain your issue here" value="" required=""></textarea> <small id="textBoxHelp" class="form-text errorHelperText">Please enter the issue</small></div>
+                </form>
+                <p class="writeToUsNote"><span class="bold600">Note:</span> We strongly recommend to mention the loan ID in the issue for faster resolution</p>
+            </div>
+            <div class="modal-footer grievanceOfficerFooter"><button type="submit" class="btn cta_button grievanceOfficerButton" id="myBtn" onclick="validateFields()">Send</button></div>
+        </div>
+    </div>
+</div>
 </template>
 
 <script>
@@ -81,7 +112,7 @@ section {
 }
 
 @media (max-width: 959px) {
-    body > div:first-of-type {
+    body>div:first-of-type {
         padding-top: 0px;
     }
 }
@@ -232,6 +263,9 @@ textarea {
 .grievanceOfficerHeader {
     border-bottom: 0px;
     padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .grievanceOfficerFooter {
@@ -248,6 +282,18 @@ textarea {
 .grievanceOfficerClose {
     height: 24px;
     width: 24px;
+}
+
+.close {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    background-color: transparent;
+    appearance: none;
+    border: none;
+    padding: 5px;
 }
 
 .cta_button {
@@ -280,7 +326,6 @@ button:focus {
 
 .modal-btn-close {
     opacity: 1 !important;
-    margin-top: -20px !important;
 }
 
 .writeToUsBody {
@@ -338,14 +383,14 @@ button:focus {
     border-color: #e12b1d;
 }
 
-.form-control + small {
+.form-control+small {
     color: #e12b1d;
     opacity: 0;
     height: 0;
     transition: opacity 0.4s ease-out;
 }
 
-.form-control.invalid + small {
+.form-control.invalid+small {
     opacity: 1;
     height: auto;
     transition: opacity 0.4s ease-out;
@@ -447,8 +492,6 @@ button:focus {
         flex: 0;
     }
 }
-
-
 
 .successContent {
     max-width: 480px;
