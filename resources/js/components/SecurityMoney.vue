@@ -609,6 +609,7 @@ button:disabled {
     font-size: 14px;
     line-height: 1.75;
     font-weight: var(--font-weight-regular) !important;
+    text-align: start !important;
 }
 
 /* emi-calc , mvl , hindi/emi */

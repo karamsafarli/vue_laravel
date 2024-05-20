@@ -88,10 +88,10 @@ const whiteNavList = [
     <div class="menu_bar" :class="[headerBgClass, { 'scrolled': isScrolled }]">
     <div class="container">
         <div class="menu_bar_in">
-            <a href="/">
+            <router-link to="/">
                 <img v-if="isScrolled || whiteNavList.includes(route.path)" src="../../assets/image/logo.svg" class="logo" alt="Logo">
                 <img v-else src="../../assets/image/white-logo.svg" class="logo" alt="Logo"> 
-            </a>
+            </router-link>
             <div class="menu_bar_right">
                 <button type="buttons" class="open_menu_btn" @click="toggleMenu">
                     <img v-if="isScrolled || whiteNavList.includes(route.path)" src="../../assets/image/burger_green.svg" alt="icon">
@@ -106,10 +106,10 @@ const whiteNavList = [
                             </a>
                         </li>
                         <li>
-                            <a href="#" :class="[textWhite, { 'scrolled_text': isScrolled }]">
+                            <router-link to="/credit-score/login" :class="[textWhite, { 'scrolled_text': isScrolled }]">
                                 <img src="../../assets/image/CT_ProductIconDesktop.webp" alt="image/CT_ProductIconDesktop.webp">
                                 Credit Tracker
-                            </a>
+                            </router-link>
                         </li>
                         <li class="drop_li" id="loan_li">
                             <a href="javascript:void(0)" :class="[textWhite, { 'scrolled_text': isScrolled }]" @click="toggleCalc">Calculators <i class="fas fa-angle-down"></i></a>
