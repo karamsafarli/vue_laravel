@@ -47,6 +47,8 @@ const headerBgClass = computed(() => {
       return 'about_nav';
     case '/personal-loan':
       return 'about_nav';
+    case '/business-loan':
+      return 'about_nav';
     default:
       return;
   }
@@ -73,6 +75,8 @@ const textWhite = computed(() => {
       return 'scrolled_text';
     case '/personal-loan':
       return 'scrolled_text';
+    case '/business-loan':
+      return 'scrolled_text';
     default:
       return;
   }
@@ -88,7 +92,8 @@ const whiteNavList = [
      '/media-coverages',
      '/security-money-view-app',
      '/smart-pay',
-     '/personal-loan'
+     '/personal-loan',
+     '/business-loan'
 ]
 
 </script>
@@ -129,7 +134,7 @@ const whiteNavList = [
                                     <li><a href="#">Educational Loan</a></li>
                                     <li><a href="#">Bike Loan</a></li>
                                     <li><a href="#">Car Loan</a></li>
-                                    <li><a href="#">Business Loan</a></li>
+                                    <li><router-link to="/business-loan">Business Loan</router-link></li>
                                     <li><a href="#">Home Loan</a></li>
                                     <li><a href="#">Mortgage Loan</a></li>
                                     <li><a href="#">Gold Loan</a></li>
@@ -170,7 +175,8 @@ const whiteNavList = [
                     <div class="footer_item">
                         <h4>PRODUCTS</h4>
                         <ul>
-                            <li><a href="#">Personal loan</a></li>
+                            <li><router-link to="/personal-loan">Personal loan</router-link></li>
+                            <li><router-link to="/smart-pay">Smart Pay</router-link></li>
                             <li><a href="#">Credit Tracker</a></li>
                             <li><a href="#">EMI Calculator</a></li>
                         </ul>

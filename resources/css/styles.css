@@ -3734,8 +3734,8 @@ a:hover {
 
 
 .scrollToTopBtn {
-  bottom: 112px;
-  right: 60px;
+  bottom: 40px;
+  right: 30px;
   padding: 8px;
   z-index: 1000;
   background-color: var(--green01);

@@ -13,37 +13,62 @@
             <h3 class="header_banner_heading">Personal loans made just for you</h3>
             <div class="header_apply_online_container">
                 <div class="lead_gen_form isModal displayNone PLloginForm" id="loginForm" style="display: grid;">
-                    <div id="generateOtpWrap" class="lead_gen_section generate_otp_container lead_gen_container">
+                    <div v-if="showPhoneInput" id="generateOtpWrap" class="lead_gen_section generate_otp_container lead_gen_container">
                         <div class="header_generate_otp_container">
                             <div class="header_generate_otp_input_container">
                                 <div class="country_code"><span>+91</span></div>
-                                <div class="header_generate_otp_input_wrap"><input type="number" id="header_generate_otp_input" class="header_generate_otp_input generate_otp_input" placeholder="Enter Mobile Number">
-                                    <p id="header_generate_otp_message" class="header_generaate_otp_message generate_otp_message">
-                                        An OTP will be sent for verification</p>
+                                <div class="header_generate_otp_input_wrap">
+                                    <input maxlength="10" type="text" v-model="phoneNumber" class="header_generate_otp_input generate_otp_input" :class="{ 'input-error': phoneError }" placeholder="Enter Mobile Number" />
+                                    
+                                    <p v-if="phoneError"id="header_generate_otp_message" class="header_generaate_otp_message generate_otp_message input_error_text" style="display: grid; color: rgb(214, 39, 60);">Please enter valid mobile number</p>
+                                    <p v-else id="header_generate_otp_message" class="header_generate_otp_message generate_otp_message">
+                                        An OTP will be sent for verification
+                                    </p>
                                 </div>
                             </div>
-                            <button type="button" class="header_generate_otp_apply_loan_btn apply_now_lead_gen_btn pl_page_header_applynow_cta" id="sendOtp"> <span class="btn_loader spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display: none;"></span> Apply now </button>
+                            <button type="button" class="header_generate_otp_apply_loan_btn apply_now_lead_gen_btn" id="sendOtp" @click="applyNow" :disabled="!isCheckboxChecked">
+                                <span class="btn_loader spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display: none;"></span>
+                                Apply now
+                            </button>
                         </div>
                         <div class="header_consent_wrapper">
-                            <div class="header_generate_otp_consent_container consent_checkbox_wrap loginConsent"><input class="form-check-input header_generate_otp_consent generate_otp_consent" type="checkbox" value="" id="header_generate_otp_consent" checked="checked"> <label class="form-check-label header_generate_otp_consent_text loginConsentText" htmlfor="header_generate_otp_consent"> By proceeding, you agree to our <a class="header_generate_otp_consent_text" target="_blank" href="/terms-conditions-loans-app" rel="noopener"> Terms &amp; Conditions </a> &nbsp;&amp;&nbsp; <a class="header_generate_otp_consent_text" target="_blank" href="/privacy-policy-loans" rel="noopener">Privacy Policy </a> </label></div>
+                            <div class="header_generate_otp_consent_container consent_checkbox_wrap loginConsent">
+                                <input class="form-check-input header_generate_otp_consent generate_otp_consent" type="checkbox" v-model="consentChecked" id="header_generate_otp_consent" />
+                                <label class="form-check-label header_generate_otp_consent_text loginConsentText" for="header_generate_otp_consent">
+                                    By proceeding, you agree to our
+                                    <a class="header_generate_otp_consent_text" target="_blank" href="/terms-conditions-loans-app" rel="noopener">
+                                        Terms &amp; Conditions
+                                    </a>
+                                    &nbsp;&amp;&nbsp;
+                                    <a class="header_generate_otp_consent_text" target="_blank" href="/privacy-policy-loans" rel="noopener">
+                                        Privacy Policy
+                                    </a>
+                                </label>
+                            </div>
                             <div class="header_generate_otp_consent_container consent_checkbox_wrap whatsAppConsent">
-                                <input class="form-check-input header_generate_otp_consent" type="checkbox" value="" id="whatsAppCheckBox" checked="checked">
-                                <label class="form-check-label header_generate_otp_consent_text whatsAppConsentText" htmlfor="header_generate_otp_consent">I agree to receive updates on WhatsApp</label>
+                                <input class="form-check-input header_generate_otp_consent" type="checkbox" v-model="whatsAppChecked" id="whatsAppCheckBox" />
+                                <label class="form-check-label header_generate_otp_consent_text whatsAppConsentText" for="whatsAppCheckBox">
+                                    I agree to receive updates on WhatsApp
+                                </label>
                             </div>
                         </div>
                     </div>
-                    <div id="verifyotpWrap" class="verify_otp_wrap_container verify_otp_container header_verify_otp" style="display: none;">
+
+                    <div v-else id="verifyotpWrap" class="verify_otp_wrap_container verify_otp_container header_verify_otp">
                         <div>
-                            <div style="position: relative;"><input type="number" id="verify_otp_lead_gen_input" class="verify_otp_lead_gen_input verify_otp_input" placeholder="Enter OTP" onkeydown="if(this.value.length === 5 &amp;&amp; event.keyCode > 47 &amp;&amp; event.keyCode < 58)return false;">
-                                <button id="resend_otp" type="button" class="text-button-link resend_otp header_resend_otp">Resend
-                                    OTP</button></div>
+                            <div style="position: relative;">
+                                <input maxlength="5" type="text" v-model="otp" id="verify_otp_lead_gen_input" class="verify_otp_lead_gen_input verify_otp_input" placeholder="Enter OTP" />
+                                <button id="resend_otp" type="button" class="text-button-link resend_otp header_resend_otp">Resend OTP</button>
+                            </div>
                             <div class="verify_otp_message_container verify_otp_container">
-                                <p id="otp_error_message" class="otp_error_message" style="display: none; margin-bottom: 0px;"></p>
-                                <div class="verify_otp_mobile_number_container alignItemsEnd flex-grow-1"><span id="mobile2" class="edit_mobile_number_text"></span> <button class="edit_mobile_number text-button-link">Edit</button></div>
+                                <p v-if="otpError" id="otp_error_message" class="otp_error_message" style="margin-bottom: 0px;">{{ otpError }}</p>
+                                <div class="verify_otp_mobile_number_container alignItemsEnd flex-grow-1">
+                                    <span id="mobile2" class="edit_mobile_number_text">{{ phoneNumber }}</span>
+                                    <button @click="editNumber" class="edit_mobile_number text-button-link">Edit</button>
+                                </div>
                             </div>
                         </div>
-                        <button id="verifyNow" type="button" class="verify_otp_lead_gen_btn pl_page_header_verify_otp_cta">Verify
-                            OTP</button>
+                        <button id="verifyNow" type="button" class="verify_otp_lead_gen_btn pl_page_header_verify_otp_cta">Verify OTP</button>
                     </div>
                 </div>
             </div>
@@ -659,48 +684,94 @@
 </button>
 </template>
 
-
 <script>
-import { ref, onMounted, onUnmounted, defineComponent } from 'vue';
+import {
+    ref,
+    onMounted,
+    onUnmounted,
+    defineComponent,
+    computed
+} from 'vue';
 import '@dotlottie/player-component';
 
 export default defineComponent({
-  setup() {
-    const isScrolled = ref(false);
+    setup() {
+        const isScrolled = ref(false);
 
-    const scrollToTop = () => {
-      window.scrollTo(0, 0);
-    };
+        const scrollToTop = () => {
+            window.scrollTo(0, 0);
+        };
 
-    const handleScroll = () => {
-      if (window.scrollY > 900) {
-        isScrolled.value = true;
-      } else {
-        isScrolled.value = false;
-      }
-    };
+        const handleScroll = () => {
+            if (window.scrollY > 900) {
+                isScrolled.value = true;
+            } else {
+                isScrolled.value = false;
+            }
+        };
 
-    onMounted(() => {
-      window.addEventListener('scroll', handleScroll);
-    });
+        onMounted(() => {
+            window.addEventListener('scroll', handleScroll);
+        });
 
-    onUnmounted(() => {
-      window.removeEventListener('scroll', handleScroll);
-    });
+        onUnmounted(() => {
+            window.removeEventListener('scroll', handleScroll);
+        });
 
-    return {
-      isScrolled,
-      scrollToTop
-    };
-  }
+        const phoneNumber = ref('');
+        const phoneError = ref(false);
+        const otp = ref('');
+        const otpError = ref('');
+        const showPhoneInput = ref(true);
+        const consentChecked = ref(false);
+        const whatsAppChecked = ref(false);
+
+        const isCheckboxChecked = computed(() => consentChecked.value && whatsAppChecked.value);
+
+        const applyNow = () => {
+            console.log('fajflakf')
+            const phoneRegex = /^[789]\d{9}$/;
+            if (!phoneRegex.test(phoneNumber.value)) {
+                console.log('salam')
+                phoneError.value = true;
+            } else {
+                phoneError.value = false;
+                showPhoneInput.value = false;
+            }
+        };
+
+        const editNumber = () => {
+            showPhoneInput.value = true;
+        };
+
+        return {
+            isScrolled,
+            scrollToTop,
+            phoneNumber,
+            phoneError,
+            otp,
+            otpError,
+            showPhoneInput,
+            consentChecked,
+            whatsAppChecked,
+            isCheckboxChecked,
+            applyNow,
+            editNumber
+        };
+    }
 });
 </script>
 
-
 <style scoped>
+.input-error {
+    outline: none;
+    border: 2px solid red !important;
+}
+
 .marginTop0 {
     margin-top: 0 !important;
 }
+
 p {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -1532,10 +1603,7 @@ ol {
     }
 }
 
-
-
 /* RESPONSIVE STYLES */
-
 
 @media screen and (min-width: 1440px) {
     .lead_gen_section {

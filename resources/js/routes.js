@@ -11,6 +11,7 @@ import MediaCoverages from './components/MediaCoverages.vue';
 import SecurityMoney from './components/SecurityMoney.vue';
 import SmartPay from './components/SmartPay.vue';
 import PersonalLoan from './components/PersonalLoan.vue';
+import BusinessLoan from './components/BusinessLoan.vue';
 
 
 const routes = [
@@ -61,6 +62,10 @@ const routes = [
             {
                 path: '/personal-loan',
                 component: PersonalLoan
+            },
+            {
+                path: '/business-loan',
+                component: BusinessLoan
             },
         ]
     },
