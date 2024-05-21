@@ -43,6 +43,8 @@ const headerBgClass = computed(() => {
       return 'about_nav';
     case '/security-money-view-app':
       return 'about_nav';
+    case '/smart-pay':
+      return 'about_nav';
     default:
       return;
   }
@@ -65,6 +67,8 @@ const textWhite = computed(() => {
       return 'scrolled_text';
     case '/security-money-view-app':
       return 'scrolled_text';
+    case '/smart-pay':
+      return 'scrolled_text';
     default:
       return;
   }
@@ -78,7 +82,8 @@ const whiteNavList = [
      '/business-partner',
      '/grievance',
      '/media-coverages',
-     '/security-money-view-app'
+     '/security-money-view-app',
+     '/smart-pay'
 ]
 
 </script>

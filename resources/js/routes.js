@@ -9,6 +9,7 @@ import BusinessPart from './components/BusinessPart.vue';
 import Grievance from './components/Grievance.vue';
 import MediaCoverages from './components/MediaCoverages.vue';
 import SecurityMoney from './components/SecurityMoney.vue';
+import SmartPay from './components/SmartPay.vue';
 
 
 const routes = [
@@ -51,6 +52,10 @@ const routes = [
             {
                 path: '/security-money-view-app',
                 component: SecurityMoney
+            },
+            {
+                path: '/smart-pay',
+                component: SmartPay
             },
         ]
     },
