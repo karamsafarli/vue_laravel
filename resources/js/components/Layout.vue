@@ -177,7 +177,8 @@ const whiteNavList = [
                         <ul>
                             <li><router-link to="/personal-loan">Personal loan</router-link></li>
                             <li><router-link to="/smart-pay">Smart Pay</router-link></li>
-                            <li><a href="#">Credit Tracker</a></li>
+                            <li><router-link to="/credit-score/login">Credit Tracker</router-link></li>
+                            <li><router-link to="/business-loan">Business Loan</router-link></li>
                             <li><a href="#">EMI Calculator</a></li>
                         </ul>
                     </div>
