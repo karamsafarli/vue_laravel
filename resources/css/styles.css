@@ -3731,3 +3731,15 @@ a:hover {
   }
 }
 }
+
+
+.scrollToTopBtn {
+  bottom: 112px;
+  right: 60px;
+  padding: 8px;
+  z-index: 1000;
+  background-color: var(--green01);
+  border: none;
+  border-radius: 50%;
+  position: fixed;
+}

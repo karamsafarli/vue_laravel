@@ -10,6 +10,7 @@ import Grievance from './components/Grievance.vue';
 import MediaCoverages from './components/MediaCoverages.vue';
 import SecurityMoney from './components/SecurityMoney.vue';
 import SmartPay from './components/SmartPay.vue';
+import PersonalLoan from './components/PersonalLoan.vue';
 
 
 const routes = [
@@ -56,6 +57,10 @@ const routes = [
             {
                 path: '/smart-pay',
                 component: SmartPay
+            },
+            {
+                path: '/personal-loan',
+                component: PersonalLoan
             },
         ]
     },

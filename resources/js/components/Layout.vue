@@ -45,6 +45,8 @@ const headerBgClass = computed(() => {
       return 'about_nav';
     case '/smart-pay':
       return 'about_nav';
+    case '/personal-loan':
+      return 'about_nav';
     default:
       return;
   }
@@ -69,6 +71,8 @@ const textWhite = computed(() => {
       return 'scrolled_text';
     case '/smart-pay':
       return 'scrolled_text';
+    case '/personal-loan':
+      return 'scrolled_text';
     default:
       return;
   }
@@ -83,7 +87,8 @@ const whiteNavList = [
      '/grievance',
      '/media-coverages',
      '/security-money-view-app',
-     '/smart-pay'
+     '/smart-pay',
+     '/personal-loan'
 ]
 
 </script>
@@ -105,10 +110,10 @@ const whiteNavList = [
                 <div class="menu_ul_wrapper" v-if="isMenuOpen">
                     <ul class="menu_ul">
                         <li>
-                            <a href="#" :class="[textWhite, { 'scrolled_text': isScrolled }]">
+                            <router-link to="/personal-loan" :class="[textWhite, { 'scrolled_text': isScrolled }]">
                                 <img src="../../assets/image/ic-personal-loan-product.webp" alt="ic-personal-loan-product.webp">
                                 Personal Loan
-                            </a>
+                            </router-link>
                         </li>
                         <li>
                             <router-link to="/credit-score/login" :class="[textWhite, { 'scrolled_text': isScrolled }]">
