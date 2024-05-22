@@ -12,6 +12,7 @@ import SecurityMoney from './components/SecurityMoney.vue';
 import SmartPay from './components/SmartPay.vue';
 import PersonalLoan from './components/PersonalLoan.vue';
 import BusinessLoan from './components/BusinessLoan.vue';
+import PrivacyPolicy from './components/PrivacyPolicy.vue';
 
 
 const routes = [
@@ -66,6 +67,10 @@ const routes = [
             {
                 path: '/business-loan',
                 component: BusinessLoan
+            },
+            {
+                path: '/privacy-policy-loans',
+                component: PrivacyPolicy
             },
         ]
     },

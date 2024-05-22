@@ -192,7 +192,8 @@
                 <img loading="lazy" alt="Customer Reviews" src="https://moneyview.in/images/customer-review-section-desktop.webp" width="100%" height="auto">
             </picture>
         </div>
-        <div class="reviewCard colspan-xl-1-6 colspan-xs-1-6">
+
+        <!-- <div class="reviewCard colspan-xl-1-6 colspan-xs-1-6">
             <div class="customer-details"><img loading="lazy" src="https://moneyview.in/images/ShantanuGupta.webp" alt="avatar" class="customer-image" width="auto" height="auto">
                 <div class="customer-class">
                     <p class="customer-name">Shantanu Gupta</p>
@@ -215,7 +216,111 @@
                 <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span></div>
             <p class="review-content">Had a great experience regarding credit. They just provide you instant credit in times
                 of need. Thanks a lot 😊 for helping me.</p>
-        </div>
+        </div> -->
+    </div>
+</section>
+
+<section class="testimonial">
+    <div class="container">
+            <Swiper :slides-per-view="2" :space-between="30" :grab-cursor="true" :loop="true" :modules="[Pagination]"
+            :pagination="{ clickable: true }"
+            :breakpoints="{
+                300: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                991: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                }
+            }"
+            >
+                <SwiperSlide>
+                    <div class="item">
+                        <div class="testimonial_item">
+                            <div class="testimonial_profile">
+                                <img src="../../assets/image/customer1.webp" alt="customer1.webp">
+                                <div>
+                                    <h4>Shantanu Gupta</h4>
+                                    <p>Feb 26, 2023</p>
+                                </div>
+                            </div>
+                            <div class="testimonial_rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="testi_review">
+                                <p>
+                                    Thank you so much for the service! Your app claim fast loan approval. Got the
+                                    amount
+                                    in minutes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </SwiperSlide>
+
+                <SwiperSlide>
+
+                    <div class="item">
+                        <div class="testimonial_item">
+                            <div class="testimonial_profile">
+                                <img src="../../assets/image/customer2.webp" alt="customer2.webp">
+                                <div>
+                                    <h4>Vikram Sher</h4>
+                                    <p>Feb 26, 2023</p>
+                                </div>
+                            </div>
+                            <div class="testimonial_rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="testi_review">
+                                <p>
+                                    Had a great experience regarding credit. They just provide you instant credit in
+                                    times of need. Thanks a lot 😊 for helping me.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <div class="item">
+                        <div class="testimonial_item">
+                            <div class="testimonial_profile">
+                                <img src="../../assets/image/customer2.webp" alt="customer2.webp">
+                                <div>
+                                    <h4>Vikram Sher</h4>
+                                    <p>Feb 26, 2023</p>
+                                </div>
+                            </div>
+                            <div class="testimonial_rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="testi_review">
+                                <p>
+                                    Had a great experience regarding credit. They just provide you instant credit in
+                                    times of need. Thanks a lot 😊 for helping me.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </SwiperSlide>
+
+            </Swiper>
     </div>
 </section>
 
@@ -684,85 +789,150 @@
 </button>
 </template>
 
-<script>
-import {
-    ref,
-    onMounted,
-    onUnmounted,
-    defineComponent,
-    computed
-} from 'vue';
+<script setup>
+import { ref, onMounted, onUnmounted, computed } from 'vue';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
 import '@dotlottie/player-component';
 
-export default defineComponent({
-    setup() {
-        const isScrolled = ref(false);
+const isScrolled = ref(false);
 
-        const scrollToTop = () => {
-            window.scrollTo(0, 0);
-        };
+const scrollToTop = () => {
+    window.scrollTo(0, 0);
+};
 
-        const handleScroll = () => {
-            if (window.scrollY > 900) {
-                isScrolled.value = true;
-            } else {
-                isScrolled.value = false;
-            }
-        };
-
-        onMounted(() => {
-            window.addEventListener('scroll', handleScroll);
-        });
-
-        onUnmounted(() => {
-            window.removeEventListener('scroll', handleScroll);
-        });
-
-        const phoneNumber = ref('');
-        const phoneError = ref(false);
-        const otp = ref('');
-        const otpError = ref('');
-        const showPhoneInput = ref(true);
-        const consentChecked = ref(false);
-        const whatsAppChecked = ref(false);
-
-        const isCheckboxChecked = computed(() => consentChecked.value && whatsAppChecked.value);
-
-        const applyNow = () => {
-            console.log('fajflakf')
-            const phoneRegex = /^[789]\d{9}$/;
-            if (!phoneRegex.test(phoneNumber.value)) {
-                console.log('salam')
-                phoneError.value = true;
-            } else {
-                phoneError.value = false;
-                showPhoneInput.value = false;
-            }
-        };
-
-        const editNumber = () => {
-            showPhoneInput.value = true;
-        };
-
-        return {
-            isScrolled,
-            scrollToTop,
-            phoneNumber,
-            phoneError,
-            otp,
-            otpError,
-            showPhoneInput,
-            consentChecked,
-            whatsAppChecked,
-            isCheckboxChecked,
-            applyNow,
-            editNumber
-        };
+const handleScroll = () => {
+    if (window.scrollY > 900) {
+        isScrolled.value = true;
+    } else {
+        isScrolled.value = false;
     }
+};
+
+onMounted(() => {
+    window.addEventListener('scroll', handleScroll);
 });
+
+onUnmounted(() => {
+    window.removeEventListener('scroll', handleScroll);
+});
+
+const phoneNumber = ref('');
+const phoneError = ref(false);
+const otp = ref('');
+const otpError = ref('');
+const showPhoneInput = ref(true);
+const consentChecked = ref(false);
+const whatsAppChecked = ref(false);
+
+const isCheckboxChecked = computed(() => consentChecked.value && whatsAppChecked.value);
+
+const applyNow = () => {
+    const phoneRegex = /^[789]\d{9}$/;
+    if (!phoneRegex.test(phoneNumber.value)) {
+        phoneError.value = true;
+    } else {
+        phoneError.value = false;
+        showPhoneInput.value = false;
+    }
+};
+
+const editNumber = () => {
+    showPhoneInput.value = true;
+};
+
+const limitOtpInput = (event) => {
+    if (otp.value.length >= 5 && event.keyCode >= 48 && event.keyCode <= 57) {
+        event.preventDefault();
+    }
+};
 </script>
 
 <style scoped>
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.scrolled {
+    background-color: #fff !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.scrolled_text {
+    color: rgb(20, 72, 53) !important;
+}
+
+
+.slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial .container {
+    height: 100%;
+}
+
+.swiper-wrapper {
+    height: 100% !important;
+}
+
+.swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySwiper2 {
+    height: 400px;
+    width: 100%;
+}
+
+
+.mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.mySwiper .slide {
+    width: 50px;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.mySwiper .slide-thumb-active {
+    opacity: 1;
+}
+
+.slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.swiper {
+    height: 100% !important;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+    background: #144835 !important;
+}
+
 .input-error {
     outline: none;
     border: 2px solid red !important;

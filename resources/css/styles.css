@@ -1,27 +1,27 @@
 @font-face {
   font-family: "AtAero";
-  src: url(../fonts/AtAero-Retina.otf);
+  src: url(../assets/font/AtAero-Retina.otf);
   font-weight: 350;
   font-display: swap;
 }
 
 @font-face {
   font-family: "AtAero";
-  src: url(../fonts/AtAero-Semibold.otf);
+  src: url(../assets/font/AtAero-Semibold.otf);
   font-weight: 600;
   font-display: swap;
 }
 
 @font-face {
   font-family: "AtAero";
-  src: url(../fonts/AtAero-Bold.otf);
+  src: url(../assets/font/AtAero-Bold.otf);
   font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'AtAero';
-  src: url(../fonts/AtAero-Black.otf);
+  src: url(../assets/font/AtAero-Black.otf);
   font-weight: 800;
   font-display: swap;
 }

@@ -49,6 +49,8 @@ const headerBgClass = computed(() => {
       return 'about_nav';
     case '/business-loan':
       return 'about_nav';
+    case '/privacy-policy-loans':
+      return 'about_nav';
     default:
       return;
   }
@@ -77,6 +79,8 @@ const textWhite = computed(() => {
       return 'scrolled_text';
     case '/business-loan':
       return 'scrolled_text';
+    case '/privacy-policy-loans':
+      return 'scrolled_text';
     default:
       return;
   }
@@ -93,7 +97,8 @@ const whiteNavList = [
      '/security-money-view-app',
      '/smart-pay',
      '/personal-loan',
-     '/business-loan'
+     '/business-loan',
+     '/privacy-policy-loans'
 ]
 
 </script>
@@ -246,7 +251,7 @@ const whiteNavList = [
             </div>
         </section>
 
-        <section class="footer_quote">
+        <section class="footer_quote" v-if="route.path === '/'">
             <div class="container">
                 <h4>DigitSathi: Personalized Finance Plans for Every Need </h4>
                 <p><span>Personal Loans:</span> DigitSathi, your digital lending partner, offers hassle-free personal
