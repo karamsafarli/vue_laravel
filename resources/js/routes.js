@@ -13,9 +13,12 @@ import SmartPay from './components/SmartPay.vue';
 import PersonalLoan from './components/PersonalLoan.vue';
 import BusinessLoan from './components/BusinessLoan.vue';
 import PrivacyPolicy from './components/PrivacyPolicy.vue';
+
 import PersonalLoanCalculator from './components/PersonalLoanCalculator.vue';
 import BusinessLoanCalculator from './components/BusinessLoanCalculator.vue';
 import HomeLoanCalculator from './components/HomeLoanCalculator.vue';
+
+import OtherDisclosures from './components/OtherDisclosures.vue';
 
 
 const routes = [
@@ -26,6 +29,10 @@ const routes = [
             {
                 path: '',
                 component: Home
+            },
+            {
+                path: '/other-disclosures',
+                component: OtherDisclosures
             },
             {
                 path: '/about-us',
