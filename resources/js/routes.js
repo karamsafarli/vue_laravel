@@ -13,12 +13,12 @@ import SmartPay from './components/SmartPay.vue';
 import PersonalLoan from './components/PersonalLoan.vue';
 import BusinessLoan from './components/BusinessLoan.vue';
 import PrivacyPolicy from './components/PrivacyPolicy.vue';
-
 import PersonalLoanCalculator from './components/PersonalLoanCalculator.vue';
 import BusinessLoanCalculator from './components/BusinessLoanCalculator.vue';
 import HomeLoanCalculator from './components/HomeLoanCalculator.vue';
-
 import OtherDisclosures from './components/OtherDisclosures.vue';
+import Careers from './components/Careers.vue'
+import ContactUs from './components/ContactUs.vue';
 
 
 const routes = [
@@ -93,6 +93,14 @@ const routes = [
             {
                 path: '/emi-calculator/home-loan-emi-calculator',
                 component: HomeLoanCalculator
+            },
+            {
+                path: '/careers',
+                component: Careers
+            },
+            {
+                path: '/contact-us',
+                component: ContactUs
             },
         ]
     },

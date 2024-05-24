@@ -57,6 +57,12 @@ const headerBgClass = computed(() => {
       return 'about_nav';
     case '/emi-calculator/home-loan-emi-calculator':
       return 'about_nav';
+    case '/other-disclosures':
+      return 'about_nav';
+    case '/careers':
+      return 'about_nav';
+    case '/contact-us':
+      return 'about_nav';
     default:
       return;
   }
@@ -93,6 +99,12 @@ const textWhite = computed(() => {
       return 'scrolled_text';
     case '/emi-calculator/home-loan-emi-calculator':
       return 'scrolled_text';
+    case '/other-disclosures':
+      return 'scrolled_text';
+    case '/careers':
+      return 'scrolled_text';
+    case '/contact-us':
+      return 'scrolled_text';
     default:
       return;
   }
@@ -113,7 +125,10 @@ const whiteNavList = [
      '/privacy-policy-loans',
      '/emi-calculator/personal-loan-emi-calculator',
      '/emi-calculator/business-loan-emi-calculator',
-     '/emi-calculator/home-loan-emi-calculator'
+     '/emi-calculator/home-loan-emi-calculator',
+     '/other-disclosures',
+     '/careers',
+     '/contact-us',
 ]
 
 </script>
@@ -161,7 +176,7 @@ const whiteNavList = [
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="#" :class="[textWhite, { 'scrolled_text': isScrolled }]">Contact Us</a></li>
+                        <li><router-link to="/contact-us" :class="[textWhite, { 'scrolled_text': isScrolled }]">Contact Us</router-link></li>
                         <button class="close_menu_btn" type="button" @click="toggleMenu">
                             <img src="../../assets/image/blackCloseIcon.svg" alt="blackCloseIcon.svg">
                         </button>
@@ -189,7 +204,7 @@ const whiteNavList = [
                             <li><router-link to="/about-us">About</router-link></li>
 
                             <li><router-link to="/security-money-view-app">Security</router-link></li>
-                            <li><a href="#">Careers</a></li>
+                            <li><router-link to="/careers">Careers</router-link></li>
                         </ul>
                     </div>
                     <div class="footer_item">
@@ -259,7 +274,7 @@ const whiteNavList = [
                     <div class="privacy_link">
                         <a href="#">Sitemap</a>
                         <a href="#">Privacy Policy</a>
-                        <a href="#">Other Disclosures</a>
+                        <router-link to="/other-disclosures">Other Disclosures</router-link>
                         <a href="#">Terms & Conditions</a>
                     </div>
                 </div>

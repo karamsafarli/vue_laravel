@@ -675,7 +675,9 @@
 <script>
 import {
     Doughnut
-} from 'vue-chartjs'
+} from 'vue-chartjs';
+
+
 import {
     Chart as ChartJS,
     Tooltip,
