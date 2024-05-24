@@ -1308,6 +1308,7 @@ input::-webkit-inner-spin-button {
 
 input[type="number"] {
   -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 input[type="number"]:focus {
@@ -3742,4 +3743,69 @@ a:hover {
   border: none;
   border-radius: 50%;
   position: fixed;
+}
+
+
+
+
+
+
+
+.emiTable {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  border: 1px solid rgba(220, 220, 222, 1);
+  width: 100%;
+}
+
+.emiTable tr.header {
+  background-color: var(--orange01);
+  padding: 10px;
+}
+
+.emiTable th {
+  font-size: 24px;
+  font-weight: var(--font-weight-semibold);
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: rgba(0, 0, 0, 1);
+  padding-block: 14px;
+  text-align: center;
+}
+
+.emiTable td {
+  font-size: 18px;
+  font-weight: var(--font-weight-regular);
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: rgba(0, 0, 0, 1);
+  padding-block: 12px;
+}
+
+
+@media screen and (min-width: 280px) and (max-width: 767px) {
+  .emiTable th {
+    font-size: 12px;
+    font-weight: var(--font-weight-semibold);
+    line-height: 24px;
+    padding-block: 4px;
+}
+
+.emiTable td {
+    font-size: 12px;
+    font-weight: var(--font-weight-regular);
+    line-height: 20px;
+    padding-block: 6px;
+}
+
+.emiTable th:last-child,
+td:last-child {
+    display: none;
+}
+
+.emiTable .viewButton {
+    font-size: 16px;
+}
+
 }

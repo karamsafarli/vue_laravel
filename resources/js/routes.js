@@ -13,6 +13,9 @@ import SmartPay from './components/SmartPay.vue';
 import PersonalLoan from './components/PersonalLoan.vue';
 import BusinessLoan from './components/BusinessLoan.vue';
 import PrivacyPolicy from './components/PrivacyPolicy.vue';
+import PersonalLoanCalculator from './components/PersonalLoanCalculator.vue';
+import BusinessLoanCalculator from './components/BusinessLoanCalculator.vue';
+import HomeLoanCalculator from './components/HomeLoanCalculator.vue';
 
 
 const routes = [
@@ -71,6 +74,18 @@ const routes = [
             {
                 path: '/privacy-policy-loans',
                 component: PrivacyPolicy
+            },
+            {
+                path: '/emi-calculator/personal-loan-emi-calculator',
+                component: PersonalLoanCalculator
+            },
+            {
+                path: '/emi-calculator/business-loan-emi-calculator',
+                component: BusinessLoanCalculator
+            },
+            {
+                path: '/emi-calculator/home-loan-emi-calculator',
+                component: HomeLoanCalculator
             },
         ]
     },

@@ -51,6 +51,12 @@ const headerBgClass = computed(() => {
       return 'about_nav';
     case '/privacy-policy-loans':
       return 'about_nav';
+    case '/emi-calculator/personal-loan-emi-calculator':
+      return 'about_nav';
+    case '/emi-calculator/business-loan-emi-calculator':
+      return 'about_nav';
+    case '/emi-calculator/home-loan-emi-calculator':
+      return 'about_nav';
     default:
       return;
   }
@@ -81,6 +87,12 @@ const textWhite = computed(() => {
       return 'scrolled_text';
     case '/privacy-policy-loans':
       return 'scrolled_text';
+    case '/emi-calculator/personal-loan-emi-calculator':
+      return 'scrolled_text';
+    case '/emi-calculator/business-loan-emi-calculator':
+      return 'scrolled_text';
+    case '/emi-calculator/home-loan-emi-calculator':
+      return 'scrolled_text';
     default:
       return;
   }
@@ -98,7 +110,10 @@ const whiteNavList = [
      '/smart-pay',
      '/personal-loan',
      '/business-loan',
-     '/privacy-policy-loans'
+     '/privacy-policy-loans',
+     '/emi-calculator/personal-loan-emi-calculator',
+     '/emi-calculator/business-loan-emi-calculator',
+     '/emi-calculator/home-loan-emi-calculator'
 ]
 
 </script>
@@ -135,12 +150,12 @@ const whiteNavList = [
                             <a href="javascript:void(0)" :class="[textWhite, { 'scrolled_text': isScrolled }]" @click="toggleCalc">Calculators <i class="fas fa-angle-down"></i></a>
                             <div class="menu_drop" id="loan_drop" v-if="isCalcOpen">
                                 <ul>
-                                    <li><a href="#">Personal Loan</a></li>
+                                    <li><router-link to="/emi-calculator/personal-loan-emi-calculator">Personal Loan</router-link></li>
                                     <li><a href="#">Educational Loan</a></li>
                                     <li><a href="#">Bike Loan</a></li>
                                     <li><a href="#">Car Loan</a></li>
-                                    <li><router-link to="/business-loan">Business Loan</router-link></li>
-                                    <li><a href="#">Home Loan</a></li>
+                                    <li><router-link to="/emi-calculator/business-loan-emi-calculator">Business Loan</router-link></li>
+                                    <li><router-link to="/emi-calculator/home-loan-emi-calculator">Home Loan</router-link></li>
                                     <li><a href="#">Mortgage Loan</a></li>
                                     <li><a href="#">Gold Loan</a></li>
                                 </ul>
