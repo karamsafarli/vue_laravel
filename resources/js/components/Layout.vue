@@ -63,6 +63,10 @@ const headerBgClass = computed(() => {
       return 'about_nav';
     case '/contact-us':
       return 'about_nav';
+    case '/loans-faq-en':
+      return 'about_nav';
+    case '/sitemap':
+      return 'about_nav';
     default:
       return;
   }
@@ -105,6 +109,10 @@ const textWhite = computed(() => {
       return 'scrolled_text';
     case '/contact-us':
       return 'scrolled_text';
+    case '/loans-faq-en':
+      return 'scrolled_text';
+    case '/sitemap':
+      return 'scrolled_text';
     default:
       return;
   }
@@ -129,6 +137,8 @@ const whiteNavList = [
      '/other-disclosures',
      '/careers',
      '/contact-us',
+     '/loans-faq-en',
+     '/sitemap',
 ]
 
 </script>
@@ -272,7 +282,7 @@ const whiteNavList = [
                 <div class="footer_copyright">
                     <p>© 2024 Ladia Credit (P) Ltd </p>
                     <div class="privacy_link">
-                        <a href="#">Sitemap</a>
+                        <router-link to="/sitemap">Sitemap</router-link>
                         <a href="#">Privacy Policy</a>
                         <router-link to="/other-disclosures">Other Disclosures</router-link>
                         <a href="#">Terms & Conditions</a>

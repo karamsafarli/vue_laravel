@@ -19,6 +19,8 @@ import HomeLoanCalculator from './components/HomeLoanCalculator.vue';
 import OtherDisclosures from './components/OtherDisclosures.vue';
 import Careers from './components/Careers.vue'
 import ContactUs from './components/ContactUs.vue';
+import LoansFaq from './components/LoansFaq.vue';
+import SiteMap from './components/SiteMap.vue';
 
 
 const routes = [
@@ -101,6 +103,14 @@ const routes = [
             {
                 path: '/contact-us',
                 component: ContactUs
+            },
+            {
+                path: '/loans-faq-en',
+                component: LoansFaq
+            },
+            {
+                path: '/sitemap',
+                component: SiteMap
             },
         ]
     },
