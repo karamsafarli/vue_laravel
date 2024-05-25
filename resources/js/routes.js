@@ -37,12 +37,21 @@ const routes = [
                 component: Home
             },
             {
-                path: '/other-disclosures',
-                component: OtherDisclosures
-            },
-            {
                 path: '/about-us',
-                component: About
+                component: About,
+                meta: {
+                    title: 'Home - My Awesome App',
+                    metaTags: [
+                        {
+                            name: 'description',
+                            content: 'This is the home page of my awesome app.'
+                        },
+                        {
+                            property: 'og:title',
+                            content: 'Home - My Awesome App'
+                        }
+                    ]
+                }
             },
             {
                 path: '/credit-score/login',
@@ -117,6 +126,10 @@ const routes = [
                 component: SiteMap
             },
             {
+                path: '/other-disclosures',
+                component: OtherDisclosures
+            },
+            {
                 path: '/personal-loan-documents',
                 component: PersonalLoanDocuments
             },
@@ -146,6 +159,34 @@ const router = createRouter({
             return { top: 0 };
         }
     },
-})
+});
+
+
+router.beforeEach((to, from, next) => {
+    document.title = to.meta.title || 'Default Title';
+    next();
+});
+
+// This will handle the meta tags
+router.afterEach((to) => {
+    // Remove any stale meta tags from the document using the key attribute we set below
+    Array.from(document.querySelectorAll('[data-vue-router-controlled]')).map(el => el.parentNode.removeChild(el));
+
+    // Turn the metaTags array into individual elements in the head.
+    if (to.meta.metaTags) {
+        to.meta.metaTags.map(tagDef => {
+            const tag = document.createElement('meta');
+
+            Object.keys(tagDef).forEach(key => {
+                tag.setAttribute(key, tagDef[key]);
+            });
+
+            // We use this to track which elements we create, so we don't interfere with other ones.
+            tag.setAttribute('data-vue-router-controlled', '');
+
+            return tag;
+        }).forEach(tag => document.head.appendChild(tag));
+    }
+});
 
 export default router;
