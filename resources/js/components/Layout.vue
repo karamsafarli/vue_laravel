@@ -67,6 +67,14 @@ const headerBgClass = computed(() => {
       return 'about_nav';
     case '/sitemap':
       return 'about_nav';
+    case '/personal-loan-documents':
+      return 'about_nav';
+    case '/personal-loan-interest-rates-and-charges':
+      return 'about_nav';
+    case '/how-to-apply-for-personal-loan':
+      return 'about_nav';
+    case '/personal-loan-eligibility-check':
+      return 'about_nav';
     default:
       return;
   }
@@ -113,6 +121,14 @@ const textWhite = computed(() => {
       return 'scrolled_text';
     case '/sitemap':
       return 'scrolled_text';
+    case '/personal-loan-documents':
+      return 'scrolled_text';
+    case '/personal-loan-interest-rates-and-charges':
+      return 'scrolled_text';
+    case '/how-to-apply-for-personal-loan':
+      return 'scrolled_text';
+    case '/personal-loan-eligibility-check':
+      return 'scrolled_text';
     default:
       return;
   }
@@ -139,6 +155,10 @@ const whiteNavList = [
      '/contact-us',
      '/loans-faq-en',
      '/sitemap',
+     '/personal-loan-documents',
+     '/personal-loan-interest-rates-and-charges',
+     '/how-to-apply-for-personal-loan',
+     '/personal-loan-eligibility-check',
 ]
 
 </script>

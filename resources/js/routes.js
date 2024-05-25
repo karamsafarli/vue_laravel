@@ -21,6 +21,10 @@ import Careers from './components/Careers.vue'
 import ContactUs from './components/ContactUs.vue';
 import LoansFaq from './components/LoansFaq.vue';
 import SiteMap from './components/SiteMap.vue';
+import PersonalLoanDocuments from './components/PersonalLoanDocuments.vue';
+import PersonalLoanIntRates from './components/PersonalLoanIntRates.vue';
+import HowToApplyPersonalLoan from './components/HowToApplyPersonalLoan.vue';
+import PersonalLoanEligCheck from './components/PersonalLoanEligCheck.vue';
 
 
 const routes = [
@@ -111,6 +115,22 @@ const routes = [
             {
                 path: '/sitemap',
                 component: SiteMap
+            },
+            {
+                path: '/personal-loan-documents',
+                component: PersonalLoanDocuments
+            },
+            {
+                path: '/personal-loan-interest-rates-and-charges',
+                component: PersonalLoanIntRates
+            },
+            {
+                path: '/how-to-apply-for-personal-loan',
+                component: HowToApplyPersonalLoan
+            },
+            {
+                path: '/personal-loan-eligibility-check',
+                component: PersonalLoanEligCheck
             },
         ]
     },

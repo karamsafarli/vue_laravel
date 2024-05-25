@@ -3,10 +3,10 @@
     <img src="https://moneyview.in/images/PL-header-pattern-desktop.svg" class="banner_bg_pattern" alt="background pattern">
     <div class="mainContainer header_section_container marginTop0">
         <div class="navMenu fullRowClass">
-            <a class="navLink personal-loan-page-personal-loan-interest-rates-and-charges-header-navbar" href="/personal-loan-interest-rates-and-charges?utm_source=personal-loan-page&amp;utm_medium=personal-loan-interest-rates-and-charges-header-navbar&amp;utm_campaign=personal-loan-page-personal-loan-interest-rates-and-charges-header-navbar">Interest rates</a>
-            <a class="navLink personal-loan-page-personal-loan-eligibility-check-header-navbar" href="/personal-loan-eligibility-check?utm_source=personal-loan-page&amp;utm_medium=personal-loan-eligibility-check-header-navbar&amp;utm_campaign=personal-loan-page-personal-loan-eligibility-check-header-navbar">Eligibility criteria</a>
-            <a class="navLink personal-loan-page-personal-loan-documents-header-navbar" href="/personal-loan-documents?utm_source=personal-loan-page&amp;utm_medium=personal-loan-documents-header-navbar&amp;utm_campaign=personal-loan-page-personal-loan-documents-header-navbar">Documents required</a>
-            <a class="navLink personal-loan-page-how-to-apply-for-personal-loan-header-navbar" href="/how-to-apply-for-personal-loan?utm_source=personal-loan-page&amp;utm_medium=how-to-apply-for-personal-loan-header-navbar&amp;utm_campaign=personal-loan-page-how-to-apply-for-personal-loan-header-navbar">How to apply</a>
+            <router-link class="navLink personal-loan-page-personal-loan-interest-rates-and-charges-header-navbar" to="/personal-loan-interest-rates-and-charges">Interest rates</router-link>
+            <router-link class="navLink personal-loan-page-personal-loan-eligibility-check-header-navbar" to="/personal-loan-eligibility-check">Eligibility criteria</router-link>
+            <router-link class="navLink personal-loan-page-personal-loan-documents-header-navbar" to="/personal-loan-documents">Documents required</router-link>
+            <router-link class="navLink personal-loan-page-how-to-apply-for-personal-loan-header-navbar" to="/how-to-apply-for-personal-loan">How to apply</router-link>
         </div>
         <div class="header_banner_lead_card header_banner_text_span">
             <h1 class="header_banner_title">Get up to ₹10 lakhs<br> in 10 mins!</h1>
@@ -796,6 +796,7 @@ import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import '@dotlottie/player-component';
+import router from '../routes';
 
 const isScrolled = ref(false);
 
