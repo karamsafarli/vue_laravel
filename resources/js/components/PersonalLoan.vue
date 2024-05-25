@@ -3,10 +3,10 @@
     <img src="https://moneyview.in/images/PL-header-pattern-desktop.svg" class="banner_bg_pattern" alt="background pattern">
     <div class="mainContainer header_section_container marginTop0">
         <div class="navMenu fullRowClass">
-            <router-link class="navLink personal-loan-page-personal-loan-interest-rates-and-charges-header-navbar" to="/personal-loan-interest-rates-and-charges">Interest rates</router-link>
-            <router-link class="navLink personal-loan-page-personal-loan-eligibility-check-header-navbar" to="/personal-loan-eligibility-check">Eligibility criteria</router-link>
-            <router-link class="navLink personal-loan-page-personal-loan-documents-header-navbar" to="/personal-loan-documents">Documents required</router-link>
-            <router-link class="navLink personal-loan-page-how-to-apply-for-personal-loan-header-navbar" to="/how-to-apply-for-personal-loan">How to apply</router-link>
+            <router-link class="navLink personal-loan-page-personal-loan-interest-rates-and-charges-header-navbar" to="/">Interest rates</router-link>
+            <router-link class="navLink personal-loan-page-personal-loan-eligibility-check-header-navbar" to="/">Eligibility criteria</router-link>
+            <router-link class="navLink personal-loan-page-personal-loan-documents-header-navbar" to="/">Documents required</router-link>
+            <router-link class="navLink personal-loan-page-how-to-apply-for-personal-loan-header-navbar" to="/">How to apply</router-link>
         </div>
         <div class="header_banner_lead_card header_banner_text_span">
             <h1 class="header_banner_title">Get up to ₹10 lakhs<br> in 10 mins!</h1>
