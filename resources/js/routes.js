@@ -34,116 +34,428 @@ const routes = [
         children: [
             {
                 path: '',
-                component: Home
+                component: Home,
+                meta: {
+                    title: 'About Us - My Awesome App',
+                    metaTags: [
+                        {
+                            name: 'description',
+                            content: 'This is the about us page of my awesome app.'
+                        },
+                        {
+                            property: 'og:title',
+                            content: 'About Us  - My Awesome App'
+                        }
+                    ]
+                }
             },
             {
                 path: '/about-us',
                 component: About,
                 meta: {
-                    title: 'Home - My Awesome App',
+                    title: 'About Us - My Awesome App',
                     metaTags: [
                         {
                             name: 'description',
-                            content: 'This is the home page of my awesome app.'
+                            content: 'This is the about us page of my awesome app.'
                         },
                         {
                             property: 'og:title',
-                            content: 'Home - My Awesome App'
+                            content: 'About Us  - My Awesome App'
                         }
                     ]
                 }
             },
             {
                 path: '/credit-score/login',
-                component: Login
+                component: Login,
+                meta: {
+                    title: 'Check CIBIL Score Free - Get Credit Score Report Instantly.',
+                    metaTags: [
+                        {
+                            name: 'description',
+                            content: 'At Moneyview get your free monthly credit score report in just 20 seconds. Get detailed credit report and suggestions to improve your cibil score if it is low.'
+                        },
+                        {
+                            property: 'og:title',
+                            content: 'Check CIBIL Score Free - Get Credit Score Report Instantly.'
+                        }
+                    ]
+                }
             },
             {
                 path: '/digital-lead-partners',
-                component: DigitalLeadPartners
+                component: DigitalLeadPartners,
+                meta: {
+                    title: 'About Us - My Awesome App',
+                    metaTags: [
+                        {
+                            name: 'description',
+                            content: 'This is the about us page of my awesome app.'
+                        },
+                        {
+                            property: 'og:title',
+                            content: 'About Us  - My Awesome App'
+                        }
+                    ]
+                }
             },
             {
                 path: '/debt-collection-agencies',
-                component: DebtCollectionAgencies
+                component: DebtCollectionAgencies,
+                meta: {
+                    title: 'About Us - My Awesome App',
+                    metaTags: [
+                        {
+                            name: 'description',
+                            content: 'This is the about us page of my awesome app.'
+                        },
+                        {
+                            property: 'og:title',
+                            content: 'About Us  - My Awesome App'
+                        }
+                    ]
+                }
             },
             {
                 path: '/business-partner',
-                component: BusinessPart
+                component: BusinessPart,
+                meta: {
+                    title: 'About Us - My Awesome App',
+                    metaTags: [
+                        {
+                            name: 'description',
+                            content: 'This is the about us page of my awesome app.'
+                        },
+                        {
+                            property: 'og:title',
+                            content: 'About Us  - My Awesome App'
+                        }
+                    ]
+                }
             },
             {
                 path: '/grievance',
-                component: Grievance
+                component: Grievance,
+                meta: {
+                    title: 'About Us - My Awesome App',
+                    metaTags: [
+                        {
+                            name: 'description',
+                            content: 'This is the about us page of my awesome app.'
+                        },
+                        {
+                            property: 'og:title',
+                            content: 'About Us  - My Awesome App'
+                        }
+                    ]
+                }
             },
             {
                 path: '/media-coverages',
-                component: MediaCoverages
+                component: MediaCoverages,
+                meta: {
+                    title: 'About Us - My Awesome App',
+                    metaTags: [
+                        {
+                            name: 'description',
+                            content: 'This is the about us page of my awesome app.'
+                        },
+                        {
+                            property: 'og:title',
+                            content: 'About Us  - My Awesome App'
+                        }
+                    ]
+                }
             },
             {
                 path: '/security-money-view-app',
-                component: SecurityMoney
+                component: SecurityMoney,
+                meta: {
+                    title: 'About Us - My Awesome App',
+                    metaTags: [
+                        {
+                            name: 'description',
+                            content: 'This is the about us page of my awesome app.'
+                        },
+                        {
+                            property: 'og:title',
+                            content: 'About Us  - My Awesome App'
+                        }
+                    ]
+                }
             },
             {
                 path: '/smart-pay',
-                component: SmartPay
+                component: SmartPay,
+                meta: {
+                    title: 'About Us - My Awesome App',
+                    metaTags: [
+                        {
+                            name: 'description',
+                            content: 'This is the about us page of my awesome app.'
+                        },
+                        {
+                            property: 'og:title',
+                            content: 'About Us  - My Awesome App'
+                        }
+                    ]
+                }
             },
             {
                 path: '/personal-loan',
-                component: PersonalLoan
+                component: PersonalLoan,
+                meta: {
+                    title: 'About Us - My Awesome App',
+                    metaTags: [
+                        {
+                            name: 'description',
+                            content: 'This is the about us page of my awesome app.'
+                        },
+                        {
+                            property: 'og:title',
+                            content: 'About Us  - My Awesome App'
+                        }
+                    ]
+                }
             },
             {
                 path: '/business-loan',
-                component: BusinessLoan
+                component: BusinessLoan,
+                meta: {
+                    title: 'About Us - My Awesome App',
+                    metaTags: [
+                        {
+                            name: 'description',
+                            content: 'This is the about us page of my awesome app.'
+                        },
+                        {
+                            property: 'og:title',
+                            content: 'About Us  - My Awesome App'
+                        }
+                    ]
+                }
             },
             {
                 path: '/privacy-policy-loans',
-                component: PrivacyPolicy
+                component: PrivacyPolicy,
+                meta: {
+                    title: 'About Us - My Awesome App',
+                    metaTags: [
+                        {
+                            name: 'description',
+                            content: 'This is the about us page of my awesome app.'
+                        },
+                        {
+                            property: 'og:title',
+                            content: 'About Us  - My Awesome App'
+                        }
+                    ]
+                }
             },
             {
                 path: '/emi-calculator/personal-loan-emi-calculator',
-                component: PersonalLoanCalculator
+                component: PersonalLoanCalculator,
+                meta: {
+                    title: 'About Us - My Awesome App',
+                    metaTags: [
+                        {
+                            name: 'description',
+                            content: 'This is the about us page of my awesome app.'
+                        },
+                        {
+                            property: 'og:title',
+                            content: 'About Us  - My Awesome App'
+                        }
+                    ]
+                }
             },
             {
                 path: '/emi-calculator/business-loan-emi-calculator',
-                component: BusinessLoanCalculator
+                component: BusinessLoanCalculator,
+                meta: {
+                    title: 'About Us - My Awesome App',
+                    metaTags: [
+                        {
+                            name: 'description',
+                            content: 'This is the about us page of my awesome app.'
+                        },
+                        {
+                            property: 'og:title',
+                            content: 'About Us  - My Awesome App'
+                        }
+                    ]
+                }
             },
             {
                 path: '/emi-calculator/home-loan-emi-calculator',
-                component: HomeLoanCalculator
+                component: HomeLoanCalculator,
+                meta: {
+                    title: 'About Us - My Awesome App',
+                    metaTags: [
+                        {
+                            name: 'description',
+                            content: 'This is the about us page of my awesome app.'
+                        },
+                        {
+                            property: 'og:title',
+                            content: 'About Us  - My Awesome App'
+                        }
+                    ]
+                }
             },
             {
                 path: '/careers',
-                component: Careers
+                component: Careers,
+                meta: {
+                    title: 'About Us - My Awesome App',
+                    metaTags: [
+                        {
+                            name: 'description',
+                            content: 'This is the about us page of my awesome app.'
+                        },
+                        {
+                            property: 'og:title',
+                            content: 'About Us  - My Awesome App'
+                        }
+                    ]
+                }
             },
             {
                 path: '/contact-us',
-                component: ContactUs
+                component: ContactUs,
+                meta: {
+                    title: 'About Us - My Awesome App',
+                    metaTags: [
+                        {
+                            name: 'description',
+                            content: 'This is the about us page of my awesome app.'
+                        },
+                        {
+                            property: 'og:title',
+                            content: 'About Us  - My Awesome App'
+                        }
+                    ]
+                }
             },
             {
                 path: '/loans-faq-en',
-                component: LoansFaq
+                component: LoansFaq,
+                meta: {
+                    title: 'About Us - My Awesome App',
+                    metaTags: [
+                        {
+                            name: 'description',
+                            content: 'This is the about us page of my awesome app.'
+                        },
+                        {
+                            property: 'og:title',
+                            content: 'About Us  - My Awesome App'
+                        }
+                    ]
+                }
             },
             {
                 path: '/sitemap',
-                component: SiteMap
+                component: SiteMap,
+                meta: {
+                    title: 'About Us - My Awesome App',
+                    metaTags: [
+                        {
+                            name: 'description',
+                            content: 'This is the about us page of my awesome app.'
+                        },
+                        {
+                            property: 'og:title',
+                            content: 'About Us  - My Awesome App'
+                        }
+                    ]
+                }
             },
             {
                 path: '/other-disclosures',
-                component: OtherDisclosures
+                component: OtherDisclosures,
+                meta: {
+                    title: 'About Us - My Awesome App',
+                    metaTags: [
+                        {
+                            name: 'description',
+                            content: 'This is the about us page of my awesome app.'
+                        },
+                        {
+                            property: 'og:title',
+                            content: 'About Us  - My Awesome App'
+                        }
+                    ]
+                }
             },
             {
                 path: '/personal-loan-documents',
-                component: PersonalLoanDocuments
+                component: PersonalLoanDocuments,
+                meta: {
+                    title: 'About Us - My Awesome App',
+                    metaTags: [
+                        {
+                            name: 'description',
+                            content: 'This is the about us page of my awesome app.'
+                        },
+                        {
+                            property: 'og:title',
+                            content: 'About Us  - My Awesome App'
+                        }
+                    ]
+                }
             },
             {
                 path: '/personal-loan-interest-rates-and-charges',
-                component: PersonalLoanIntRates
+                component: PersonalLoanIntRates,
+                meta: {
+                    title: 'About Us - My Awesome App',
+                    metaTags: [
+                        {
+                            name: 'description',
+                            content: 'This is the about us page of my awesome app.'
+                        },
+                        {
+                            property: 'og:title',
+                            content: 'About Us  - My Awesome App'
+                        }
+                    ]
+                }
             },
             {
                 path: '/how-to-apply-for-personal-loan',
-                component: HowToApplyPersonalLoan
+                component: HowToApplyPersonalLoan,
+                meta: {
+                    title: 'About Us - My Awesome App',
+                    metaTags: [
+                        {
+                            name: 'description',
+                            content: 'This is the about us page of my awesome app.'
+                        },
+                        {
+                            property: 'og:title',
+                            content: 'About Us  - My Awesome App'
+                        }
+                    ]
+                }
             },
             {
                 path: '/personal-loan-eligibility-check',
-                component: PersonalLoanEligCheck
+                component: PersonalLoanEligCheck,
+                meta: {
+                    title: 'About Us - My Awesome App',
+                    metaTags: [
+                        {
+                            name: 'description',
+                            content: 'This is the about us page of my awesome app.'
+                        },
+                        {
+                            property: 'og:title',
+                            content: 'About Us  - My Awesome App'
+                        }
+                    ]
+                }
             },
         ]
     },
