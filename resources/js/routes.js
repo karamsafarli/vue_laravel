@@ -25,6 +25,7 @@ import PersonalLoanDocuments from './components/PersonalLoanDocuments.vue';
 import PersonalLoanIntRates from './components/PersonalLoanIntRates.vue';
 import HowToApplyPersonalLoan from './components/HowToApplyPersonalLoan.vue';
 import PersonalLoanEligCheck from './components/PersonalLoanEligCheck.vue';
+import ErrorPage from './components/ErrorPage.vue';
 
 
 const routes = [
@@ -455,6 +456,13 @@ const routes = [
                             content: 'About Us  - My Awesome App'
                         }
                     ]
+                }
+            },
+            {
+                path: '/:catchAll(.*)',
+                component: ErrorPage,
+                meta: {
+                    title: '404 - Page Not Found',
                 }
             },
         ]
