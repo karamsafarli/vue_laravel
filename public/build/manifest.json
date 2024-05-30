@@ -13,7 +13,7 @@
     ]
   },
   "node_modules/@dotlottie/player-component/dist/dotlottie-state-machine-manager-2E7RUGJG-NTQ25VSR.mjs": {
-    "file": "assets/dotlottie-state-machine-manager-2E7RUGJG-NTQ25VSR-CVLdnmnp.js",
+    "file": "assets/dotlottie-state-machine-manager-2E7RUGJG-NTQ25VSR-ByEa3m3x.js",
     "name": "dotlottie-state-machine-manager-2E7RUGJG-NTQ25VSR",
     "src": "node_modules/@dotlottie/player-component/dist/dotlottie-state-machine-manager-2E7RUGJG-NTQ25VSR.mjs",
     "isDynamicEntry": true,
@@ -211,7 +211,7 @@
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-CDgBhti-.js",
+    "file": "assets/app-Q5v_lv4w.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -227,7 +227,7 @@
       "node_modules/@dotlottie/player-component/dist/lottie_html-X3TYKVQI-L6774NQS.mjs"
     ],
     "css": [
-      "assets/app--YVJ434_.css"
+      "assets/app-D8g4qNYT.css"
     ],
     "assets": [
       "assets/home-page-header-banner-desktop-BsFaeNoh.webp",
