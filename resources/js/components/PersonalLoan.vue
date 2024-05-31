@@ -33,7 +33,7 @@
                         </div>
                         <div class="header_consent_wrapper">
                             <div class="header_generate_otp_consent_container consent_checkbox_wrap loginConsent">
-                                <input class="form-check-input header_generate_otp_consent generate_otp_consent" type="checkbox" v-model="consentChecked" id="header_generate_otp_consent" />
+                                <input class="form-check-input header_generate_otp_consent generate_otp_consent" type="checkbox"  v-model="consentChecked" id="header_generate_otp_consent" />
                                 <label class="form-check-label header_generate_otp_consent_text loginConsentText" for="header_generate_otp_consent">
                                     By proceeding, you agree to our
                                     <a class="header_generate_otp_consent_text" target="_blank" href="/terms-conditions-loans-app" rel="noopener">
@@ -113,7 +113,8 @@
                 <p class="cardDescription">Our credit model generates the best personalized offer for you.</p>
             </div>
             <div class="cardAnimation">
-                <dotlottie-player class="cardAnimationLottie1" autoplay="autoplay" loop="" mode="normal" background="transparent"></dotlottie-player>
+                <!-- <dotlottie-player class="cardAnimationLottie1" autoplay="autoplay" loop="" mode="normal" background="transparent"></dotlottie-player> -->
+                <!-- <dotlottie-player class="cardAnimationLottie1" src="../../assets/animations/account-setup.lottie" background="transparent" :speed.attr="1.5" :loop.attr="true" :autoplay.attr="true" /> -->
             </div>
         </div>
         <div class="colspan-xl-7-12 colspan-xs-1-6 colspan betterCard cardMarginTop cardMarginTopDesktop">
@@ -825,8 +826,8 @@ const phoneError = ref(false);
 const otp = ref('');
 const otpError = ref('');
 const showPhoneInput = ref(true);
-const consentChecked = ref(false);
-const whatsAppChecked = ref(false);
+const consentChecked = ref(true);
+const whatsAppChecked = ref(true);
 
 const isCheckboxChecked = computed(() => consentChecked.value && whatsAppChecked.value);
 

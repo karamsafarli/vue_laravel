@@ -375,8 +375,8 @@ export default defineComponent({
         const otp = ref('');
         const otpError = ref('');
         const showPhoneInput = ref(true);
-        const consentChecked = ref(false);
-        const whatsAppChecked = ref(false);
+        const consentChecked = ref(true);
+        const whatsAppChecked = ref(true);
 
         const isCheckboxChecked = computed(() => consentChecked.value && whatsAppChecked.value);
 

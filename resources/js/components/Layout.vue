@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed  } from 'vue';
+import { ref, computed, onMounted, onBeforeUnmount  } from 'vue';
 import { useRoute } from 'vue-router'
 
 const isMenuOpen = ref(window.innerWidth >= 991 ? true : false);
@@ -14,6 +14,28 @@ const toggleMenu = () => {
 const toggleCalc = () => {
     isCalcOpen.value = !isCalcOpen.value;
 }
+
+
+
+const handleClickOutside = (event) => {
+  // const menu = document.querySelector('.menu_ul_wrapper');
+  const calcDrop = document.querySelector('.drop_li');
+  // if (isMenuOpen.value && menu && !menu.contains(event.target)) {
+  //   isMenuOpen.value = false;
+  // }
+  if (isCalcOpen.value && calcDrop && !calcDrop.contains(event.target)) {
+    isCalcOpen.value = false;
+  }
+};
+
+onMounted(() => {
+  document.addEventListener('click', handleClickOutside);
+});
+
+onBeforeUnmount(() => {
+  document.removeEventListener('click', handleClickOutside);
+});
+
 
 const isScrolled = ref(false);
 
@@ -195,14 +217,14 @@ const whiteNavList = [
                             <a href="javascript:void(0)" :class="[textWhite, { 'scrolled_text': isScrolled }]" @click="toggleCalc">Calculators <i class="fas fa-angle-down"></i></a>
                             <div class="menu_drop" id="loan_drop" v-if="isCalcOpen">
                                 <ul>
-                                    <li><router-link to="/emi-calculator/personal-loan-emi-calculator">Personal Loan</router-link></li>
-                                    <li><a href="#">Educational Loan</a></li>
-                                    <li><a href="#">Bike Loan</a></li>
-                                    <li><a href="#">Car Loan</a></li>
-                                    <li><router-link to="/emi-calculator/business-loan-emi-calculator">Business Loan</router-link></li>
-                                    <li><router-link to="/emi-calculator/home-loan-emi-calculator">Home Loan</router-link></li>
-                                    <li><a href="#">Mortgage Loan</a></li>
-                                    <li><a href="#">Gold Loan</a></li>
+                                    <li @click="toggleCalc"><router-link to="/emi-calculator/personal-loan-emi-calculator">Personal Loan</router-link></li>
+                                    <li @click="toggleCalc"><a href="#">Educational Loan</a></li>
+                                    <li @click="toggleCalc"><a href="#">Bike Loan</a></li>
+                                    <li @click="toggleCalc"><a href="#">Car Loan</a></li>
+                                    <li @click="toggleCalc"><router-link to="/emi-calculator/business-loan-emi-calculator">Business Loan</router-link></li>
+                                    <li @click="toggleCalc"><router-link to="/emi-calculator/home-loan-emi-calculator">Home Loan</router-link></li>
+                                    <li @click="toggleCalc"><a href="#">Mortgage Loan</a></li>
+                                    <li @click="toggleCalc"><a href="#">Gold Loan</a></li>
                                 </ul>
                             </div>
                         </li>
