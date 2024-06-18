@@ -183,11 +183,19 @@ const whiteNavList = [
      '/personal-loan-eligibility-check',
 ]
 
+
+const withoutLayoutList = [
+  '/products/home-loan/login',
+  '/products/motor-insurance/login',
+  '/products/lap/login',
+];
+
 </script>
 
 
 <template>
-    <div class="menu_bar" :class="[headerBgClass, { 'scrolled': isScrolled }]">
+    <div class="menu_bar" :class="[headerBgClass, { 'scrolled': isScrolled }, {'dnone': withoutLayoutList.includes(route.path)}]"
+    >
     <div class="container">
         <div class="menu_bar_in">
             <router-link to="/">
@@ -246,7 +254,7 @@ const whiteNavList = [
     </main>
 
 
-    <footer>
+    <footer :class="{'dnone': withoutLayoutList.includes(route.path)}">
         <section class="footer">
             <div class="container">
                 <div class="footer_in">
@@ -347,6 +355,11 @@ const whiteNavList = [
 </template>
 
 <style scoped>
+
+.dnone {
+  display: none !important;
+}
+
 .scrolled {
     background-color: #fff !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;

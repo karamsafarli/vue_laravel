@@ -13,7 +13,7 @@
     ]
   },
   "node_modules/@dotlottie/player-component/dist/dotlottie-state-machine-manager-2E7RUGJG-NTQ25VSR.mjs": {
-    "file": "assets/dotlottie-state-machine-manager-2E7RUGJG-NTQ25VSR-ByEa3m3x.js",
+    "file": "assets/dotlottie-state-machine-manager-2E7RUGJG-NTQ25VSR-NTlI3IcN.js",
     "name": "dotlottie-state-machine-manager-2E7RUGJG-NTQ25VSR",
     "src": "node_modules/@dotlottie/player-component/dist/dotlottie-state-machine-manager-2E7RUGJG-NTQ25VSR.mjs",
     "isDynamicEntry": true,
@@ -100,6 +100,10 @@
     "file": "assets/CT_ProductIconDesktop-0fBRoUYZ.webp",
     "src": "resources/assets/image/CT_ProductIconDesktop.webp"
   },
+  "resources/assets/image/accident_cover.svg": {
+    "file": "assets/accident_cover-Bt9rLRAf.svg",
+    "src": "resources/assets/image/accident_cover.svg"
+  },
   "resources/assets/image/blackCloseIcon.svg": {
     "file": "assets/blackCloseIcon-CCbgOhGd.svg",
     "src": "resources/assets/image/blackCloseIcon.svg"
@@ -107,6 +111,10 @@
   "resources/assets/image/burger_green.svg": {
     "file": "assets/burger_green-DPeCiDyH.svg",
     "src": "resources/assets/image/burger_green.svg"
+  },
+  "resources/assets/image/cashless.svg": {
+    "file": "assets/cashless-DvBbErR8.svg",
+    "src": "resources/assets/image/cashless.svg"
   },
   "resources/assets/image/customer-review-section-desktop.webp": {
     "file": "assets/customer-review-section-desktop-7Mt9XHle.webp",
@@ -123,6 +131,14 @@
   "resources/assets/image/customer2.webp": {
     "file": "assets/customer2-Bk6Tw4qs.webp",
     "src": "resources/assets/image/customer2.webp"
+  },
+  "resources/assets/image/doorstep.svg": {
+    "file": "assets/doorstep-ClQW72mh.svg",
+    "src": "resources/assets/image/doorstep.svg"
+  },
+  "resources/assets/image/fast_track.svg": {
+    "file": "assets/fast_track-CT7GNCsH.svg",
+    "src": "resources/assets/image/fast_track.svg"
   },
   "resources/assets/image/hamburgerIcon-v3.svg": {
     "file": "assets/hamburgerIcon-v3-CfaIBnJ0.svg",
@@ -188,13 +204,25 @@
     "file": "assets/ic-trustFactor-users-DhCEoVWw.svg",
     "src": "resources/assets/image/ic-trustFactor-users.svg"
   },
+  "resources/assets/image/loan_transfer.svg": {
+    "file": "assets/loan_transfer-BjOKpIVc.svg",
+    "src": "resources/assets/image/loan_transfer.svg"
+  },
   "resources/assets/image/logo.svg": {
     "file": "assets/logo-B8I0erxj.svg",
     "src": "resources/assets/image/logo.svg"
   },
+  "resources/assets/image/no_inspection.svg": {
+    "file": "assets/no_inspection-BZGRpjCu.svg",
+    "src": "resources/assets/image/no_inspection.svg"
+  },
   "resources/assets/image/plProductCardRsIcon.webp": {
     "file": "assets/plProductCardRsIcon-E72fCDGr.webp",
     "src": "resources/assets/image/plProductCardRsIcon.webp"
+  },
+  "resources/assets/image/tenure_year.svg": {
+    "file": "assets/tenure_year-C_Wv0us-.svg",
+    "src": "resources/assets/image/tenure_year.svg"
   },
   "resources/assets/image/white-logo.svg": {
     "file": "assets/white-logo-B0run_-y.svg",
@@ -211,7 +239,7 @@
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-Q5v_lv4w.js",
+    "file": "assets/app-yKt7CK41.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -227,7 +255,7 @@
       "node_modules/@dotlottie/player-component/dist/lottie_html-X3TYKVQI-L6774NQS.mjs"
     ],
     "css": [
-      "assets/app-D8g4qNYT.css"
+      "assets/app-CR4cPOsR.css"
     ],
     "assets": [
       "assets/home-page-header-banner-desktop-BsFaeNoh.webp",
@@ -255,7 +283,14 @@
       "assets/burger_green-DPeCiDyH.svg",
       "assets/hamburgerIcon-v3-CfaIBnJ0.svg",
       "assets/ic-personal-loan-product-B_TrgkUP.webp",
-      "assets/blackCloseIcon-CCbgOhGd.svg"
+      "assets/blackCloseIcon-CCbgOhGd.svg",
+      "assets/fast_track-CT7GNCsH.svg",
+      "assets/doorstep-ClQW72mh.svg",
+      "assets/tenure_year-C_Wv0us-.svg",
+      "assets/cashless-DvBbErR8.svg",
+      "assets/no_inspection-BZGRpjCu.svg",
+      "assets/accident_cover-Bt9rLRAf.svg",
+      "assets/loan_transfer-BjOKpIVc.svg"
     ]
   }
 }

@@ -26,6 +26,9 @@ import PersonalLoanIntRates from './components/PersonalLoanIntRates.vue';
 import HowToApplyPersonalLoan from './components/HowToApplyPersonalLoan.vue';
 import PersonalLoanEligCheck from './components/PersonalLoanEligCheck.vue';
 import ErrorPage from './components/ErrorPage.vue';
+import HomeLoanLogin from './components/HomeLoanLogin.vue';
+import MotorInsuranceLogin from './components/MotorInsuranceLogin.vue';
+import LapLogin from './components/LapLogin.vue';
 
 
 const routes = [
@@ -465,6 +468,27 @@ const routes = [
                     title: '404 - Page Not Found',
                 }
             },
+            {
+                path: '/products/home-loan/login',
+                component: HomeLoanLogin,
+                meta: {
+                    title: 'Products - Home Loan Login',
+                }
+            },
+            {
+                path: '/products/motor-insurance/login',
+                component: MotorInsuranceLogin,
+                meta: {
+                    title: 'Products - Motor Insurance Login',
+                }
+            },
+            {
+                path: '/products/lap/login',
+                component: LapLogin,
+                meta: {
+                    title: 'Products - Lap Login',
+                }
+            },
         ]
     },
 ]
@@ -483,7 +507,7 @@ const router = createRouter({
 
 
 router.beforeEach((to, from, next) => {
-    document.title = to.meta.title || 'Default Title';
+    document.title = to.meta.title || 'Digitsathi';
     next();
 });
 
