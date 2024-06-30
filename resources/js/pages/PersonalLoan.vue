@@ -797,7 +797,6 @@ import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import '@dotlottie/player-component';
-import router from '../routes';
 
 const isScrolled = ref(false);
 
