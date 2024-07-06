@@ -1,0 +1,3381 @@
+#personal_loan_page .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+#personal_loan_page .scrolled {
+    background-color: #fff !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+#personal_loan_page .scrolled_text {
+    color: #144835 !important;
+}
+
+#personal_loan_page .slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#personal_loan_page .testimonial .container {
+    height: 100%;
+}
+
+#personal_loan_page .swiper-wrapper {
+    height: 100% !important;
+}
+
+#personal_loan_page .swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#personal_loan_page .slide {
+    background-size: cover;
+    background-position: center;
+}
+
+#personal_loan_page .mySwiper2 {
+    height: 400px;
+    width: 100%;
+}
+
+#personal_loan_page .mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+#personal_loan_page .mySwiper .slide {
+    width: 50px;
+    height: 100%;
+    opacity: 0.4;
+}
+
+#personal_loan_page .mySwiper .slide-thumb-active {
+    opacity: 1;
+}
+
+#personal_loan_page .slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#personal_loan_page .swiper {
+    height: 100% !important;
+}
+
+#personal_loan_page .swiper-pagination-bullet,
+#personal_loan_page .swiper-pagination-bullet-active {
+    background: #144835 !important;
+}
+
+#personal_loan_page .input-error {
+    outline: none;
+    border: 2px solid red !important;
+}
+
+#personal_loan_page .marginTop0 {
+    margin-top: 0 !important;
+}
+
+#personal_loan_page p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#personal_loan_page section {
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#personal_loan_page body>div:first-of-type {
+    padding: 0px;
+}
+
+#personal_loan_page .navMenu {
+    display: flex;
+    gap: 24px;
+    margin-block: 24px;
+    justify-content: end;
+    margin-right: 18px;
+    z-index: 1;
+}
+
+#personal_loan_page .navLink {
+    font-size: 16px !important;
+    font-weight: var(--font-weight-regular) !important;
+    line-height: 16px !important;
+    letter-spacing: 0px;
+    color: var(--primary-color) !important;
+}
+
+#personal_loan_page .navbar-custom {
+    background: linear-gradient(109deg, #f0f8f3 37.69%, var(--white-color) 86.94%);
+}
+
+#personal_loan_page .header_banner {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 79.37%, #fff 100%), linear-gradient(109.47deg, #f0f8f3 37.69%, #fff 86.94%);
+    background-clip: border-box;
+    position: relative;
+}
+
+#personal_loan_page .banner_bg_pattern {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#personal_loan_page .header_banner_image_span {
+    z-index: 6;
+}
+
+#personal_loan_page .header_banner_lead_card {
+    background: var(--white-color);
+    padding: 40px 48px;
+    box-shadow: 0px 23px 24px 0px var(--grey10);
+    height: fit-content;
+    align-self: center;
+}
+
+#personal_loan_page .header_banner_subtitle {
+    font-style: italic;
+    color: var(--orange05);
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    background: var(--orange01);
+    border-radius: 2px;
+    clip-path: polygon(0 0, 95% 0, 100% 100%, 0% 100%);
+    padding: 3px 0px 3px 8px;
+}
+
+#personal_loan_page .header_banner_title {
+    margin-bottom: 0px;
+    font-style: italic;
+    font-weight: var(--font-weight-bold);
+    color: var(--black-color);
+}
+
+#personal_loan_page .header_banner_heading {
+    color: var(--grey07);
+    margin-bottom: 0px;
+    padding-bottom: 27px;
+}
+
+#personal_loan_page .header_generate_otp_message {
+    font-weight: var(--font-weight-regular);
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin-left: 20px;
+}
+
+#personal_loan_page .header_generate_otp_input_container {
+    position: relative;
+}
+
+#personal_loan_page .header_generate_otp_input_container .country_code {
+    position: absolute;
+    color: var(--grey05);
+    font-size: 16px;
+    font-weight: var(--font-weight-regular);
+    line-height: 24px;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+#personal_loan_page .lead_gen_section {
+    display: flex;
+    flex-direction: column;
+}
+
+#personal_loan_page .header_generate_otp_consent_text {
+    font-weight: var(--font-weight-regular);
+    font-size: 11px;
+    line-height: 20px;
+    align-self: center;
+    color: var(--grey07);
+    padding-bottom: 16px;
+    padding-bottom: 0px;
+    margin-bottom: 0px !important;
+}
+
+#personal_loan_page .header_generate_otp_consent_text a {
+    font-weight: var(--font-weight-semibold);
+    margin-left: 0px;
+    text-decoration: underline !important;
+}
+
+#personal_loan_page .header_generate_otp_input {
+    background: var(--white-color) !important;
+    color: var(--black-color);
+    border: 1px solid var(--grey05);
+    padding: 16px 16px 16px 54px;
+    border-radius: 4px;
+    height: 56px;
+    width: 100%;
+}
+
+#personal_loan_page .header_generate_otp_input:focus {
+    border: 2px solid rgba(16, 16, 18, 1);
+}
+
+#personal_loan_page .verify_otp_lead_gen_input {
+    align-items: center;
+    padding: 18px;
+    gap: 8px;
+    height: 56px !important;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 4px;
+    border: 1px solid rgba(185, 186, 189, 1);
+}
+
+#personal_loan_page .verify_otp_lead_gen_input:focus {
+    border: 2px solid rgba(16, 16, 18, 1);
+}
+
+#personal_loan_page .header_generate_otp_apply_loan_btn {
+    background: var(--primary-color);
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    color: var(--white-color) !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    height: 56px;
+    padding: 16px 20px !important;
+    font-weight: var(--font-weight-regular);
+    font-size: var(--body-font-size) !important;
+    line-height: var(--body-line-height);
+    gap: 8px;
+}
+
+#personal_loan_page .header_generate_otp_apply_loan_btn:disabled {
+    background: var(--primary-color) !important;
+    opacity: 0.6 !important;
+    color: var(--white-color) !important;
+}
+
+#personal_loan_page .header_generate_otp_apply_loan_btn:hover {
+    cursor: pointer;
+}
+
+#personal_loan_page .verify_otp_lead_gen_btn {
+    height: 56px;
+    background: var(--primary-color);
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    color: var(--white-color);
+    padding: 0px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+#personal_loan_page .verify_otp_lead_gen_btn:disabled {
+    background: var(--primary-color) !important;
+    opacity: 0.6 !important;
+    color: var(--white-color) !important;
+}
+
+#personal_loan_page .header_apply_online_container {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+#personal_loan_page .header_generate_otp_container {
+    display: flex;
+    flex-direction: column;
+}
+
+#personal_loan_page .verify_otp_wrap_container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: fit-content;
+}
+
+#personal_loan_page .verify_otp_wrap {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+#personal_loan_page .header_consent_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#personal_loan_page .header_generate_otp_consent_container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+#personal_loan_page .header_generate_otp_consent {
+    width: 24px;
+    height: 24px;
+    margin-left: 0px !important;
+}
+
+#personal_loan_page .otpInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+#personal_loan_page .otp-field {
+    align-items: center;
+    padding: 8px;
+    width: 80px;
+    height: 48px;
+    border: 1px solid var(--grey05);
+    border-radius: 8px;
+    text-align: center;
+}
+
+#personal_loan_page .verify_otp_message_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0px 0px;
+}
+
+#personal_loan_page .verify_otp_mobile_number_container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#personal_loan_page .edit_mobile_number_text {
+    font-weight: var(--font-weight-regular);
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: var(--grey07);
+}
+
+#personal_loan_page .edit_mobile_number {
+    font-weight: var(--font-weight-regular);
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    padding-inline: 0px !important;
+    color: var(--primary-color);
+}
+
+#personal_loan_page .text-button-link {
+    width: fit-content;
+    outline: none !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+#personal_loan_page .text-button-link:disabled {
+    background-color: transparent !important;
+    border: none !important;
+    color: var(--grey05) !important;
+}
+
+#personal_loan_page .google_play_store_image {
+    width: 142px;
+    height: 32px;
+    margin: auto;
+}
+
+#personal_loan_page .header_resend_otp {
+    position: absolute;
+    right: 18px;
+    padding-block: 18px;
+}
+
+#personal_loan_page ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--grey07);
+}
+
+#personal_loan_page :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--grey07);
+}
+
+#personal_loan_page ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--grey07);
+}
+
+#personal_loan_page button:focus {
+    outline: 0 !important;
+}
+
+#personal_loan_page .modal-btn-close {
+    opacity: 1 !important;
+    margin-top: -20px !important;
+}
+
+#personal_loan_page .get_started_lottie {
+    display: grid;
+}
+
+#personal_loan_page .get_started_text {
+    display: grid;
+}
+
+#personal_loan_page .get_started_lottie_player {
+    width: 100%;
+}
+
+#personal_loan_page .get_started_text_div {
+    margin: auto 0;
+}
+
+#personal_loan_page .get_started_title {
+    font-weight: var(--font-weight-bold);
+}
+
+#personal_loan_page .get_started_subtitle {
+    font-weight: var(--font-weight-regular);
+    color: var(--grey07);
+}
+
+#personal_loan_page .what_makes_moneyview_better_title {
+    font-weight: var(--font-weight-bold);
+}
+
+#personal_loan_page .betterCard {
+    text-align: center;
+    background: var(--grey01);
+}
+
+#personal_loan_page .cardTitle {
+    font-weight: var(--font-weight-semibold);
+    text-align: left;
+    color: var(--black-color);
+}
+
+#personal_loan_page .cardDescription {
+    font-weight: var(--font-weight-regular);
+    text-align: left;
+    color: var(--grey09);
+}
+
+#personal_loan_page .cardAnimation {
+    text-align: center;
+}
+
+#personal_loan_page .trustMarker {
+    background: var(--orange06);
+}
+
+#personal_loan_page .display-flex {
+    display: flex !important;
+}
+
+#personal_loan_page .trust-marker-title {
+    font-weight: var(--font-weight-semibold);
+    color: var(--white-color);
+}
+
+#personal_loan_page .trust-marker-content {
+    font-weight: var(--font-weight-regular);
+    color: var(--white-color);
+}
+
+#personal_loan_page .trust-marker-heading {
+    font-weight: var(--font-weight-semibold);
+    color: var(--white-color);
+}
+
+#personal_loan_page .trust-marker-subheading {
+    font-weight: var(--font-weight-regular);
+    color: var(--white-color);
+}
+
+#personal_loan_page .trustclass {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 24px;
+}
+
+#personal_loan_page .trustRowClass {
+    display: grid;
+    grid-column-end: span 8;
+}
+
+#personal_loan_page .text-1:after {
+    content: " Million+";
+    display: inline-block;
+    white-space: pre;
+}
+
+#personal_loan_page .text-2:after {
+    content: " Cr+";
+    display: inline-block;
+    white-space: pre;
+}
+
+#personal_loan_page .text-3:after {
+    content: "+";
+    display: inline-block;
+}
+
+#personal_loan_page .backdropBtn {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#personal_loan_page .continuePLApplication {
+    display: none;
+}
+
+#personal_loan_page #footerLoginForm {
+    display: none;
+}
+
+#personal_loan_page #footerContinueApp {
+    display: none;
+}
+
+#personal_loan_page .reviewSection {
+    position: relative;
+}
+
+#personal_loan_page .customerReviewTitle {
+    font-weight: var(--font-weight-bold);
+    position: absolute;
+}
+
+#personal_loan_page .reviewCard {
+    box-sizing: border-box;
+    background: var(--white-color);
+}
+
+#personal_loan_page .customer-details {
+    display: flex;
+}
+
+#personal_loan_page .customer-class {
+    margin: auto 0px;
+}
+
+#personal_loan_page .customer-name {
+    font-weight: var(--font-weight-regular);
+    color: var(--black-color);
+}
+
+#personal_loan_page .review-details {
+    font-weight: var(--font-weight-regular);
+    color: var(--grey07);
+}
+
+#personal_loan_page .review-content {
+    font-weight: var(--font-weight-regular);
+    color: var(--grey07);
+}
+
+#personal_loan_page .checked {
+    color: var(--yellow01);
+    font: normal normal normal 27.35px/1 FontAwesome;
+    margin-right: 13.15px;
+}
+
+#personal_loan_page .heart_lottie_div {
+    position: relative;
+}
+
+#personal_loan_page .heart_lottie {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+}
+
+#personal_loan_page .display-desktop {
+    display: block;
+}
+
+#personal_loan_page .display-mobile {
+    display: none;
+}
+
+#personal_loan_page .emiCalculator {
+    border-radius: 12px;
+    background: var(--magenta01);
+}
+
+#personal_loan_page .emi-calculator-image {
+    align-self: center;
+    width: 220px;
+    margin-inline: auto;
+}
+
+#personal_loan_page .heading {
+    font-weight: var(--font-weight-semibold);
+    color: var(--black-color);
+}
+
+#personal_loan_page .subHeading {
+    font-weight: var(--font-weight-regular);
+    color: var(--grey09);
+}
+
+#personal_loan_page .calculateEmi {
+    font-weight: var(--font-weight-semibold) !important;
+    color: var(--primary-color) !important;
+    justify-content: center;
+    display: flex;
+}
+
+#personal_loan_page .calculateEmiButton {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#personal_loan_page .video_section_title {
+    font-style: italic;
+    font-weight: var(--font-weight-bold);
+    color: var(--grey09);
+}
+
+#personal_loan_page .video_section_subtitle {
+    font-weight: var(--font-weight-regular);
+    color: var(--grey09);
+}
+
+#personal_loan_page .hashtag {
+    color: var(--primary-color);
+}
+
+#personal_loan_page .video_section_carousel {
+    position: relative;
+}
+
+#personal_loan_page .videocard__img {
+    visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 481px;
+    border-radius: 4px;
+}
+
+#personal_loan_page .videocard__img--hover {
+    transition: 0.4s all ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    height: 481px;
+    border-radius: 4px;
+    top: 0;
+}
+
+#personal_loan_page .videocard {
+    transition: 0.4s all ease-out;
+    background-color: var(--white-color);
+    width: 100%;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#personal_loan_page .videocard:hover {
+    transform: scale(1.1, 1.1);
+}
+
+#personal_loan_page .videocard:hover .videocard__img--hover {
+    height: 100%;
+}
+
+#personal_loan_page .videocardPlayButton1 {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 45%;
+    left: 45%;
+}
+
+#personal_loan_page .videocardPlayButton2 {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 45%;
+    left: 45%;
+}
+
+#personal_loan_page .videocard--2:hover .videocardPlayButton2 {
+    display: block;
+}
+
+#personal_loan_page .videocard--1 {
+    z-index: 1;
+    height: 100% !important;
+}
+
+#personal_loan_page .videocard--2 {
+    left: 56%;
+    position: absolute;
+    top: 6%;
+    height: 90%;
+}
+
+#personal_loan_page .videocard--2:hover {
+    z-index: 1;
+    top: 0%;
+    height: 100%;
+    box-shadow: 0 0 0 8px var(--grey04);
+    /* using box-shadow instead of border for inner radius */
+}
+
+#personal_loan_page .videoBorder {
+    box-shadow: 0 0 0 8px var(--grey04) !important;
+    /* using box-shadow instead of border for inner radius */
+}
+
+#personal_loan_page .iframeOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+#personal_loan_page .iframePopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#personal_loan_page .bottomBannerSection {
+    position: relative;
+}
+
+#personal_loan_page .bottomBannerContainer {
+    background: var(--green07);
+    border-radius: 8px;
+}
+
+#personal_loan_page .bottomBannerTitle {
+    font-weight: var(--font-weight-semibold);
+    color: var(--white-color);
+}
+
+#personal_loan_page .bottomBannerSubTitle {
+    font-weight: var(--font-weight-regular);
+    color: var(--white-color);
+}
+
+#personal_loan_page .downloadBtn {
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    background-color: var(--orange05);
+    border: none;
+    border-radius: 4px;
+    padding: 16px 24px;
+}
+
+#personal_loan_page .accordion .card {
+    border-bottom: 0px;
+}
+
+#personal_loan_page .accordion .card-header {
+    margin-bottom: 0px !important;
+    border-top: 0px;
+    border-bottom: 0px !important;
+    padding: 0px;
+}
+
+#personal_loan_page .accordion .card-header>a[aria-expanded="true"] .fa-angle-down {
+    display: none;
+}
+
+#personal_loan_page .accordion .card-header>a[aria-expanded="false"] .fa-angle-up {
+    display: none;
+}
+
+#personal_loan_page .accordion .card .card-body ul,
+#personal_loan_page ol {
+    padding-left: 2.5rem;
+}
+
+#personal_loan_page .accordion .card .card-body table {
+    border: 1px solid var(--grey07);
+    width: fit-content !important;
+}
+
+#personal_loan_page .accordion .card .card-body .table th {
+    color: var(--black-color);
+    font-weight: var(--font-weight-regular);
+    padding: 15px 0px 16px 24px;
+}
+
+#personal_loan_page .accordion .card .card-body .table td {
+    padding: 12px 24px 12px 24px;
+}
+
+#personal_loan_page .accordionCardHeader {
+    font-weight: var(--font-weight-regular) !important;
+    color: var(--black-color);
+    padding: 0px;
+}
+
+#personal_loan_page .hrAccordian {
+    margin: 0px;
+    border: 1px solid #dcdcde;
+}
+
+#personal_loan_page .table-striped tbody tr:nth-of-type(odd) {
+    background-color: var(--white-color) !important;
+}
+
+#personal_loan_page .table td,
+#personal_loan_page .table th,
+#personal_loan_page .table-bordered th,
+#personal_loan_page .table-bordered td {
+    border: 1px solid var(--grey07) !important;
+    color: var(--grey07);
+}
+
+#personal_loan_page .cardLinks {
+    font-weight: var(--font-weight-regular) !important;
+    margin: 0px;
+}
+
+#personal_loan_page .accordion .card .card-body .FaqHeader {
+    font-weight: var(--font-weight-regular);
+    color: var(--black-color) !important;
+}
+
+#personal_loan_page .moreFaqButton {
+    color: var(--primary-color) !important;
+    text-decoration: underline !important;
+}
+
+#personal_loan_page .section-animation.animation_effect {
+    animation-name: bottom-slide-in;
+    animation-duration: 1250ms;
+}
+
+@keyframes bottom-slide-in {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+        animation-timing-function: cubic-bezier(0, 0, 0, 1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #personal_loan_page {
+        /* get started section */
+        /* what makes mv better section */
+        /* trust marker*/
+        /*review section*/
+        /* emi section*/
+        /* video section */
+        /*Bottom-banner*/
+        /*Accordian*/
+        /* FAQ */
+    }
+
+    #personal_loan_page .lead_gen_section {
+        gap: 16px;
+    }
+
+    #personal_loan_page .header_section_container {
+        margin-top: 80px;
+    }
+
+    #personal_loan_page .header_banner_lead_card {
+        border-radius: 4px;
+        margin-block: 12px 30px;
+    }
+
+    #personal_loan_page .header_banner_text_span {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: span 6;
+        align-items: center;
+    }
+
+    #personal_loan_page .header_banner_image_span {
+        display: grid;
+        grid-column-start: 7;
+        grid-column-end: span 6;
+    }
+
+    #personal_loan_page .header_banner_subtitle {
+        font-weight: var(--font-weight-semibold);
+        font-size: 20px;
+        line-height: var(--body-line-height);
+    }
+
+    #personal_loan_page .header_banner_title {
+        font-weight: var(--font-weight-bold);
+        font-size: 44px;
+        line-height: 44px;
+        padding-bottom: 4px;
+        margin-bottom: 0px;
+    }
+
+    #personal_loan_page .header_banner_heading {
+        font-weight: var(--font-weight-regular);
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 0px;
+    }
+
+    #personal_loan_page .header_apply_online_container {
+        max-width: 390px;
+    }
+
+    #personal_loan_page .header_generate_otp_container {
+        gap: 12px;
+    }
+
+    #personal_loan_page .verify_otp_lead_gen_btn {
+        width: 100% !important;
+        padding: 16px 20px;
+        font-weight: var(--font-weight-regular);
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+    }
+
+    #personal_loan_page .header_generate_otp_input {
+        height: 56px !important;
+        width: 100% !important;
+        font-size: 14px !important;
+        line-height: 22px !important;
+    }
+
+    #personal_loan_page .verify_otp_lead_gen_input {
+        width: 100% !important;
+        font-size: var(--body-font-size) !important;
+        line-height: var(--body-line-height) !important;
+        line-height: 22px !important;
+    }
+
+    #personal_loan_page #banner_image {
+        width: 580px;
+        aspect-ratio: 1.1364678899;
+    }
+
+    #personal_loan_page .resend_otp {
+        font-weight: var(--font-weight-regular);
+        font-size: 12px;
+        line-height: var(--primary-color);
+        color: var(--primary-color);
+        padding-right: 0px !important;
+    }
+
+    #personal_loan_page .get_started_lottie {
+        grid-column-start: 1;
+        grid-column-end: span 5;
+    }
+
+    #personal_loan_page .get_started_text {
+        grid-column-start: 7;
+        grid-column-end: span 6;
+    }
+
+    #personal_loan_page .get_started_text_div {
+        width: 468px;
+        height: 169px;
+    }
+
+    #personal_loan_page .get_started_title {
+        font-size: 44px;
+        line-height: 64px;
+    }
+
+    #personal_loan_page .get_started_subtitle {
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+        margin-top: 20px;
+    }
+
+    #personal_loan_page .cardMarginTop {
+        margin-top: 32px;
+    }
+
+    #personal_loan_page .cardMarginTopDesktop {
+        margin-top: 0px;
+    }
+
+    #personal_loan_page .what_makes_moneyview_better_title {
+        font-size: 44px;
+        line-height: 64px;
+        margin-bottom: 64px;
+    }
+
+    #personal_loan_page .paddingDiv {
+        padding: 32px;
+    }
+
+    #personal_loan_page .betterCard {
+        border-radius: 20px;
+    }
+
+    #personal_loan_page .cardTitle {
+        font-size: 32px;
+        line-height: 48px;
+        width: 289px;
+        margin-bottom: 24px;
+    }
+
+    #personal_loan_page .cardDescription {
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+        width: 448px;
+        min-height: 76px;
+    }
+
+    #personal_loan_page .cardAnimation {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    #personal_loan_page .trustMarker {
+        margin-top: 96px;
+    }
+
+    #personal_loan_page .trust-marker-1 {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: span 8;
+    }
+
+    #personal_loan_page .trust-marker-2 {
+        display: grid;
+        grid-column-start: 9;
+        grid-column-end: span 4;
+    }
+
+    #personal_loan_page .trust-marker-image {
+        width: 32px;
+        height: 32px;
+    }
+
+    #personal_loan_page .trust-marker-container {
+        padding: 0px 0px 0px 12px;
+    }
+
+    #personal_loan_page .trust-marker-title {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 4px;
+    }
+
+    #personal_loan_page .trust-marker-content {
+        height: 28px;
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+    }
+
+    #personal_loan_page .trust-marker-heading {
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 12px;
+    }
+
+    #personal_loan_page .trust-marker-subheading {
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+        margin-bottom: 40px;
+    }
+
+    #personal_loan_page .trust-marker-col-1 {
+        padding: 50px 0px 56px 0px;
+    }
+
+    #personal_loan_page .trustclass {
+        column-gap: 20px;
+    }
+
+    #personal_loan_page .reviewSection {
+        margin-bottom: 82px;
+    }
+
+    #personal_loan_page .customerReviewTitle {
+        font-size: 44px;
+        line-height: 64px;
+        margin-bottom: 0px;
+    }
+
+    #personal_loan_page .reviewCard {
+        border: 2px solid var(--grey02);
+        border-radius: 24px;
+        padding: 32px 32px;
+    }
+
+    #personal_loan_page .customer-image {
+        width: 72px;
+        height: 72px;
+    }
+
+    #personal_loan_page .customer-class {
+        padding-left: 12px;
+    }
+
+    #personal_loan_page .customer-name {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    #personal_loan_page .review-details {
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+        margin-bottom: 0px;
+    }
+
+    #personal_loan_page .review-content {
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+        margin-bottom: 0px;
+    }
+
+    #personal_loan_page .customerRating {
+        margin: 20px 0px;
+    }
+
+    #personal_loan_page .emiCalculatorMargin {
+        margin-block: 42px 32px;
+    }
+
+    #personal_loan_page .heading {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 16px;
+    }
+
+    #personal_loan_page .subHeading {
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+        width: 680px;
+    }
+
+    #personal_loan_page .calculateEmi {
+        font-size: var(--body-font-size) !important;
+        line-height: 28px !important;
+    }
+
+    #personal_loan_page .calculateEmiButton {
+        margin-top: 43px;
+        margin-right: 32px;
+    }
+
+    #personal_loan_page .rightArrow {
+        width: 53px;
+        height: 32px;
+        margin-left: 24px;
+    }
+
+    #personal_loan_page .video_section_title {
+        font-size: 44px;
+        line-height: 44px;
+    }
+
+    #personal_loan_page .video_section_subtitle {
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+        width: 780px;
+        margin-top: 32px;
+        margin-bottom: 66px;
+    }
+
+    #personal_loan_page .video_section_carousel {
+        width: 750px;
+        height: 428px;
+    }
+
+    #personal_loan_page .videocard__img {
+        width: 750px !important;
+        height: 428px !important;
+    }
+
+    #personal_loan_page .videocard__img--hover {
+        width: 750px !important;
+        height: 428px !important;
+    }
+
+    #personal_loan_page .videocard--2 {
+        top: 8%;
+    }
+
+    #personal_loan_page .videocardPlayButton1 img {
+        width: 64px;
+        height: 64px;
+    }
+
+    #personal_loan_page .videocardPlayButton2 img {
+        width: 64px;
+        height: 64px;
+    }
+
+    #personal_loan_page .videocardPlayButton1 {
+        left: 45%;
+        top: 45%;
+    }
+
+    #personal_loan_page .videocardPlayButton2 {
+        left: 45%;
+        top: 45%;
+    }
+
+    #personal_loan_page .iframePlayer {
+        width: 800px;
+        height: 480px;
+    }
+
+    #personal_loan_page .bottomBannerSection {
+        position: relative;
+        padding-top: 196px;
+    }
+
+    #personal_loan_page .bottomBannerContainer {
+        margin: 0px !important;
+    }
+
+    #personal_loan_page .bottomBannerImage {
+        width: 80%;
+        bottom: -15%;
+        height: auto;
+        position: absolute;
+        right: 20%;
+    }
+
+    #personal_loan_page .bottomBanner {
+        background-image: url("https://moneyview.in/images/PL-bottomBanner-Desktop.webp");
+        background-repeat: no-repeat;
+        background-position: right 0% top 48%;
+        background-size: 100%;
+        padding-top: 292px !important;
+    }
+
+    #personal_loan_page .bottomBannerTitle {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 16px;
+    }
+
+    #personal_loan_page .bottomBannerSubTitle {
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+        margin-bottom: 40px;
+    }
+
+    #personal_loan_page .bottomBannerTextPadding {
+        padding: 48px 48px 45px;
+    }
+
+    #personal_loan_page .bottom-banner-backdrop {
+        height: 260px;
+        bottom: 26px;
+    }
+
+    #personal_loan_page .benefitsMargin {
+        margin-block: 80px !important;
+    }
+
+    #personal_loan_page .cardLinks {
+        font-size: 12px !important;
+        line-height: var(--body-line-height) !important;
+        margin: 0px;
+    }
+
+    #personal_loan_page .accordion .card .card-body table {
+        margin: 20px 80px 0px;
+    }
+
+    #personal_loan_page .accordion .card .card-body .FaqContent {
+        margin-bottom: 24px;
+    }
+
+    #personal_loan_page .downloadBtn {
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1439px) {
+    #personal_loan_page {
+        /* get started section */
+        /* what makes mv better section */
+        /* trust marker*/
+        /*review section*/
+        /* emi section*/
+        /* video section */
+        /*Bottom-banner*/
+        /*Accordian*/
+        /* FAQ */
+    }
+
+    #personal_loan_page .lead_gen_section {
+        gap: 16px;
+    }
+
+    #personal_loan_page .header_section_container {
+        margin-top: 64px;
+    }
+
+    #personal_loan_page .header_banner_lead_card {
+        border-radius: 4px;
+        margin-block: 12px 30px;
+    }
+
+    #personal_loan_page .header_banner_text_span {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: span 6;
+        align-items: center;
+    }
+
+    #personal_loan_page .header_banner_image_span {
+        display: grid;
+        grid-column-start: 7;
+        grid-column-end: span 6;
+    }
+
+    #personal_loan_page .header_banner_subtitle {
+        font-weight: var(--font-weight-semibold);
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+    }
+
+    #personal_loan_page .header_banner_title {
+        font-weight: var(--font-weight-bold);
+        font-size: 32px;
+        line-height: 36px;
+        padding-bottom: 4px;
+        margin-bottom: 0px;
+    }
+
+    #personal_loan_page .header_banner_heading {
+        font-weight: var(--font-weight-regular);
+        font-size: 20px;
+        line-height: 30px;
+        padding-bottom: 15px;
+        margin-bottom: 0px;
+    }
+
+    #personal_loan_page .header_apply_online_container {
+        width: 100%;
+    }
+
+    #personal_loan_page .header_generate_otp_container {
+        width: 100%;
+        gap: 12px;
+    }
+
+    #personal_loan_page .header_generate_otp_consent_text {
+        font-size: 8px;
+        line-height: 14px;
+    }
+
+    #personal_loan_page .verify_otp_lead_gen_btn {
+        width: 100% !important;
+        height: 56px;
+        padding: 16px 20px;
+        font-weight: var(--font-weight-regular);
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+    }
+
+    #personal_loan_page .header_generate_otp_input {
+        height: 56px !important;
+        width: 100% !important;
+        font-size: 14px !important;
+        line-height: 22px !important;
+    }
+
+    #personal_loan_page .verify_otp_lead_gen_input {
+        width: 100% !important;
+        font-size: var(--body-font-size) !important;
+        line-height: var(--body-line-height) !important;
+        line-height: 22px !important;
+    }
+
+    #personal_loan_page #banner_image {
+        width: 493px;
+        aspect-ratio: 1.1364678899;
+    }
+
+    #personal_loan_page .resend_otp {
+        font-weight: var(--font-weight-regular);
+        font-size: 12px;
+        line-height: var(--body-line-height);
+        color: var(--primary-color);
+        padding-right: 0px !important;
+    }
+
+    #personal_loan_page .get_started_lottie {
+        grid-column-start: 1;
+        grid-column-end: span 5;
+    }
+
+    #personal_loan_page .get_started_text {
+        grid-column-start: 7;
+        grid-column-end: span 6;
+    }
+
+    #personal_loan_page .get_started_text_div {
+        width: 324px;
+        height: 169px;
+    }
+
+    #personal_loan_page .get_started_title {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    #personal_loan_page .get_started_subtitle {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 16px;
+    }
+
+    #personal_loan_page .cardMarginTop {
+        margin-top: 12px;
+    }
+
+    #personal_loan_page .cardMarginTopDesktop {
+        margin-top: 0px;
+    }
+
+    #personal_loan_page .what_makes_moneyview_better_title {
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 42px;
+    }
+
+    #personal_loan_page .paddingDiv {
+        padding: 32px;
+    }
+
+    #personal_loan_page .betterCard {
+        border-radius: 16px;
+    }
+
+    #personal_loan_page .cardTitle {
+        font-size: 20px;
+        line-height: 32px;
+        width: 176px;
+        margin-bottom: 12px;
+    }
+
+    #personal_loan_page .cardDescription {
+        font-size: 14px;
+        line-height: 20px;
+        width: 332px;
+        min-height: 60px;
+    }
+
+    #personal_loan_page .cardAnimation {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #personal_loan_page .trustMarker {
+        margin-top: 64px;
+    }
+
+    #personal_loan_page .trust-marker-1 {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: span 8;
+    }
+
+    #personal_loan_page .trust-marker-2 {
+        display: grid;
+        grid-column-start: 9;
+        grid-column-end: span 4;
+    }
+
+    #personal_loan_page .trust-marker-image {
+        width: 24px;
+        height: 24px;
+    }
+
+    #personal_loan_page .trust-marker-container {
+        padding: 0px 0px 0px 8px;
+    }
+
+    #personal_loan_page .trust-marker-title {
+        font-size: 18px;
+        line-height: var(--body-line-height);
+        margin-bottom: 2px;
+    }
+
+    #personal_loan_page .trust-marker-content {
+        height: 48px;
+        font-size: 14px;
+        line-height: var(--body-line-height);
+    }
+
+    #personal_loan_page .trust-marker-heading {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 8px;
+    }
+
+    #personal_loan_page .trust-marker-subheading {
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+        margin-bottom: 28px;
+    }
+
+    #personal_loan_page .trust-marker-col-1 {
+        padding: 50px 0px 56px 0px;
+    }
+
+    #personal_loan_page .trustclass {
+        column-gap: 12px;
+    }
+
+    #personal_loan_page .trust_marker_model_image {
+        align-self: end;
+    }
+
+    #personal_loan_page .reviewSection {
+        margin-bottom: 40px;
+    }
+
+    #personal_loan_page .customerReviewTitle {
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 0px;
+    }
+
+    #personal_loan_page .reviewCard {
+        border: 2px solid var(--grey02);
+        border-radius: 20px;
+        padding: 32px 32px;
+    }
+
+    #personal_loan_page .customer-image {
+        width: 48px;
+        height: 48px;
+    }
+
+    #personal_loan_page .customer-class {
+        padding-left: 8px;
+    }
+
+    #personal_loan_page .customer-name {
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+    }
+
+    #personal_loan_page .review-details {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 0px;
+    }
+
+    #personal_loan_page .review-content {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 0px;
+    }
+
+    #personal_loan_page .customerRating {
+        margin: 14px 0px;
+    }
+
+    #personal_loan_page .emiCalculatorMargin {
+        margin-block: 34px 24px;
+    }
+
+    #personal_loan_page .heading {
+        font-size: 18px;
+        line-height: var(--body-line-height);
+        margin-bottom: 12px;
+    }
+
+    #personal_loan_page .subHeading {
+        font-size: 14px;
+        line-height: 20px;
+        width: 455px;
+    }
+
+    #personal_loan_page .calculateEmi {
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+
+    #personal_loan_page .calculateEmiButton {
+        margin-top: 32px;
+        margin-right: 24px;
+    }
+
+    #personal_loan_page .rightArrow {
+        width: 33px;
+        height: 20px;
+        margin-left: 8px;
+    }
+
+    #personal_loan_page .video_section_title {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    #personal_loan_page .video_section_subtitle {
+        font-size: 14px;
+        line-height: 20px;
+        width: 780px;
+        margin-top: 16px;
+        margin-bottom: 32px;
+    }
+
+    #personal_loan_page .video_section_carousel {
+        width: 527px;
+        height: 297px;
+    }
+
+    #personal_loan_page .videocard__img {
+        width: 527px !important;
+        height: 297px !important;
+    }
+
+    #personal_loan_page .videocard__img--hover {
+        width: 527px !important;
+        height: 297px !important;
+    }
+
+    #personal_loan_page .videocard--2 {
+        left: 58% !important;
+        top: 8%;
+    }
+
+    #personal_loan_page .videocardPlayButton1 img {
+        width: 45px;
+        height: 45px;
+    }
+
+    #personal_loan_page .videocardPlayButton2 img {
+        width: 45px;
+        height: 45px;
+    }
+
+    #personal_loan_page .videocardPlayButton1 {
+        left: 45%;
+        top: 45%;
+    }
+
+    #personal_loan_page .videocardPlayButton2 {
+        left: 45%;
+        top: 45%;
+    }
+
+    #personal_loan_page .iframePlayer {
+        width: 500px;
+        height: 360px;
+    }
+
+    #personal_loan_page .bottomBannerContainer {
+        margin: 0px !important;
+    }
+
+    #personal_loan_page .bottomBannerSection {
+        padding-top: 163px !important;
+    }
+
+    #personal_loan_page .bottomBannerImage {
+        width: 80%;
+        bottom: -16%;
+        height: auto;
+        position: absolute;
+        right: 20%;
+    }
+
+    #personal_loan_page .bottomBannerTitle {
+        font-size: 18px;
+        line-height: var(--body-line-height);
+        margin-bottom: 12px;
+    }
+
+    #personal_loan_page .bottomBannerSubTitle {
+        font-size: 12px;
+        line-height: var(--body-line-height);
+        margin-bottom: 20px;
+    }
+
+    #personal_loan_page .bottomBannerTextPadding {
+        padding: 24px;
+    }
+
+    #personal_loan_page .bottom-banner-backdrop {
+        height: 186px;
+        bottom: 20px;
+    }
+
+    #personal_loan_page .benefitsMargin {
+        margin-block: 60px !important;
+    }
+
+    #personal_loan_page .cardLinks {
+        font-size: 12px !important;
+        line-height: var(--body-line-height) !important;
+        margin: 0px;
+    }
+
+    #personal_loan_page .accordion .card .card-body table {
+        margin: 20px 59px 0px;
+    }
+
+    #personal_loan_page .accordion .card .card-body .FaqContent {
+        margin-bottom: 20px;
+    }
+
+    #personal_loan_page .downloadBtn {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1439px) and (min-width: 959px) and (max-width: 1199px) {
+    #personal_loan_page {
+        /* Navbar */
+    }
+
+    #personal_loan_page .navMenu {
+        display: none !important;
+    }
+
+    #personal_loan_page .PLSideMenuLinks {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-left: 52px;
+        text-align: left;
+    }
+
+    #personal_loan_page .navLink {
+        font-size: 14px !important;
+        line-height: 24px !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    #personal_loan_page {
+        /* get started section */
+        /* what makes mv better section */
+        /* trust marker*/
+        /*review section*/
+        /* emi section*/
+        /* video section */
+        /*Bottom-banner*/
+        /*Accordian*/
+        /* FAQ */
+    }
+
+    #personal_loan_page .navMenu {
+        display: none;
+    }
+
+    #personal_loan_page .PLSideMenuLinks {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-left: 52px;
+        text-align: left;
+    }
+
+    #personal_loan_page .navLink {
+        font-size: 14px !important;
+        line-height: 24px !important;
+    }
+
+    #personal_loan_page .header_banner {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 48.34%, #fff 61.2%), linear-gradient(109.47deg, #f0f8f3 37.69%, #fff 86.94%);
+        display: block !important;
+    }
+
+    #personal_loan_page .banner_bg_pattern {
+        width: 520px;
+        height: 450px;
+    }
+
+    #personal_loan_page .lead_gen_section {
+        gap: 16px;
+    }
+
+    #personal_loan_page .header_section_container {
+        margin-top: 62px;
+        grid-template-columns: repeat(12, 1fr) !important;
+    }
+
+    #personal_loan_page .header_banner_lead_card {
+        border-radius: 0px;
+        padding: 40px 30px 12px 30px;
+        margin-inline: -30px;
+        position: relative;
+        box-shadow: none !important;
+        background: transparent;
+    }
+
+    #personal_loan_page .header_banner_text_span {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: span 12;
+        grid-row-start: 2;
+    }
+
+    #personal_loan_page .header_banner_image_span {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: span 12;
+        grid-row-start: 1;
+    }
+
+    #personal_loan_page .header_banner_subtitle {
+        font-weight: var(--font-weight-semibold);
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 16px;
+        max-width: 376px;
+    }
+
+    #personal_loan_page .header_banner_title {
+        font-weight: var(--font-weight-bold);
+        font-size: 52px;
+        line-height: 52px;
+        padding-bottom: 4px;
+        margin-bottom: 0px;
+    }
+
+    #personal_loan_page .header_banner_heading {
+        font-weight: var(--font-weight-regular);
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 0px;
+    }
+
+    #personal_loan_page .header_apply_online_container {
+        width: 100%;
+    }
+
+    #personal_loan_page .header_generate_otp_container {
+        width: 100%;
+        gap: 12px;
+    }
+
+    #personal_loan_page .verify_otp_lead_gen_btn {
+        width: 100% !important;
+        height: 56px;
+        padding: 16px 20px;
+        font-weight: var(--font-weight-regular);
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+    }
+
+    #personal_loan_page .header_generate_otp_input {
+        height: 56px !important;
+        width: 100% !important;
+        font-size: 14px !important;
+        font-weight: var(--font-weight-regular) !important;
+        line-height: 22px !important;
+    }
+
+    #personal_loan_page .verify_otp_lead_gen_input {
+        height: 64px !important;
+        width: 100% !important;
+        font-size: 14px !important;
+        font-weight: var(--font-weight-regular) !important;
+        line-height: 22px !important;
+    }
+
+    #personal_loan_page #banner_image {
+        width: 464px;
+        aspect-ratio: 1.1364678899;
+    }
+
+    #personal_loan_page .resend_otp {
+        font-weight: var(--font-weight-regular);
+        font-size: 14px;
+        line-height: 22px;
+        color: var(--primary-color);
+        padding-right: 0px !important;
+    }
+
+    #personal_loan_page .get_started_lottie {
+        grid-column-start: 1;
+        grid-column-end: span 5;
+    }
+
+    #personal_loan_page .get_started_text {
+        grid-column-start: 7;
+        grid-column-end: span 6;
+    }
+
+    #personal_loan_page .get_started_text_div {
+        width: 348px;
+        height: 169px;
+    }
+
+    #personal_loan_page .get_started_title {
+        font-size: 32px;
+        line-height: 48px;
+        width: 288px;
+    }
+
+    #personal_loan_page .get_started_subtitle {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 16px;
+    }
+
+    #personal_loan_page .cardMarginTop {
+        margin-top: 12px;
+    }
+
+    #personal_loan_page .cardMarginTopDesktop {
+        margin-top: 0px;
+    }
+
+    #personal_loan_page .what_makes_moneyview_better_title {
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 40px;
+    }
+
+    #personal_loan_page .paddingDiv {
+        padding: 32px 28px 28px 28px;
+    }
+
+    #personal_loan_page .betterCard {
+        border-radius: 16px;
+    }
+
+    #personal_loan_page .cardTitle {
+        font-size: 24px;
+        line-height: 32px;
+        width: 292px;
+        margin-bottom: 14px;
+    }
+
+    #personal_loan_page .cardDescription {
+        font-size: 14px;
+        line-height: 20px;
+        width: 292px;
+        min-height: 80px;
+    }
+
+    #personal_loan_page .cardAnimation {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #personal_loan_page .trustMarker {
+        margin-top: 64px;
+    }
+
+    #personal_loan_page .trust-marker-1 {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: span 8;
+    }
+
+    #personal_loan_page .trust-marker-2 {
+        display: grid;
+        grid-column-start: 9;
+        grid-column-end: span 4;
+    }
+
+    #personal_loan_page .trust-marker-image {
+        width: 24px;
+        height: 24px;
+    }
+
+    #personal_loan_page .trust-marker-container {
+        padding: 0px 0px 0px 8px;
+    }
+
+    #personal_loan_page .trust-marker-title {
+        font-size: 18px;
+        line-height: var(--body-line-height);
+        margin-bottom: 2px;
+    }
+
+    #personal_loan_page .trust-marker-content {
+        height: 48px;
+        font-size: 14px;
+        line-height: var(--body-line-height);
+    }
+
+    #personal_loan_page .trust-marker-heading {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 8px;
+    }
+
+    #personal_loan_page .trust-marker-subheading {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 40px;
+    }
+
+    #personal_loan_page .trust-marker-col-1 {
+        padding: 50px 0px 56px 0px;
+    }
+
+    #personal_loan_page .trustclass {
+        column-gap: 12px;
+    }
+
+    #personal_loan_page .trustMarkerMargin {
+        margin-bottom: 16px;
+    }
+
+    #personal_loan_page .trust_marker_model_image {
+        position: absolute;
+        left: -72px;
+        align-self: end;
+    }
+
+    #personal_loan_page .reviewSection {
+        margin-bottom: 60px;
+    }
+
+    #personal_loan_page .customerReviewTitle {
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 0px;
+    }
+
+    #personal_loan_page .reviewCard {
+        border: 2px solid var(--grey02);
+        border-radius: 20px;
+        padding: 32px 32px;
+    }
+
+    #personal_loan_page .customer-image {
+        width: 48px;
+        height: 48px;
+    }
+
+    #personal_loan_page .customer-class {
+        padding-left: 12px;
+    }
+
+    #personal_loan_page .customer-name {
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+    }
+
+    #personal_loan_page .review-details {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 0px;
+    }
+
+    #personal_loan_page .review-content {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 0px;
+    }
+
+    #personal_loan_page .customerRating {
+        margin: 14px 0px;
+    }
+
+    #personal_loan_page .emiCalculatorMargin {
+        margin-block: 34px 24px;
+    }
+
+    #personal_loan_page .emi-calculator-image {
+        height: 209px;
+    }
+
+    #personal_loan_page .heading {
+        font-size: 18px;
+        line-height: var(--body-line-height);
+        margin-bottom: 12px;
+    }
+
+    #personal_loan_page .subHeading {
+        font-size: 14px;
+        line-height: 20px;
+        width: 286px;
+    }
+
+    #personal_loan_page .calculateEmi {
+        font-size: 14px !important;
+        line-height: 18px !important;
+    }
+
+    #personal_loan_page .calculateEmiButton {
+        margin-top: 32px;
+        margin-right: 24px;
+    }
+
+    #personal_loan_page .rightArrow {
+        width: 33px;
+        height: 20px;
+        margin-left: 8px;
+    }
+
+    #personal_loan_page .video_section_title {
+        font-size: 52px;
+        line-height: 52px;
+    }
+
+    #personal_loan_page .video_section_subtitle {
+        font-size: 14px;
+        line-height: 20px;
+        width: 706px;
+        margin-top: 16px;
+        margin-bottom: 28px;
+    }
+
+    #personal_loan_page .video_section_carousel {
+        width: 446px;
+        height: 250px;
+    }
+
+    #personal_loan_page .videocard__img {
+        width: 446px !important;
+        height: 250px !important;
+    }
+
+    #personal_loan_page .videocard__img--hover {
+        width: 446px !important;
+        height: 250px !important;
+    }
+
+    #personal_loan_page .videocard--2 {
+        left: 58% !important;
+        top: 8%;
+    }
+
+    #personal_loan_page .videocardPlayButton1 img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #personal_loan_page .videocardPlayButton2 img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #personal_loan_page .videocardPlayButton1 {
+        left: 45%;
+        top: 45%;
+    }
+
+    #personal_loan_page .videocardPlayButton2 {
+        left: 45%;
+        top: 45%;
+    }
+
+    #personal_loan_page .videoBorder {
+        box-shadow: 0 0 0 6px var(--grey04) !important;
+        /* using box-shadow instead of border for inner radius */
+    }
+
+    #personal_loan_page .videocard--2:hover {
+        box-shadow: 0 0 0 6px var(--grey04);
+        /* using box-shadow instead of border for inner radius */
+    }
+
+    #personal_loan_page .iframePlayer {
+        width: 500px;
+        height: 360px;
+    }
+
+    #personal_loan_page .bottomBannerContainer {
+        margin: 0px !important;
+    }
+
+    #personal_loan_page .bottomBannerSection {
+        position: relative;
+        padding-top: 136px !important;
+    }
+
+    #personal_loan_page .bottomBannerImage {
+        width: 88%;
+        bottom: -15%;
+        height: auto;
+        position: absolute;
+        right: 20%;
+    }
+
+    #personal_loan_page .bottomBannerTitle {
+        font-size: 18px;
+        line-height: var(--body-line-height);
+        margin-bottom: 12px;
+    }
+
+    #personal_loan_page .bottomBannerSubTitle {
+        font-size: 12px;
+        line-height: var(--body-line-height);
+        margin-bottom: 8px;
+    }
+
+    #personal_loan_page .bottomBannerTextPadding {
+        padding: 24px;
+    }
+
+    #personal_loan_page .bottom-banner-backdrop {
+        height: 157px;
+        bottom: 20px;
+    }
+
+    #personal_loan_page .benefitsMargin {
+        margin-block: 40px !important;
+    }
+
+    #personal_loan_page .cardLinks {
+        font-size: 12px !important;
+        line-height: var(--body-line-height) !important;
+        margin: 0px;
+    }
+
+    #personal_loan_page .accordion .card .card-body table {
+        margin: 20px 48px 0px;
+    }
+
+    #personal_loan_page .accordion .card .card-body .FaqContent {
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    #personal_loan_page {
+        /* Header-Banner */
+        /* get started section */
+        /* what makes mv better section */
+        /* trust marker */
+        /*review section*/
+        /* emi section */
+        /* video section */
+        /*Bottom-banner*/
+        /*Accordian*/
+        /* FAQ */
+    }
+
+    #personal_loan_page section {
+        align-items: unset;
+    }
+
+    #personal_loan_page .navMenu {
+        display: none;
+    }
+
+    #personal_loan_page .PLSideMenuLinks {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-left: 52px;
+        text-align: left;
+    }
+
+    #personal_loan_page .navLink {
+        font-size: 14px !important;
+        line-height: 24px !important;
+    }
+
+    #personal_loan_page .header_banner {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 48.34%, #fff 61.2%), linear-gradient(109.47deg, #f0f8f3 37.69%, #fff 86.94%);
+    }
+
+    #personal_loan_page .banner_bg_pattern {
+        width: 280px;
+        height: 258px;
+    }
+
+    #personal_loan_page .lead_gen_section {
+        gap: 12px;
+    }
+
+    #personal_loan_page .header_section_container {
+        margin-top: 62px;
+    }
+
+    #personal_loan_page .header_banner_lead_card {
+        border-radius: 0px;
+        padding: 40px 24px 12px 24px;
+        margin-inline: -24px;
+        position: relative;
+        box-shadow: none !important;
+        background: transparent;
+    }
+
+    #personal_loan_page .header_banner_text_span {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: span 6;
+        grid-row-start: 2;
+    }
+
+    #personal_loan_page .header_banner_image_span {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: span 6;
+        grid-row-start: 1;
+    }
+
+    #personal_loan_page .header_banner_subtitle {
+        font-weight: var(--font-weight-semibold);
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+        max-width: 280px;
+    }
+
+    #personal_loan_page .header_banner_title {
+        font-weight: var(--font-weight-bold);
+        font-size: 40px;
+        line-height: 40px;
+        padding-bottom: 4px;
+        margin-bottom: 0px;
+    }
+
+    #personal_loan_page .header_banner_heading {
+        font-weight: var(--font-weight-regular);
+        font-size: 20px;
+        line-height: 30px;
+        padding-bottom: 15px;
+        margin-bottom: 0px;
+    }
+
+    #personal_loan_page .header_generate_otp_container {
+        width: 100%;
+        gap: 8px;
+    }
+
+    #personal_loan_page .header_apply_online_container {
+        width: 100%;
+        gap: 23px;
+    }
+
+    #personal_loan_page .verify_otp_lead_gen_btn {
+        width: 100% !important;
+        height: 56px;
+        padding: 16px 20px;
+        font-weight: var(--font-weight-regular);
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+    }
+
+    #personal_loan_page .header_generate_otp_input {
+        height: 56px !important;
+        width: 100% !important;
+        font-size: 14px !important;
+        font-weight: var(--font-weight-regular) !important;
+        line-height: 20px !important;
+    }
+
+    #personal_loan_page .verify_otp_lead_gen_input {
+        width: 100% !important;
+        font-size: 14px !important;
+        font-weight: var(--font-weight-regular) !important;
+        line-height: 22px !important;
+    }
+
+    #personal_loan_page #banner_image {
+        width: 435px;
+        aspect-ratio: 1.1364678899;
+    }
+
+    #personal_loan_page .resend_otp {
+        font-weight: var(--font-weight-regular);
+        font-size: 14px;
+        line-height: 22px;
+        color: var(--primary-color);
+        padding-right: 0px !important;
+    }
+
+    #personal_loan_page .header_generate_otp_consent {
+        width: 16px;
+        height: 16px;
+    }
+
+    #personal_loan_page .header_generate_otp_consent:checked {
+        background-size: 12px !important;
+    }
+
+    #personal_loan_page .get_started_lottie {
+        grid-column-start: 1;
+        grid-column-end: span 6;
+        grid-row-start: 2;
+    }
+
+    #personal_loan_page .get_started_text {
+        grid-column-start: 1;
+        grid-column-end: span 6;
+        grid-row-start: 1;
+    }
+
+    #personal_loan_page .get_started_text_div {
+        width: 428px;
+    }
+
+    #personal_loan_page .get_started_title {
+        font-size: 32px;
+        line-height: 44px;
+        width: 312px;
+    }
+
+    #personal_loan_page .get_started_subtitle {
+        font-size: 14px;
+        line-height: var(--body-line-height);
+        margin-top: 16px;
+    }
+
+    #personal_loan_page .cardMarginTop {
+        margin-top: 24px;
+    }
+
+    #personal_loan_page .what_makes_moneyview_better_title {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 24px;
+    }
+
+    #personal_loan_page .paddingDiv {
+        padding: 36px 28px 28px 28px;
+    }
+
+    #personal_loan_page .betterCard {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    #personal_loan_page .cardTitle {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 16px;
+        width: 100%;
+    }
+
+    #personal_loan_page .removeBr br {
+        display: none;
+    }
+
+    #personal_loan_page .cardDescription {
+        font-size: 14px;
+        line-height: var(--body-line-height);
+        width: 376px;
+        min-height: 72px;
+        margin-top: 8px;
+    }
+
+    #personal_loan_page .cardAnimation {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    #personal_loan_page .trustMarker {
+        margin-top: 72px;
+    }
+
+    #personal_loan_page .trust-marker-1 {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: span 6;
+    }
+
+    #personal_loan_page .trust-marker-2 {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: span 6;
+    }
+
+    #personal_loan_page .trust-marker-image {
+        width: 24px;
+        height: 24px;
+    }
+
+    #personal_loan_page .trust-marker-container {
+        padding: 0px 0px 0px 12px;
+    }
+
+    #personal_loan_page .trust-marker-title {
+        font-size: 18px;
+        line-height: var(--body-line-height);
+        margin-bottom: 4px;
+    }
+
+    #personal_loan_page .trust-marker-content {
+        height: 40px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #personal_loan_page .trust-marker-heading {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 12px;
+    }
+
+    #personal_loan_page .trust-marker-subheading {
+        font-size: 14px;
+        line-height: var(--body-line-height);
+        margin-bottom: 22px;
+    }
+
+    #personal_loan_page .trustMarkerMargin {
+        margin-bottom: 16px;
+    }
+
+    #personal_loan_page .trust-marker-col-1 {
+        padding: 56px 0px 0px;
+    }
+
+    #personal_loan_page .trustclass {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 12px;
+    }
+
+    #personal_loan_page .trustRowClass {
+        display: grid;
+        grid-column-end: span 6;
+    }
+
+    #personal_loan_page .trust_marker_model_image {
+        width: auto;
+        align-self: end;
+        margin-top: 0px;
+        height: 295px;
+        margin: auto;
+    }
+
+    #personal_loan_page .reviewSection {
+        margin-bottom: 24px;
+    }
+
+    #personal_loan_page .reviewCardMargin {
+        margin-top: 16px;
+    }
+
+    #personal_loan_page .reviewCard {
+        border: 1px solid var(--grey02);
+        border-radius: 16px;
+        padding: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    #personal_loan_page .customerReviewTitle {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    #personal_loan_page .customer-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    #personal_loan_page .customer-class {
+        padding-left: 8px;
+    }
+
+    #personal_loan_page .customer-name {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 2px;
+    }
+
+    #personal_loan_page .review-details {
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 0px;
+    }
+
+    #personal_loan_page .checked {
+        font: normal normal normal 12px/1 FontAwesome;
+        margin-right: 6px;
+        border-radius: 0.5px;
+    }
+
+    #personal_loan_page .review-content {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    #personal_loan_page .customerRating {
+        margin: 14px 0px;
+    }
+
+    #personal_loan_page .display-desktop {
+        display: none;
+    }
+
+    #personal_loan_page .display-mobile {
+        display: flex;
+    }
+
+    #personal_loan_page .emiCalculator {
+        margin-top: 36px !important;
+    }
+
+    #personal_loan_page .emiCalculatorMargin {
+        margin-block: 20px !important;
+        margin-inline: 0px !important;
+    }
+
+    #personal_loan_page .emi-calculator-image {
+        width: 210px;
+        margin: auto;
+        margin-top: 0px;
+        width: 180px;
+    }
+
+    #personal_loan_page .heading {
+        margin-bottom: 8px;
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+    }
+
+    #personal_loan_page .subHeading {
+        font-size: 12px;
+        line-height: 18px;
+        width: 160px;
+    }
+
+    #personal_loan_page .calculateEmi {
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+
+    #personal_loan_page .calculateEmiButton {
+        margin-top: 16px;
+        justify-content: flex-start !important;
+    }
+
+    #personal_loan_page .rightArrow {
+        margin-top: 2px;
+        width: 25px;
+        height: 15px;
+        margin-left: 8px;
+    }
+
+    #personal_loan_page .video_section_title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    #personal_loan_page .video_section_subtitle {
+        width: 432px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 16px;
+        margin-bottom: 45px;
+    }
+
+    #personal_loan_page .videocard--2 {
+        right: -84% !important;
+        left: auto;
+        top: 8%;
+    }
+
+    #personal_loan_page .videocardPlayButton1 img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #personal_loan_page .videocardPlayButton2 img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #personal_loan_page .videocardPlayButton1 {
+        left: 40%;
+        top: 40%;
+    }
+
+    #personal_loan_page .videocardPlayButton2 {
+        left: 40%;
+        top: 40%;
+    }
+
+    #personal_loan_page .videoBorder {
+        box-shadow: 0 0 0 4px var(--grey04) !important;
+        /* using box-shadow instead of border for inner radius */
+    }
+
+    #personal_loan_page .videocard--2:hover {
+        box-shadow: 0 0 0 4px var(--grey04);
+        /* using box-shadow instead of border for inner radius */
+    }
+
+    #personal_loan_page .iframePlayer {
+        width: 338px !important;
+        height: 220px !important;
+    }
+
+    #personal_loan_page .video_section_carousel {
+        width: 50vw;
+        height: 220px;
+    }
+
+    #personal_loan_page .videocard__img {
+        height: 100% !important;
+    }
+
+    #personal_loan_page .videocard__img--hover {
+        width: auto !important;
+        height: 100% !important;
+    }
+
+    #personal_loan_page .play_image {
+        width: 40px;
+        height: 40px;
+        left: 40%;
+        top: 30%;
+    }
+
+    #personal_loan_page .bottomBannerSection {
+        overflow: hidden;
+    }
+
+    #personal_loan_page .bottomBanner {
+        background-image: url(https://moneyview.in/images/Bottom-Banner-Mobile-Bg.webp);
+        background-repeat: no-repeat;
+        background-color: unset !important;
+        background-size: cover;
+        background-position: right 0% bottom 0%;
+        margin: 60px 24px 0px 24px !important;
+        height: 380px;
+        border-radius: 12px;
+        padding-top: 0px !important;
+    }
+
+    #personal_loan_page .bottomBannerTitle {
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+        margin-bottom: 12px;
+        width: 254px;
+    }
+
+    #personal_loan_page .bottomBannerImage {
+        width: 70%;
+        height: auto;
+        margin-bottom: -1%;
+        margin-top: 24px;
+    }
+
+    #personal_loan_page .bottomBannerSubTitle {
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 12px;
+    }
+
+    #personal_loan_page .bottomBannerTextPadding {
+        padding: 24px 0px 0px 24px;
+    }
+
+    #personal_loan_page .bottom-banner-backdrop {
+        height: 380px;
+        width: calc(100vw - 48px);
+        bottom: 2px;
+    }
+
+    #personal_loan_page .cardLinks {
+        font-size: 12px !important;
+        line-height: var(--body-line-height) !important;
+    }
+
+    #personal_loan_page .accordion .card .card-body .FaqContent {
+        margin-bottom: 12px;
+    }
+
+    #personal_loan_page .benefitsMargin {
+        margin-block: 40px !important;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) and (min-width: 480px) and (max-width: 599px) {
+    #personal_loan_page .bottom-banner-backdrop {
+        height: 380px;
+        width: calc(100vw - 48px);
+        bottom: 2px;
+    }
+}
+
+@media screen and (min-width: 280px) and (max-width: 479px) {
+    #personal_loan_page {
+        /* Header-Banner */
+        /* get started section */
+        /* what makes mv better section */
+        /* trust marker */
+        /*review section*/
+        /* emi section */
+        /* video section */
+        /* video Section */
+        /*Bottom-banner*/
+        /*Accordian*/
+        /* FAQ */
+    }
+
+    #personal_loan_page section {
+        align-items: unset;
+    }
+
+    #personal_loan_page .navMenu {
+        display: none;
+    }
+
+    #personal_loan_page .PLSideMenuLinks {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-left: 52px;
+        text-align: left;
+    }
+
+    #personal_loan_page .navLink {
+        font-size: 14px !important;
+        line-height: 24px !important;
+    }
+
+    #personal_loan_page .header_banner {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 48.34%, #fff 61.2%), linear-gradient(109.47deg, #f0f8f3 37.69%, #fff 86.94%);
+    }
+
+    #personal_loan_page .banner_bg_pattern {
+        width: 260px;
+        height: 240px;
+    }
+
+    #personal_loan_page .lead_gen_section {
+        gap: 12px;
+    }
+
+    #personal_loan_page .header_section_container {
+        margin-top: 62px;
+    }
+
+    #personal_loan_page .header_banner_lead_card {
+        border-radius: 0px;
+        padding: 24px 24px 12px 24px;
+        margin-inline: -24px;
+        position: relative;
+        box-shadow: none !important;
+        background: transparent;
+    }
+
+    #personal_loan_page .header_banner_text_span {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: span 6;
+        grid-row-start: 2;
+    }
+
+    #personal_loan_page .header_banner_image_span {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: span 6;
+        grid-row-start: 1;
+    }
+
+    #personal_loan_page .header_banner_subtitle {
+        font-weight: var(--font-weight-semibold);
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+        max-width: 266px;
+    }
+
+    #personal_loan_page .header_banner_title {
+        font-weight: var(--font-weight-bold);
+        font-size: 32px;
+        line-height: 32px;
+        padding-bottom: 12px;
+        margin-bottom: 0px;
+    }
+
+    #personal_loan_page .header_banner_heading {
+        font-weight: var(--font-weight-regular);
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 0px;
+        padding-bottom: 16px;
+    }
+
+    #personal_loan_page .header_generate_otp_container {
+        width: 100%;
+        gap: 8px;
+    }
+
+    #personal_loan_page .header_apply_online_container {
+        width: 100%;
+        gap: 23px;
+    }
+
+    #personal_loan_page .verify_otp_lead_gen_btn {
+        width: 100% !important;
+        height: 56px;
+        padding: 16px 20px;
+        font-weight: var(--font-weight-regular);
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+    }
+
+    #personal_loan_page .header_generate_otp_input {
+        height: 56px !important;
+        width: 100% !important;
+        font-size: 14px !important;
+        font-weight: var(--font-weight-regular) !important;
+        line-height: 20px !important;
+    }
+
+    #personal_loan_page .verify_otp_lead_gen_input {
+        width: 100% !important;
+        font-size: 14px !important;
+        font-weight: var(--font-weight-regular) !important;
+        line-height: 22px !important;
+    }
+
+    #personal_loan_page .header_generate_otp_consent {
+        width: 16px;
+        height: 16px;
+    }
+
+    #personal_loan_page .header_generate_otp_consent:checked {
+        background-size: 12px !important;
+    }
+
+    #personal_loan_page .header_generate_otp_consent_text {
+        font-size: 7px;
+        line-height: 12px;
+    }
+
+    #personal_loan_page #banner_image {
+        min-width: 285px;
+        width: 100%;
+        aspect-ratio: 1.1364678899;
+    }
+
+    #personal_loan_page .resend_otp {
+        font-weight: var(--font-weight-regular);
+        font-size: 14px;
+        line-height: 22px;
+        color: var(--primary-color);
+        padding-right: 0px !important;
+    }
+
+    #personal_loan_page .get_started_lottie {
+        grid-column-start: 1;
+        grid-column-end: span 6;
+        grid-row-start: 2;
+    }
+
+    #personal_loan_page .get_started_text {
+        grid-column-start: 1;
+        grid-column-end: span 6;
+        grid-row-start: 1;
+    }
+
+    #personal_loan_page .get_started_text_div {
+        width: 100%;
+    }
+
+    #personal_loan_page .get_started_title {
+        font-size: 32px;
+        line-height: 44px;
+        width: 312px;
+    }
+
+    #personal_loan_page .get_started_subtitle {
+        font-size: 14px;
+        line-height: var(--body-line-height);
+        margin-top: 16px;
+    }
+
+    #personal_loan_page .cardMarginTop {
+        margin-top: 24px;
+    }
+
+    #personal_loan_page .what_makes_moneyview_better_title {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 24px;
+    }
+
+    #personal_loan_page .paddingDiv {
+        padding: 36px 28px 28px 28px;
+    }
+
+    #personal_loan_page .betterCard {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    #personal_loan_page .cardTitle {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 16px;
+        width: 100%;
+    }
+
+    #personal_loan_page .removeBr br {
+        display: none;
+    }
+
+    #personal_loan_page .cardDescription {
+        font-size: 14px;
+        line-height: var(--body-line-height);
+        width: 256px;
+        min-height: 96px;
+    }
+
+    #personal_loan_page .cardAnimation {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    #personal_loan_page .trustMarker {
+        margin-top: 72px;
+    }
+
+    #personal_loan_page .trust-marker-1 {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: span 6;
+    }
+
+    #personal_loan_page .trust-marker-2 {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: span 6;
+    }
+
+    #personal_loan_page .trust-marker-image {
+        width: 24px;
+        height: 24px;
+    }
+
+    #personal_loan_page .trust-marker-container {
+        padding: 0px 0px 0px 12px;
+    }
+
+    #personal_loan_page .trust-marker-title {
+        font-size: 18px;
+        line-height: var(--body-line-height);
+        margin-bottom: 4px;
+    }
+
+    #personal_loan_page .trust-marker-content {
+        height: 40px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #personal_loan_page .trust-marker-heading {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 12px;
+    }
+
+    #personal_loan_page .trust-marker-subheading {
+        font-size: 14px;
+        line-height: var(--body-line-height);
+        margin-bottom: 22px;
+    }
+
+    #personal_loan_page .trustMarkerMargin {
+        margin-bottom: 16px;
+    }
+
+    #personal_loan_page .trust-marker-col-1 {
+        padding: 56px 0px 0px;
+    }
+
+    #personal_loan_page .trustclass {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 12px;
+    }
+
+    #personal_loan_page .trustRowClass {
+        display: grid;
+        grid-column-end: span 6;
+    }
+
+    #personal_loan_page .trust_marker_model_image {
+        width: 100%;
+        align-self: end;
+        margin-top: -80px;
+    }
+
+    #personal_loan_page .reviewSection {
+        margin-bottom: 24px;
+    }
+
+    #personal_loan_page .reviewCardMargin {
+        margin-top: 16px;
+    }
+
+    #personal_loan_page .reviewCard {
+        border: 1px solid var(--grey02);
+        border-radius: 16px;
+        padding: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    #personal_loan_page .customerReviewTitle {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    #personal_loan_page .customer-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    #personal_loan_page .customer-class {
+        padding-left: 8px;
+    }
+
+    #personal_loan_page .customer-name {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 2px;
+    }
+
+    #personal_loan_page .review-details {
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 0px;
+    }
+
+    #personal_loan_page .checked {
+        font: normal normal normal 12px/1 FontAwesome;
+        margin-right: 6px;
+        border-radius: 0.5px;
+    }
+
+    #personal_loan_page .review-content {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    #personal_loan_page .customerRating {
+        margin: 14px 0px;
+    }
+
+    #personal_loan_page .display-desktop {
+        display: none;
+    }
+
+    #personal_loan_page .display-mobile {
+        display: flex;
+    }
+
+    #personal_loan_page .emiCalculator {
+        margin-top: 36px !important;
+    }
+
+    #personal_loan_page .emiCalculatorMargin {
+        margin-block: 12px 20px !important;
+        margin-inline: 24px !important;
+    }
+
+    #personal_loan_page .heading {
+        margin-bottom: 8px;
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+    }
+
+    #personal_loan_page .subHeading {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    #personal_loan_page .calculateEmi {
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+
+    #personal_loan_page .calculateEmiButton {
+        margin-top: 16px;
+    }
+
+    #personal_loan_page .rightArrow {
+        margin-top: 2px;
+        width: 25px;
+        height: 15px;
+        margin-left: 8px;
+    }
+
+    #personal_loan_page .emi-calculator-image {
+        margin-left: 2px;
+        width: 180px;
+        margin-inline: unset;
+    }
+
+    #personal_loan_page .video_section_title {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    #personal_loan_page .video_section_subtitle {
+        width: 305px;
+        font-size: 14px;
+        line-height: var(--body-line-height);
+        margin-top: 16px;
+        margin-bottom: 34px;
+    }
+
+    #personal_loan_page .videocard--2 {
+        left: 50% !important;
+        top: 8%;
+    }
+
+    #personal_loan_page .videocardPlayButton1 img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #personal_loan_page .videocardPlayButton2 img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #personal_loan_page .videocardPlayButton1 {
+        left: 40%;
+        top: 40%;
+    }
+
+    #personal_loan_page .videocardPlayButton2 {
+        left: 40%;
+        top: 40%;
+    }
+
+    #personal_loan_page .videoBorder {
+        box-shadow: 0 0 0 2px var(--grey04) !important;
+        /* using box-shadow instead of border for inner radius */
+    }
+
+    #personal_loan_page .videocard--2:hover {
+        box-shadow: 0 0 0 2px var(--grey04);
+        /* using box-shadow instead of border for inner radius */
+    }
+
+    #personal_loan_page .iframePlayer {
+        width: 338px !important;
+        height: 220px !important;
+    }
+
+    #personal_loan_page .video_section_carousel {
+        width: 210px;
+        height: 118px;
+    }
+
+    #personal_loan_page .videocard__img {
+        width: 210px !important;
+        height: 118px !important;
+    }
+
+    #personal_loan_page .videocard__img--hover {
+        width: 210px !important;
+        height: 118px !important;
+    }
+
+    #personal_loan_page .bottomBannerSection {
+        overflow: hidden;
+    }
+
+    #personal_loan_page .bottomBanner {
+        background-image: url(https://moneyview.in/images/Bottom-Banner-Mobile-Bg.webp);
+        background-repeat: no-repeat;
+        background-color: unset !important;
+        background-size: cover;
+        background-position: right 0% bottom 0%;
+        margin: 60px 24px 0px 24px !important;
+        height: 380px;
+        border-radius: 12px;
+        padding-top: 0px !important;
+    }
+
+    #personal_loan_page .bottomBannerTitle {
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+        margin-bottom: 12px;
+        width: 254px;
+    }
+
+    #personal_loan_page .bottomBannerImage {
+        width: 78%;
+        height: auto;
+        margin-bottom: -1%;
+        margin-top: 24px;
+    }
+
+    #personal_loan_page .bottomBannerSubTitle {
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 12px;
+    }
+
+    #personal_loan_page .bottomBannerTextPadding {
+        padding: 24px 0px 0px 24px;
+    }
+
+    #personal_loan_page .bottom-banner-backdrop {
+        height: 380px;
+        width: calc(100vw - 48px);
+        bottom: 2px;
+    }
+
+    #personal_loan_page .cardLinks {
+        font-size: 12px !important;
+        line-height: var(--body-line-height) !important;
+    }
+
+    #personal_loan_page .accordion .card .card-body .FaqContent {
+        margin-bottom: 12px;
+    }
+
+    #personal_loan_page .benefitsMargin {
+        margin-block: 40px !important;
+    }
+}
+
+@media screen and (min-width: 280px) and (max-width: 479px) and (min-width: 400px) and (max-width: 480px) {
+    #personal_loan_page .bottom-banner-backdrop {
+        height: 380px;
+        width: calc(100vw - 48px);
+        bottom: 2px;
+    }
+}

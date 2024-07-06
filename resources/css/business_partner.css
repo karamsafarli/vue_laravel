@@ -1,0 +1,1375 @@
+#business_partner_page {
+    /* Button Styles */
+    /* Breadcrumbs */
+    /* Banner */
+    /*Table of content */
+    /* Features & Benifits */
+    /* EMI Calculator */
+    /* Interlinks */
+    /* Feedback section */
+    /* Tables */
+    /* mvl/loan-partner */
+    /* used in so many pages */
+    /* /money-manger , /mvl , /unsubscribe */
+    /* /security-money-view-app, /mvl, / */
+    /* emi-calc , mvl , hindi/emi */
+    /* emi-calulator, loan-partner , money-manager */
+    /* 7pages */
+    /* calculator & seo */
+    /* /mvl, careers, download apps */
+}
+
+#business_partner_page .main {
+    text-align: center;
+}
+
+#business_partner_page .container {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    #business_partner_page .business_logo {
+        margin-top: 60px;
+    }
+}
+
+#business_partner_page .mv-why-us {
+    text-align: center;
+    line-height: 0.8;
+}
+
+#business_partner_page .font12 {
+    font-size: 12px !important;
+    color: #144835;
+    text-decoration: none;
+}
+
+#business_partner_page .cta-btn {
+    font-size: 14px;
+    font-weight: var(--font-weight-extrabold) !important;
+    width: 260px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 13px 31px;
+    background-color: #144835 !important;
+    color: var(--white-color);
+    cursor: pointer;
+    background-image: none;
+    border-style: solid;
+    border-radius: 4px;
+    margin-top: 18px;
+}
+
+#business_partner_page .cta-btn:hover {
+    background-color: transparent !important;
+    border-color: #144835 !important;
+    color: #144835;
+}
+
+#business_partner_page .cta-btn-outline {
+    font-size: 14px;
+    font-weight: var(--font-weight-extrabold) !important;
+    width: 260px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 13px 31px !important;
+    background-color: transparent !important;
+    border-color: #144835 !important;
+    color: #144835;
+    cursor: pointer;
+    background-image: none;
+    border-style: solid;
+    border-radius: 4px;
+    margin-top: 18px;
+}
+
+#business_partner_page .cta-btn-outline:hover {
+    background-color: #144835 !important;
+    border-color: var(--white-color) !important;
+    color: var(--white-color);
+}
+
+#business_partner_page .cta-btn-green {
+    font-size: 14px;
+    font-weight: 700 !important;
+    width: 100%;
+    max-width: 260px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 13px 13px !important;
+    background-color: #144835 !important;
+    color: var(--white-color);
+    cursor: pointer;
+    background-image: none;
+    border-style: solid;
+    border-radius: 4px;
+}
+
+#business_partner_page body>div:first-of-type {
+    padding-top: 60px;
+}
+
+#business_partner_page ul.breadcrumb_list * {
+    font-size: 14px;
+}
+
+#business_partner_page ul.breadcrumb {
+    padding: 10px 1px;
+    list-style: none;
+    background-color: var(--white-color) !important;
+    margin-bottom: -27px;
+}
+
+#business_partner_page ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+#business_partner_page ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+}
+
+#business_partner_page ul.breadcrumb li a {
+    color: #144835;
+    text-decoration: none;
+    font-size: 12px !important;
+}
+
+#business_partner_page ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+#business_partner_page .breadcrumb-font {
+    color: #999;
+    padding: 7px 2px 0px;
+}
+
+#business_partner_page .breadcrumb_alignment {
+    margin-top: 1.5rem;
+}
+
+#business_partner_page ul.breadcrumb_list {
+    list-style-type: none;
+    padding-left: 0px;
+    color: #144835;
+    margin-bottom: 0.5rem !important;
+}
+
+#business_partner_page ul.breadcrumb_list li {
+    display: inline;
+}
+
+#business_partner_page ul.breadcrumb_list li span a {
+    color: #144835;
+}
+
+#business_partner_page ul.breadcrumb_list li:not(:first-child)::before {
+    content: "\003E";
+    margin: 0 0.1rem;
+}
+
+#business_partner_page ul.breadcrumb_list li:last-child::before {
+    content: "\003E";
+    color: #999;
+    margin: 0 0.1rem;
+}
+
+#business_partner_page .banner_btn {
+    margin: 0px 15px;
+    align-items: center;
+}
+
+#business_partner_page .bannerContainer {
+    height: fit-content !important;
+    background: no-repeat right / cover scroll;
+}
+
+#business_partner_page .bannerClass {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), transparent);
+    width: 100%;
+    padding: 15px 16px 7rem 16px;
+}
+
+#business_partner_page .bannerContent {
+    padding-top: 5rem !important;
+}
+
+#business_partner_page .center_item {
+    padding-top: 3%;
+}
+
+#business_partner_page .btn_alignment {
+    text-align: left;
+}
+
+#business_partner_page .banner_text {
+    text-align: left !important;
+}
+
+#business_partner_page .tableofcontentClass {
+    padding: 20px 10px;
+    margin: 10px 0 20px 0;
+    max-width: 750px;
+    border: 0.5px solid var(--black-color);
+    background: #f3f3f3;
+    text-align: justify;
+}
+
+#business_partner_page .applyLoanClass {
+    padding: 32px 0;
+}
+
+#business_partner_page .topFeaturesOverlay {
+    box-shadow: 0 2px 10px -4px rgba(0, 0, 0, 0.5);
+    background-color: var(--white-color);
+    border-radius: 8px;
+    padding: 0 1.5rem 1.5rem 1rem;
+    width: 100%;
+    height: fit-content;
+    transition: height 0.25s ease-in;
+    overflow: hidden;
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+}
+
+#business_partner_page .features_text {
+    text-align: left !important;
+}
+
+#business_partner_page .hideItem {
+    display: none;
+}
+
+#business_partner_page .icon_style {
+    max-width: 110px;
+}
+
+#business_partner_page .expandMoreBtn {
+    position: relative;
+    left: 50%;
+}
+
+#business_partner_page .expandBtn {
+    cursor: pointer;
+}
+
+#business_partner_page .parallax {
+    background: linear-gradient(#000, #000), url(https://moneyview.in/images/calculator_bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#business_partner_page .icon_alignment {
+    justify-content: center;
+    vertical-align: middle;
+}
+
+#business_partner_page .calculator_btn {
+    font-size: 15px;
+    font-weight: 700 !important;
+    padding: 16px !important;
+    height: 6rem;
+    background-color: var(--white-color) !important;
+    color: #777;
+    cursor: pointer;
+    background-image: none;
+    margin-top: 2rem;
+}
+
+#business_partner_page .cta-btn-white {
+    font-size: 14px;
+    font-weight: 700 !important;
+    width: 100%;
+    max-width: 260px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 13px 31px !important;
+    background-color: var(--white-color) !important;
+    color: #144835;
+    cursor: pointer;
+    background-image: none;
+    border-style: solid;
+    border-radius: 4px;
+    margin-top: 18px;
+}
+
+#business_partner_page .banner_mobile {
+    display: none;
+}
+
+#business_partner_page .mvl-h2-white {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--white-color);
+    text-align: center;
+    margin-bottom: 39.1px;
+}
+
+#business_partner_page .alignment {
+    padding: 40px 0;
+    margin-bottom: 24px !important;
+}
+
+#business_partner_page .emiTitle {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#business_partner_page .interlinksSectionContainer {
+    background-color: var(--grey01);
+}
+
+#business_partner_page .wrapper {
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
+    background-color: var(--white-color) !important;
+    width: 100%;
+}
+
+#business_partner_page ul.newInterlinks * {
+    color: #999;
+}
+
+#business_partner_page ul.newInterlinks *:hover {
+    color: #144835;
+}
+
+#business_partner_page .interLinkIcon {
+    max-height: 392.5px;
+    overflow-y: auto;
+    background: var(--white-color);
+    margin-top: 1rem;
+}
+
+#business_partner_page .interlinksIcon {
+    height: 180px;
+    margin: 16px 0;
+    padding-top: 40px;
+    background-color: #fbfbfb;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+#business_partner_page .interlinksIcon:hover {
+    background-color: #144835;
+}
+
+#business_partner_page .interlinksIcon:hover * {
+    color: #f1f1f1;
+}
+
+#business_partner_page .interlinksHeading {
+    padding-top: 32px;
+    margin-bottom: 24px;
+}
+
+#business_partner_page .interlinks_alignment {
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+#business_partner_page .interlinksIconText {
+    color: #999;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#business_partner_page .interlinksImage {
+    height: 70px;
+    margin: auto;
+    background: no-repeat center / contain;
+}
+
+#business_partner_page #successSection {
+    display: none;
+    padding-left: 16px;
+    padding-bottom: 4px;
+}
+
+#business_partner_page #successSection p {
+    color: #144835;
+}
+
+#business_partner_page #feedbackForm {
+    padding-right: 0px;
+    margin-left: -8px;
+    padding-bottom: 16px;
+}
+
+#business_partner_page #feedbackComment {
+    width: 100%;
+    padding: 8px;
+}
+
+#business_partner_page #feedbackSection div {
+    width: 100%;
+    justify-content: center;
+}
+
+#business_partner_page #feedbackComment::placeholder {
+    font-size: 15px;
+    font-weight: var(--font-weight-regular);
+}
+
+#business_partner_page #feedbackComment:-ms-input-placeholder {
+    font-size: 15px;
+    font-weight: var(--font-weight-regular);
+}
+
+#business_partner_page #feedbackComment::-ms-input-placeholder {
+    font-size: 15px;
+    font-weight: var(--font-weight-regular);
+}
+
+#business_partner_page #feedbackComment:focus {
+    outline: none !important;
+    border: 1px solid #144835;
+    border-radius: 2px;
+}
+
+#business_partner_page button:disabled {
+    background-color: #dcdcde !important;
+    color: #73757a !important;
+    border: 0px solid !important;
+}
+
+#business_partner_page #feedbackActionMessageMain {
+    font-size: var(--body-font-size) !important;
+    font-weight: var(--font-weight-semibold) !important;
+    margin-bottom: 4px;
+}
+
+#business_partner_page #feedbackActionMessageSecondary {
+    font-size: 15px !important;
+    font-weight: var(--font-weight-regular) !important;
+    margin-bottom: 8px;
+}
+
+#business_partner_page #feedbackCommentHelperText {
+    font-size: 12px !important;
+}
+
+#business_partner_page #submitFeedback {
+    background: #144835;
+    border: 2px solid #144835;
+    border-radius: 4px;
+    color: var(--chalk-white);
+    height: 30px;
+    margin: 8px auto;
+    display: block;
+    width: 144px !important;
+}
+
+#business_partner_page #feedbackActionSuccess,
+#business_partner_page #feedbackSection {
+    display: none;
+}
+
+#business_partner_page .feedbackHelpfulText {
+    padding-top: 2px;
+    font-size: var(--body-font-size) !important;
+    font-weight: var(--font-weight-semibold) !important;
+}
+
+#business_partner_page .feedbackHelpfulButton {
+    color: #333 !important;
+    background-color: var(--chalk-white);
+    border: 2px solid #144835;
+    border-radius: 4px;
+    width: 100%;
+    width: 144px !important;
+    font-weight: var(--font-weight-regular) !important;
+}
+
+#business_partner_page .scrollTable {
+    width: 100%;
+    overflow: scroll;
+}
+
+#business_partner_page .img-mv-loans {
+    width: 112px;
+    padding-bottom: 20px;
+}
+
+#business_partner_page .mv-h4 {
+    font-size: 24px;
+    font-weight: var(--font-weight-extrabold);
+    padding: 25px 0px 5px 0px;
+}
+
+#business_partner_page .mv-h5 {
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    color: #505d68 !important;
+    line-height: 30px !important;
+    padding: 20px 0px 2px 0px;
+    margin-bottom: 0;
+}
+
+#business_partner_page .mv-h6 {
+    font-size: 14px !important;
+    font-weight: var(--font-weight-regular) !important;
+    color: #505d68 !important;
+    line-height: 30px !important;
+    font-weight: 700;
+}
+
+#business_partner_page .mv-why-us {
+    font-size: 15px;
+    font-weight: var(--font-weight-regular) !important;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #777;
+    line-height: 1.75;
+}
+
+#business_partner_page .ul-check {
+    vertical-align: middle;
+    list-style: none;
+    padding-left: 0px;
+}
+
+#business_partner_page .ul-check li {
+    margin: 10px 0px;
+    background-image: url("/img/icon_check.png");
+    background-repeat: no-repeat;
+    line-height: 30px;
+    padding-left: 35px;
+}
+
+#business_partner_page .mv-link {
+    color: #144835 !important;
+    border-bottom: 1px solid #777;
+    padding-bottom: 3px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#business_partner_page .mv-link:hover {
+    color: #144835 !important;
+    border-bottom: 1px solid #144835;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#business_partner_page .mv-p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.75;
+    font-weight: var(--font-weight-regular) !important;
+}
+
+#business_partner_page .faq-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid #eaeaea;
+    margin: 18px 0 0;
+    color: #777;
+    width: 100%;
+    font-size: 14px;
+}
+
+#business_partner_page .faq-table tr.header {
+    background-color: lightgrey;
+    padding: 10px;
+}
+
+#business_partner_page .faq-table th {
+    padding: 8px;
+    font-weight: var(--font-weight-regular);
+    border: 1px solid #eaeaea;
+}
+
+#business_partner_page .faq-table td {
+    padding: 8px;
+    font-weight: var(--font-weight-regular);
+    border: 1px solid #eaeaea;
+}
+
+#business_partner_page .bg-green {
+    background-color: var(--green-lightest-2);
+    padding: 20px 0px;
+}
+
+#business_partner_page .green_color {
+    color: #144835;
+    line-height: normal;
+    margin-bottom: 4px;
+}
+
+#business_partner_page .cities-header {
+    background-color: #fff;
+    height: inherit;
+}
+
+#business_partner_page .values {
+    background: #f7f7f7;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+#business_partner_page .values p {
+    padding-top: 30px;
+    min-height: 140px;
+}
+
+#business_partner_page .orderedList li,
+#business_partner_page .unorderedList li {
+    color: #7b7e7b;
+}
+
+#business_partner_page .mvl-h2 {
+    font-weight: 700 !important;
+    font-size: 22px;
+}
+
+#business_partner_page .personal-loan-bg-gradient {
+    background-image: linear-gradient(to right, #59cc59 2%, #00c987 98%) !important;
+}
+
+#business_partner_page .loan-criteria {
+    background-size: 300px 100px;
+    background: white;
+    padding: 30px 20px;
+    text-align: center;
+    max-height: 300px !important;
+}
+
+#business_partner_page .presonalloanoverlay {
+    background-color: rgba(0, 130, 18, 0.7);
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#business_partner_page .mv-h1-text {
+    display: block;
+    font-size: 32px;
+    font-weight: 700 !important;
+}
+
+#business_partner_page .mv-h2-text {
+    display: block;
+    font-size: 26px;
+    font-weight: 700 !important;
+}
+
+#business_partner_page .mv-h3-text {
+    display: block;
+    font-size: 22px;
+    font-weight: var(--font-weight-semibold) !important;
+}
+
+#business_partner_page .mv-h4-text {
+    display: block;
+    font-size: 21px;
+    font-weight: var(--font-weight-regular) !important;
+}
+
+#business_partner_page .mv-h5-text {
+    display: block;
+    font-size: 19px;
+    font-weight: var(--font-weight-regular) !important;
+}
+
+#business_partner_page .mv-h2 {
+    font-size: 32px;
+    font-weight: var(--font-weight-extrabold);
+    padding: 50px;
+}
+
+#business_partner_page .mv-h3 {
+    font-size: 28px;
+    font-weight: var(--font-weight-extrabold);
+    padding: 40px 0px;
+}
+
+#business_partner_page .couponlink a:hover {
+    color: #144835;
+    text-decoration: none !important;
+    font-size: 24px;
+    font-weight: var(--font-weight-extrabold);
+}
+
+#business_partner_page .textAlign-sm-center-lg-left {
+    text-align: left;
+}
+
+#business_partner_page .search-box {
+    border-radius: 4px !important;
+}
+
+#business_partner_page .noResulText {
+    font-weight: var(--font-weight-regular);
+}
+
+#business_partner_page .tab button {
+    color: #144835;
+    border-radius: 4px;
+}
+
+#business_partner_page .tab button:hover {
+    background-color: #144835 !important;
+    color: var(--white-color) !important;
+}
+
+#business_partner_page .active-btn {
+    background-color: #144835 !important;
+    color: var(--white-color) !important;
+}
+
+#business_partner_page .tab button:active {
+    background-color: #144835 !important;
+    color: var(--white-color) !important;
+}
+
+#business_partner_page .tab button:focus {
+    background-color: #144835 !important;
+    color: var(--white-color);
+}
+
+#business_partner_page .investor-section {
+    background-color: var(--orange01) !important;
+}
+
+#business_partner_page .founders-border-box {
+    border-radius: 4px !important;
+    box-shadow: 8px 8px var(--green01) !important;
+}
+
+#business_partner_page .box-shadow-color {
+    box-shadow: 8px 8px var(--magenta01) !important;
+}
+
+#business_partner_page .loan-title {
+    font-weight: 700 !important;
+}
+
+#business_partner_page .loan-item {
+    border-radius: 4px !important;
+}
+
+#business_partner_page .loan-item:hover {
+    background-color: #144835 !important;
+}
+
+#business_partner_page .faq-section {
+    background: var(--orange01) !important;
+    border-radius: 8px !important;
+}
+
+#business_partner_page .view-faq-button {
+    background: #144835 !important;
+    box-shadow: none !important;
+    border-radius: 4px !important;
+}
+
+#business_partner_page .write-to-us-button {
+    color: #144835 !important;
+    border: 1px solid #144835 !important;
+    border-radius: 4px !important;
+}
+
+#business_partner_page .cta_button {
+    background: #144835 !important;
+    border-radius: 4px;
+}
+
+#business_partner_page .table thead {
+    background: #144835 !important;
+    color: var(--white-color) !important;
+}
+
+@media (max-width: 480px) {
+    #business_partner_page {
+        /* Breadcrumbs */
+        /* Banner */
+        /* Features & Benifits && Apply Loan */
+        /* Features & Benifits */
+        /* EMI Calculator */
+        /* Interlinks */
+        /*Common Styles */
+    }
+
+    #business_partner_page body>div:first-of-type {
+        padding-top: 25px;
+    }
+
+    #business_partner_page ul.breadcrumb {
+        padding: 10px 1px;
+        list-style: none;
+        background-color: var(--white-color) !important;
+        margin-top: 60px;
+        margin-bottom: -27px;
+    }
+
+    #business_partner_page ul.breadcrumb li {
+        display: inline;
+        font-size: 13px;
+    }
+
+    #business_partner_page ul.breadcrumb li+li:before {
+        padding: 8px;
+        color: black;
+    }
+
+    #business_partner_page ul.breadcrumb li a {
+        color: #0275d8;
+        text-decoration: none;
+        font-size: 12px !important;
+    }
+
+    #business_partner_page ul.breadcrumb li a:hover {
+        color: #01447e;
+        text-decoration: underline;
+    }
+
+    #business_partner_page ul.breadcrumb_list * {
+        font-size: 12px;
+    }
+
+    #business_partner_page .breadcrumb-font {
+        font-size: 12px;
+        color: #999;
+        padding: 1px 2px 0px;
+    }
+
+    #business_partner_page .breadcrumb_alignment {
+        margin-top: 2.5rem;
+        text-align: left;
+    }
+
+    #business_partner_page .bannerClass {
+        border-radius: 4px;
+        padding: 0rem !important;
+    }
+
+    #business_partner_page .center_item {
+        padding-bottom: 7% !important;
+    }
+
+    #business_partner_page .banner_btn {
+        width: 149px !important;
+        padding: 12px 0px !important;
+        margin: -8px 0;
+        align-items: center;
+    }
+
+    #business_partner_page .playstore_btn {
+        justify-content: right;
+        display: flex;
+        margin-left: 10px;
+    }
+
+    #business_partner_page .btn_alignment {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0px !important;
+    }
+
+    #business_partner_page .banner_text {
+        text-align: center !important;
+    }
+
+    #business_partner_page .bannerContent {
+        padding-bottom: 2rem !important;
+    }
+
+    #business_partner_page .btn_class {
+        height: 42px !important;
+        margin-top: 6px !important;
+        padding: 9px !important;
+    }
+
+    #business_partner_page .applyLoanClass {
+        padding: 14px 0px !important;
+    }
+
+    #business_partner_page .applyLoanClass :nth-child(odd) {
+        padding-right: 0px;
+    }
+
+    #business_partner_page .features_text {
+        padding-left: 4px;
+    }
+
+    #business_partner_page .valign-items-middle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #business_partner_page .topFeaturesOverlay {
+        height: fit-content !important;
+        margin-top: unset !important;
+    }
+
+    #business_partner_page .hideItem {
+        display: unset !important;
+    }
+
+    #business_partner_page .banner_mobile {
+        display: block;
+    }
+
+    #business_partner_page .mvl-h2 {
+        margin-bottom: 20px;
+    }
+
+    #business_partner_page .calculator_text {
+        color: var(--white-color);
+        text-align: center;
+    }
+
+    #business_partner_page .mvl-h2-white {
+        color: var(--white-color);
+        font-size: 22px;
+        margin-bottom: 29px !important;
+    }
+
+    #business_partner_page .wrapper {
+        margin-left: 1px;
+    }
+
+    #business_partner_page .interlinksHeading {
+        padding-top: 40px;
+        margin-bottom: 5px;
+    }
+
+    #business_partner_page .feedbackHelpfulButton {
+        width: 120px !important;
+    }
+
+    #business_partner_page .main {
+        margin-top: 40px;
+    }
+
+    #business_partner_page .responsiveTextH1 {
+        font-size: 32px;
+    }
+
+    #business_partner_page .responsiveTextH4 {
+        font-size: 20px;
+    }
+
+    #business_partner_page .mv-h2 {
+        font-size: 26px;
+        font-weight: var(--font-weight-extrabold);
+        padding: 20px;
+        margin-top: 100px;
+    }
+
+    #business_partner_page .mv-h3 {
+        font-size: 24px;
+        font-weight: var(--font-weight-extrabold);
+        padding: 20px 0px;
+    }
+
+    #business_partner_page .mv-h1-text {
+        display: block;
+        font-size: 27px;
+        font-weight: 700 !important;
+    }
+
+    #business_partner_page .mv-h2-text {
+        display: block;
+        font-size: 24px;
+        font-weight: 700 !important;
+    }
+
+    #business_partner_page .mv-h3-text {
+        display: block;
+        font-size: 21px;
+        font-weight: var(--font-weight-semibold) !important;
+    }
+
+    #business_partner_page .mv-h4-text {
+        display: block;
+        font-size: 19px;
+        font-weight: var(--font-weight-regular) !important;
+    }
+
+    #business_partner_page .mv-h5-text {
+        display: block;
+        font-size: 17px;
+        font-weight: var(--font-weight-regular) !important;
+    }
+
+    #business_partner_page .img-mv-loans {
+        margin-top: 10x;
+    }
+
+    #business_partner_page .personalloanheader {
+        font-size: 24px !important;
+        font-weight: var(--font-weight-extrabold) !important;
+        color: var(--white-color) !important;
+        padding: 0px 50px;
+        padding-top: 150px;
+        text-align: center !important;
+    }
+
+    #business_partner_page .nobackground {
+        background-image: none !important;
+        background-color: transparent !important;
+        height: unset !important;
+    }
+
+    #business_partner_page .textAlign-sm-center-lg-left {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    #business_partner_page {
+        /* Breadcrumbs */
+        /* Banner */
+        /* Interlinks */
+    }
+
+    #business_partner_page body>div:first-of-type {
+        padding-top: 25px;
+    }
+
+    #business_partner_page ul.breadcrumb {
+        padding: 10px 1px;
+        list-style: none;
+        background-color: var(--white-color) !important;
+        margin-top: 60px;
+        margin-bottom: -27px;
+    }
+
+    #business_partner_page ul.breadcrumb li {
+        display: inline;
+        font-size: 13px;
+    }
+
+    #business_partner_page ul.breadcrumb li+li:before {
+        padding: 8px;
+        color: black;
+    }
+
+    #business_partner_page ul.breadcrumb li a {
+        color: #0275d8;
+        text-decoration: none;
+        font-size: 12px !important;
+    }
+
+    #business_partner_page ul.breadcrumb li a:hover {
+        color: #01447e;
+        text-decoration: underline;
+    }
+
+    #business_partner_page ul.breadcrumb_list * {
+        font-size: 12px;
+    }
+
+    #business_partner_page .breadcrumb-font {
+        font-size: 12px;
+        color: #999;
+        padding: 1px 2px 0px;
+    }
+
+    #business_partner_page .breadcrumb_alignment {
+        margin-top: 2.5rem;
+        text-align: left;
+    }
+
+    #business_partner_page .banner_btn {
+        width: 149px !important;
+        padding: 12px 0px !important;
+        margin: -8px 0;
+        align-items: center;
+    }
+
+    #business_partner_page .playstore_btn {
+        justify-content: right;
+        display: flex;
+    }
+
+    #business_partner_page .btn_alignment {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 8px;
+    }
+
+    #business_partner_page .banner_text {
+        text-align: center !important;
+    }
+
+    #business_partner_page .bannerContent {
+        padding-bottom: 2rem !important;
+    }
+
+    #business_partner_page .btn_class {
+        height: 42px !important;
+        margin-top: 6px !important;
+        padding: 9px !important;
+    }
+
+    #business_partner_page .wrapper {
+        margin-left: 1px;
+    }
+
+    #business_partner_page .interlinksHeading {
+        padding-top: 40px;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) and (max-width: 600px) {
+    #business_partner_page {
+        /* Banner */
+        /* Features & Benifits && Apply Loan */
+        /* EMI Calculator */
+    }
+
+    #business_partner_page .bannerClass {
+        border-radius: 4px;
+        padding: 0rem !important;
+    }
+
+    #business_partner_page .playstore_btn {
+        margin-left: 10px;
+    }
+
+    #business_partner_page .center_item {
+        padding-bottom: 7% !important;
+    }
+
+    #business_partner_page .btn_alignment {
+        padding-left: 0px !important;
+    }
+
+    #business_partner_page .applyLoanClass {
+        padding: 14px 0px !important;
+    }
+
+    #business_partner_page .applyLoanClass :nth-child(odd) {
+        padding-right: 0px;
+    }
+
+    #business_partner_page .features_text {
+        padding-left: 4px;
+    }
+
+    #business_partner_page .valign-items-middle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #business_partner_page .topFeaturesOverlay {
+        height: fit-content !important;
+        margin-top: unset !important;
+    }
+
+    #business_partner_page .hideItem {
+        display: unset !important;
+    }
+
+    #business_partner_page .banner_mobile {
+        display: block;
+    }
+
+    #business_partner_page .mvl-h2 {
+        margin-bottom: 20px;
+    }
+
+    #business_partner_page .calculator_text {
+        color: var(--white-color);
+        text-align: center;
+    }
+
+    #business_partner_page .mvl-h2-white {
+        color: var(--white-color);
+        font-size: 22px;
+        margin-bottom: 29px !important;
+    }
+
+    #business_partner_page .feedbackHelpfulButton {
+        width: 120px !important;
+    }
+}
+
+@media (max-width: 768px) and (max-width: 960px) {
+    #business_partner_page {
+        /* Breadcrumbs */
+        /* Banner */
+        /* Interlinks */
+        /* Common Styles */
+    }
+
+    #business_partner_page body>div:first-of-type {
+        padding-top: 25px;
+    }
+
+    #business_partner_page ul.breadcrumb {
+        padding: 10px 1px;
+        list-style: none;
+        background-color: var(--white-color) !important;
+        margin-top: 60px;
+        margin-bottom: -27px;
+    }
+
+    #business_partner_page ul.breadcrumb li {
+        display: inline;
+        font-size: 13px;
+    }
+
+    #business_partner_page ul.breadcrumb li+li:before {
+        padding: 8px;
+        color: black;
+    }
+
+    #business_partner_page ul.breadcrumb li a {
+        color: #0275d8;
+        text-decoration: none;
+        font-size: 12px !important;
+    }
+
+    #business_partner_page ul.breadcrumb li a:hover {
+        color: #01447e;
+        text-decoration: underline;
+    }
+
+    #business_partner_page ul.breadcrumb_list * {
+        font-size: 12px;
+    }
+
+    #business_partner_page .breadcrumb-font {
+        font-size: 12px;
+        color: #999;
+        padding: 1px 2px 0px;
+    }
+
+    #business_partner_page .breadcrumb_alignment {
+        margin-top: 2.5rem;
+        text-align: left;
+    }
+
+    #business_partner_page .banner_btn {
+        width: 149px !important;
+        padding: 12px 0px !important;
+        margin: -8px 0;
+        align-items: center;
+    }
+
+    #business_partner_page .playstore_btn {
+        justify-content: right;
+        display: flex;
+    }
+
+    #business_partner_page .btn_alignment {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 8px;
+    }
+
+    #business_partner_page .banner_text {
+        text-align: center !important;
+    }
+
+    #business_partner_page .bannerContent {
+        padding-bottom: 2rem !important;
+    }
+
+    #business_partner_page .btn_class {
+        height: 42px !important;
+        margin-top: 6px !important;
+        padding: 9px !important;
+    }
+
+    #business_partner_page .wrapper {
+        margin-left: 1px;
+    }
+
+    #business_partner_page .interlinksHeading {
+        padding-top: 40px;
+        margin-bottom: 5px;
+    }
+
+    #business_partner_page .main {
+        margin-top: 40px;
+    }
+
+    #business_partner_page .responsiveTextH1 {
+        font-size: 32px;
+    }
+
+    #business_partner_page .responsiveTextH4 {
+        font-size: 20px;
+    }
+
+    #business_partner_page .mv-h2 {
+        font-size: 26px;
+        font-weight: var(--font-weight-extrabold);
+        padding: 20px;
+        margin-top: 100px;
+    }
+
+    #business_partner_page .mv-h3 {
+        font-size: 24px;
+        font-weight: var(--font-weight-extrabold);
+        padding: 20px 0px;
+    }
+
+    #business_partner_page .mv-h1-text {
+        display: block;
+        font-size: 27px;
+        font-weight: 700 !important;
+    }
+
+    #business_partner_page .mv-h2-text {
+        display: block;
+        font-size: 24px;
+        font-weight: 700 !important;
+    }
+
+    #business_partner_page .mv-h3-text {
+        display: block;
+        font-size: 21px;
+        font-weight: var(--font-weight-semibold) !important;
+    }
+
+    #business_partner_page .mv-h4-text {
+        display: block;
+        font-size: 19px;
+        font-weight: var(--font-weight-regular) !important;
+    }
+
+    #business_partner_page .mv-h5-text {
+        display: block;
+        font-size: 17px;
+        font-weight: var(--font-weight-regular) !important;
+    }
+
+    #business_partner_page .img-mv-loans {
+        margin-top: 10x;
+    }
+
+    #business_partner_page .personalloanheader {
+        font-size: 24px !important;
+        font-weight: var(--font-weight-extrabold) !important;
+        color: var(--white-color) !important;
+        padding: 0px 50px;
+        padding-top: 150px;
+        text-align: center !important;
+    }
+
+    #business_partner_page .nobackground {
+        background-image: none !important;
+        background-color: transparent !important;
+        height: unset !important;
+    }
+
+    #business_partner_page .textAlign-sm-center-lg-left {
+        display: flex;
+        justify-content: space-between;
+    }
+}

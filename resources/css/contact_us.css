@@ -1,0 +1,1371 @@
+#contact_us_page {
+    /* Button Styles */
+    /* Breadcrumbs */
+    /* Banner */
+    /*Table of content */
+    /* Features & Benifits */
+    /* EMI Calculator */
+    /* Interlinks */
+    /* Feedback section */
+    /* Tables */
+    /* .scrollTable {
+		 width: 100%;
+		 overflow: scroll;
+	}
+	 */
+    /* mvl/loan-partner */
+    /* used in so many pages */
+    /* /money-manger , /mvl , /unsubscribe */
+    /* /security-money-view-app, /mvl, / */
+    /* emi-calc , mvl , hindi/emi */
+    /* emi-calulator, loan-partner , money-manager */
+    /* 7pages */
+    /* calculator & seo */
+    /* /mvl, careers, download apps */
+    /*about-us*/
+    /*Grievance*/
+}
+
+#contact_us_page .table_margin {
+    margin: 15px 25px 0px 25px;
+}
+
+@media (max-width: 600px) {
+    #contact_us_page .table_margin {
+        margin: 10px !important;
+    }
+}
+
+#contact_us_page * {
+    text-align: left;
+}
+
+#contact_us_page .cta-btn {
+    font-size: 14px;
+    font-weight: var(--font-weight-extrabold) !important;
+    width: 260px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 13px 31px;
+    background-color: var(--primary-color) !important;
+    color: var(--white-color);
+    cursor: pointer;
+    background-image: none;
+    border-style: solid;
+    border-radius: 4px;
+    margin-top: 18px;
+}
+
+#contact_us_page .cta-btn:hover {
+    background-color: transparent !important;
+    border-color: var(--primary-color) !important;
+    color: var(--primary-color);
+}
+
+#contact_us_page .cta-btn-outline {
+    font-size: 14px;
+    font-weight: var(--font-weight-extrabold) !important;
+    width: 260px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 13px 31px !important;
+    background-color: transparent !important;
+    border-color: var(--primary-color) !important;
+    color: var(--primary-color);
+    cursor: pointer;
+    background-image: none;
+    border-style: solid;
+    border-radius: 4px;
+    margin-top: 18px;
+}
+
+#contact_us_page .cta-btn-outline:hover {
+    background-color: var(--primary-color) !important;
+    border-color: var(--white-color) !important;
+    color: var(--white-color);
+}
+
+#contact_us_page .font-weight-bold {
+    font-weight: 600;
+}
+
+#contact_us_page .cta-btn-green {
+    font-size: 14px;
+    font-weight: var(--font-weight-bold) !important;
+    width: 100%;
+    max-width: 260px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 13px 13px !important;
+    background-color: var(--primary-color) !important;
+    color: var(--white-color);
+    cursor: pointer;
+    background-image: none;
+    border-style: solid;
+    border-radius: 4px;
+}
+
+#contact_us_page body>div:first-of-type {
+    padding-top: 60px;
+}
+
+#contact_us_page ul.breadcrumb_list * {
+    font-size: 14px;
+}
+
+#contact_us_page ul.breadcrumb {
+    padding: 10px 1px;
+    list-style: none;
+    background-color: var(--white-color) !important;
+    margin-bottom: -27px;
+}
+
+#contact_us_page ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+#contact_us_page ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+}
+
+#contact_us_page ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+    font-size: 12px !important;
+}
+
+#contact_us_page ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+#contact_us_page .breadcrumb-font {
+    color: #999;
+    padding: 7px 2px 0px;
+}
+
+#contact_us_page .breadcrumb_alignment {
+    margin-top: 1.5rem;
+}
+
+#contact_us_page ul.breadcrumb_list {
+    list-style-type: none;
+    padding-left: 0px;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem !important;
+}
+
+#contact_us_page ul.breadcrumb_list li {
+    display: inline;
+}
+
+#contact_us_page ul.breadcrumb_list li span a {
+    color: var(--primary-color);
+}
+
+#contact_us_page ul.breadcrumb_list li:not(:first-child)::before {
+    content: "\003E";
+    margin: 0 0.1rem;
+}
+
+#contact_us_page ul.breadcrumb_list li:last-child::before {
+    content: "\003E";
+    color: #999;
+    margin: 0 0.1rem;
+}
+
+#contact_us_page .banner_btn {
+    margin: 0px 15px;
+    align-items: center;
+}
+
+#contact_us_page .bannerContainer {
+    height: fit-content !important;
+    background: no-repeat right / cover scroll;
+}
+
+#contact_us_page .bannerClass {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), transparent);
+    width: 100%;
+    padding: 15px 16px 7rem 16px;
+}
+
+#contact_us_page .bannerContent {
+    padding-top: 5rem !important;
+}
+
+#contact_us_page .center_item {
+    padding-top: 3%;
+}
+
+#contact_us_page .btn_alignment {
+    text-align: left;
+}
+
+#contact_us_page .banner_text {
+    text-align: left !important;
+}
+
+#contact_us_page .tableofcontentClass {
+    padding: 20px 10px;
+    margin: 10px 0 20px 0;
+    max-width: 750px;
+    border: 0.5px solid var(--black-color);
+    background: #f3f3f3;
+    text-align: justify;
+}
+
+#contact_us_page .applyLoanClass {
+    padding: 32px 0;
+}
+
+#contact_us_page .topFeaturesOverlay {
+    box-shadow: 0 2px 10px -4px rgba(0, 0, 0, 0.5);
+    background-color: var(--white-color);
+    border-radius: 8px;
+    padding: 0 1.5rem 1.5rem 1rem;
+    width: 100%;
+    height: fit-content;
+    transition: height 0.25s ease-in;
+    overflow: hidden;
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+}
+
+#contact_us_page .features_text {
+    text-align: left !important;
+}
+
+#contact_us_page .hideItem {
+    display: none;
+}
+
+#contact_us_page .icon_style {
+    max-width: 110px;
+}
+
+#contact_us_page .expandMoreBtn {
+    position: relative;
+    left: 50%;
+}
+
+#contact_us_page .expandBtn {
+    cursor: pointer;
+}
+
+#contact_us_page .parallax {
+    background: linear-gradient(#000, #000), url(https://moneyview.in/images/calculator_bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact_us_page .icon_alignment {
+    justify-content: center;
+    vertical-align: middle;
+}
+
+#contact_us_page .calculator_btn {
+    font-size: 15px;
+    font-weight: var(--font-weight-bold) !important;
+    padding: 16px !important;
+    height: 6rem;
+    background-color: var(--white-color) !important;
+    color: #777;
+    cursor: pointer;
+    background-image: none;
+    margin-top: 2rem;
+}
+
+#contact_us_page .cta-btn-white {
+    font-size: 14px;
+    font-weight: var(--font-weight-bold) !important;
+    width: 100%;
+    max-width: 260px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 13px 31px !important;
+    background-color: var(--white-color) !important;
+    color: var(--primary-color);
+    cursor: pointer;
+    background-image: none;
+    border-style: solid;
+    border-radius: 4px;
+    margin-top: 18px;
+}
+
+#contact_us_page .banner_mobile {
+    display: none;
+}
+
+#contact_us_page .mvl-h2-white {
+    font-size: 32px;
+    font-weight: var(--font-weight-bold);
+    color: var(--white-color);
+    text-align: center;
+    margin-bottom: 39.1px;
+}
+
+#contact_us_page .alignment {
+    padding: 40px 0;
+    margin-bottom: 24px !important;
+}
+
+#contact_us_page .emiTitle {
+    font-size: 15px;
+    font-weight: var(--font-weight-bold);
+}
+
+#contact_us_page .interlinksSectionContainer {
+    background-color: var(--grey01);
+}
+
+#contact_us_page .wrapper {
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
+    background-color: var(--white-color) !important;
+    width: 100%;
+}
+
+#contact_us_page ul.newInterlinks * {
+    color: #999;
+}
+
+#contact_us_page ul.newInterlinks *:hover {
+    color: var(--primary-color);
+}
+
+#contact_us_page .interLinkIcon {
+    max-height: 392.5px;
+    overflow-y: auto;
+    background: var(--white-color);
+    margin-top: 1rem;
+}
+
+#contact_us_page .interlinksIcon {
+    height: 180px;
+    margin: 16px 0;
+    padding-top: 40px;
+    background-color: #fbfbfb;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+#contact_us_page .interlinksIcon:hover {
+    background-color: var(--primary-color);
+}
+
+#contact_us_page .interlinksIcon:hover * {
+    color: #f1f1f1;
+}
+
+#contact_us_page .interlinksHeading {
+    padding-top: 32px;
+    margin-bottom: 24px;
+}
+
+#contact_us_page .interlinks_alignment {
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+#contact_us_page .interlinksIconText {
+    color: #999;
+    font-size: 15px;
+    font-weight: var(--font-weight-bold);
+}
+
+#contact_us_page .interlinksImage {
+    height: 70px;
+    margin: auto;
+    background: no-repeat center / contain;
+}
+
+#contact_us_page #successSection {
+    display: none;
+    padding-left: 16px;
+    padding-bottom: 4px;
+}
+
+#contact_us_page #successSection p {
+    color: var(--primary-color);
+}
+
+#contact_us_page #feedbackForm {
+    padding-right: 0px;
+    margin-left: -8px;
+    padding-bottom: 16px;
+}
+
+#contact_us_page #feedbackComment {
+    width: 100%;
+    padding: 8px;
+}
+
+#contact_us_page #feedbackSection div {
+    width: 100%;
+    justify-content: center;
+}
+
+#contact_us_page #feedbackComment::placeholder {
+    font-size: 15px;
+    font-weight: var(--font-weight-regular);
+}
+
+#contact_us_page #feedbackComment:-ms-input-placeholder {
+    font-size: 15px;
+    font-weight: var(--font-weight-regular);
+}
+
+#contact_us_page #feedbackComment::-ms-input-placeholder {
+    font-size: 15px;
+    font-weight: var(--font-weight-regular);
+}
+
+#contact_us_page #feedbackComment:focus {
+    outline: none !important;
+    border: 1px solid var(--primary-color);
+    border-radius: 2px;
+}
+
+#contact_us_page button:disabled {
+    background-color: #dcdcde !important;
+    color: #73757a !important;
+    border: 0px solid !important;
+}
+
+#contact_us_page #feedbackActionMessageMain {
+    font-size: var(--body-font-size) !important;
+    font-weight: var(--font-weight-semibold) !important;
+    margin-bottom: 4px;
+}
+
+#contact_us_page #feedbackActionMessageSecondary {
+    font-size: 15px !important;
+    font-weight: var(--font-weight-regular) !important;
+    margin-bottom: 8px;
+}
+
+#contact_us_page #feedbackCommentHelperText {
+    font-size: 12px !important;
+}
+
+#contact_us_page #submitFeedback {
+    background: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    color: var(--chalk-white);
+    height: 30px;
+    margin: 8px auto;
+    display: block;
+    width: 144px !important;
+}
+
+#contact_us_page #feedbackActionSuccess,
+#contact_us_page #feedbackSection {
+    display: none;
+}
+
+#contact_us_page .feedbackHelpfulText {
+    padding-top: 2px;
+    font-size: var(--body-font-size) !important;
+    font-weight: var(--font-weight-semibold) !important;
+}
+
+#contact_us_page .feedbackHelpfulButton {
+    color: #333 !important;
+    background-color: var(--chalk-white);
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    width: 100%;
+    width: 144px !important;
+    font-weight: var(--font-weight-regular) !important;
+}
+
+#contact_us_page .img-mv-loans {
+    width: 112px;
+    padding-bottom: 20px;
+}
+
+#contact_us_page .mv-h4 {
+    font-size: 24px;
+    font-weight: var(--font-weight-extrabold);
+    padding: 25px 0px 5px 0px;
+}
+
+#contact_us_page .mv-h5 {
+    font-size: 15px !important;
+    font-weight: var(--font-weight-bold) !important;
+    color: #505d68 !important;
+    line-height: 30px !important;
+    padding: 20px 0px 2px 0px;
+    margin-bottom: 0;
+}
+
+#contact_us_page .mv-h6 {
+    font-size: 14px !important;
+    font-weight: var(--font-weight-regular) !important;
+    color: #505d68 !important;
+    line-height: 30px !important;
+    font-weight: var(--font-weight-bold);
+}
+
+#contact_us_page .mv-why-us {
+    font-size: 15px;
+    font-weight: var(--font-weight-regular) !important;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #777;
+    line-height: 1.75;
+}
+
+#contact_us_page .ul-check {
+    vertical-align: middle;
+    list-style: none;
+    padding-left: 0px;
+}
+
+#contact_us_page .ul-check li {
+    margin: 10px 0px;
+    background-image: url("/img/ic-tick-icon.png");
+    background-repeat: no-repeat;
+    line-height: 30px;
+    padding-left: 35px;
+    background-size: contain;
+}
+
+#contact_us_page .mv-link {
+    color: var(--primary-color) !important;
+    border-bottom: 1px solid #777;
+    padding-bottom: 3px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#contact_us_page .mv-link:hover {
+    color: var(--primary-color) !important;
+    border-bottom: 1px solid var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#contact_us_page .mv-p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.75;
+    font-weight: var(--font-weight-regular) !important;
+}
+
+#contact_us_page .faq-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid #eaeaea;
+    margin: 18px 0 0;
+    color: #777;
+    width: 100%;
+    font-size: 14px;
+}
+
+#contact_us_page .faq-table tr.header {
+    background-color: lightgrey;
+    padding: 10px;
+}
+
+#contact_us_page .faq-table th {
+    padding: 8px;
+    font-weight: var(--font-weight-regular);
+    border: 1px solid #eaeaea;
+}
+
+#contact_us_page .faq-table td {
+    padding: 8px;
+    font-weight: var(--font-weight-regular);
+    border: 1px solid #eaeaea;
+}
+
+#contact_us_page .bg-green {
+    background-color: var(--green-lightest-2);
+    padding: 20px 0px;
+}
+
+#contact_us_page .green_color {
+    color: var(--primary-color);
+    line-height: normal;
+    margin-bottom: 4px;
+}
+
+#contact_us_page .cities-header {
+    background-color: #fff;
+    height: inherit;
+}
+
+#contact_us_page .values {
+    background: #f7f7f7;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+#contact_us_page .values p {
+    padding-top: 30px;
+    min-height: 140px;
+}
+
+#contact_us_page .orderedList li,
+#contact_us_page .unorderedList li {
+    color: #7b7e7b;
+}
+
+#contact_us_page .mvl-h2 {
+    font-weight: var(--font-weight-bold) !important;
+    font-size: 22px;
+}
+
+#contact_us_page .personal-loan-bg-gradient {
+    background-image: linear-gradient(to right, #59cc59 2%, #00c987 98%) !important;
+}
+
+#contact_us_page .loan-criteria {
+    background-size: 300px 100px;
+    background: white;
+    padding: 30px 20px;
+    text-align: center;
+    max-height: 300px !important;
+}
+
+#contact_us_page .presonalloanoverlay {
+    background-color: rgba(0, 130, 18, 0.7);
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#contact_us_page .mv-h1-text {
+    display: block;
+    font-size: 32px;
+    font-weight: var(--font-weight-bold) !important;
+}
+
+#contact_us_page .mv-h2-text {
+    display: block;
+    font-size: 26px;
+    font-weight: var(--font-weight-bold) !important;
+}
+
+#contact_us_page .mv-h3-text {
+    display: block;
+    font-size: 22px;
+    font-weight: var(--font-weight-semibold) !important;
+}
+
+#contact_us_page .mv-h4-text {
+    display: block;
+    font-size: 21px;
+    font-weight: var(--font-weight-regular) !important;
+}
+
+#contact_us_page .mv-h5-text {
+    display: block;
+    font-size: 19px;
+    font-weight: var(--font-weight-regular) !important;
+}
+
+#contact_us_page .mv-h2 {
+    font-size: 32px;
+    font-weight: var(--font-weight-extrabold);
+    padding: 50px;
+}
+
+#contact_us_page .mv-h3 {
+    font-size: 28px;
+    font-weight: var(--font-weight-extrabold);
+    padding: 40px 0px;
+}
+
+#contact_us_page .couponlink a:hover {
+    color: var(--primary-color);
+    text-decoration: none !important;
+    font-size: 24px;
+    font-weight: var(--font-weight-extrabold);
+}
+
+#contact_us_page .textAlign-sm-center-lg-left {
+    text-align: left;
+}
+
+#contact_us_page .search-box {
+    border-radius: 4px !important;
+}
+
+#contact_us_page .noResulText {
+    font-weight: var(--font-weight-regular);
+}
+
+#contact_us_page .tab button {
+    color: var(--primary-color);
+    border-radius: 4px;
+}
+
+#contact_us_page .tab button:hover {
+    background-color: var(--primary-color) !important;
+    color: var(--white-color) !important;
+}
+
+#contact_us_page .active-btn {
+    background-color: var(--primary-color) !important;
+    color: var(--white-color) !important;
+}
+
+#contact_us_page .tab button:active {
+    background-color: var(--primary-color) !important;
+    color: var(--white-color) !important;
+}
+
+#contact_us_page .tab button:focus {
+    background-color: var(--primary-color) !important;
+    color: var(--white-color);
+}
+
+#contact_us_page .investor-section {
+    background-color: var(--orange01) !important;
+}
+
+#contact_us_page .founders-border-box {
+    border-radius: 4px !important;
+    box-shadow: 8px 8px var(--green01) !important;
+}
+
+#contact_us_page .box-shadow-color {
+    box-shadow: 8px 8px var(--magenta01) !important;
+}
+
+#contact_us_page .loan-title {
+    font-weight: var(--font-weight-bold) !important;
+}
+
+#contact_us_page .loan-item {
+    border-radius: 4px !important;
+}
+
+#contact_us_page .loan-item:hover {
+    background-color: var(--primary-color) !important;
+}
+
+#contact_us_page .faq-section {
+    background: var(--orange01) !important;
+    border-radius: 8px !important;
+}
+
+#contact_us_page .view-faq-button {
+    background: var(--primary-color) !important;
+    box-shadow: none !important;
+    border-radius: 4px !important;
+}
+
+#contact_us_page .write-to-us-button {
+    color: var(--primary-color) !important;
+    border: 1px solid var(--primary-color) !important;
+    border-radius: 4px !important;
+}
+
+#contact_us_page .cta_button {
+    background: var(--primary-color) !important;
+    border-radius: 4px;
+}
+
+#contact_us_page .table thead {
+    background: var(--primary-color) !important;
+    color: var(--white-color) !important;
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    #contact_us_page {
+        /* Breadcrumbs */
+        /* Banner */
+        /* Interlinks */
+        /* Common Styles */
+    }
+
+    #contact_us_page body>div:first-of-type {
+        padding-top: 25px;
+    }
+
+    #contact_us_page ul.breadcrumb {
+        padding: 10px 1px;
+        list-style: none;
+        background-color: var(--white-color) !important;
+        margin-top: 60px;
+        margin-bottom: -27px;
+    }
+
+    #contact_us_page ul.breadcrumb li {
+        display: inline;
+        font-size: 13px;
+    }
+
+    #contact_us_page ul.breadcrumb li+li:before {
+        padding: 8px;
+        color: black;
+    }
+
+    #contact_us_page ul.breadcrumb li a {
+        color: #0275d8;
+        text-decoration: none;
+        font-size: 12px !important;
+    }
+
+    #contact_us_page ul.breadcrumb li a:hover {
+        color: #01447e;
+        text-decoration: underline;
+    }
+
+    #contact_us_page ul.breadcrumb_list * {
+        font-size: 12px;
+    }
+
+    #contact_us_page .breadcrumb-font {
+        font-size: 12px;
+        color: #999;
+        padding: 1px 2px 0px;
+    }
+
+    #contact_us_page .breadcrumb_alignment {
+        margin-top: 2.5rem;
+        text-align: left;
+    }
+
+    #contact_us_page .banner_btn {
+        width: 149px !important;
+        padding: 12px 0px !important;
+        margin: -8px 0;
+        align-items: center;
+    }
+
+    #contact_us_page .playstore_btn {
+        justify-content: right;
+        display: flex;
+    }
+
+    #contact_us_page .btn_alignment {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 8px;
+    }
+
+    #contact_us_page .banner_text {
+        text-align: center !important;
+    }
+
+    #contact_us_page .bannerContent {
+        padding-bottom: 2rem !important;
+    }
+
+    #contact_us_page .btn_class {
+        height: 42px !important;
+        margin-top: 6px !important;
+        padding: 9px !important;
+    }
+
+    #contact_us_page .wrapper {
+        margin-left: 1px;
+    }
+
+    #contact_us_page .interlinksHeading {
+        padding-top: 40px;
+        margin-bottom: 5px;
+    }
+
+    #contact_us_page .main {
+        margin-top: 40px;
+    }
+
+    #contact_us_page .responsiveTextH1 {
+        font-size: 32px;
+    }
+
+    #contact_us_page .responsiveTextH4 {
+        font-size: 20px;
+    }
+
+    #contact_us_page .mv-h2 {
+        font-size: 26px;
+        font-weight: var(--font-weight-extrabold);
+        padding: 20px;
+        margin-top: 100px;
+    }
+
+    #contact_us_page .mv-h3 {
+        font-size: 24px;
+        font-weight: var(--font-weight-extrabold);
+        padding: 20px 0px;
+    }
+
+    #contact_us_page .mv-h1-text {
+        display: block;
+        font-size: 27px;
+        font-weight: var(--font-weight-bold) !important;
+    }
+
+    #contact_us_page .mv-h2-text {
+        display: block;
+        font-size: 24px;
+        font-weight: var(--font-weight-bold) !important;
+    }
+
+    #contact_us_page .mv-h3-text {
+        display: block;
+        font-size: 21px;
+        font-weight: var(--font-weight-semibold) !important;
+    }
+
+    #contact_us_page .mv-h4-text {
+        display: block;
+        font-size: 19px;
+        font-weight: var(--font-weight-regular) !important;
+    }
+
+    #contact_us_page .mv-h5-text {
+        display: block;
+        font-size: 17px;
+        font-weight: var(--font-weight-regular) !important;
+    }
+
+    #contact_us_page .img-mv-loans {
+        margin-top: 10x;
+    }
+
+    #contact_us_page .personalloanheader {
+        font-size: 24px !important;
+        font-weight: var(--font-weight-extrabold) !important;
+        color: var(--white-color) !important;
+        padding: 0px 50px;
+        padding-top: 150px;
+        text-align: center !important;
+    }
+
+    #contact_us_page .nobackground {
+        background-image: none !important;
+        background-color: transparent !important;
+        height: unset !important;
+    }
+
+    #contact_us_page .textAlign-sm-center-lg-left {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    #contact_us_page {
+        /* Breadcrumbs */
+        /* Banner */
+        /* Interlinks */
+    }
+
+    #contact_us_page body>div:first-of-type {
+        padding-top: 25px;
+    }
+
+    #contact_us_page ul.breadcrumb {
+        padding: 10px 1px;
+        list-style: none;
+        background-color: var(--white-color) !important;
+        margin-top: 60px;
+        margin-bottom: -27px;
+    }
+
+    #contact_us_page ul.breadcrumb li {
+        display: inline;
+        font-size: 13px;
+    }
+
+    #contact_us_page ul.breadcrumb li+li:before {
+        padding: 8px;
+        color: black;
+    }
+
+    #contact_us_page ul.breadcrumb li a {
+        color: #0275d8;
+        text-decoration: none;
+        font-size: 12px !important;
+    }
+
+    #contact_us_page ul.breadcrumb li a:hover {
+        color: #01447e;
+        text-decoration: underline;
+    }
+
+    #contact_us_page ul.breadcrumb_list * {
+        font-size: 12px;
+    }
+
+    #contact_us_page .breadcrumb-font {
+        font-size: 12px;
+        color: #999;
+        padding: 1px 2px 0px;
+    }
+
+    #contact_us_page .breadcrumb_alignment {
+        margin-top: 2.5rem;
+        text-align: left;
+    }
+
+    #contact_us_page .banner_btn {
+        width: 149px !important;
+        padding: 12px 0px !important;
+        margin: -8px 0;
+        align-items: center;
+    }
+
+    #contact_us_page .playstore_btn {
+        justify-content: right;
+        display: flex;
+    }
+
+    #contact_us_page .btn_alignment {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 8px;
+    }
+
+    #contact_us_page .banner_text {
+        text-align: center !important;
+    }
+
+    #contact_us_page .bannerContent {
+        padding-bottom: 2rem !important;
+    }
+
+    #contact_us_page .btn_class {
+        height: 42px !important;
+        margin-top: 6px !important;
+        padding: 9px !important;
+    }
+
+    #contact_us_page .wrapper {
+        margin-left: 1px;
+    }
+
+    #contact_us_page .interlinksHeading {
+        padding-top: 40px;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) and (max-width: 600px) {
+    #contact_us_page {
+        /* Banner */
+        /* Features & Benifits && Apply Loan */
+        /* EMI Calculator */
+    }
+
+    #contact_us_page .bannerClass {
+        border-radius: 4px;
+        padding: 0rem !important;
+    }
+
+    #contact_us_page .playstore_btn {
+        margin-left: 10px;
+    }
+
+    #contact_us_page .center_item {
+        padding-bottom: 7% !important;
+    }
+
+    #contact_us_page .btn_alignment {
+        padding-left: 0px !important;
+    }
+
+    #contact_us_page .applyLoanClass {
+        padding: 14px 0px !important;
+    }
+
+    #contact_us_page .applyLoanClass :nth-child(odd) {
+        padding-right: 0px;
+    }
+
+    #contact_us_page .features_text {
+        padding-left: 4px;
+    }
+
+    #contact_us_page .valign-items-middle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact_us_page .topFeaturesOverlay {
+        height: fit-content !important;
+        margin-top: unset !important;
+    }
+
+    #contact_us_page .hideItem {
+        display: unset !important;
+    }
+
+    #contact_us_page .banner_mobile {
+        display: block;
+    }
+
+    #contact_us_page .mvl-h2 {
+        margin-bottom: 20px;
+    }
+
+    #contact_us_page .calculator_text {
+        color: var(--white-color);
+        text-align: center;
+    }
+
+    #contact_us_page .mvl-h2-white {
+        color: var(--white-color);
+        font-size: 22px;
+        margin-bottom: 29px !important;
+    }
+
+    #contact_us_page .feedbackHelpfulButton {
+        width: 120px !important;
+    }
+}
+
+@media screen and (min-width: 280px) and (max-width: 480px) {
+    #contact_us_page {
+        /* Breadcrumbs */
+        /* Banner */
+        /* Features & Benifits && Apply Loan */
+        /* Features & Benifits */
+        /* EMI Calculator */
+        /* Interlinks */
+        /*Common Styles */
+    }
+
+    #contact_us_page body>div:first-of-type {
+        padding-top: 25px;
+    }
+
+    #contact_us_page ul.breadcrumb {
+        padding: 10px 1px;
+        list-style: none;
+        background-color: var(--white-color) !important;
+        margin-top: 60px;
+        margin-bottom: -27px;
+    }
+
+    #contact_us_page ul.breadcrumb li {
+        display: inline;
+        font-size: 13px;
+    }
+
+    #contact_us_page ul.breadcrumb li+li:before {
+        padding: 8px;
+        color: black;
+    }
+
+    #contact_us_page ul.breadcrumb li a {
+        color: #0275d8;
+        text-decoration: none;
+        font-size: 12px !important;
+    }
+
+    #contact_us_page ul.breadcrumb li a:hover {
+        color: #01447e;
+        text-decoration: underline;
+    }
+
+    #contact_us_page ul.breadcrumb_list * {
+        font-size: 12px;
+    }
+
+    #contact_us_page .breadcrumb-font {
+        font-size: 12px;
+        color: #999;
+        padding: 1px 2px 0px;
+    }
+
+    #contact_us_page .breadcrumb_alignment {
+        margin-top: 2.5rem;
+        text-align: left;
+    }
+
+    #contact_us_page .bannerClass {
+        border-radius: 4px;
+        padding: 0rem !important;
+    }
+
+    #contact_us_page .center_item {
+        padding-bottom: 7% !important;
+    }
+
+    #contact_us_page .banner_btn {
+        width: 149px !important;
+        padding: 12px 0px !important;
+        margin: -8px 0;
+        align-items: center;
+    }
+
+    #contact_us_page .playstore_btn {
+        justify-content: right;
+        display: flex;
+        margin-left: 10px;
+    }
+
+    #contact_us_page .btn_alignment {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0px !important;
+    }
+
+    #contact_us_page .banner_text {
+        text-align: center !important;
+    }
+
+    #contact_us_page .bannerContent {
+        padding-bottom: 2rem !important;
+    }
+
+    #contact_us_page .btn_class {
+        height: 42px !important;
+        margin-top: 6px !important;
+        padding: 9px !important;
+    }
+
+    #contact_us_page .applyLoanClass {
+        padding: 14px 0px !important;
+    }
+
+    #contact_us_page .applyLoanClass :nth-child(odd) {
+        padding-right: 0px;
+    }
+
+    #contact_us_page .features_text {
+        padding-left: 4px;
+    }
+
+    #contact_us_page .valign-items-middle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact_us_page .topFeaturesOverlay {
+        height: fit-content !important;
+        margin-top: unset !important;
+    }
+
+    #contact_us_page .hideItem {
+        display: unset !important;
+    }
+
+    #contact_us_page .banner_mobile {
+        display: block;
+    }
+
+    #contact_us_page .mvl-h2 {
+        margin-bottom: 20px;
+    }
+
+    #contact_us_page .calculator_text {
+        color: var(--white-color);
+        text-align: center;
+    }
+
+    #contact_us_page .mvl-h2-white {
+        color: var(--white-color);
+        font-size: 22px;
+        margin-bottom: 29px !important;
+    }
+
+    #contact_us_page .wrapper {
+        margin-left: 1px;
+    }
+
+    #contact_us_page .interlinksHeading {
+        padding-top: 40px;
+        margin-bottom: 5px;
+    }
+
+    #contact_us_page .feedbackHelpfulButton {
+        width: 120px !important;
+    }
+
+    #contact_us_page .main {
+        margin-top: 40px;
+    }
+
+    #contact_us_page .responsiveTextH1 {
+        font-size: 32px;
+    }
+
+    #contact_us_page .responsiveTextH4 {
+        font-size: 20px;
+    }
+
+    #contact_us_page .mv-h2 {
+        font-size: 26px;
+        font-weight: var(--font-weight-extrabold);
+        padding: 20px;
+        margin-top: 100px;
+    }
+
+    #contact_us_page .mv-h3 {
+        font-size: 24px;
+        font-weight: var(--font-weight-extrabold);
+        padding: 20px 0px;
+    }
+
+    #contact_us_page .mv-h1-text {
+        display: block;
+        font-size: 27px;
+        font-weight: var(--font-weight-bold) !important;
+    }
+
+    #contact_us_page .mv-h2-text {
+        display: block;
+        font-size: 24px;
+        font-weight: var(--font-weight-bold) !important;
+    }
+
+    #contact_us_page .mv-h3-text {
+        display: block;
+        font-size: 21px;
+        font-weight: var(--font-weight-semibold) !important;
+    }
+
+    #contact_us_page .mv-h4-text {
+        display: block;
+        font-size: 19px;
+        font-weight: var(--font-weight-regular) !important;
+    }
+
+    #contact_us_page .mv-h5-text {
+        display: block;
+        font-size: 17px;
+        font-weight: var(--font-weight-regular) !important;
+    }
+
+    #contact_us_page .img-mv-loans {
+        margin-top: 10x;
+    }
+
+    #contact_us_page .personalloanheader {
+        font-size: 24px !important;
+        font-weight: var(--font-weight-extrabold) !important;
+        color: var(--white-color) !important;
+        padding: 0px 50px;
+        padding-top: 150px;
+        text-align: center !important;
+    }
+
+    #contact_us_page .nobackground {
+        background-image: none !important;
+        background-color: transparent !important;
+        height: unset !important;
+    }
+
+    #contact_us_page .textAlign-sm-center-lg-left {
+        display: flex;
+        justify-content: space-between;
+    }
+}

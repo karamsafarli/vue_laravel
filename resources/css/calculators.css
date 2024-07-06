@@ -1,0 +1,1543 @@
+.calculator_page {
+    /* Slider Section */
+    /* #interestRange {
+		 background: linear-gradient(to right, #FF7F4C 0%, #FF7F4C 33%, rgba(221, 221, 221, 1) 33%, rgba(221, 221, 221, 1) 100%);
+	}
+	 */
+    /* CALCULATOR STYLES */
+    /* Slider Section */
+    /* EMI Table */
+    /* Introduction */
+    /*what makes mv better section*/
+    /* Steps to apply */
+    /* Interlinks */
+    /*Bottom-banner*/
+    /*Accordian*/
+    /* FAQ */
+    /* RESPONSIVE STYLES */
+}
+
+.calculator_page .marginTop0 {
+    margin-top: 20px !important;
+}
+
+@keyframes chartjs-render-animation {
+    from {
+        opacity: 0.99;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.calculator_page .chartjs-render-monitor {
+    animation: chartjs-render-animation 1ms;
+}
+
+.calculator_page .chartjs-size-monitor,
+.calculator_page .chartjs-size-monitor-expand,
+.calculator_page .chartjs-size-monitor-shrink {
+    position: absolute;
+    direction: ltr;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    pointer-events: none;
+    visibility: hidden;
+    z-index: -1;
+}
+
+.calculator_page .chartjs-size-monitor-expand>div {
+    position: absolute;
+    width: 1000000px;
+    height: 1000000px;
+    left: 0;
+    top: 0;
+}
+
+.calculator_page .chartjs-size-monitor-shrink>div {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    left: 0;
+    top: 0;
+}
+
+.calculator_page #inputRange {
+    background: linear-gradient(to right, #ff7f4c 0%, #ff7f4c 2%, rgba(221, 221, 221, 1) 20.8417%, rgba(221, 221, 221, 1) 100%);
+}
+
+.calculator_page #tenureRange {
+    background: linear-gradient(to right, #ff7f4c 6%, #ff7f4c 6%, rgba(221, 221, 221, 1) 0%, rgba(221, 221, 221, 1) 100%);
+}
+
+.calculator_page .inputContainer {
+    width: 96px;
+}
+
+.calculator_page .loanAmountContainer {
+    width: 154px !important;
+}
+
+.calculator_page section {
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator_page .sectionTitle {
+    text-align: left !important;
+    color: rgba(0, 0, 0, 1);
+}
+
+.calculator_page .calculatorPageContent {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: var(--font-weight-regular);
+    color: rgba(67, 64, 97, 1);
+}
+
+.calculator_page h6 {
+    padding-top: 0px !important;
+}
+
+.calculator_page .calculatorSlider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    border-radius: 82px;
+    background: rgba(221, 221, 221, 1);
+    outline: none;
+    transition: background 450ms ease-in;
+}
+
+.calculator_page .calculatorSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 50%;
+    background: linear-gradient(228.37deg, var(--orange05) 16.67%, var(--orange05) 87.75%) !important;
+    cursor: pointer;
+    border: 8px solid var(--white-color) !important;
+    box-shadow: 0px 3px 12px 0px #000 29 !important;
+}
+
+.calculator_page .calculatorSlider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    cursor: pointer;
+}
+
+.calculator_page .emiText {
+    font-size: 24px;
+    font-weight: var(--font-weight-semibold);
+    line-height: 36px;
+    letter-spacing: 0px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.calculator_page .emiAmount {
+    font-size: 32px;
+    font-weight: var(--font-weight-bold);
+    line-height: 48px;
+    letter-spacing: 0px;
+    color: var(--orange05);
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.calculator_page .emiContent {
+    font-size: 16px;
+    font-weight: var(--font-weight-regular);
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgba(130, 132, 157, 1);
+    margin-bottom: 20px;
+}
+
+.calculator_page .subContentText {
+    font-size: 14px;
+    font-weight: var(--font-weight-regular);
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: rgba(67, 64, 97, 1);
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.calculator_page .subContentAmount {
+    font-size: 16px;
+    font-weight: var(--font-weight-semibold);
+    line-height: 22px;
+    letter-spacing: 0px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+}
+
+.calculator_page .vl {
+    color: rgba(220, 220, 222, 1);
+    border-left: 1px solid rgba(220, 220, 222, 1);
+    height: 38px;
+    margin: 0 32px;
+}
+
+.calculator_page .rec:before {
+    color: #0b864c;
+}
+
+.calculator_page .can:before {
+    color: #f3aaa5;
+}
+
+.calculator_page .inputContainer {
+    border: 1px solid rgba(185, 186, 189, 1) !important;
+    color: rgba(0, 0, 0, 1);
+    width: 96px;
+    height: 48px;
+    padding: 13px 16px 13px 16px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: var(--font-weight-regular);
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.calculator_page .sliderTitle {
+    font-size: 18px;
+    font-weight: var(--font-weight-semibold);
+    line-height: 24px;
+    align-self: center;
+    color: var(--black-color);
+    margin-block: auto;
+}
+
+.calculator_page .rangeValue {
+    font-size: 12px;
+    font-weight: var(--font-weight-regular);
+    line-height: 20px;
+    color: var(--grey07);
+}
+
+.calculator_page .sliderSection {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.calculator_page .sliderButton {
+    width: 270px !important;
+    height: 56px;
+    margin-top: 12px;
+}
+
+.calculator_page .ChartList {
+    list-style: none !important;
+    padding-left: 0px;
+}
+
+.calculator_page .ChartList li:before {
+    content: "•";
+    padding-right: 8px;
+    vertical-align: middle;
+    font-size: 2em;
+    line-height: 20px;
+}
+
+.calculator_page .ChartList:nth-child(1) li:before {
+    color: var(--primary-color);
+}
+
+.calculator_page .ChartList:nth-child(2) li:before {
+    color: var(--magenta03);
+}
+
+.calculator_page .chartContainer {
+    padding-block: 32px 32px;
+}
+
+.calculator_page .chartText {
+    font-size: 14px;
+    font-weight: var(--font-weight-regular);
+    line-height: 24px;
+    color: var(--grey09);
+    margin-bottom: 4px;
+}
+
+.calculator_page .chartAmount {
+    font-size: 16px;
+    font-weight: var(--font-weight-semibold);
+    line-height: 22px;
+    color: var(--black-color);
+    margin-bottom: 0px;
+}
+
+.calculator_page .loanAmountContainer {
+    width: 154px !important;
+    padding-left: 32px;
+    text-align: left;
+}
+
+.calculator_page .interestContainer {
+    text-align: right;
+    padding-right: 32px;
+}
+
+.calculator_page .tenureInputContainer {
+    margin-right: 4px;
+}
+
+.calculator_page .loanEmiCalculator {
+    border-radius: 12px;
+    border: 1px solid var(--primary-color);
+    gap: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: var(--font-weight-regular);
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--primary-color) !important;
+    background: var(--grey01);
+    padding-block: 8px;
+    margin-bottom: 16px;
+}
+
+.calculator_page .inputSymbolRupee::after {
+    position: absolute;
+    top: 0;
+    content: "₹";
+    left: 16px;
+    font-size: 16px;
+    font-weight: var(--font-weight-regular);
+    line-height: 20px;
+}
+
+.calculator_page .inputSymbolPercent:after {
+    position: absolute;
+    top: 0;
+    content: "%";
+    right: 16px;
+    font-size: 16px;
+    font-weight: var(--font-weight-regular);
+    line-height: 22px;
+}
+
+.calculator_page .emiTable {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid rgba(220, 220, 222, 1);
+    width: 100%;
+}
+
+.calculator_page .emiTable tr.header {
+    background-color: var(--orange01);
+    padding: 10px;
+}
+
+.calculator_page .emiTable th {
+    font-size: 24px;
+    font-weight: var(--font-weight-semibold);
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: rgba(0, 0, 0, 1);
+    padding-block: 14px;
+    text-align: center;
+}
+
+.calculator_page .emiTable td {
+    font-size: 18px;
+    font-weight: var(--font-weight-regular);
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: rgba(0, 0, 0, 1);
+    padding-block: 12px;
+}
+
+.calculator_page .viewButton {
+    font-size: 20px;
+    font-weight: var(--font-weight-semibold);
+    line-height: 24px;
+    text-align: center;
+    color: var(--primary-color);
+    padding-top: 24px;
+    background: none;
+    border: none;
+    text-decoration: underline;
+}
+
+.calculator_page .font-weight-600 {
+    font-weight: var(--font-weight-semibold) !important;
+}
+
+.calculator_page .roundedList {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.calculator_page .betterCard {
+    text-align: center;
+    background: var(--grey01);
+}
+
+.calculator_page .cardTitle {
+    font-weight: var(--font-weight-semibold);
+    text-align: left;
+    color: var(--black-color);
+}
+
+.calculator_page .cardDescription {
+    font-weight: var(--font-weight-regular);
+    text-align: left;
+    color: var(--grey09);
+}
+
+.calculator_page .cardAnimation {
+    text-align: center;
+}
+
+.calculator_page .roundedList li {
+    position: relative;
+    padding-left: 48px;
+    counter-increment: item;
+    margin-bottom: 24px;
+}
+
+.calculator_page .roundedList li::before {
+    content: counter(item);
+    border-radius: 50%;
+    width: 32px !important;
+    height: 32px !important;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid #dcdcde;
+    color: var(--grey09);
+    font-size: 20px;
+    font-weight: var(--font-weight-regular);
+    line-height: 32px;
+    text-align: center;
+}
+
+.calculator_page .loanSteps {
+    font-size: 20px;
+    font-weight: var(--font-weight-regular);
+    line-height: 32px;
+    color: var(--grey07) !important;
+}
+
+.calculator_page .applyNowButton {
+    height: 56px;
+    border-radius: 4px;
+    background: var(--primary-color);
+    font-size: 20px;
+    font-weight: var(--font-weight-regular);
+    line-height: 24px;
+    text-align: center;
+    padding-block: 16px;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    width: 100%;
+}
+
+.calculator_page .calculatorInterlinks {
+    border-radius: 12px;
+    background: var(--orange01);
+    padding: 24px 28px;
+}
+
+.calculator_page .interlinksContent {
+    font-size: 14px;
+    font-weight: var(--font-weight-regular);
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    padding-top: 16px;
+}
+
+.calculator_page .interlinksImageContainer {
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    margin-inline: auto;
+}
+
+.calculator_page .bottomBanner {
+    background-image: url(https://d31bgfoj87qaaj.cloudfront.net/banner-bottom-1400.webp);
+    background-repeat: no-repeat;
+    background-position: right 0% top 48%;
+    background-size: 100%;
+    padding-top: 292px !important;
+}
+
+.calculator_page .bottomBannerTitle {
+    font-weight: var(--font-weight-semibold);
+    color: var(--black-color);
+}
+
+.calculator_page .bottomBannerSubTitle {
+    font-weight: var(--font-weight-regular);
+    color: var(--black-color);
+}
+
+.calculator_page .accordion .card {
+    border-bottom: 0px;
+}
+
+.calculator_page .accordion .card-header {
+    margin-bottom: 0px !important;
+    border-top: 0px;
+    border-bottom: 0px !important;
+    padding: 0px;
+}
+
+.calculator_page .accordion .card-header>a[aria-expanded="true"] .fa-angle-down {
+    display: none;
+}
+
+.calculator_page .accordion .card-header>a[aria-expanded="false"] .fa-angle-up {
+    display: none;
+}
+
+.calculator_page .accordion .card .card-body {
+    color: var(--grey07);
+    text-align: left;
+}
+
+.calculator_page .accordion .card .card-header a {
+    font-weight: var(--font-weight-regular) !important;
+    color: var(--black-color);
+    padding: 0px;
+    letter-spacing: unset;
+}
+
+.calculator_page .accordion .card .card-body ul,
+.calculator_page ol {
+    padding-left: 2.5rem;
+}
+
+.calculator_page .accordion .card .card-body strong {
+    color: var(--black-color) !important;
+}
+
+.calculator_page .accordion .card .card-body table {
+    margin-top: 20px;
+    border: 1px solid var(--grey07);
+    text-align: center;
+}
+
+.calculator_page .accordion .card .card-body .table th {
+    color: var(--black-color);
+    padding: 8px;
+}
+
+.calculator_page .accordion .card .card-body .table td {
+    padding: 8px;
+}
+
+.calculator_page .accordionCardHeader {
+    font-weight: var(--font-weight-regular) !important;
+    color: var(--black-color);
+    padding: 0px;
+}
+
+.calculator_page .hrAccordian {
+    margin: 0px;
+    border: 1px solid #dcdcde;
+}
+
+.calculator_page .table-striped tbody tr:nth-of-type(odd) {
+    background-color: var(--white-color) !important;
+}
+
+.calculator_page .table td,
+.calculator_page .table th,
+.calculator_page .table-bordered th,
+.calculator_page .table-bordered td {
+    border: 1px solid var(--grey07) !important;
+}
+
+.calculator_page .accordion .card .card-body p,
+.calculator_page ul,
+.calculator_page ol,
+.calculator_page table,
+.calculator_page strong {
+    font-weight: var(--font-weight-regular) !important;
+    color: var(--grey07) !important;
+    margin: 0px;
+}
+
+.calculator_page .cardLinks {
+    font-weight: var(--font-weight-regular) !important;
+    margin: 0px;
+}
+
+.calculator_page .accordion .card .card-body .FaqHeader {
+    font-weight: var(--font-weight-regular);
+    color: var(--black-color) !important;
+}
+
+.calculator_page .moreFaqs {
+    font-weight: var(--font-weight-regular) !important;
+}
+
+.calculator_page .moreFaqButton {
+    color: var(--primary-color) !important;
+    text-decoration: underline !important;
+}
+
+@media screen and (min-width: 1440px) {
+    .calculator_page {
+        /* Slider Section*/
+        /* what makes mv better section */
+        /*EMI Calculator*/
+        /*Bottom-banner*/
+        /*Accordian*/
+        /* FAQ */
+    }
+
+    .calculator_page .sliderSectionContainer {
+        margin-top: 96px;
+    }
+
+    .calculator_page .calculatorSection {
+        box-shadow: 4px 4px 72px 0px rgba(165, 167, 195, 0.4);
+        background: rgba(255, 255, 255, 1);
+        border-radius: 20px;
+        width: fit-content;
+        padding-block: 80px;
+    }
+
+    .calculator_page .sectionTitle {
+        font-size: 44px;
+        line-height: 64px;
+        margin-bottom: 64px;
+        font-weight: var(--font-weight-bold);
+    }
+
+    .calculator_page .cardMarginTop {
+        margin-top: 32px;
+    }
+
+    .calculator_page .cardMarginTopDesktop {
+        margin-top: 0px;
+    }
+
+    .calculator_page .paddingDiv {
+        padding: 32px;
+    }
+
+    .calculator_page .betterCard {
+        border-radius: 20px;
+    }
+
+    .calculator_page .cardTitle {
+        font-size: 32px;
+        line-height: 48px;
+        width: 362px;
+        margin-bottom: 24px;
+    }
+
+    .calculator_page .cardDescription {
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+        width: 448px;
+        min-height: 0px;
+    }
+
+    .calculator_page .cardAnimation {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .calculator_page .cardSectionTitle {
+        width: 60%;
+    }
+
+    .calculator_page .loanEmiCalculator {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: var(--font-weight-regular);
+        margin-bottom: 24px;
+        padding-block: 13px;
+    }
+
+    .calculator_page .bottomBanner {
+        min-height: 260px;
+        border-radius: 10px;
+        margin-top: 64px;
+        padding-top: 234px !important;
+        margin: 90px 130px 120px 130px;
+    }
+
+    .calculator_page .bottomBannerTitle {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 12px;
+    }
+
+    .calculator_page .bottomBannerSubTitle {
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+        margin-bottom: 32px;
+    }
+
+    .calculator_page .bottomBannerTextPadding {
+        bottom: 52px;
+        position: relative;
+        left: 36px;
+    }
+
+    .calculator_page .bottomBannerBackdrop {
+        height: 260px;
+        bottom: 26px;
+    }
+
+    .calculator_page .playstoreButton {
+        width: 165px;
+        height: 48px;
+    }
+
+    .calculator_page .benefitsMargin {
+        margin-block: 80px !important;
+    }
+
+    .calculator_page .accordion .card {
+        padding: 24px 0px !important;
+    }
+
+    .calculator_page .accordion .card .card-body {
+        padding: 16px 0px 0px 0px !important;
+    }
+
+    .calculator_page .accordion .card .card-header a {
+        font-size: var(--body-font-size) !important;
+        line-height: var(--body-line-height) !important;
+        padding: 0px;
+    }
+
+    .calculator_page .accordionCardHeader {
+        font-size: var(--body-font-size) !important;
+        line-height: var(--body-line-height) !important;
+        padding: 0px;
+    }
+
+    .calculator_page .accordion .card .card-body p,
+    .calculator_page ul,
+    .calculator_page ol,
+    .calculator_page table,
+    .calculator_page strong {
+        font-size: 12px !important;
+        line-height: var(--body-line-height) !important;
+        margin: 0px;
+    }
+
+    .calculator_page .cardLinks {
+        font-size: 12px !important;
+        line-height: var(--body-line-height) !important;
+        margin: 0px;
+    }
+
+    .calculator_page .moreFaqs {
+        padding: 24px 0px;
+        margin: 0px;
+        font-size: var(--body-font-size) !important;
+        line-height: var(--body-line-height);
+    }
+
+    .calculator_page .accordion .card .card-body .FaqContent {
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1439px) {
+    .calculator_page {
+        /* Slider Section*/
+        /* what makes mv better section */
+        /*Bottom-banner*/
+        /*Accordian*/
+        /* FAQ */
+    }
+
+    .calculator_page .sliderSectionContainer {
+        margin-top: 80px;
+    }
+
+    .calculator_page .calculatorSection {
+        box-shadow: 4px 4px 72px 0px rgba(165, 167, 195, 0.4);
+        background: rgba(255, 255, 255, 1);
+        border-radius: 20px;
+        width: fit-content;
+        padding-block: 80px;
+    }
+
+    .calculator_page .sectionTitle {
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 40px;
+        font-weight: var(--font-weight-bold);
+    }
+
+    .calculator_page .cardMarginTop {
+        margin-top: 12px;
+    }
+
+    .calculator_page .cardMarginTopDesktop {
+        margin-top: 0px;
+    }
+
+    .calculator_page .paddingDiv {
+        padding: 32px;
+    }
+
+    .calculator_page .betterCard {
+        border-radius: 16px;
+    }
+
+    .calculator_page .cardTitle {
+        font-size: 20px;
+        line-height: 32px;
+        width: 230px;
+        margin-bottom: 12px;
+    }
+
+    .calculator_page .cardDescription {
+        font-size: 14px;
+        line-height: 20px;
+        width: 332px;
+        min-height: 60px;
+    }
+
+    .calculator_page .cardAnimation {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .calculator_page .cardSectionTitle {
+        width: 60%;
+    }
+
+    .calculator_page .bottomBanner {
+        min-height: 186px;
+        border-radius: 6px;
+        margin-top: 40px;
+        padding-top: 163px !important;
+        margin: 60px 60px 60px 60px;
+    }
+
+    .calculator_page .bottomBannerTitle {
+        font-size: 18px;
+        line-height: var(--body-line-height);
+        margin-bottom: 12px;
+    }
+
+    .calculator_page .bottomBannerSubTitle {
+        font-size: 12px;
+        line-height: var(--body-line-height);
+        margin-bottom: 20px;
+    }
+
+    .calculator_page .bottomBannerTextPadding {
+        bottom: 38px;
+        position: relative;
+        left: 24px;
+    }
+
+    .calculator_page .playstoreButton {
+        width: 116px;
+        height: 34px;
+    }
+
+    .calculator_page .bottomBannerBackdrop {
+        height: 186px;
+        bottom: 20px;
+    }
+
+    .calculator_page .benefitsMargin {
+        margin-block: 60px !important;
+    }
+
+    .calculator_page .accordion .card {
+        padding: 16px 0px !important;
+    }
+
+    .calculator_page .accordion .card .card-body {
+        padding: 16px 0px 0px 0px !important;
+    }
+
+    .calculator_page .accordion .card .card-header a {
+        font-size: 14px !important;
+        line-height: 20px !important;
+        padding: 0px;
+    }
+
+    .calculator_page .accordionCardHeader {
+        font-size: 14px !important;
+        line-height: 20px !important;
+        padding: 0px;
+    }
+
+    .calculator_page .accordion .card .card-body p,
+    .calculator_page ul,
+    .calculator_page ol,
+    .calculator_page table,
+    .calculator_page strong {
+        font-size: 12px !important;
+        line-height: var(--body-line-height) !important;
+        margin: 0px;
+    }
+
+    .calculator_page .cardLinks {
+        font-size: 12px !important;
+        line-height: var(--body-line-height) !important;
+        margin: 0px;
+    }
+
+    .calculator_page .moreFaqs {
+        padding: 16px 0px;
+        margin: 0px;
+        font-size: 14px !important;
+        line-height: 20px;
+    }
+
+    .calculator_page .accordion .card .card-body .FaqContent {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    .calculator_page {
+        /* Slider Section*/
+        /*Section styles*/
+        /* what makes mv better section */
+        /*Steps to apply*/
+        /*Interlinks*/
+        /*Bottom-banner*/
+        /*Accordian*/
+        /* FAQ */
+    }
+
+    .calculator_page .sliderSectionContainer {
+        margin-top: 70px;
+    }
+
+    .calculator_page .calculatorSection {
+        box-shadow: 4px 4px 72px 0px rgba(165, 167, 195, 0.4);
+        background: rgba(255, 255, 255, 1);
+        border-radius: 20px;
+        width: fit-content;
+        padding-block: 80px;
+    }
+
+    .calculator_page .sectionTitle {
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 40px;
+        font-weight: var(--font-weight-bold);
+    }
+
+    .calculator_page .cardMarginTop {
+        margin-top: 12px;
+    }
+
+    .calculator_page .cardMarginTopDesktop {
+        margin-top: 0px;
+    }
+
+    .calculator_page .paddingDiv {
+        padding: 32px 28px 28px 28px;
+    }
+
+    .calculator_page .betterCard {
+        border-radius: 16px;
+    }
+
+    .calculator_page .cardTitle {
+        font-size: 24px;
+        line-height: 32px;
+        width: 292px;
+        margin-bottom: 14px;
+    }
+
+    .calculator_page .cardDescription {
+        font-size: 14px;
+        line-height: 20px;
+        width: 292px;
+    }
+
+    .calculator_page .cardAnimation {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .calculator_page .cardSectionTitle {
+        width: 70%;
+    }
+
+    .calculator_page .loanSteps {
+        font-size: 14px !important;
+        font-weight: var(--font-weight-regular);
+        line-height: 24px !important;
+        padding-block: 4px !important;
+    }
+
+    .calculator_page .calculatorInterlinks {
+        padding: 12px 12px;
+    }
+
+    .calculator_page .bottomBanner {
+        min-height: 186px;
+        border-radius: 6px;
+        padding-top: 136px !important;
+        margin: 60px 30px 60px 30px;
+    }
+
+    .calculator_page .bottomBannerTitle {
+        font-size: 18px;
+        line-height: var(--body-line-height);
+        margin-bottom: 12px;
+    }
+
+    .calculator_page .bottomBannerSubTitle {
+        font-size: 12px;
+        line-height: var(--body-line-height);
+        margin-bottom: 8px;
+    }
+
+    .calculator_page .bottomBannerTextPadding {
+        bottom: 38px;
+        position: relative;
+        left: 24px;
+    }
+
+    .calculator_page .playstoreButton {
+        width: 116px;
+        height: 34px;
+    }
+
+    .calculator_page .bottomBannerBackdrop {
+        height: 157px;
+        bottom: 20px;
+    }
+
+    .calculator_page .benefitsMargin {
+        margin-block: 40px !important;
+    }
+
+    .calculator_page .accordion .card {
+        padding: 16px 0px !important;
+    }
+
+    .calculator_page .accordion .card .card-body {
+        padding: 16px 0px 0px 0px !important;
+    }
+
+    .calculator_page .accordion .card .card-header a {
+        font-size: 14px !important;
+        line-height: 20px !important;
+        padding: 0px;
+    }
+
+    .calculator_page .accordionCardHeader {
+        font-size: 14px !important;
+        line-height: 20px !important;
+        padding: 0px;
+    }
+
+    .calculator_page .accordion .card .card-body p,
+    .calculator_page ul,
+    .calculator_page ol,
+    .calculator_page table,
+    .calculator_page strong {
+        font-size: 12px !important;
+        line-height: var(--body-line-height) !important;
+        margin: 0px;
+    }
+
+    .calculator_page .cardLinks {
+        font-size: 12px !important;
+        line-height: var(--body-line-height) !important;
+        margin: 0px;
+    }
+
+    .calculator_page .moreFaqs {
+        padding: 16px 0px;
+        margin: 0px;
+        font-size: 14px !important;
+        line-height: 20px;
+    }
+
+    .calculator_page .accordion .card .card-body .FaqContent {
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .calculator_page {
+        /*Slider Section*/
+        /*EMI Table*/
+        /* what makes mv better section */
+        /*Steps to apply*/
+        /*Interlinks*/
+        /*FAQ*/
+        /*Accordian*/
+        /* FAQ */
+    }
+
+    .calculator_page section {
+        align-items: unset;
+    }
+
+    .calculator_page .sectionTitle {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 24px;
+        /*check this*/
+        font-weight: var(--font-weight-bold);
+    }
+
+    .calculator_page .sliderSectionContainer {
+        margin-top: 66px;
+    }
+
+    .calculator_page .loanDetails {
+        box-shadow: 4px 4px 72px 0px rgba(165, 167, 195, 0.4);
+        background: rgba(255, 255, 255, 1);
+        border-radius: 20px;
+        width: 100%;
+        padding: 24px 16px 16px;
+        margin-bottom: 28px;
+    }
+
+    .calculator_page .emiText {
+        font-size: 16px;
+        font-weight: var(--font-weight-semibold);
+        line-height: 22px;
+        padding-bottom: 2px;
+    }
+
+    .calculator_page .emiAmount {
+        font-size: 24px;
+        font-weight: var(--font-weight-bold);
+        line-height: 34px;
+        margin-bottom: 2px;
+    }
+
+    .calculator_page .emiContent {
+        font-size: 14px;
+        font-weight: var(--font-weight-regular);
+        line-height: 20px;
+        margin-bottom: 16px;
+    }
+
+    .calculator_page .sliderSection {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .calculator_page .inputContainer {
+        height: 32px;
+    }
+
+    .calculator_page .roundedList li::before {
+        width: 32px !important;
+        height: 32px !important;
+        font-size: 14px !important;
+        font-weight: var(--font-weight-semibold);
+    }
+
+    .calculator_page .roundedList li {
+        position: relative;
+        padding-left: 48px !important;
+        counter-increment: item;
+        margin-bottom: 8px !important;
+        min-height: 32px !important;
+    }
+
+    .calculator_page .applyNowButton {
+        font-size: 16px;
+    }
+
+    .calculator_page .emiTable th {
+        font-size: 12px;
+        font-weight: var(--font-weight-semibold);
+        line-height: 24px;
+        padding-block: 4px;
+    }
+
+    .calculator_page .emiTable td {
+        font-size: 12px;
+        font-weight: var(--font-weight-regular);
+        line-height: 20px;
+        padding-block: 6px;
+    }
+
+    .calculator_page th:last-child,
+    .calculator_page td:last-child {
+        display: none;
+    }
+
+    .calculator_page .viewButton {
+        font-size: 16px;
+    }
+
+    .calculator_page .cardMarginTop {
+        margin-top: 24px;
+    }
+
+    .calculator_page .paddingDiv {
+        padding: 36px 28px 28px 28px;
+    }
+
+    .calculator_page .betterCard {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    .calculator_page .cardTitle {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 16px;
+        width: 100%;
+    }
+
+    .calculator_page .removeBr br {
+        display: none;
+    }
+
+    .calculator_page .cardDescription {
+        font-size: 14px;
+        line-height: var(--body-line-height);
+        width: 256px;
+        min-height: 0px;
+    }
+
+    .calculator_page .cardAnimation {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .calculator_page .cardSectionTitle {
+        width: 70%;
+    }
+
+    .calculator_page .loanSteps {
+        font-size: 14px !important;
+        font-weight: var(--font-weight-regular);
+        line-height: 24px !important;
+        padding-block: 0px !important;
+    }
+
+    .calculator_page .sliderButton {
+        width: 100% !important;
+        margin-top: 24px;
+    }
+
+    .calculator_page .calculatorInterlinks {
+        margin-bottom: 16px;
+    }
+
+    .calculator_page .interlinksContent {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: var(--font-weight-regular);
+    }
+
+    .calculator_page .interlinksImageContainer {
+        width: 48px;
+        height: 48px;
+        margin: auto;
+    }
+
+    .calculator_page .faqSection {
+        margin-bottom: 100px;
+    }
+
+    .calculator_page .accordion .card {
+        padding: 16px 0px !important;
+    }
+
+    .calculator_page .accordion .card .card-body {
+        padding: 8px 0px 0px !important;
+    }
+
+    .calculator_page .accordion .card .card-header a {
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+
+    .calculator_page .accordionCardHeader {
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+
+    .calculator_page .accordion .card .card-body p,
+    .calculator_page ol,
+    .calculator_page ul,
+    .calculator_page table,
+    .calculator_page strong {
+        font-size: 12px !important;
+        line-height: var(--body-line-height) !important;
+    }
+
+    .calculator_page .cardLinks {
+        font-size: 12px !important;
+        line-height: var(--body-line-height) !important;
+    }
+
+    .calculator_page .moreFaqs {
+        padding: 16px 0px;
+        margin: 0px;
+        font-size: 14px !important;
+        line-height: 20px;
+    }
+
+    .calculator_page .accordion .card .card-body .FaqContent {
+        margin-bottom: 12px;
+    }
+
+    .calculator_page .benefitsMargin {
+        margin-block: 40px !important;
+    }
+}
+
+@media screen and (min-width: 280px) and (max-width: 480px) {
+    .calculator_page {
+        /*Slider Section*/
+        /*EMI Table*/
+        /* what makes mv better section */
+        /*Steps to apply*/
+        /*Interlinks*/
+        /*FAQ*/
+        /*Accordian*/
+        /* FAQ */
+    }
+
+    .calculator_page section {
+        align-items: unset;
+    }
+
+    .calculator_page .sectionTitle {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 24px;
+        /*check this*/
+        font-weight: var(--font-weight-bold);
+    }
+
+    .calculator_page .sliderSectionContainer {
+        margin-top: 66px;
+    }
+
+    .calculator_page .loanDetails {
+        box-shadow: 4px 4px 72px 0px rgba(165, 167, 195, 0.4);
+        background: rgba(255, 255, 255, 1);
+        border-radius: 20px;
+        width: 100%;
+        padding: 24px 16px 16px;
+        margin-bottom: 28px;
+    }
+
+    .calculator_page .emiText {
+        font-size: 16px;
+        font-weight: var(--font-weight-semibold);
+        line-height: 22px;
+        margin-bottom: 2px;
+    }
+
+    .calculator_page .emiAmount {
+        font-size: 24px;
+        font-weight: var(--font-weight-bold);
+        line-height: 34px;
+        margin-bottom: 2px;
+    }
+
+    .calculator_page .emiContent {
+        font-size: 14px;
+        font-weight: var(--font-weight-regular);
+        line-height: 20px;
+        margin-bottom: 16px;
+    }
+
+    .calculator_page .sliderSection {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .calculator_page .inputContainer {
+        height: 32px;
+    }
+
+    .calculator_page .roundedList li::before {
+        width: 32px !important;
+        height: 32px !important;
+        font-size: 14px !important;
+        font-weight: var(--font-weight-semibold);
+    }
+
+    .calculator_page .roundedList li {
+        position: relative;
+        padding-left: 48px !important;
+        counter-increment: item;
+        margin-bottom: 8px !important;
+        min-height: 32px !important;
+    }
+
+    .calculator_page .applyNowButton {
+        font-size: 16px;
+    }
+
+    .calculator_page .emiTable th {
+        font-size: 12px;
+        font-weight: var(--font-weight-semibold);
+        line-height: 24px;
+        padding-block: 4px;
+    }
+
+    .calculator_page .emiTable td {
+        font-size: 12px;
+        font-weight: var(--font-weight-regular);
+        line-height: 20px;
+        padding-block: 6px;
+    }
+
+    .calculator_page th:last-child,
+    .calculator_page td:last-child {
+        display: none;
+    }
+
+    .calculator_page .viewButton {
+        font-size: 16px;
+    }
+
+    .calculator_page .cardMarginTop {
+        margin-top: 24px;
+    }
+
+    .calculator_page .paddingDiv {
+        padding: 36px 28px 28px 28px;
+    }
+
+    .calculator_page .betterCard {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    .calculator_page .cardTitle {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 16px;
+        width: 100%;
+    }
+
+    .calculator_page .removeBr br {
+        display: none;
+    }
+
+    .calculator_page .cardDescription {
+        font-size: 14px;
+        line-height: var(--body-line-height);
+        width: 256px;
+        min-height: 0px;
+    }
+
+    .calculator_page .cardAnimation {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .calculator_page .loanSteps {
+        font-size: 14px !important;
+        font-weight: var(--font-weight-regular);
+        line-height: 24px !important;
+        padding-block: 0px !important;
+    }
+
+    .calculator_page .sliderButton {
+        width: 100% !important;
+        margin-top: 24px;
+    }
+
+    .calculator_page .calculatorInterlinks {
+        margin-bottom: 16px;
+    }
+
+    .calculator_page .interlinksContent {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: var(--font-weight-regular);
+    }
+
+    .calculator_page .interlinksImageContainer {
+        width: 48px;
+        height: 48px;
+        margin: auto;
+    }
+
+    .calculator_page .faqSection {
+        margin-bottom: 100px;
+    }
+
+    .calculator_page .accordion .card {
+        padding: 16px 0px !important;
+    }
+
+    .calculator_page .accordion .card .card-body {
+        padding: 8px 0px 0px !important;
+    }
+
+    .calculator_page .accordion .card .card-header a {
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+
+    .calculator_page .accordionCardHeader {
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+
+    .calculator_page .accordion .card .card-body p,
+    .calculator_page ol,
+    .calculator_page ul,
+    .calculator_page table,
+    .calculator_page strong {
+        font-size: 12px !important;
+        line-height: var(--body-line-height) !important;
+    }
+
+    .calculator_page .cardLinks {
+        font-size: 12px !important;
+        line-height: var(--body-line-height) !important;
+    }
+
+    .calculator_page .moreFaqs {
+        padding: 16px 0px;
+        margin: 0px;
+        font-size: 14px !important;
+        line-height: 20px;
+    }
+
+    .calculator_page .accordion .card .card-body .FaqContent {
+        margin-bottom: 12px;
+    }
+
+    .calculator_page .benefitsMargin {
+        margin-block: 40px !important;
+    }
+}

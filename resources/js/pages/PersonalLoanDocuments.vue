@@ -1,4 +1,5 @@
 <template>
+  <div class="personal_loan_subpages">
 <div class="container">
     <div class="container breadcrumb_alignment paddingInline0">
         <ul class="breadcrumb_list">
@@ -935,10 +936,13 @@
         </div>
     </div>
 </div>
+  </div>
+
 </template>
 
 
 <script>
+import '../../css/hta_ploan.css';
     export default {
         data() {
             return {
@@ -955,7 +959,7 @@
 </script>
 
 
-<style scoped>
+<!-- <style scoped>
 
 /* Button Styles */
 .cta-btn {
@@ -2311,4 +2315,4 @@ ul.breadcrumb_list * {
   justify-content: space-between;
 }
 }
-</style>
+</style> -->

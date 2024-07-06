@@ -1,0 +1,1330 @@
+
+.personal_loan_subpages .cta-btn {
+    font-size: 14px;
+    font-weight: var(--font-weight-extrabold) !important;
+    width: 260px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 13px 31px;
+    background-color: var(--primary-color) !important;
+    color: var(--white-color);
+    cursor: pointer;
+    background-image: none;
+    border-style: solid;
+    border-radius: 4px;
+    margin-top: 18px;
+}
+
+.personal_loan_subpages .cta-btn:hover {
+    background-color: transparent !important;
+    border-color: var(--primary-color) !important;
+    color: var(--primary-color);
+}
+
+.personal_loan_subpages .cta-btn-outline {
+    font-size: 14px;
+    font-weight: var(--font-weight-extrabold) !important;
+    width: 260px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 13px 31px !important;
+    background-color: transparent !important;
+    border-color: var(--primary-color) !important;
+    color: var(--primary-color);
+    cursor: pointer;
+    background-image: none;
+    border-style: solid;
+    border-radius: 4px;
+    margin-top: 18px;
+}
+
+.personal_loan_subpages .cta-btn-outline:hover {
+    background-color: var(--primary-color) !important;
+    border-color: var(--white-color) !important;
+    color: var(--white-color);
+}
+
+.personal_loan_subpages .font-weight-bold {
+    font-weight: 600;
+}
+
+.personal_loan_subpages .cta-btn-green {
+    font-size: 14px;
+    font-weight: var(--font-weight-bold) !important;
+    width: 100%;
+    max-width: 260px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 13px 13px !important;
+    background-color: var(--primary-color) !important;
+    color: var(--white-color);
+    cursor: pointer;
+    background-image: none;
+    border-style: solid;
+    border-radius: 4px;
+}
+
+.personal_loan_subpages body>div:first-of-type {
+    padding-top: 60px;
+}
+
+.personal_loan_subpages ul.breadcrumb_list * {
+    font-size: 14px;
+}
+
+.personal_loan_subpages ul.breadcrumb {
+    padding: 10px 1px;
+    list-style: none;
+    background-color: var(--white-color) !important;
+    margin-bottom: -27px;
+}
+
+.personal_loan_subpages ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+.personal_loan_subpages ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+}
+
+.personal_loan_subpages ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+    font-size: 12px !important;
+}
+
+.personal_loan_subpages ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+.personal_loan_subpages .breadcrumb-font {
+    color: #999;
+    padding: 7px 2px 0px;
+}
+
+.personal_loan_subpages .breadcrumb_alignment {
+    margin-top: 1.5rem;
+}
+
+.personal_loan_subpages ul.breadcrumb_list {
+    list-style-type: none;
+    padding-left: 0px;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem !important;
+}
+
+.personal_loan_subpages ul.breadcrumb_list li {
+    display: inline;
+}
+
+.personal_loan_subpages ul.breadcrumb_list li span a {
+    color: var(--primary-color);
+}
+
+.personal_loan_subpages ul.breadcrumb_list li:not(:first-child)::before {
+    content: "\003E";
+    margin: 0 0.1rem;
+}
+
+.personal_loan_subpages ul.breadcrumb_list li:last-child::before {
+    content: "\003E";
+    color: #999;
+    margin: 0 0.1rem;
+}
+
+.personal_loan_subpages .banner_btn {
+    margin: 0px 15px;
+    align-items: center;
+}
+
+.personal_loan_subpages .bannerContainer {
+    height: fit-content !important;
+    background: no-repeat right / cover scroll;
+}
+
+.personal_loan_subpages .bannerClass {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), transparent);
+    width: 100%;
+    padding: 15px 16px 7rem 16px;
+}
+
+.personal_loan_subpages .bannerContent {
+    padding-top: 5rem !important;
+}
+
+.personal_loan_subpages .center_item {
+    padding-top: 3%;
+}
+
+.personal_loan_subpages .btn_alignment {
+    text-align: left;
+}
+
+.personal_loan_subpages .banner_text {
+    text-align: left !important;
+}
+
+.personal_loan_subpages .tableofcontentClass {
+    padding: 20px 10px;
+    margin: 10px 0 20px 0;
+    max-width: 750px;
+    border: 0.5px solid var(--black-color);
+    background: #f3f3f3;
+    text-align: justify;
+}
+
+.personal_loan_subpages .applyLoanClass {
+    padding: 32px 0;
+}
+
+.personal_loan_subpages .topFeaturesOverlay {
+    box-shadow: 0 2px 10px -4px rgba(0, 0, 0, 0.5);
+    background-color: var(--white-color);
+    border-radius: 8px;
+    padding: 0 1.5rem 1.5rem 1rem;
+    width: 100%;
+    height: fit-content;
+    transition: height 0.25s ease-in;
+    overflow: hidden;
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+}
+
+.personal_loan_subpages .features_text {
+    text-align: left !important;
+}
+
+.personal_loan_subpages .hideItem {
+    display: none;
+}
+
+.personal_loan_subpages .icon_style {
+    max-width: 110px;
+}
+
+.personal_loan_subpages .expandMoreBtn {
+    position: relative;
+    left: 50%;
+}
+
+.personal_loan_subpages .expandBtn {
+    cursor: pointer;
+}
+
+.personal_loan_subpages .parallax {
+    background: linear-gradient(rgb(12 12 12 / 50%), rgb(12 12 12 / 50%)), url(https://moneyview.in/images/calculator_bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.personal_loan_subpages .icon_alignment {
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.personal_loan_subpages .calculator_btn {
+    font-size: 15px;
+    font-weight: var(--font-weight-bold) !important;
+    padding: 16px !important;
+    height: 6rem;
+    background-color: var(--white-color) !important;
+    color: #777;
+    cursor: pointer;
+    background-image: none;
+    margin-top: 2rem;
+}
+
+.personal_loan_subpages .cta-btn-white {
+    font-size: 14px;
+    font-weight: var(--font-weight-bold) !important;
+    width: 100%;
+    max-width: 260px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 13px 31px !important;
+    background-color: var(--white-color) !important;
+    color: var(--primary-color);
+    cursor: pointer;
+    background-image: none;
+    border-style: solid;
+    border-radius: 4px;
+    margin-top: 18px;
+}
+
+.personal_loan_subpages .banner_mobile {
+    display: none;
+}
+
+.personal_loan_subpages .mvl-h2-white {
+    font-size: 32px;
+    font-weight: var(--font-weight-bold);
+    color: var(--white-color);
+    text-align: center;
+    margin-bottom: 39.1px;
+}
+
+.personal_loan_subpages .alignment {
+    padding: 40px 0;
+    margin-bottom: 24px !important;
+}
+
+.personal_loan_subpages .emiTitle {
+    font-size: 15px;
+    font-weight: var(--font-weight-bold);
+}
+
+.personal_loan_subpages .interlinksSectionContainer {
+    background-color: var(--grey01);
+}
+
+.personal_loan_subpages .wrapper {
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
+    background-color: var(--white-color) !important;
+    width: 100%;
+}
+
+.personal_loan_subpages ul.newInterlinks * {
+    color: #999;
+}
+
+.personal_loan_subpages ul.newInterlinks *:hover {
+    color: var(--primary-color);
+}
+
+.personal_loan_subpages .interLinkIcon {
+    max-height: 392.5px;
+    overflow-y: auto;
+    background: var(--white-color);
+    margin-top: 1rem;
+}
+
+.personal_loan_subpages .interlinksIcon {
+    height: 180px;
+    margin: 16px 0;
+    padding-top: 40px;
+    background-color: #fbfbfb;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.personal_loan_subpages .interlinksIcon:hover {
+    background-color: var(--primary-color);
+}
+
+.personal_loan_subpages .interlinksIcon:hover * {
+    color: #f1f1f1;
+}
+
+.personal_loan_subpages .interlinksHeading {
+    padding-top: 32px;
+    margin-bottom: 24px;
+}
+
+.personal_loan_subpages .interlinks_alignment {
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.personal_loan_subpages .interlinksIconText {
+    color: #999;
+    font-size: 15px;
+    font-weight: var(--font-weight-bold);
+}
+
+.personal_loan_subpages .interlinksImage {
+    height: 70px;
+    margin: auto;
+    background: no-repeat center / contain;
+}
+
+.personal_loan_subpages #successSection {
+    display: none;
+    padding-left: 16px;
+    padding-bottom: 4px;
+}
+
+.personal_loan_subpages #successSection p {
+    color: var(--primary-color);
+}
+
+.personal_loan_subpages #feedbackForm {
+    padding-right: 0px;
+    margin-left: -8px;
+    padding-bottom: 16px;
+}
+
+.personal_loan_subpages #feedbackComment {
+    width: 100%;
+    padding: 8px;
+}
+
+.personal_loan_subpages #feedbackSection div {
+    width: 100%;
+    justify-content: center;
+}
+
+.personal_loan_subpages #feedbackComment::placeholder {
+    font-size: 15px;
+    font-weight: var(--font-weight-regular);
+}
+
+.personal_loan_subpages #feedbackComment:-ms-input-placeholder {
+    font-size: 15px;
+    font-weight: var(--font-weight-regular);
+}
+
+.personal_loan_subpages #feedbackComment::-ms-input-placeholder {
+    font-size: 15px;
+    font-weight: var(--font-weight-regular);
+}
+
+.personal_loan_subpages #feedbackComment:focus {
+    outline: none !important;
+    border: 1px solid var(--primary-color);
+    border-radius: 2px;
+}
+
+.personal_loan_subpages button:disabled {
+    background-color: #dcdcde !important;
+    color: #73757a !important;
+    border: 0px solid !important;
+}
+
+.personal_loan_subpages #feedbackActionMessageMain {
+    font-size: var(--body-font-size) !important;
+    font-weight: var(--font-weight-semibold) !important;
+    margin-bottom: 4px;
+}
+
+.personal_loan_subpages #feedbackActionMessageSecondary {
+    font-size: 15px !important;
+    font-weight: var(--font-weight-regular) !important;
+    margin-bottom: 8px;
+}
+
+.personal_loan_subpages #feedbackCommentHelperText {
+    font-size: 12px !important;
+}
+
+.personal_loan_subpages #submitFeedback {
+    background: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    color: var(--chalk-white);
+    height: 30px;
+    margin: 8px auto;
+    display: block;
+    width: 144px !important;
+}
+
+.personal_loan_subpages #feedbackActionSuccess,
+.personal_loan_subpages #feedbackSection {
+    display: none;
+}
+
+.personal_loan_subpages .feedbackHelpfulText {
+    padding-top: 2px;
+    font-size: var(--body-font-size) !important;
+    font-weight: var(--font-weight-semibold) !important;
+}
+
+.personal_loan_subpages .feedbackHelpfulButton {
+    color: #333 !important;
+    background-color: var(--chalk-white);
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    width: 100%;
+    width: 144px !important;
+    font-weight: var(--font-weight-regular) !important;
+}
+
+.personal_loan_subpages .img-mv-loans {
+    width: 112px;
+    padding-bottom: 20px;
+}
+
+.personal_loan_subpages .mv-h4 {
+    font-size: 24px;
+    font-weight: var(--font-weight-extrabold);
+    padding: 25px 0px 5px 0px;
+}
+
+.personal_loan_subpages .mv-h5 {
+    font-size: 15px !important;
+    font-weight: var(--font-weight-bold) !important;
+    color: #505d68 !important;
+    line-height: 30px !important;
+    padding: 20px 0px 2px 0px;
+    margin-bottom: 0;
+}
+
+.personal_loan_subpages .mv-h6 {
+    font-size: 14px !important;
+    font-weight: var(--font-weight-regular) !important;
+    color: #505d68 !important;
+    line-height: 30px !important;
+    font-weight: var(--font-weight-bold);
+}
+
+.personal_loan_subpages .mv-why-us {
+    font-size: 15px;
+    font-weight: var(--font-weight-regular) !important;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #777;
+    line-height: 1.75;
+}
+
+.personal_loan_subpages .ul-check {
+    vertical-align: middle;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.personal_loan_subpages .ul-check li {
+    margin: 10px 0px;
+    background-image: url("/img/ic-tick-icon.png");
+    background-repeat: no-repeat;
+    line-height: 30px;
+    padding-left: 35px;
+    background-size: contain;
+}
+
+.personal_loan_subpages .mv-link {
+    color: var(--primary-color) !important;
+    border-bottom: 1px solid #777;
+    padding-bottom: 3px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.personal_loan_subpages .mv-link:hover {
+    color: var(--primary-color) !important;
+    border-bottom: 1px solid var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.personal_loan_subpages .mv-p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.75;
+    font-weight: var(--font-weight-regular) !important;
+}
+
+.personal_loan_subpages .faq-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid #eaeaea;
+    margin: 18px 0 0;
+    color: #777;
+    width: 100%;
+    font-size: 14px;
+}
+
+.personal_loan_subpages .faq-table tr.header {
+    background-color: lightgrey;
+    padding: 10px;
+}
+
+.personal_loan_subpages .faq-table th {
+    padding: 8px;
+    font-weight: var(--font-weight-regular);
+    border: 1px solid #eaeaea;
+}
+
+.personal_loan_subpages .faq-table td {
+    padding: 8px;
+    font-weight: var(--font-weight-regular);
+    border: 1px solid #eaeaea;
+}
+
+.personal_loan_subpages .bg-green {
+    background-color: var(--green-lightest-2);
+    padding: 20px 0px;
+}
+
+.personal_loan_subpages .green_color {
+    color: var(--primary-color);
+    line-height: normal;
+    margin-bottom: 4px;
+}
+
+.personal_loan_subpages .cities-header {
+    background-color: #fff;
+    height: inherit;
+}
+
+.personal_loan_subpages .values {
+    background: #f7f7f7;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.personal_loan_subpages .values p {
+    padding-top: 30px;
+    min-height: 140px;
+}
+
+.personal_loan_subpages .orderedList li,
+.personal_loan_subpages .unorderedList li {
+    color: #7b7e7b;
+}
+
+.personal_loan_subpages .mvl-h2 {
+    font-weight: var(--font-weight-bold) !important;
+    font-size: 22px;
+}
+
+.personal_loan_subpages .personal-loan-bg-gradient {
+    background-image: linear-gradient(to right, #59cc59 2%, #00c987 98%) !important;
+}
+
+.personal_loan_subpages .loan-criteria {
+    background-size: 300px 100px;
+    background: white;
+    padding: 30px 20px;
+    text-align: center;
+    max-height: 300px !important;
+}
+
+.personal_loan_subpages .presonalloanoverlay {
+    background-color: rgba(0, 130, 18, 0.7);
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.personal_loan_subpages .mv-h1-text {
+    display: block;
+    font-size: 32px;
+    font-weight: var(--font-weight-bold) !important;
+}
+
+.personal_loan_subpages .mv-h2-text {
+    display: block;
+    font-size: 26px;
+    font-weight: var(--font-weight-bold) !important;
+}
+
+.personal_loan_subpages .mv-h3-text {
+    display: block;
+    font-size: 22px;
+    font-weight: var(--font-weight-semibold) !important;
+}
+
+.personal_loan_subpages .mv-h4-text {
+    display: block;
+    font-size: 21px;
+    font-weight: var(--font-weight-regular) !important;
+}
+
+.personal_loan_subpages .mv-h5-text {
+    display: block;
+    font-size: 19px;
+    font-weight: var(--font-weight-regular) !important;
+}
+
+.personal_loan_subpages .mv-h2 {
+    font-size: 32px;
+    font-weight: var(--font-weight-extrabold);
+    padding: 50px;
+}
+
+.personal_loan_subpages .mv-h3 {
+    font-size: 28px;
+    font-weight: var(--font-weight-extrabold);
+    padding: 40px 0px;
+}
+
+.personal_loan_subpages .couponlink a:hover {
+    color: var(--primary-color);
+    text-decoration: none !important;
+    font-size: 24px;
+    font-weight: var(--font-weight-extrabold);
+}
+
+.personal_loan_subpages .textAlign-sm-center-lg-left {
+    text-align: left;
+}
+
+.personal_loan_subpages .search-box {
+    border-radius: 4px !important;
+}
+
+.personal_loan_subpages .noResulText {
+    font-weight: var(--font-weight-regular);
+}
+
+.personal_loan_subpages .tab button {
+    color: var(--primary-color);
+    border-radius: 4px;
+}
+
+.personal_loan_subpages .tab button:hover {
+    background-color: var(--primary-color) !important;
+    color: var(--white-color) !important;
+}
+
+.personal_loan_subpages .active-btn {
+    background-color: var(--primary-color) !important;
+    color: var(--white-color) !important;
+}
+
+.personal_loan_subpages .tab button:active {
+    background-color: var(--primary-color) !important;
+    color: var(--white-color) !important;
+}
+
+.personal_loan_subpages .tab button:focus {
+    background-color: var(--primary-color) !important;
+    color: var(--white-color);
+}
+
+.personal_loan_subpages .investor-section {
+    background-color: var(--orange01) !important;
+}
+
+.personal_loan_subpages .founders-border-box {
+    border-radius: 4px !important;
+    box-shadow: 8px 8px var(--green01) !important;
+}
+
+.personal_loan_subpages .box-shadow-color {
+    box-shadow: 8px 8px var(--magenta01) !important;
+}
+
+.personal_loan_subpages .loan-title {
+    font-weight: var(--font-weight-bold) !important;
+}
+
+.personal_loan_subpages .loan-item {
+    border-radius: 4px !important;
+}
+
+.personal_loan_subpages .loan-item:hover {
+    background-color: var(--primary-color) !important;
+}
+
+.personal_loan_subpages .faq-section {
+    background: var(--orange01) !important;
+    border-radius: 8px !important;
+}
+
+.personal_loan_subpages .view-faq-button {
+    background: var(--primary-color) !important;
+    box-shadow: none !important;
+    border-radius: 4px !important;
+}
+
+.personal_loan_subpages .write-to-us-button {
+    color: var(--primary-color) !important;
+    border: 1px solid var(--primary-color) !important;
+    border-radius: 4px !important;
+}
+
+.personal_loan_subpages .cta_button {
+    background: var(--primary-color) !important;
+    border-radius: 4px;
+}
+
+.personal_loan_subpages .table thead {
+    background: var(--primary-color) !important;
+    color: var(--white-color) !important;
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    .personal_loan_subpages {
+        /* Breadcrumbs */
+        /* Banner */
+        /* Interlinks */
+        /* Common Styles */
+    }
+
+    .personal_loan_subpages body>div:first-of-type {
+        padding-top: 25px;
+    }
+
+    .personal_loan_subpages ul.breadcrumb {
+        padding: 10px 1px;
+        list-style: none;
+        background-color: var(--white-color) !important;
+        margin-top: 60px;
+        margin-bottom: -27px;
+    }
+
+    .personal_loan_subpages ul.breadcrumb li {
+        display: inline;
+        font-size: 13px;
+    }
+
+    .personal_loan_subpages ul.breadcrumb li+li:before {
+        padding: 8px;
+        color: black;
+    }
+
+    .personal_loan_subpages ul.breadcrumb li a {
+        color: #0275d8;
+        text-decoration: none;
+        font-size: 12px !important;
+    }
+
+    .personal_loan_subpages ul.breadcrumb li a:hover {
+        color: #01447e;
+        text-decoration: underline;
+    }
+
+    .personal_loan_subpages ul.breadcrumb_list * {
+        font-size: 12px;
+    }
+
+    .personal_loan_subpages .breadcrumb-font {
+        font-size: 12px;
+        color: #999;
+        padding: 1px 2px 0px;
+    }
+
+    .personal_loan_subpages .breadcrumb_alignment {
+        margin-top: 2.5rem;
+        text-align: left;
+    }
+
+    .personal_loan_subpages .banner_btn {
+        width: 149px !important;
+        padding: 12px 0px !important;
+        margin: -8px 0;
+        align-items: center;
+    }
+
+    .personal_loan_subpages .playstore_btn {
+        justify-content: right;
+        display: flex;
+    }
+
+    .personal_loan_subpages .btn_alignment {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 8px;
+    }
+
+    .personal_loan_subpages .banner_text {
+        text-align: center !important;
+    }
+
+    .personal_loan_subpages .bannerContent {
+        padding-bottom: 2rem !important;
+    }
+
+    .personal_loan_subpages .btn_class {
+        height: 42px !important;
+        margin-top: 6px !important;
+        padding: 9px !important;
+    }
+
+    .personal_loan_subpages .wrapper {
+        margin-left: 1px;
+    }
+
+    .personal_loan_subpages .interlinksHeading {
+        padding-top: 40px;
+        margin-bottom: 5px;
+    }
+
+    .personal_loan_subpages .main {
+        margin-top: 40px;
+    }
+
+    .personal_loan_subpages .responsiveTextH1 {
+        font-size: 32px;
+    }
+
+    .personal_loan_subpages .responsiveTextH4 {
+        font-size: 20px;
+    }
+
+    .personal_loan_subpages .mv-h2 {
+        font-size: 26px;
+        font-weight: var(--font-weight-extrabold);
+        padding: 20px;
+        margin-top: 100px;
+    }
+
+    .personal_loan_subpages .mv-h3 {
+        font-size: 24px;
+        font-weight: var(--font-weight-extrabold);
+        padding: 20px 0px;
+    }
+
+    .personal_loan_subpages .mv-h1-text {
+        display: block;
+        font-size: 27px;
+        font-weight: var(--font-weight-bold) !important;
+    }
+
+    .personal_loan_subpages .mv-h2-text {
+        display: block;
+        font-size: 24px;
+        font-weight: var(--font-weight-bold) !important;
+    }
+
+    .personal_loan_subpages .mv-h3-text {
+        display: block;
+        font-size: 21px;
+        font-weight: var(--font-weight-semibold) !important;
+    }
+
+    .personal_loan_subpages .mv-h4-text {
+        display: block;
+        font-size: 19px;
+        font-weight: var(--font-weight-regular) !important;
+    }
+
+    .personal_loan_subpages .mv-h5-text {
+        display: block;
+        font-size: 17px;
+        font-weight: var(--font-weight-regular) !important;
+    }
+
+    .personal_loan_subpages .img-mv-loans {
+        margin-top: 10x;
+    }
+
+    .personal_loan_subpages .personalloanheader {
+        font-size: 24px !important;
+        font-weight: var(--font-weight-extrabold) !important;
+        color: var(--white-color) !important;
+        padding: 0px 50px;
+        padding-top: 150px;
+        text-align: center !important;
+    }
+
+    .personal_loan_subpages .nobackground {
+        background-image: none !important;
+        background-color: transparent !important;
+        height: unset !important;
+    }
+
+    .personal_loan_subpages .textAlign-sm-center-lg-left {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .personal_loan_subpages {
+        /* Breadcrumbs */
+        /* Banner */
+        /* Interlinks */
+    }
+
+    .personal_loan_subpages body>div:first-of-type {
+        padding-top: 25px;
+    }
+
+    .personal_loan_subpages ul.breadcrumb {
+        padding: 10px 1px;
+        list-style: none;
+        background-color: var(--white-color) !important;
+        margin-top: 60px;
+        margin-bottom: -27px;
+    }
+
+    .personal_loan_subpages ul.breadcrumb li {
+        display: inline;
+        font-size: 13px;
+    }
+
+    .personal_loan_subpages ul.breadcrumb li+li:before {
+        padding: 8px;
+        color: black;
+    }
+
+    .personal_loan_subpages ul.breadcrumb li a {
+        color: #0275d8;
+        text-decoration: none;
+        font-size: 12px !important;
+    }
+
+    .personal_loan_subpages ul.breadcrumb li a:hover {
+        color: #01447e;
+        text-decoration: underline;
+    }
+
+    .personal_loan_subpages ul.breadcrumb_list * {
+        font-size: 12px;
+    }
+
+    .personal_loan_subpages .breadcrumb-font {
+        font-size: 12px;
+        color: #999;
+        padding: 1px 2px 0px;
+    }
+
+    .personal_loan_subpages .breadcrumb_alignment {
+        margin-top: 2.5rem;
+        text-align: left;
+    }
+
+    .personal_loan_subpages .banner_btn {
+        width: 149px !important;
+        padding: 12px 0px !important;
+        margin: -8px 0;
+        align-items: center;
+    }
+
+    .personal_loan_subpages .playstore_btn {
+        justify-content: right;
+        display: flex;
+    }
+
+    .personal_loan_subpages .btn_alignment {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 8px;
+    }
+
+    .personal_loan_subpages .banner_text {
+        text-align: center !important;
+    }
+
+    .personal_loan_subpages .bannerContent {
+        padding-bottom: 2rem !important;
+    }
+
+    .personal_loan_subpages .btn_class {
+        height: 42px !important;
+        margin-top: 6px !important;
+        padding: 9px !important;
+    }
+
+    .personal_loan_subpages .wrapper {
+        margin-left: 1px;
+    }
+
+    .personal_loan_subpages .interlinksHeading {
+        padding-top: 40px;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) and (max-width: 600px) {
+    .personal_loan_subpages {
+        /* Banner */
+        /* Features & Benifits && Apply Loan */
+        /* EMI Calculator */
+    }
+
+    .personal_loan_subpages .bannerClass {
+        border-radius: 4px;
+        padding: 0rem !important;
+    }
+
+    .personal_loan_subpages .playstore_btn {
+        margin-left: 10px;
+    }
+
+    .personal_loan_subpages .center_item {
+        padding-bottom: 7% !important;
+    }
+
+    .personal_loan_subpages .btn_alignment {
+        padding-left: 0px !important;
+    }
+
+    .personal_loan_subpages .applyLoanClass {
+        padding: 14px 0px !important;
+    }
+
+    .personal_loan_subpages .applyLoanClass :nth-child(odd) {
+        padding-right: 0px;
+    }
+
+    .personal_loan_subpages .features_text {
+        padding-left: 4px;
+    }
+
+    .personal_loan_subpages .valign-items-middle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .personal_loan_subpages .topFeaturesOverlay {
+        height: fit-content !important;
+        margin-top: unset !important;
+    }
+
+    .personal_loan_subpages .hideItem {
+        display: unset !important;
+    }
+
+    .personal_loan_subpages .banner_mobile {
+        display: block;
+    }
+
+    .personal_loan_subpages .mvl-h2 {
+        margin-bottom: 20px;
+    }
+
+    .personal_loan_subpages .calculator_text {
+        color: var(--white-color);
+        text-align: center;
+    }
+
+    .personal_loan_subpages .mvl-h2-white {
+        color: var(--white-color);
+        font-size: 22px;
+        margin-bottom: 29px !important;
+    }
+
+    .personal_loan_subpages .feedbackHelpfulButton {
+        width: 120px !important;
+    }
+}
+
+@media screen and (min-width: 280px) and (max-width: 480px) {
+    .personal_loan_subpages {
+        /* Breadcrumbs */
+        /* Banner */
+        /* Features & Benifits && Apply Loan */
+        /* Features & Benifits */
+        /* EMI Calculator */
+        /* Interlinks */
+        /*Common Styles */
+    }
+
+    .personal_loan_subpages body>div:first-of-type {
+        padding-top: 25px;
+    }
+
+    .personal_loan_subpages ul.breadcrumb {
+        padding: 10px 1px;
+        list-style: none;
+        background-color: var(--white-color) !important;
+        margin-top: 60px;
+        margin-bottom: -27px;
+    }
+
+    .personal_loan_subpages ul.breadcrumb li {
+        display: inline;
+        font-size: 13px;
+    }
+
+    .personal_loan_subpages ul.breadcrumb li+li:before {
+        padding: 8px;
+        color: black;
+    }
+
+    .personal_loan_subpages ul.breadcrumb li a {
+        color: #0275d8;
+        text-decoration: none;
+        font-size: 12px !important;
+    }
+
+    .personal_loan_subpages ul.breadcrumb li a:hover {
+        color: #01447e;
+        text-decoration: underline;
+    }
+
+    .personal_loan_subpages ul.breadcrumb_list * {
+        font-size: 12px;
+    }
+
+    .personal_loan_subpages .breadcrumb-font {
+        font-size: 12px;
+        color: #999;
+        padding: 1px 2px 0px;
+    }
+
+    .personal_loan_subpages .breadcrumb_alignment {
+        margin-top: 2.5rem;
+        text-align: left;
+    }
+
+    .personal_loan_subpages .bannerClass {
+        border-radius: 4px;
+        padding: 0rem !important;
+    }
+
+    .personal_loan_subpages .center_item {
+        padding-bottom: 7% !important;
+    }
+
+    .personal_loan_subpages .banner_btn {
+        width: 149px !important;
+        padding: 12px 0px !important;
+        margin: -8px 0;
+        align-items: center;
+    }
+
+    .personal_loan_subpages .playstore_btn {
+        justify-content: right;
+        display: flex;
+        margin-left: 10px;
+    }
+
+    .personal_loan_subpages .btn_alignment {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0px !important;
+    }
+
+    .personal_loan_subpages .banner_text {
+        text-align: center !important;
+    }
+
+    .personal_loan_subpages .bannerContent {
+        padding-bottom: 2rem !important;
+    }
+
+    .personal_loan_subpages .btn_class {
+        height: 42px !important;
+        margin-top: 6px !important;
+        padding: 9px !important;
+    }
+
+    .personal_loan_subpages .applyLoanClass {
+        padding: 14px 0px !important;
+    }
+
+    .personal_loan_subpages .applyLoanClass :nth-child(odd) {
+        padding-right: 0px;
+    }
+
+    .personal_loan_subpages .features_text {
+        padding-left: 4px;
+    }
+
+    .personal_loan_subpages .valign-items-middle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .personal_loan_subpages .topFeaturesOverlay {
+        height: fit-content !important;
+        margin-top: unset !important;
+    }
+
+    .personal_loan_subpages .hideItem {
+        display: unset !important;
+    }
+
+    .personal_loan_subpages .banner_mobile {
+        display: block;
+    }
+
+    .personal_loan_subpages .mvl-h2 {
+        margin-bottom: 20px;
+    }
+
+    .personal_loan_subpages .calculator_text {
+        color: var(--white-color);
+        text-align: center;
+    }
+
+    .personal_loan_subpages .mvl-h2-white {
+        color: var(--white-color);
+        font-size: 22px;
+        margin-bottom: 29px !important;
+    }
+
+    .personal_loan_subpages .wrapper {
+        margin-left: 1px;
+    }
+
+    .personal_loan_subpages .interlinksHeading {
+        padding-top: 40px;
+        margin-bottom: 5px;
+    }
+
+    .personal_loan_subpages .feedbackHelpfulButton {
+        width: 120px !important;
+    }
+
+    .personal_loan_subpages .main {
+        margin-top: 40px;
+    }
+
+    .personal_loan_subpages .responsiveTextH1 {
+        font-size: 32px;
+    }
+
+    .personal_loan_subpages .responsiveTextH4 {
+        font-size: 20px;
+    }
+
+    .personal_loan_subpages .mv-h2 {
+        font-size: 26px;
+        font-weight: var(--font-weight-extrabold);
+        padding: 20px;
+        margin-top: 100px;
+    }
+
+    .personal_loan_subpages .mv-h3 {
+        font-size: 24px;
+        font-weight: var(--font-weight-extrabold);
+        padding: 20px 0px;
+    }
+
+    .personal_loan_subpages .mv-h1-text {
+        display: block;
+        font-size: 27px;
+        font-weight: var(--font-weight-bold) !important;
+    }
+
+    .personal_loan_subpages .mv-h2-text {
+        display: block;
+        font-size: 24px;
+        font-weight: var(--font-weight-bold) !important;
+    }
+
+    .personal_loan_subpages .mv-h3-text {
+        display: block;
+        font-size: 21px;
+        font-weight: var(--font-weight-semibold) !important;
+    }
+
+    .personal_loan_subpages .mv-h4-text {
+        display: block;
+        font-size: 19px;
+        font-weight: var(--font-weight-regular) !important;
+    }
+
+    .personal_loan_subpages .mv-h5-text {
+        display: block;
+        font-size: 17px;
+        font-weight: var(--font-weight-regular) !important;
+    }
+
+    .personal_loan_subpages .img-mv-loans {
+        margin-top: 10x;
+    }
+
+    .personal_loan_subpages .personalloanheader {
+        font-size: 24px !important;
+        font-weight: var(--font-weight-extrabold) !important;
+        color: var(--white-color) !important;
+        padding: 0px 50px;
+        padding-top: 150px;
+        text-align: center !important;
+    }
+
+    .personal_loan_subpages .nobackground {
+        background-image: none !important;
+        background-color: transparent !important;
+        height: unset !important;
+    }
+
+    .personal_loan_subpages .textAlign-sm-center-lg-left {
+        display: flex;
+        justify-content: space-between;
+    }
+}

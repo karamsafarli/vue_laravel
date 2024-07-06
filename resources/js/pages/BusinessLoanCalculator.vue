@@ -1,405 +1,406 @@
 <template>
-<section>
-    <div class="mainContainer sliderSectionContainer marginTop0">
-        <h1 class="fullRowClass sectionTitle">Business Loan EMI Calculator</h1>
-        <div class="calculatorSection fullRowClass">
-            <div class="mainContainer margin0">
-                <div class="loanDetails colspan-xl-1-5 colspan-xs-1-6 justify-content-center">
-                    <p class="emiText">Your monthly EMI is</p>
-                    <p id="yourEMI" class="emiAmount">₹{{ emi.toLocaleString('en-IN') }}</p>
-                    <p id="dynamicIRate" class="emiContent">{{ interestRate }}% interest rate per annum</p>
-                    <div class="d-flex">
-                        <div>
-                            <p class="subContentText">Total Interest</p>
-                            <p id="totalInterest" class="subContentAmount">₹{{ totalInterest.toLocaleString('en-IN') }}</p>
+<div class="calculator_page">
+    <section>
+        <div class="mainContainer sliderSectionContainer marginTop0">
+            <h1 class="fullRowClass sectionTitle">Business Loan EMI Calculator</h1>
+            <div class="calculatorSection fullRowClass">
+                <div class="mainContainer margin0">
+                    <div class="loanDetails colspan-xl-1-5 colspan-xs-1-6 justify-content-center">
+                        <p class="emiText">Your monthly EMI is</p>
+                        <p id="yourEMI" class="emiAmount">₹{{ emi.toLocaleString('en-IN') }}</p>
+                        <p id="dynamicIRate" class="emiContent">{{ interestRate }}% interest rate per annum</p>
+                        <div class="d-flex">
+                            <div>
+                                <p class="subContentText">Total Interest</p>
+                                <p id="totalInterest" class="subContentAmount">₹{{ totalInterest.toLocaleString('en-IN') }}</p>
+                            </div>
+                            <div class="vl"></div>
+                            <div>
+                                <p class="subContentText">Total Amount</p>
+                                <p id="principalandinterest" class="subContentAmount">₹{{ totalAmount.toLocaleString('en-IN') }}</p>
+                            </div>
                         </div>
-                        <div class="vl"></div>
-                        <div>
-                            <p class="subContentText">Total Amount</p>
-                            <p id="principalandinterest" class="subContentAmount">₹{{ totalAmount.toLocaleString('en-IN') }}</p>
+                        <div class="displayDesktop" style="height: 270px;  width: 270px;">
+                            <div class="chartContainer">
+                                <Doughnut id="myChart" class="chartClass" width="270" height="270" :data="chartDataUpdate" :options="chartOptions" style="margin: auto; display: block; height: 180px !important; width: 180px !important;" />
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <ul class="ChartList">
+                                    <li class="d-flex">
+                                        <div>
+                                            <p class="chartText">Loan Amount</p>
+                                            <p class="rec chartAmount" id="loanAmountChart">₹ {{ loanAmount.toLocaleString('en-IN') }}</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="ChartList">
+                                    <li class="d-flex">
+                                        <div>
+                                            <p class="chartText">Total interest</p>
+                                            <p class="can chartAmount" id="totalInterestChart">₹ {{ totalInterest.toLocaleString('en-IN') }}</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="displayMobile">
+                            <router-link to="/personal-loan">
+                                <button class="applyNowButton">Apply Now</button>
+                            </router-link>
                         </div>
                     </div>
-                    <div class="displayDesktop" style="height: 270px;  width: 270px;">
-                        <div class="chartContainer">
-                            <Doughnut id="myChart" class="chartClass" width="270" height="270" :data="chartDataUpdate" :options="chartOptions" style="margin: auto; display: block; height: 180px !important; width: 180px !important;" />
+                    <div class="colspan-xl-6-11 colspan-xs-1-6 sliderSection">
+                        <div class="loan">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="sliderTitle">Loan Amount</h6>
+                                <div class="text-right">
+                                    <span class="position-relative inputSymbolRupee">
+                                        <input id="amount" class="inputContainer loanAmountContainer" v-model.number="loanAmount" @input="updateEMI" min="20000" max="50000000" step="5000" type="number">
+                                    </span>
+                                </div>
+                            </div>
+                            <input id="inputRange" ref="loanRange" type="range" min="20000" max="50000000" v-model.number="loanAmount" step="5000" class="calculatorSlider" @input="updateEMI">
+                            <div class="range d-flex justify-content-between">
+                                <p class="rangeValue">Min ₹20K</p>
+                                <p class="rangeValue">Max ₹5Cr</p>
+                            </div>
                         </div>
-                        <div class="d-flex justify-content-between">
-                            <ul class="ChartList">
-                                <li class="d-flex">
-                                    <div>
-                                        <p class="chartText">Loan Amount</p>
-                                        <p class="rec chartAmount" id="loanAmountChart">₹ {{ loanAmount.toLocaleString('en-IN') }}</p>
-                                    </div>
-                                </li>
+                        <div class="rateOfInterest">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="sliderTitle">Rate of Interest</h6>
+                                <div class="text-right">
+                                    <span class="position-relative inputSymbolPercent">
+                                        <input id="interest" class="inputContainer interestContainer" v-model.number="interestRate" @input="updateEMI" pattern="^\d{1,2}(\.\d{1,2})?" type="number" step="0.01">
+                                    </span>
+                                </div>
+                            </div>
+                            <input id="interestRange" ref="interestRange" class="calculatorSlider" type="range" min="8" max="36" v-model.number="interestRate" step="0.25" @input="updateEMI">
+                            <div class="range d-flex justify-content-between">
+                                <p class="rangeValue">Min 8%</p>
+                                <p class="rangeValue">Max 36%</p>
+                            </div>
+                        </div>
+                        <div class="tenure">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="sliderTitle">Loan Tenure</h6>
+                                <div class="text-right d-flex">
+                                    <span class="position-relative align-self-center">
+                                        <input id="tenure" class="inputContainer tenureInputContainer" v-model.number="tenure" @input="updateEMI" min="1" max="5" type="number">
+                                    </span>
+                                    <div class="select monthdropdown align-self-center">years</div>
+                                </div>
+                            </div>
+                            <input id="tenureRange" ref="tenureRange" class="calculatorSlider" min="1" max="5" v-model.number="tenure" step="1" @input="updateEMI" type="range">
+                            <div class="range d-flex justify-content-between">
+                                <p class="rangeValue minDuration">Min 1 year</p>
+                                <p class="rangeValue maxDuration">Max 5 years</p>
+                            </div>
+                        </div>
+                        <div class="displayDesktop text-center align-flex-end">
+                            <router-link to="/personal-loan">
+                                <button class="applyNowButton sliderButton">Apply Now</button>
+                            </router-link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="mainContainer">
+            <h4 class="sectionTitle fullRowClass">EMI Schedule</h4>
+            <div class="scrollTable fullRowClass" id="Result" v-html="emiScheduleTable"></div>
+        </div>
+    </section>
+
+    <section class="what_makes_us_better ">
+        <div class="mainContainer">
+            <div class="fullRowClass">
+                <h4 class="sectionTitle cardSectionTitle">Benefits of Moneyview Business Loan EMI Calculator</h4>
+            </div>
+            <div class="colspan-xl-1-6 colspan-xs-1-6 betterCard card1Margin">
+                <div class="cardSection">
+                    <div class="paddingDiv">
+                        <p class="cardTitle removeBr">Hassle free, easy to use</p>
+                        <p class="cardDescription">Our EMI calculator is easy-to-use and intuitive.</p>
+                    </div>
+                    <div class="cardAnimation displayDesktop">
+                        <dotlottie-player class="cardAnimationLottie1" autoplay="autoplay" loop="" mode="normal" background="transparent"></dotlottie-player>
+                    </div>
+                </div>
+            </div>
+            <div class="colspan-xl-7-12 colspan-xs-1-6 colspan betterCard cardMarginTop cardMarginTopDesktop">
+                <div class="cardSection">
+                    <div class="paddingDiv">
+                        <p class="cardTitle removeBr">Most affordable offers</p>
+                        <p class="cardDescription">Enjoy flexible loan tenures from 3M to 60M; choose a plan you like!</p>
+                    </div>
+                    <div class="cardAnimation displayDesktop">
+                        <dotlottie-player class="cardAnimationLottie2" autoplay="autoplay" loop="" mode="normal" background="transparent"></dotlottie-player>
+                    </div>
+                </div>
+            </div>
+            <div class="colspan-xl-1-6 colspan-xs-1-6 betterCard cardMarginTop">
+                <div class="cardSection">
+                    <div class="paddingDiv">
+                        <p class="cardTitle removeBr">Plan Ahead</p>
+                        <p class="cardDescription">Calculate your EMI beforehand to manage your finances in a better way</p>
+                    </div>
+                    <div class="cardAnimation displayDesktop">
+                        <dotlottie-player class="cardAnimationLottie3" autoplay="autoplay" loop="" mode="normal" background="transparent"></dotlottie-player>
+                    </div>
+                </div>
+            </div>
+            <div class="colspan-xl-7-12 colspan-xs-1-6 betterCard cardMarginTop">
+                <div class="cardSection">
+                    <div class="paddingDiv">
+                        <p class="cardTitle removeBr">100% Transparent</p>
+                        <p class="cardDescription">Check interest rate, total repayment &amp; terms beforehand - leave no room for doubt or surprises!</p>
+                    </div>
+                    <div class="cardAnimation displayDesktop">
+                        <dotlottie-player class="cardAnimationLottie4" autoplay="autoplay" loop="" mode="normal" background="transparent"></dotlottie-player>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="mainContainer">
+            <h4 class="fullRowClass sectionTitle">How to Get a Business Loan from moneyview</h4>
+            <div class="fullRowClass">
+                <p class="loanSteps">Fund your business dreams with moneyview’s instant personal loans. Follow the simple steps given below -</p>
+                <ol class="roundedList">
+                    <li>
+                        <p class="loanSteps">Sign up using your mobile number</p>
+                    </li>
+                    <li>
+                        <p class="loanSteps">Check your eligibility after entering the necessary details</p>
+                    </li>
+                    <li>
+                        <p class="loanSteps">Provide the necessary documents</p>
+                    </li>
+                    <li>
+                        <p class="loanSteps">Choose the loan amount and tenure</p>
+                    </li>
+                    <li>
+                        <p class="loanSteps">Get the loan credited directly to your account</p>
+                    </li>
+                </ol>
+            </div>
+            <a href="../../personal-loan?utm_source=loan_calc&amp;utm_medium=organic_channel&amp;utm_campaign=business-loan-emi-calculator" class="colspan-xs-1-6"><button class="applyNowButton sliderButton">Apply Now</button></a>
+        </div>
+    </section>
+
+    <section>
+        <div class="mainContainer">
+            <h2 class="sectionTitle fullRowClass">Popular Loan EMI Calculators</h2>
+            <router-link to="/emi-calculator/personal-loan-emi-calculator" class="colspan-xl-1-6 colspan-xs-1-6 loanEmiCalculator">Personal Loan EMI Calculator</router-link>
+            <router-link to="/emi-calculator/bike-loan-emi-calculator" class="colspan-xl-7-12 colspan-xs-1-6 loanEmiCalculator"> Bike Loan EMI Calculator</router-link>
+            <router-link to="/emi-calculator/car-loan-emi-calculator" class="colspan-xl-1-6 colspan-xs-1-6 loanEmiCalculator"> Car Loan EMI Calculator </router-link>
+            <router-link to="/emi-calculator/gold-loan-emi-calculator" class="colspan-xl-7-12 colspan-xs-1-6 loanEmiCalculator"> Gold Loan EMI Calculator</router-link>
+            <router-link to="/emi-calculator/education-loan-emi-calculator" class="colspan-xl-1-6 colspan-xs-1-6 loanEmiCalculator"> Education Loan Emi Calculator </router-link>
+            <router-link to="/emi-calculator/home-loan-emi-calculator" class="colspan-xl-7-12 colspan-xs-1-6 loanEmiCalculator"> Home Loan EMI Calculator </router-link>
+            <router-link to="/emi-calculator/business-loan-emi-calculator" class="colspan-xl-1-6 colspan-xs-1-6 loanEmiCalculator"> Business Loan EMI Calculator </router-link>
+            <router-link to="/emi-calculator/mortgage-loan-emi-calculator" class="colspan-xl-7-12 colspan-xs-1-6 loanEmiCalculator"> Mortgage Loan EMI Calculator</router-link>
+        </div>
+    </section>
+
+    <section>
+        <div class="mainContainer">
+            <h4 class="sectionTitle fullRowClass">Formula to calculate business loan EMI</h4>
+            <div class="fullRowClass">
+                <p class="calculatorPageContent">If you are interested in knowing the formula that is used to calculate EMI, you can check it out here-<br><span class="font-weight-600">E =&nbsp; P x R x (1+R)^N&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;————————<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[(1+R)^N-1]</span></p>
+                <p class="calculatorPageContent"><span class="font-weight-600">P - the principal amount</span> that is borrowed<br><span class="font-weight-600">R - the rate of interest</span> imposed<br><span class="font-weight-600">N - tenure in the number of months</span></p>
+                <p class="calculatorPageContent">For example, if <span class="font-weight-600">Rs.110 Lakhs</span> is the amount borrowed (P), <span class="font-weight-600">18%</span> is the rate of interest imposed (R), and <span class="font-weight-600">36 months</span> is the tenure (n), the EMI to be paid using the above formula will be:</p>
+                <p class="calculatorPageContent">110 Lakhs x 0.015 x (1+0.015)36 / [(1+0.015)^36-1] = Rs. 54,229 (per month)</p>
+                <p class="calculatorPageContent font-weight-600">Thus, the EMI for a Rs.110 Lakhs loan on 18% interest will be Rs.54,229.</p>
+                <p class="calculatorPageContent">The rate of interest (R) is calculated monthly i.e. it is calculated as (Annual Rate of interest/12/100) in this case (18/12/100 = 0.015)</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="seo_section">
+        <div class="mainContainer">
+            <h4 class="fullRowClass sectionTitle">Factors Affecting Business Loan Interest Rates</h4>
+            <div class="accordion text-left fullRowClass" id="accordionExample">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="content">The rate of interest depends on a variety of factors. It is important to have a knowledge of what affects your ROI. Take a look at some of the major factors that impact the ROI for your business loan-</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingOne"><a class="collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="text-transform: none !important; display: flex; justify-content: space-between;">Credit Score<span class="pull-right"><i class="fa fa-angle-down">&nbsp;</i><i class="fa fa-angle-up">&nbsp;</i> </span> </a></div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p class="content">Your credit score is a number that portrays your credit behavior. The higher the number, the better are your chances of getting a lower rate of interest. This is because a high credit score indicates good creditworthiness and lower risk of default.</p>
+                            <p class="content">What credit score is considered high might again depend on your loan provider. You can show either your CIBIL or your Experian score as your credit score.</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="hrAccordian">
+                <div class="card">
+                    <div class="card-header" id="headingTwo"><a class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="text-transform: none !important; display: flex; justify-content: space-between;">Type of Business <span class="pull-right"><i class="fa fa-angle-down">&nbsp;</i><i class="fa fa-angle-up">&nbsp;</i></span> </a></div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p class="mv-p">When it comes to a business loan, obviously the type of your business will affect your interest rate. The riskier the business, the higher is the rate of interest charged. If the business you wish to undertake guarantees early profits with lesser risks, you might get the loan at a lower rate of interest.</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="hrAccordian">
+                <div class="card">
+                    <div class="card-header" id="headingThree"><a class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="text-transform: none !important; display: flex; justify-content: space-between;">Business Experience <span class="pull-right"><i class="fa fa-angle-down">&nbsp;</i><i class="fa fa-angle-up">&nbsp;</i></span> </a></div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p class="content">If the businessman has prior experience of running a business, they may be able to avail loans at lower interest rates. This is because an experienced entrepreneur will be better equipped to deal with unpredictable challenges that might come up.</p>
+                            <p class="content">Whether the business itself is new or old will also play a significant role in deciding the rate of interest. If it is a new business, there will be significantly higher chances of it not doing so well, as compared to an up and running business.</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="hrAccordian">
+                <div class="card">
+                    <div class="card-header" id="headingFour"><a class="collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="text-transform: none !important; display: flex; justify-content: space-between;">Loan Amount and Repayment Tenure<span class="pull-right"><i class="fa fa-angle-down">&nbsp;</i><i class="fa fa-angle-up">&nbsp;</i></span> </a></div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p class="content">As is the case with every other loan, the amount and repayment term will impact the rate of interest. A lower loan amount and a shorter repayment period will attract lower rates of interest as the perceived risk for defaulting is low.</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="hrAccordian">
+                <div class="card">
+                    <div class="card-header" id="headingFive"><a class="collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="text-transform: none !important; display: flex; justify-content: space-between;">Existing Debts <span class="pull-right"><i class="fa fa-angle-down">&nbsp;</i><i class="fa fa-angle-up">&nbsp;</i></span> </a></div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p class="content">If you already have existing debts, your debt to income ratio will be higher. In that case, you might not be able to get loans at low interest rates. But if your debt to income ratio is below the recommended level, you might easily get loans at competitive interest rates.</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="hrAccordian">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="mainContainer">
+            <h4 class="fullRowClass sectionTitle">Personal Loan Related Links</h4>
+            <div class="colspan-xl-1-2 colspan-xs-1-3 calculatorInterlinks"><a class="text-center d-flex flex-column" href="../../loans/instant-cash-loan-on-aadhar-card-and-pan-card"><img src="https://moneyview.in/images/ic-interlinks-1.webp" class="interlinksImageContainer"><span class="interlinksContent">Loan on Aadhaar &amp; PAN Card</span></a></div>
+            <div class="colspan-xl-3-4 colspan-xs-4-6 calculatorInterlinks"><a class="text-center d-flex flex-column" href="../../personal-loan-interest-rates-and-charges"><img src="https://moneyview.in/images/ic-interlinks-2.webp" class="interlinksImageContainer"> <span class="interlinksContent">Personal Loan Interest Rates</span></a></div>
+            <div class="colspan-xl-5-6 colspan-xs-1-3 calculatorInterlinks"><a class="text-center d-flex flex-column" href="../../personal-loan-eligibility-check"><img src="https://moneyview.in/images/ic-interlinks-3.webp" class="interlinksImageContainer"> <span class="interlinksContent">Personal Loan Eligibility</span></a></div>
+            <div class="colspan-xl-7-8 colspan-xs-4-6 calculatorInterlinks"><a class="text-center d-flex flex-column" href="../../personal-loan-documents"><img src="https://moneyview.in/images/ic-interlinks-4.webp" class="interlinksImageContainer"> <span class="interlinksContent">Personal Loan Documents</span></a></div>
+            <div class="colspan-xl-9-10 colspan-xs-1-3 calculatorInterlinks"><a class="text-center d-flex flex-column" href="../../loans/instant-personal-loan-for-self-employed"><img src="https://moneyview.in/images/ic-interlinks-5.webp" class="interlinksImageContainer"> <span class="interlinksContent">Personal Loan for Self-Employed</span></a></div>
+            <div class="colspan-xl-11-12 colspan-xs-4-6 calculatorInterlinks"><a class="text-center d-flex flex-column" href="../../loans/instant-personal-loan-for-salaried-employee"><img src="https://moneyview.in/images/ic-interlinks-6.webp" class="interlinksImageContainer"> <span class="interlinksContent">Personal Loan for Salaried</span></a></div>
+        </div>
+    </section>
+
+    <section class="seo_section faqSection">
+        <div class="mainContainer">
+            <h4 class="fullRowClass sectionTitle">Business Loan EMI Related FAQs</h4>
+            <div class="accordion text-left fullRowClass" id="FAQExample">
+                <div class="card">
+                    <div class="card-header" id="faqHeadingOne"><a class="collapsed" data-toggle="collapse" data-target="#faqCollapseOne" aria-expanded="false" aria-controls="faqCollapseOne" style="text-transform: none !important; display: flex; justify-content: space-between;">What is a business loan?<span class="pull-right"><i class="fa fa-angle-down">&nbsp;</i><i class="fa fa-angle-up">&nbsp;</i> </span> </a></div>
+                    <div id="faqCollapseOne" class="collapse" aria-labelledby="faqHeadingOne" data-parent="#FAQExample">
+                        <div class="card-body">
+                            <p class="text-left">A business loan often referred to as a commercial loan, may be a secured or an unsecured loan. It is taken to help one’s business in some form. It may be used to fund a new business, or as working capital for an already established one.</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="hrAccordian">
+                <div class="card">
+                    <div class="card-header" id="faqHeadingTwo"><a class="collapsed" data-toggle="collapse" data-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo" style="text-transform: none !important; display: flex; justify-content: space-between;">Are business loans secured loans?<span class="pull-right"><i class="fa fa-angle-down">&nbsp;</i><i class="fa fa-angle-up">&nbsp;</i></span> </a></div>
+                    <div id="faqCollapseTwo" class="collapse" aria-labelledby="faqHeadingTwo" data-parent="#FAQExample">
+                        <div class="card-body">
+                            <p class="content">Most business loans are secure i.e., they are provided against collateral. This can also reduce the interest rate charged on the loan.</p>
+                            <p class="content">However, if you are looking for an unsecured loan for your business wherein you do not have to provide collateral, you can apply for a personal loan from moneyview at competitive rates.</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="hrAccordian">
+                <div class="card">
+                    <div class="card-header" id="faqHeadingThree"><a class="collapsed" data-toggle="collapse" data-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree" style="text-transform: none !important; display: flex; justify-content: space-between;">Can I foreclose my business loan?<span class="pull-right"><i class="fa fa-angle-down">&nbsp;</i><i class="fa fa-angle-up">&nbsp;</i></span> </a></div>
+                    <div id="faqCollapseThree" class="collapse" aria-labelledby="faqHeadingThree" data-parent="#FAQExample">
+                        <div class="card-body">
+                            <p class="content">Yes, you can foreclose your business loan; but the terms and conditions depend on your lender. Certain loan providers allow borrowers to foreclose their loans only after a certain number of EMIs have been paid. Additionally, you may have to pay foreclosure charges for the same.</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="hrAccordian">
+                <div class="card">
+                    <div class="card-header" id="faqHeadingFour"><a class="collapsed" data-toggle="collapse" data-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour" style="text-transform: none !important; display: flex; justify-content: space-between;">How does a Business Loan EMI Calculator work? <span class="pull-right"><i class="fa fa-angle-down">&nbsp;</i><i class="fa fa-angle-up">&nbsp;</i></span> </a></div>
+                    <div id="faqCollapseFour" class="collapse" aria-labelledby="faqHeadingFour" data-parent="#FAQExample">
+                        <div class="card-body">
+                            <p class="content">It is very easy to use a business loan EMI calculator. You just have to follow these steps-</p>
+                            <ul class="content">
+                                <li>Enter your principal loan amount</li>
+                                <li>Enter your rate of interest</li>
+                                <li>Enter your repayment tenure</li>
                             </ul>
-                            <ul class="ChartList">
-                                <li class="d-flex">
-                                    <div>
-                                        <p class="chartText">Total interest</p>
-                                        <p class="can chartAmount" id="totalInterestChart">₹ {{ totalInterest.toLocaleString('en-IN') }}</p>
-                                    </div>
-                                </li>
+                            <p class="content">The moneyview commercial loan calculator will display your monthly EMI amount as well as the total interest amount to be paid.</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="hrAccordian">
+                <div class="card">
+                    <div class="card-header" id="faqHeadingFive"><a class="collapsed" data-toggle="collapse" data-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive" style="text-transform: none !important; display: flex; justify-content: space-between;">How is commercial loan EMI calculated?<span class="pull-right"><i class="fa fa-angle-down">&nbsp;</i><i class="fa fa-angle-up">&nbsp;</i></span> </a></div>
+                    <div id="faqCollapseFive" class="collapse" aria-labelledby="faqHeadingFive" data-parent="#FAQExample">
+                        <div class="card-body">
+                            <p class="content">A commercial loan or a business loan EMI is calculated just like any other loan EMI. The formula is-</p>
+                            <p class="content">Where P is the principal loan amount, R is the monthly rate of interest, and N is the tenure in number of months. <br>For example, if you have taken a loan of Rs.210 Lakhs at 18% rate of interest for 3 years(36 months), your EMI = <span class="font-weight-600">[210 Lakhs x 0.015 x (1+0.015)^36] /[(1+0.015)^36-1] = Rs.90,381</span></p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="hrAccordian">
+                <div class="card">
+                    <div class="card-header" id="faqHeadingSix"><a class="collapsed" data-toggle="collapse" data-target="#faqCollapseSix" aria-expanded="false" aria-controls="faqCollapseSix" style="text-transform: none !important; display: flex; justify-content: space-between;">How much business loan can I get on an income of Rs.40000?<span class="pull-right"><i class="fa fa-angle-down">&nbsp;</i><i class="fa fa-angle-up">&nbsp;</i></span> </a></div>
+                    <div id="faqCollapseSix" class="collapse" aria-labelledby="faqHeadingSix" data-parent="#FAQExample">
+                        <div class="card-body">
+                            <p class="content">The amount you can get as a personal loan depends on multiple factors, and not just your income. The main factors are -</p>
+                            <ul class="content">
+                                <li>Your credit score - Higher the credit score, higher is the loan amount you are eligible for</li>
+                                <li>Age and experience - As an entrepreneur, both your experience and age would play a role in getting a loan. The stage your business is in will also be important</li>
+                                <li>Type of business - If your business is low risk, you might be able to get a bigger loan amount easily</li>
+                                <li>Debt-to-income ratio - If you have multiple loans running at the same time then the loan amount you get will be less</li>
+                            </ul>
+                            <p class="content">Depending on the above factors, your loan eligibility will be determined.</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="hrAccordian">
+                <div class="card">
+                    <div class="card-header" id="faqHeadingSeven"><a class="collapsed" data-toggle="collapse" data-target="#faqCollapseSeven" aria-expanded="false" aria-controls="faqCollapseSeven" style="text-transform: none !important; display: flex; justify-content: space-between;">What is the maximum loan amount for business?<span class="pull-right"><i class="fa fa-angle-down">&nbsp;</i><i class="fa fa-angle-up">&nbsp;</i></span> </a></div>
+                    <div id="faqCollapseSeven" class="collapse" aria-labelledby="faqHeadingSeven" data-parent="#FAQExample">
+                        <div class="card-body">
+                            <p class="content">The maximum loan amount that you can get as a business loan will depend on multiple factors. Some of them are-</p>
+                            <ul class="content">
+                                <li>Your credit score</li>
+                                <li>Your experience</li>
+                                <li>Your age</li>
+                                <li>Your income-to-debt ratio</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="displayMobile">
-                        <router-link to="/personal-loan">
-                            <button class="applyNowButton">Apply Now</button>
-                        </router-link>
-                    </div>
                 </div>
-                <div class="colspan-xl-6-11 colspan-xs-1-6 sliderSection">
-                    <div class="loan">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="sliderTitle">Loan Amount</h6>
-                            <div class="text-right">
-                                <span class="position-relative inputSymbolRupee">
-                                    <input id="amount" class="inputContainer loanAmountContainer" v-model.number="loanAmount" @input="updateEMI" min="20000" max="50000000" step="5000" type="number">
-                                </span>
-                            </div>
-                        </div>
-                        <input id="inputRange" ref="loanRange" type="range" min="20000" max="50000000" v-model.number="loanAmount" step="5000" class="calculatorSlider" @input="updateEMI">
-                        <div class="range d-flex justify-content-between">
-                            <p class="rangeValue">Min ₹20K</p>
-                            <p class="rangeValue">Max ₹5Cr</p>
-                        </div>
-                    </div>
-                    <div class="rateOfInterest">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="sliderTitle">Rate of Interest</h6>
-                            <div class="text-right">
-                                <span class="position-relative inputSymbolPercent">
-                                    <input id="interest" class="inputContainer interestContainer" v-model.number="interestRate" @input="updateEMI" pattern="^\d{1,2}(\.\d{1,2})?" type="number" step="0.01">
-                                </span>
-                            </div>
-                        </div>
-                        <input id="interestRange" ref="interestRange" class="calculatorSlider" type="range" min="8" max="36" v-model.number="interestRate" step="0.25" @input="updateEMI">
-                        <div class="range d-flex justify-content-between">
-                            <p class="rangeValue">Min 8%</p>
-                            <p class="rangeValue">Max 36%</p>
-                        </div>
-                    </div>
-                    <div class="tenure">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="sliderTitle">Loan Tenure</h6>
-                            <div class="text-right d-flex">
-                                <span class="position-relative align-self-center">
-                                    <input id="tenure" class="inputContainer tenureInputContainer" v-model.number="tenure" @input="updateEMI" min="1" max="5" type="number">
-                                </span>
-                                <div class="select monthdropdown align-self-center">years</div>
-                            </div>
-                        </div>
-                        <input id="tenureRange" ref="tenureRange" class="calculatorSlider" min="1" max="5" v-model.number="tenure" step="1" @input="updateEMI" type="range">
-                        <div class="range d-flex justify-content-between">
-                            <p class="rangeValue minDuration">Min 1 year</p>
-                            <p class="rangeValue maxDuration">Max 5 years</p>
-                        </div>
-                    </div>
-                    <div class="displayDesktop text-center align-flex-end">
-                        <router-link to="/personal-loan">
-                            <button class="applyNowButton sliderButton">Apply Now</button>
-                        </router-link>
-                    </div>
-                </div>
+                <hr class="hrAccordian">
+                <h5 class="moreFaqs">For More FAQs - <a href="../../loans-faq-en" class="moreFaqs moreFaqButton" target="_blank" rel="noopener">Click Here</a></h5>
+                <hr class="hrAccordian">
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section>
-    <div class="mainContainer">
-        <h4 class="sectionTitle fullRowClass">EMI Schedule</h4>
-        <div class="scrollTable fullRowClass" id="Result" v-html="emiScheduleTable"></div>
-    </div>
-</section>
-
-<section class="what_makes_us_better ">
-    <div class="mainContainer">
-        <div class="fullRowClass">
-            <h4 class="sectionTitle cardSectionTitle">Benefits of Moneyview Business Loan EMI Calculator</h4>
-        </div>
-        <div class="colspan-xl-1-6 colspan-xs-1-6 betterCard card1Margin">
-            <div class="cardSection">
-                <div class="paddingDiv">
-                    <p class="cardTitle removeBr">Hassle free, easy to use</p>
-                    <p class="cardDescription">Our EMI calculator is easy-to-use and intuitive.</p>
-                </div>
-                <div class="cardAnimation displayDesktop">
-                    <dotlottie-player class="cardAnimationLottie1" autoplay="autoplay" loop="" mode="normal" background="transparent"></dotlottie-player>
+    <section class="bottom_banner_section" style="position: relative;">
+        <div class="bottomBanner displayDesktop">
+            <div class="mainContainer margin0" style="margin-inline: 0px !important;">
+                <div class="colspan-xl-1-4 colspan-xs-1-3 colspan-md-1-5 bottomBannerTextPadding">
+                    <p class="bottomBannerTitle">Get an instant personal loan from moneyview</p>
+                    <p class="bottomBannerSubTitle">Download the app now from Google Play</p>
+                    <div class="playstoreButton"><a href="https://moneyviewloans.app.link/rRV8PCXi8ub?%243p=a_custom_1123172339713770468" class="emi_calc_banner"> <img loading="lazy" src="https://moneyview.in/images/GooglePlayButton.png" width="100%" height="100%"> </a></div>
                 </div>
             </div>
         </div>
-        <div class="colspan-xl-7-12 colspan-xs-1-6 colspan betterCard cardMarginTop cardMarginTopDesktop">
-            <div class="cardSection">
-                <div class="paddingDiv">
-                    <p class="cardTitle removeBr">Most affordable offers</p>
-                    <p class="cardDescription">Enjoy flexible loan tenures from 3M to 60M; choose a plan you like!</p>
-                </div>
-                <div class="cardAnimation displayDesktop">
-                    <dotlottie-player class="cardAnimationLottie2" autoplay="autoplay" loop="" mode="normal" background="transparent"></dotlottie-player>
-                </div>
-            </div>
-        </div>
-        <div class="colspan-xl-1-6 colspan-xs-1-6 betterCard cardMarginTop">
-            <div class="cardSection">
-                <div class="paddingDiv">
-                    <p class="cardTitle removeBr">Plan Ahead</p>
-                    <p class="cardDescription">Calculate your EMI beforehand to manage your finances in a better way</p>
-                </div>
-                <div class="cardAnimation displayDesktop">
-                    <dotlottie-player class="cardAnimationLottie3" autoplay="autoplay" loop="" mode="normal" background="transparent"></dotlottie-player>
-                </div>
-            </div>
-        </div>
-        <div class="colspan-xl-7-12 colspan-xs-1-6 betterCard cardMarginTop">
-            <div class="cardSection">
-                <div class="paddingDiv">
-                    <p class="cardTitle removeBr">100% Transparent</p>
-                    <p class="cardDescription">Check interest rate, total repayment &amp; terms beforehand - leave no room for doubt or surprises!</p>
-                </div>
-                <div class="cardAnimation displayDesktop">
-                    <dotlottie-player class="cardAnimationLottie4" autoplay="autoplay" loop="" mode="normal" background="transparent"></dotlottie-player>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section>
-    <div class="mainContainer">
-        <h4 class="fullRowClass sectionTitle">How to Get a Business Loan from moneyview</h4>
-        <div class="fullRowClass">
-            <p class="loanSteps">Fund your business dreams with moneyview’s instant personal loans. Follow the simple steps given below -</p>
-            <ol class="roundedList">
-                <li>
-                    <p class="loanSteps">Sign up using your mobile number</p>
-                </li>
-                <li>
-                    <p class="loanSteps">Check your eligibility after entering the necessary details</p>
-                </li>
-                <li>
-                    <p class="loanSteps">Provide the necessary documents</p>
-                </li>
-                <li>
-                    <p class="loanSteps">Choose the loan amount and tenure</p>
-                </li>
-                <li>
-                    <p class="loanSteps">Get the loan credited directly to your account</p>
-                </li>
-            </ol>
-        </div>
-        <a href="../../personal-loan?utm_source=loan_calc&amp;utm_medium=organic_channel&amp;utm_campaign=business-loan-emi-calculator" class="colspan-xs-1-6"><button class="applyNowButton sliderButton">Apply Now</button></a>
-    </div>
-</section>
-
-<section>
-    <div class="mainContainer">
-        <h2 class="sectionTitle fullRowClass">Popular Loan EMI Calculators</h2>
-        <router-link to="/emi-calculator/personal-loan-emi-calculator" class="colspan-xl-1-6 colspan-xs-1-6 loanEmiCalculator">Personal Loan EMI Calculator</router-link> 
-        <router-link to="/emi-calculator/bike-loan-emi-calculator" class="colspan-xl-7-12 colspan-xs-1-6 loanEmiCalculator"> Bike Loan EMI Calculator</router-link> 
-        <router-link to="/emi-calculator/car-loan-emi-calculator" class="colspan-xl-1-6 colspan-xs-1-6 loanEmiCalculator"> Car Loan EMI Calculator </router-link> 
-        <router-link to="/emi-calculator/gold-loan-emi-calculator" class="colspan-xl-7-12 colspan-xs-1-6 loanEmiCalculator"> Gold Loan EMI Calculator</router-link> 
-        <router-link to="/emi-calculator/education-loan-emi-calculator" class="colspan-xl-1-6 colspan-xs-1-6 loanEmiCalculator"> Education Loan Emi Calculator </router-link> 
-        <router-link to="/emi-calculator/home-loan-emi-calculator" class="colspan-xl-7-12 colspan-xs-1-6 loanEmiCalculator"> Home Loan EMI Calculator </router-link> 
-        <router-link to="/emi-calculator/business-loan-emi-calculator" class="colspan-xl-1-6 colspan-xs-1-6 loanEmiCalculator"> Business Loan EMI Calculator </router-link> 
-        <router-link to="/emi-calculator/mortgage-loan-emi-calculator" class="colspan-xl-7-12 colspan-xs-1-6 loanEmiCalculator"> Mortgage Loan EMI Calculator</router-link>
-    </div>
-</section>
-
-<section>
-    <div class="mainContainer">
-        <h4 class="sectionTitle fullRowClass">Formula to calculate business loan EMI</h4>
-        <div class="fullRowClass">
-            <p class="calculatorPageContent">If you are interested in knowing the formula that is used to calculate EMI, you can check it out here-<br><span class="font-weight-600">E =&nbsp; P x R x (1+R)^N&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;————————<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[(1+R)^N-1]</span></p>
-            <p class="calculatorPageContent"><span class="font-weight-600">P - the principal amount</span> that is borrowed<br><span class="font-weight-600">R - the rate of interest</span> imposed<br><span class="font-weight-600">N - tenure in the number of months</span></p>
-            <p class="calculatorPageContent">For example, if <span class="font-weight-600">Rs.110 Lakhs</span> is the amount borrowed (P), <span class="font-weight-600">18%</span> is the rate of interest imposed (R), and <span class="font-weight-600">36 months</span> is the tenure (n), the EMI to be paid using the above formula will be:</p>
-            <p class="calculatorPageContent">110 Lakhs x 0.015 x (1+0.015)36 / [(1+0.015)^36-1] = Rs. 54,229 (per month)</p>
-            <p class="calculatorPageContent font-weight-600">Thus, the EMI for a Rs.110 Lakhs loan on 18% interest will be Rs.54,229.</p>
-            <p class="calculatorPageContent">The rate of interest (R) is calculated monthly i.e. it is calculated as (Annual Rate of interest/12/100) in this case (18/12/100 = 0.015)</p>
-        </div>
-    </div>
-</section>
-
-<section class="seo_section">
-    <div class="mainContainer">
-        <h4 class="fullRowClass sectionTitle">Factors Affecting Business Loan Interest Rates</h4>
-        <div class="accordion text-left fullRowClass" id="accordionExample">
-            <div class="card">
-                <div class="card-body">
-                    <p class="content">The rate of interest depends on a variety of factors. It is important to have a knowledge of what affects your ROI. Take a look at some of the major factors that impact the ROI for your business loan-</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingOne"><a class="collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="text-transform: none !important; display: flex; justify-content: space-between;">Credit Score<span class="pull-right"><i class="fa fa-angle-down">&nbsp;</i><i class="fa fa-angle-up">&nbsp;</i> </span> </a></div>
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body">
-                        <p class="content">Your credit score is a number that portrays your credit behavior. The higher the number, the better are your chances of getting a lower rate of interest. This is because a high credit score indicates good creditworthiness and lower risk of default.</p>
-                        <p class="content">What credit score is considered high might again depend on your loan provider. You can show either your CIBIL or your Experian score as your credit score.</p>
-                    </div>
-                </div>
-            </div>
-            <hr class="hrAccordian">
-            <div class="card">
-                <div class="card-header" id="headingTwo"><a class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="text-transform: none !important; display: flex; justify-content: space-between;">Type of Business <span class="pull-right"><i class="fa fa-angle-down">&nbsp;</i><i class="fa fa-angle-up">&nbsp;</i></span> </a></div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body">
-                        <p class="mv-p">When it comes to a business loan, obviously the type of your business will affect your interest rate. The riskier the business, the higher is the rate of interest charged. If the business you wish to undertake guarantees early profits with lesser risks, you might get the loan at a lower rate of interest.</p>
-                    </div>
-                </div>
-            </div>
-            <hr class="hrAccordian">
-            <div class="card">
-                <div class="card-header" id="headingThree"><a class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="text-transform: none !important; display: flex; justify-content: space-between;">Business Experience <span class="pull-right"><i class="fa fa-angle-down">&nbsp;</i><i class="fa fa-angle-up">&nbsp;</i></span> </a></div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                    <div class="card-body">
-                        <p class="content">If the businessman has prior experience of running a business, they may be able to avail loans at lower interest rates. This is because an experienced entrepreneur will be better equipped to deal with unpredictable challenges that might come up.</p>
-                        <p class="content">Whether the business itself is new or old will also play a significant role in deciding the rate of interest. If it is a new business, there will be significantly higher chances of it not doing so well, as compared to an up and running business.</p>
-                    </div>
-                </div>
-            </div>
-            <hr class="hrAccordian">
-            <div class="card">
-                <div class="card-header" id="headingFour"><a class="collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="text-transform: none !important; display: flex; justify-content: space-between;">Loan Amount and Repayment Tenure<span class="pull-right"><i class="fa fa-angle-down">&nbsp;</i><i class="fa fa-angle-up">&nbsp;</i></span> </a></div>
-                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                    <div class="card-body">
-                        <p class="content">As is the case with every other loan, the amount and repayment term will impact the rate of interest. A lower loan amount and a shorter repayment period will attract lower rates of interest as the perceived risk for defaulting is low.</p>
-                    </div>
-                </div>
-            </div>
-            <hr class="hrAccordian">
-            <div class="card">
-                <div class="card-header" id="headingFive"><a class="collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="text-transform: none !important; display: flex; justify-content: space-between;">Existing Debts <span class="pull-right"><i class="fa fa-angle-down">&nbsp;</i><i class="fa fa-angle-up">&nbsp;</i></span> </a></div>
-                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                    <div class="card-body">
-                        <p class="content">If you already have existing debts, your debt to income ratio will be higher. In that case, you might not be able to get loans at low interest rates. But if your debt to income ratio is below the recommended level, you might easily get loans at competitive interest rates.</p>
-                    </div>
-                </div>
-            </div>
-            <hr class="hrAccordian">
-        </div>
-    </div>
-</section>
-
-<section>
-    <div class="mainContainer">
-        <h4 class="fullRowClass sectionTitle">Personal Loan Related Links</h4>
-        <div class="colspan-xl-1-2 colspan-xs-1-3 calculatorInterlinks"><a class="text-center d-flex flex-column" href="../../loans/instant-cash-loan-on-aadhar-card-and-pan-card"><img src="https://moneyview.in/images/ic-interlinks-1.webp" class="interlinksImageContainer"><span class="interlinksContent">Loan on Aadhaar &amp; PAN Card</span></a></div>
-        <div class="colspan-xl-3-4 colspan-xs-4-6 calculatorInterlinks"><a class="text-center d-flex flex-column" href="../../personal-loan-interest-rates-and-charges"><img src="https://moneyview.in/images/ic-interlinks-2.webp" class="interlinksImageContainer"> <span class="interlinksContent">Personal Loan Interest Rates</span></a></div>
-        <div class="colspan-xl-5-6 colspan-xs-1-3 calculatorInterlinks"><a class="text-center d-flex flex-column" href="../../personal-loan-eligibility-check"><img src="https://moneyview.in/images/ic-interlinks-3.webp" class="interlinksImageContainer"> <span class="interlinksContent">Personal Loan Eligibility</span></a></div>
-        <div class="colspan-xl-7-8 colspan-xs-4-6 calculatorInterlinks"><a class="text-center d-flex flex-column" href="../../personal-loan-documents"><img src="https://moneyview.in/images/ic-interlinks-4.webp" class="interlinksImageContainer"> <span class="interlinksContent">Personal Loan Documents</span></a></div>
-        <div class="colspan-xl-9-10 colspan-xs-1-3 calculatorInterlinks"><a class="text-center d-flex flex-column" href="../../loans/instant-personal-loan-for-self-employed"><img src="https://moneyview.in/images/ic-interlinks-5.webp" class="interlinksImageContainer"> <span class="interlinksContent">Personal Loan for Self-Employed</span></a></div>
-        <div class="colspan-xl-11-12 colspan-xs-4-6 calculatorInterlinks"><a class="text-center d-flex flex-column" href="../../loans/instant-personal-loan-for-salaried-employee"><img src="https://moneyview.in/images/ic-interlinks-6.webp" class="interlinksImageContainer"> <span class="interlinksContent">Personal Loan for Salaried</span></a></div>
-    </div>
-</section>
-
-<section class="seo_section faqSection">
-    <div class="mainContainer">
-        <h4 class="fullRowClass sectionTitle">Business Loan EMI Related FAQs</h4>
-        <div class="accordion text-left fullRowClass" id="FAQExample">
-            <div class="card">
-                <div class="card-header" id="faqHeadingOne"><a class="collapsed" data-toggle="collapse" data-target="#faqCollapseOne" aria-expanded="false" aria-controls="faqCollapseOne" style="text-transform: none !important; display: flex; justify-content: space-between;">What is a business loan?<span class="pull-right"><i class="fa fa-angle-down">&nbsp;</i><i class="fa fa-angle-up">&nbsp;</i> </span> </a></div>
-                <div id="faqCollapseOne" class="collapse" aria-labelledby="faqHeadingOne" data-parent="#FAQExample">
-                    <div class="card-body">
-                        <p class="text-left">A business loan often referred to as a commercial loan, may be a secured or an unsecured loan. It is taken to help one’s business in some form. It may be used to fund a new business, or as working capital for an already established one.</p>
-                    </div>
-                </div>
-            </div>
-            <hr class="hrAccordian">
-            <div class="card">
-                <div class="card-header" id="faqHeadingTwo"><a class="collapsed" data-toggle="collapse" data-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo" style="text-transform: none !important; display: flex; justify-content: space-between;">Are business loans secured loans?<span class="pull-right"><i class="fa fa-angle-down">&nbsp;</i><i class="fa fa-angle-up">&nbsp;</i></span> </a></div>
-                <div id="faqCollapseTwo" class="collapse" aria-labelledby="faqHeadingTwo" data-parent="#FAQExample">
-                    <div class="card-body">
-                        <p class="content">Most business loans are secure i.e., they are provided against collateral. This can also reduce the interest rate charged on the loan.</p>
-                        <p class="content">However, if you are looking for an unsecured loan for your business wherein you do not have to provide collateral, you can apply for a personal loan from moneyview at competitive rates.</p>
-                    </div>
-                </div>
-            </div>
-            <hr class="hrAccordian">
-            <div class="card">
-                <div class="card-header" id="faqHeadingThree"><a class="collapsed" data-toggle="collapse" data-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree" style="text-transform: none !important; display: flex; justify-content: space-between;">Can I foreclose my business loan?<span class="pull-right"><i class="fa fa-angle-down">&nbsp;</i><i class="fa fa-angle-up">&nbsp;</i></span> </a></div>
-                <div id="faqCollapseThree" class="collapse" aria-labelledby="faqHeadingThree" data-parent="#FAQExample">
-                    <div class="card-body">
-                        <p class="content">Yes, you can foreclose your business loan; but the terms and conditions depend on your lender. Certain loan providers allow borrowers to foreclose their loans only after a certain number of EMIs have been paid. Additionally, you may have to pay foreclosure charges for the same.</p>
-                    </div>
-                </div>
-            </div>
-            <hr class="hrAccordian">
-            <div class="card">
-                <div class="card-header" id="faqHeadingFour"><a class="collapsed" data-toggle="collapse" data-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour" style="text-transform: none !important; display: flex; justify-content: space-between;">How does a Business Loan EMI Calculator work? <span class="pull-right"><i class="fa fa-angle-down">&nbsp;</i><i class="fa fa-angle-up">&nbsp;</i></span> </a></div>
-                <div id="faqCollapseFour" class="collapse" aria-labelledby="faqHeadingFour" data-parent="#FAQExample">
-                    <div class="card-body">
-                        <p class="content">It is very easy to use a business loan EMI calculator. You just have to follow these steps-</p>
-                        <ul class="content">
-                            <li>Enter your principal loan amount</li>
-                            <li>Enter your rate of interest</li>
-                            <li>Enter your repayment tenure</li>
-                        </ul>
-                        <p class="content">The moneyview commercial loan calculator will display your monthly EMI amount as well as the total interest amount to be paid.</p>
-                    </div>
-                </div>
-            </div>
-            <hr class="hrAccordian">
-            <div class="card">
-                <div class="card-header" id="faqHeadingFive"><a class="collapsed" data-toggle="collapse" data-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive" style="text-transform: none !important; display: flex; justify-content: space-between;">How is commercial loan EMI calculated?<span class="pull-right"><i class="fa fa-angle-down">&nbsp;</i><i class="fa fa-angle-up">&nbsp;</i></span> </a></div>
-                <div id="faqCollapseFive" class="collapse" aria-labelledby="faqHeadingFive" data-parent="#FAQExample">
-                    <div class="card-body">
-                        <p class="content">A commercial loan or a business loan EMI is calculated just like any other loan EMI. The formula is-</p>
-                        <p class="content">Where P is the principal loan amount, R is the monthly rate of interest, and N is the tenure in number of months. <br>For example, if you have taken a loan of Rs.210 Lakhs at 18% rate of interest for 3 years(36 months), your EMI = <span class="font-weight-600">[210 Lakhs x 0.015 x (1+0.015)^36] /[(1+0.015)^36-1] = Rs.90,381</span></p>
-                    </div>
-                </div>
-            </div>
-            <hr class="hrAccordian">
-            <div class="card">
-                <div class="card-header" id="faqHeadingSix"><a class="collapsed" data-toggle="collapse" data-target="#faqCollapseSix" aria-expanded="false" aria-controls="faqCollapseSix" style="text-transform: none !important; display: flex; justify-content: space-between;">How much business loan can I get on an income of Rs.40000?<span class="pull-right"><i class="fa fa-angle-down">&nbsp;</i><i class="fa fa-angle-up">&nbsp;</i></span> </a></div>
-                <div id="faqCollapseSix" class="collapse" aria-labelledby="faqHeadingSix" data-parent="#FAQExample">
-                    <div class="card-body">
-                        <p class="content">The amount you can get as a personal loan depends on multiple factors, and not just your income. The main factors are -</p>
-                        <ul class="content">
-                            <li>Your credit score - Higher the credit score, higher is the loan amount you are eligible for</li>
-                            <li>Age and experience - As an entrepreneur, both your experience and age would play a role in getting a loan. The stage your business is in will also be important</li>
-                            <li>Type of business - If your business is low risk, you might be able to get a bigger loan amount easily</li>
-                            <li>Debt-to-income ratio - If you have multiple loans running at the same time then the loan amount you get will be less</li>
-                        </ul>
-                        <p class="content">Depending on the above factors, your loan eligibility will be determined.</p>
-                    </div>
-                </div>
-            </div>
-            <hr class="hrAccordian">
-            <div class="card">
-                <div class="card-header" id="faqHeadingSeven"><a class="collapsed" data-toggle="collapse" data-target="#faqCollapseSeven" aria-expanded="false" aria-controls="faqCollapseSeven" style="text-transform: none !important; display: flex; justify-content: space-between;">What is the maximum loan amount for business?<span class="pull-right"><i class="fa fa-angle-down">&nbsp;</i><i class="fa fa-angle-up">&nbsp;</i></span> </a></div>
-                <div id="faqCollapseSeven" class="collapse" aria-labelledby="faqHeadingSeven" data-parent="#FAQExample">
-                    <div class="card-body">
-                        <p class="content">The maximum loan amount that you can get as a business loan will depend on multiple factors. Some of them are-</p>
-                        <ul class="content">
-                            <li>Your credit score</li>
-                            <li>Your experience</li>
-                            <li>Your age</li>
-                            <li>Your income-to-debt ratio</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <hr class="hrAccordian">
-            <h5 class="moreFaqs">For More FAQs - <a href="../../loans-faq-en" class="moreFaqs moreFaqButton" target="_blank" rel="noopener">Click Here</a></h5>
-            <hr class="hrAccordian">
-        </div>
-    </div>
-</section>
-
-<section class="bottom_banner_section" style="position: relative;">
-    <div class="bottomBanner displayDesktop">
-        <div class="mainContainer margin0" style="margin-inline: 0px !important;">
-            <div class="colspan-xl-1-4 colspan-xs-1-3 colspan-md-1-5 bottomBannerTextPadding">
-                <p class="bottomBannerTitle">Get an instant personal loan from moneyview</p>
-                <p class="bottomBannerSubTitle">Download the app now from Google Play</p>
-                <div class="playstoreButton"><a href="https://moneyviewloans.app.link/rRV8PCXi8ub?%243p=a_custom_1123172339713770468" class="emi_calc_banner"> <img loading="lazy" src="https://moneyview.in/images/GooglePlayButton.png" width="100%" height="100%"> </a></div>
-            </div>
-        </div>
-    </div>
-    <div class="mainContainer bottomBannerBackdrop" style="cursor: pointer; position: absolute; bottom: unset;"><a href="https://moneyviewloans.app.link/rRV8PCXi8ub?%243p=a_custom_1123172339713770468" class="emi_calc_banner backdropBtn" style="display: grid; width: 100%; height: 100%; position: absolute;">&nbsp;</a></div>
-</section>
+        <div class="mainContainer bottomBannerBackdrop" style="cursor: pointer; position: absolute; bottom: unset;"><a href="https://moneyviewloans.app.link/rRV8PCXi8ub?%243p=a_custom_1123172339713770468" class="emi_calc_banner backdropBtn" style="display: grid; width: 100%; height: 100%; position: absolute;">&nbsp;</a></div>
+    </section>
+</div>
 </template>
-
 
 <script>
 import {
@@ -410,6 +411,8 @@ import {
     Tooltip,
     ArcElement
 } from 'chart.js'
+
+import '../../css/calculators.css';
 
 ChartJS.register(ArcElement, Tooltip)
 
@@ -685,1543 +688,3 @@ export default {
     }
 };
 </script>
-
-<style scoped>
-.marginTop0 {
-    margin-top: 20px !important;
-}
-
-@keyframes chartjs-render-animation {
-    from {
-        opacity: .99
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-.chartjs-render-monitor {
-    animation: chartjs-render-animation 1ms
-}
-
-.chartjs-size-monitor,
-.chartjs-size-monitor-expand,
-.chartjs-size-monitor-shrink {
-    position: absolute;
-    direction: ltr;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-    pointer-events: none;
-    visibility: hidden;
-    z-index: -1
-}
-
-.chartjs-size-monitor-expand>div {
-    position: absolute;
-    width: 1000000px;
-    height: 1000000px;
-    left: 0;
-    top: 0
-}
-
-.chartjs-size-monitor-shrink>div {
-    position: absolute;
-    width: 200%;
-    height: 200%;
-    left: 0;
-    top: 0
-}
-
-/* Slider Section */
-#inputRange {
-    background: linear-gradient(to right, #FF7F4C 0%, #FF7F4C 2%, rgba(221, 221, 221, 1) 20.8417%, rgba(221, 221, 221, 1) 100%)
-}
-
-/* 
-#interestRange {
-    background: linear-gradient(to right, #FF7F4C 0%, #FF7F4C 33%, rgba(221, 221, 221, 1) 33%, rgba(221, 221, 221, 1) 100%);
-} */
-
-#tenureRange {
-    background: linear-gradient(to right, #FF7F4C 6%, #FF7F4C 6%, rgba(221, 221, 221, 1) 0%, rgba(221, 221, 221, 1) 100%);
-}
-
-.inputContainer {
-    width: 96px;
-}
-
-.loanAmountContainer {
-    width: 154px !important;
-}
-
-/* CALCULATOR STYLES */
-
-section {
-    background-color: var(--white-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.sectionTitle {
-    text-align: left !important;
-    color: rgba(0, 0, 0, 1);
-}
-
-.calculatorPageContent {
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: var(--font-weight-regular);
-    color: rgba(67, 64, 97, 1);
-}
-
-h6 {
-    padding-top: 0px !important;
-}
-
-/* Slider Section */
-.calculatorSlider {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 100%;
-    height: 4px;
-    border-radius: 82px;
-    background: rgba(221, 221, 221, 1);
-    outline: none;
-    transition: background 450ms ease-in;
-}
-
-.calculatorSlider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 28px !important;
-    height: 28px !important;
-    border-radius: 50%;
-    background: linear-gradient(228.37deg, var(--orange05) 16.67%, var(--orange05) 87.75%) !important;
-    cursor: pointer;
-    border: 8px solid var(--white-color) !important;
-    box-shadow: 0px 3px 12px 0px #00000029 !important;
-}
-
-.calculatorSlider::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background: var(--primary-color);
-    cursor: pointer;
-}
-
-.emiText {
-    font-size: 24px;
-    font-weight: var(--font-weight-semibold);
-    line-height: 36px;
-    letter-spacing: 0px;
-    color: rgba(0, 0, 0, 1);
-    text-align: center;
-    margin-bottom: 28px;
-}
-
-.emiAmount {
-    font-size: 32px;
-    font-weight: var(--font-weight-bold);
-    line-height: 48px;
-    letter-spacing: 0px;
-    color: var(--orange05);
-    text-align: center;
-    margin-bottom: 12px;
-}
-
-.emiContent {
-    font-size: 16px;
-    font-weight: var(--font-weight-regular);
-    line-height: 22px;
-    letter-spacing: 0px;
-    text-align: center;
-    color: rgba(130, 132, 157, 1);
-    margin-bottom: 20px;
-}
-
-.subContentText {
-    font-size: 14px;
-    font-weight: var(--font-weight-regular);
-    line-height: 24px;
-    letter-spacing: 0em;
-    color: rgba(67, 64, 97, 1);
-    text-align: center;
-    margin-bottom: 4px;
-}
-
-.subContentAmount {
-    font-size: 16px;
-    font-weight: var(--font-weight-semibold);
-    line-height: 22px;
-    letter-spacing: 0px;
-    color: rgba(0, 0, 0, 1);
-    text-align: center;
-}
-
-.vl {
-    color: rgba(220, 220, 222, 1);
-    border-left: 1px solid rgba(220, 220, 222, 1);
-    height: 38px;
-    margin: 0 32px;
-}
-
-.rec:before {
-    color: #0b864c;
-}
-
-.can:before {
-    color: #f3aaa5;
-}
-
-.inputContainer {
-    border: 1px solid rgba(185, 186, 189, 1) !important;
-    color: rgba(0, 0, 0, 1);
-    width: 96px;
-    height: 48px;
-    padding: 13px 16px 13px 16px;
-    border-radius: 6px;
-    font-size: 16px;
-    font-weight: var(--font-weight-regular);
-    line-height: 22px;
-    letter-spacing: 0px;
-    text-align: center;
-}
-
-.sliderTitle {
-    font-size: 18px;
-    font-weight: var(--font-weight-semibold);
-    line-height: 24px;
-    align-self: center;
-    color: var(--black-color);
-    margin-block: auto;
-}
-
-.rangeValue {
-    font-size: 12px;
-    font-weight: var(--font-weight-regular);
-    line-height: 20px;
-    color: var(--grey07);
-}
-
-.sliderSection {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.sliderButton {
-    width: 270px !important;
-    height: 56px;
-    margin-top: 12px;
-}
-
-.ChartList {
-    list-style: none !important;
-    padding-left: 0px;
-}
-
-.ChartList li:before {
-    content: "•";
-    padding-right: 8px;
-    vertical-align: middle;
-    font-size: 2em;
-    line-height: 20px;
-}
-
-.ChartList:nth-child(1) li:before {
-    color: var(--primary-color);
-}
-
-.ChartList:nth-child(2) li:before {
-    color: var(--magenta03);
-}
-
-.chartContainer {
-    padding-block: 32px 32px;
-}
-
-.chartText {
-    font-size: 14px;
-    font-weight: var(--font-weight-regular);
-    line-height: 24px;
-    color: var(--grey09);
-    margin-bottom: 4px;
-}
-
-.chartAmount {
-    font-size: 16px;
-    font-weight: var(--font-weight-semibold);
-    line-height: 22px;
-    color: var(--black-color);
-    margin-bottom: 0px;
-}
-
-.loanAmountContainer {
-    width: 154px !important;
-    padding-left: 32px;
-    text-align: left;
-}
-
-.interestContainer {
-    text-align: right;
-    padding-right: 32px;
-}
-
-.tenureInputContainer {
-    margin-right: 4px;
-}
-
-.loanEmiCalculator {
-    border-radius: 12px;
-    border: 1px solid var(--primary-color);
-    gap: 10px;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: var(--font-weight-regular);
-    letter-spacing: 0em;
-    text-align: center;
-    color: var(--primary-color) !important;
-    background: var(--grey01);
-    padding-block: 8px;
-    margin-bottom: 16px;
-}
-
-.inputSymbolRupee::after {
-    position: absolute;
-    top: 0;
-    content: "₹";
-    left: 16px;
-    font-size: 16px;
-    font-weight: var(--font-weight-regular);
-    line-height: 20px;
-}
-
-.inputSymbolPercent:after {
-    position: absolute;
-    top: 0;
-    content: "%";
-    right: 16px;
-    font-size: 16px;
-    font-weight: var(--font-weight-regular);
-    line-height: 22px;
-}
-
-/* EMI Table */
-
-.emiTable {
-    border-collapse: collapse;
-    border-spacing: 0;
-    empty-cells: show;
-    border: 1px solid rgba(220, 220, 222, 1);
-    width: 100%;
-}
-
-.emiTable tr.header {
-    background-color: var(--orange01);
-    padding: 10px;
-}
-
-.emiTable th {
-    font-size: 24px;
-    font-weight: var(--font-weight-semibold);
-    line-height: 20px;
-    letter-spacing: 0em;
-    color: rgba(0, 0, 0, 1);
-    padding-block: 14px;
-    text-align: center;
-}
-
-.emiTable td {
-    font-size: 18px;
-    font-weight: var(--font-weight-regular);
-    line-height: 20px;
-    letter-spacing: 0em;
-    color: rgba(0, 0, 0, 1);
-    padding-block: 12px;
-}
-
-.viewButton {
-    font-size: 20px;
-    font-weight: var(--font-weight-semibold);
-    line-height: 24px;
-    text-align: center;
-    color: var(--primary-color);
-    padding-top: 24px;
-    background: none;
-    border: none;
-    text-decoration: underline;
-}
-
-.font-weight-600 {
-    font-weight: var(--font-weight-semibold) !important;
-}
-
-/* Introduction */
-.roundedList {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-/*what makes mv better section*/
-.betterCard {
-    text-align: center;
-    background: var(--grey01);
-}
-
-.cardTitle {
-    font-weight: var(--font-weight-semibold);
-    text-align: left;
-    color: var(--black-color);
-}
-
-.cardDescription {
-    font-weight: var(--font-weight-regular);
-    text-align: left;
-    color: var(--grey09);
-}
-
-.cardAnimation {
-    text-align: center;
-}
-
-/* Steps to apply */
-.roundedList li {
-    position: relative;
-    padding-left: 48px;
-    counter-increment: item;
-    margin-bottom: 24px;
-}
-
-.roundedList li::before {
-    content: counter(item);
-    border-radius: 50%;
-    width: 32px !important;
-    height: 32px !important;
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    border: 1px solid #DCDCDE;
-    color: var(--grey09);
-    font-size: 20px;
-    font-weight: var(--font-weight-regular);
-    line-height: 32px;
-    text-align: center;
-}
-
-.loanSteps {
-    font-size: 20px;
-    font-weight: var(--font-weight-regular);
-    line-height: 32px;
-    color: var(--grey07) !important;
-}
-
-.applyNowButton {
-    height: 56px;
-    border-radius: 4px;
-    background: var(--primary-color);
-    font-size: 20px;
-    font-weight: var(--font-weight-regular);
-    line-height: 24px;
-    text-align: center;
-    padding-block: 16px;
-    color: rgba(255, 255, 255, 1);
-    border: none;
-    width: 100%;
-}
-
-/* Interlinks */
-.calculatorInterlinks {
-    border-radius: 12px;
-    background: var(--orange01);
-    padding: 24px 28px;
-}
-
-.interlinksContent {
-    font-size: 14px;
-    font-weight: var(--font-weight-regular);
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: rgba(0, 0, 0, 1);
-    padding-top: 16px;
-}
-
-.interlinksImageContainer {
-    width: 64px;
-    height: 64px;
-    text-align: center;
-    margin-inline: auto;
-}
-
-/*Bottom-banner*/
-.bottomBanner {
-    background-image: url(https://d31bgfoj87qaaj.cloudfront.net/banner-bottom-1400.webp);
-    background-repeat: no-repeat;
-    background-position: right 0% top 48%;
-    background-size: 100%;
-    padding-top: 292px !important;
-}
-
-.bottomBannerTitle {
-    font-weight: var(--font-weight-semibold);
-    color: var(--black-color);
-}
-
-.bottomBannerSubTitle {
-    font-weight: var(--font-weight-regular);
-    color: var(--black-color);
-}
-
-/*Accordian*/
-.accordion .card {
-    border-bottom: 0px;
-}
-
-.accordion .card-header {
-    margin-bottom: 0px !important;
-    border-top: 0px;
-    border-bottom: 0px !important;
-    padding: 0px;
-}
-
-.accordion .card-header>a[aria-expanded="true"] .fa-angle-down {
-    display: none;
-}
-
-.accordion .card-header>a[aria-expanded="false"] .fa-angle-up {
-    display: none;
-}
-
-.accordion .card .card-body {
-    color: var(--grey07);
-    text-align: left;
-}
-
-.accordion .card .card-header a {
-    font-weight: var(--font-weight-regular) !important;
-    color: var(--black-color);
-    padding: 0px;
-    letter-spacing: unset;
-}
-
-.accordion .card .card-body ul,
-ol {
-    padding-left: 2.5rem;
-}
-
-.accordion .card .card-body strong {
-    color: var(--black-color) !important;
-}
-
-.accordion .card .card-body table {
-    margin-top: 20px;
-    border: 1px solid var(--grey07);
-    text-align: center;
-}
-
-.accordion .card .card-body .table th {
-    color: var(--black-color);
-    padding: 8px;
-}
-
-.accordion .card .card-body .table td {
-    padding: 8px;
-}
-
-.accordionCardHeader {
-    font-weight: var(--font-weight-regular) !important;
-    color: var(--black-color);
-    padding: 0px;
-}
-
-.hrAccordian {
-    margin: 0px;
-    border: 1px solid #dcdcde;
-}
-
-.table-striped tbody tr:nth-of-type(odd) {
-    background-color: var(--white-color) !important;
-}
-
-.table td,
-.table th,
-.table-bordered th,
-.table-bordered td {
-    border: 1px solid var(--grey07) !important;
-}
-
-.accordion .card .card-body p,
-ul,
-ol,
-table,
-strong {
-    font-weight: var(--font-weight-regular) !important;
-    color: var(--grey07) !important;
-    margin: 0px;
-}
-
-.cardLinks {
-    font-weight: var(--font-weight-regular) !important;
-    margin: 0px;
-}
-
-/* FAQ */
-.accordion .card .card-body .FaqHeader {
-    font-weight: var(--font-weight-regular);
-    color: var(--black-color) !important;
-}
-
-.moreFaqs {
-    font-weight: var(--font-weight-regular) !important;
-}
-
-.moreFaqButton {
-    color: var(--primary-color) !important;
-    text-decoration: underline !important;
-}
-
-/* RESPONSIVE STYLES */
-
-@media screen and (min-width: 1440px) {
-
-    /* Slider Section*/
-    .sliderSectionContainer {
-        margin-top: 96px;
-    }
-
-    .calculatorSection {
-        box-shadow: 4px 4px 72px 0px rgba(165, 167, 195, 0.4);
-        background: rgba(255, 255, 255, 1);
-        border-radius: 20px;
-        width: fit-content;
-        padding-block: 80px;
-    }
-
-    .sectionTitle {
-        font-size: 44px;
-        line-height: 64px;
-        margin-bottom: 64px;
-        font-weight: var(--font-weight-bold);
-    }
-
-    /* what makes mv better section */
-    .cardMarginTop {
-        margin-top: 32px;
-    }
-
-    .cardMarginTopDesktop {
-        margin-top: 0px;
-    }
-
-    .paddingDiv {
-        padding: 32px;
-    }
-
-    .betterCard {
-        border-radius: 20px;
-    }
-
-    .cardTitle {
-        font-size: 32px;
-        line-height: 48px;
-        width: 362px;
-        margin-bottom: 24px;
-    }
-
-    .cardDescription {
-        font-size: var(--body-font-size);
-        line-height: var(--body-line-height);
-        width: 448px;
-        min-height: 0px;
-    }
-
-    .cardAnimation {
-        width: 100%;
-        margin-top: 16px;
-    }
-
-    .cardSectionTitle {
-        width: 60%;
-    }
-
-    /*EMI Calculator*/
-    .loanEmiCalculator {
-        font-size: 16px;
-        line-height: 24px;
-        font-weight: var(--font-weight-regular);
-        margin-bottom: 24px;
-        padding-block: 13px;
-    }
-
-    /*Bottom-banner*/
-    .bottomBanner {
-        min-height: 260px;
-        border-radius: 10px;
-        margin-top: 64px;
-        padding-top: 234px !important;
-        margin: 90px 130px 120px 130px;
-    }
-
-    .bottomBannerTitle {
-        font-size: 24px;
-        line-height: 36px;
-        margin-bottom: 12px;
-    }
-
-    .bottomBannerSubTitle {
-        font-size: var(--body-font-size);
-        line-height: var(--body-line-height);
-        margin-bottom: 32px;
-    }
-
-    .bottomBannerTextPadding {
-        bottom: 52px;
-        position: relative;
-        left: 36px;
-    }
-
-    .bottomBannerBackdrop {
-        height: 260px;
-        bottom: 26px;
-    }
-
-    .playstoreButton {
-        width: 165px;
-        height: 48px;
-    }
-
-    /*Accordian*/
-    .benefitsMargin {
-        margin-block: 80px !important;
-    }
-
-    .accordion .card {
-        padding: 24px 0px !important;
-    }
-
-    .accordion .card .card-body {
-        padding: 16px 0px 0px 0px !important;
-    }
-
-    .accordion .card .card-header a {
-        font-size: var(--body-font-size) !important;
-        line-height: var(--body-line-height) !important;
-        padding: 0px;
-    }
-
-    .accordionCardHeader {
-        font-size: var(--body-font-size) !important;
-        line-height: var(--body-line-height) !important;
-        padding: 0px;
-    }
-
-    .accordion .card .card-body p,
-    ul,
-    ol,
-    table,
-    strong {
-        font-size: 12px !important;
-        line-height: var(--body-line-height) !important;
-        margin: 0px;
-    }
-
-    .cardLinks {
-        font-size: 12px !important;
-        line-height: var(--body-line-height) !important;
-        margin: 0px;
-    }
-
-    /* FAQ */
-    .moreFaqs {
-        padding: 24px 0px;
-        margin: 0px;
-        font-size: var(--body-font-size) !important;
-        line-height: var(--body-line-height);
-    }
-
-    .accordion .card .card-body .FaqContent {
-        margin-bottom: 24px;
-    }
-
-}
-
-@media screen and (min-width: 960px) and (max-width: 1439px) {
-
-    /* Slider Section*/
-    .sliderSectionContainer {
-        margin-top: 80px;
-    }
-
-    .calculatorSection {
-        box-shadow: 4px 4px 72px 0px rgba(165, 167, 195, 0.4);
-        background: rgba(255, 255, 255, 1);
-        border-radius: 20px;
-        width: fit-content;
-        padding-block: 80px;
-    }
-
-    .sectionTitle {
-        font-size: 32px;
-        line-height: 48px;
-        margin-bottom: 40px;
-        font-weight: var(--font-weight-bold);
-    }
-
-    /* what makes mv better section */
-    .cardMarginTop {
-        margin-top: 12px;
-    }
-
-    .cardMarginTopDesktop {
-        margin-top: 0px;
-    }
-
-    .paddingDiv {
-        padding: 32px;
-    }
-
-    .betterCard {
-        border-radius: 16px;
-    }
-
-    .cardTitle {
-        font-size: 20px;
-        line-height: 32px;
-        width: 230px;
-        margin-bottom: 12px;
-    }
-
-    .cardDescription {
-        font-size: 14px;
-        line-height: 20px;
-        width: 332px;
-        min-height: 60px;
-    }
-
-    .cardAnimation {
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    .cardSectionTitle {
-        width: 60%;
-    }
-
-    /*Bottom-banner*/
-    .bottomBanner {
-        min-height: 186px;
-        border-radius: 6px;
-        margin-top: 40px;
-        padding-top: 163px !important;
-        margin: 60px 60px 60px 60px;
-    }
-
-    .bottomBannerTitle {
-        font-size: 18px;
-        line-height: var(--body-line-height);
-        margin-bottom: 12px;
-    }
-
-    .bottomBannerSubTitle {
-
-        font-size: 12px;
-        line-height: var(--body-line-height);
-        margin-bottom: 20px;
-    }
-
-    .bottomBannerTextPadding {
-        bottom: 38px;
-        position: relative;
-        left: 24px;
-    }
-
-    .playstoreButton {
-        width: 116px;
-        height: 34px;
-    }
-
-    .bottomBannerBackdrop {
-        height: 186px;
-        bottom: 20px;
-    }
-
-    /*Accordian*/
-    .benefitsMargin {
-        margin-block: 60px !important;
-    }
-
-    .accordion .card {
-        padding: 16px 0px !important;
-    }
-
-    .accordion .card .card-body {
-        padding: 16px 0px 0px 0px !important;
-    }
-
-    .accordion .card .card-header a {
-        font-size: 14px !important;
-        line-height: 20px !important;
-        padding: 0px;
-    }
-
-    .accordionCardHeader {
-        font-size: 14px !important;
-        line-height: 20px !important;
-        padding: 0px;
-    }
-
-    .accordion .card .card-body p,
-    ul,
-    ol,
-    table,
-    strong {
-        font-size: 12px !important;
-        line-height: var(--body-line-height) !important;
-        margin: 0px;
-    }
-
-    .cardLinks {
-        font-size: 12px !important;
-        line-height: var(--body-line-height) !important;
-        margin: 0px;
-    }
-
-    /* FAQ */
-    .moreFaqs {
-        padding: 16px 0px;
-        margin: 0px;
-        font-size: 14px !important;
-        line-height: 20px;
-    }
-
-    .accordion .card .card-body .FaqContent {
-        margin-bottom: 20px;
-    }
-
-}
-
-@media screen and (min-width: 768px) and (max-width: 959px) {
-
-    /* Slider Section*/
-    .sliderSectionContainer {
-        margin-top: 70px;
-    }
-
-    .calculatorSection {
-        box-shadow: 4px 4px 72px 0px rgba(165, 167, 195, 0.4);
-        background: rgba(255, 255, 255, 1);
-        border-radius: 20px;
-        width: fit-content;
-        padding-block: 80px;
-    }
-
-    /*Section styles*/
-    .sectionTitle {
-        font-size: 32px;
-        line-height: 48px;
-        margin-bottom: 40px;
-        font-weight: var(--font-weight-bold);
-    }
-
-    /* what makes mv better section */
-    .cardMarginTop {
-        margin-top: 12px;
-    }
-
-    .cardMarginTopDesktop {
-        margin-top: 0px;
-    }
-
-    .paddingDiv {
-        padding: 32px 28px 28px 28px;
-    }
-
-    .betterCard {
-        border-radius: 16px;
-    }
-
-    .cardTitle {
-        font-size: 24px;
-        line-height: 32px;
-        width: 292px;
-        margin-bottom: 14px;
-    }
-
-    .cardDescription {
-        font-size: 14px;
-        line-height: 20px;
-        width: 292px;
-    }
-
-    .cardAnimation {
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    .cardSectionTitle {
-        width: 70%;
-    }
-
-    /*Steps to apply*/
-    .loanSteps {
-        font-size: 14px !important;
-        font-weight: var(--font-weight-regular);
-        line-height: 24px !important;
-        padding-block: 4px !important;
-    }
-
-    /*Interlinks*/
-    .calculatorInterlinks {
-        padding: 12px 12px;
-    }
-
-    /*Bottom-banner*/
-    .bottomBanner {
-        min-height: 186px;
-        border-radius: 6px;
-        padding-top: 136px !important;
-        margin: 60px 30px 60px 30px;
-    }
-
-    .bottomBannerTitle {
-        font-size: 18px;
-        line-height: var(--body-line-height);
-        margin-bottom: 12px;
-    }
-
-    .bottomBannerSubTitle {
-        font-size: 12px;
-        line-height: var(--body-line-height);
-        margin-bottom: 8px;
-    }
-
-    .bottomBannerTextPadding {
-        bottom: 38px;
-        position: relative;
-        left: 24px;
-    }
-
-    .playstoreButton {
-        width: 116px;
-        height: 34px;
-    }
-
-    .bottomBannerBackdrop {
-        height: 157px;
-        bottom: 20px;
-    }
-
-    /*Accordian*/
-    .benefitsMargin {
-        margin-block: 40px !important;
-    }
-
-    .accordion .card {
-        padding: 16px 0px !important;
-    }
-
-    .accordion .card .card-body {
-        padding: 16px 0px 0px 0px !important;
-    }
-
-    .accordion .card .card-header a {
-        font-size: 14px !important;
-        line-height: 20px !important;
-        padding: 0px;
-    }
-
-    .accordionCardHeader {
-        font-size: 14px !important;
-        line-height: 20px !important;
-        padding: 0px;
-    }
-
-    .accordion .card .card-body p,
-    ul,
-    ol,
-    table,
-    strong {
-        font-size: 12px !important;
-        line-height: var(--body-line-height) !important;
-        margin: 0px;
-    }
-
-    .cardLinks {
-        font-size: 12px !important;
-        line-height: var(--body-line-height) !important;
-        margin: 0px;
-    }
-
-    /* FAQ */
-    .moreFaqs {
-        padding: 16px 0px;
-        margin: 0px;
-        font-size: 14px !important;
-        line-height: 20px;
-    }
-
-    .accordion .card .card-body .FaqContent {
-        margin-bottom: 16px;
-    }
-
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-    section {
-        align-items: unset;
-    }
-
-    .sectionTitle {
-        font-size: 28px;
-        line-height: 36px;
-        margin-bottom: 24px;
-        /*check this*/
-        font-weight: var(--font-weight-bold);
-    }
-
-    /*Slider Section*/
-    .sliderSectionContainer {
-        margin-top: 66px;
-    }
-
-    .loanDetails {
-        box-shadow: 4px 4px 72px 0px rgba(165, 167, 195, 0.4);
-        background: rgba(255, 255, 255, 1);
-        border-radius: 20px;
-        width: 100%;
-        padding: 24px 16px 16px;
-        margin-bottom: 28px;
-    }
-
-    .emiText {
-        font-size: 16px;
-        font-weight: var(--font-weight-semibold);
-        line-height: 22px;
-        padding-bottom: 2px;
-    }
-
-    .emiAmount {
-        font-size: 24px;
-        font-weight: var(--font-weight-bold);
-        ;
-        line-height: 34px;
-        margin-bottom: 2px;
-    }
-
-    .emiContent {
-        font-size: 14px;
-        font-weight: var(--font-weight-regular);
-        line-height: 20px;
-        margin-bottom: 16px;
-    }
-
-    .sliderSection {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .inputContainer {
-        height: 32px;
-    }
-
-    .roundedList li::before {
-        width: 32px !important;
-        height: 32px !important;
-        font-size: 14px !important;
-        font-weight: var(--font-weight-semibold);
-    }
-
-    .roundedList li {
-        position: relative;
-        padding-left: 48px !important;
-        counter-increment: item;
-        margin-bottom: 8px !important;
-        min-height: 32px !important;
-    }
-
-    .applyNowButton {
-        font-size: 16px;
-    }
-
-    /*EMI Table*/
-    .emiTable th {
-        font-size: 12px;
-        font-weight: var(--font-weight-semibold);
-        line-height: 24px;
-        padding-block: 4px;
-    }
-
-    .emiTable td {
-        font-size: 12px;
-        font-weight: var(--font-weight-regular);
-        line-height: 20px;
-        padding-block: 6px;
-    }
-
-    th:last-child,
-    td:last-child {
-        display: none;
-    }
-
-    .viewButton {
-        font-size: 16px;
-    }
-
-    /* what makes mv better section */
-    .cardMarginTop {
-        margin-top: 24px;
-    }
-
-    .paddingDiv {
-        padding: 36px 28px 28px 28px;
-    }
-
-    .betterCard {
-        width: 100%;
-        border-radius: 12px;
-    }
-
-    .cardTitle {
-        font-size: 20px;
-        line-height: 32px;
-        margin-bottom: 16px;
-        width: 100%;
-    }
-
-    .removeBr br {
-        display: none;
-    }
-
-    .cardDescription {
-        font-size: 14px;
-        line-height: var(--body-line-height);
-        width: 256px;
-        min-height: 0px;
-    }
-
-    .cardAnimation {
-        width: 100%;
-        margin-top: 8px;
-    }
-
-    .cardSectionTitle {
-        width: 70%;
-    }
-
-    /*Steps to apply*/
-    .loanSteps {
-        font-size: 14px !important;
-        font-weight: var(--font-weight-regular);
-        line-height: 24px !important;
-        padding-block: 0px !important;
-    }
-
-    .sliderButton {
-        width: 100% !important;
-        margin-top: 24px;
-    }
-
-    /*Interlinks*/
-    .calculatorInterlinks {
-        margin-bottom: 16px;
-    }
-
-    .interlinksContent {
-        font-size: 14px;
-        line-height: 20px;
-        font-weight: var(--font-weight-regular);
-    }
-
-    .interlinksImageContainer {
-        width: 48px;
-        height: 48px;
-        margin: auto;
-    }
-
-    /*FAQ*/
-    .faqSection {
-        margin-bottom: 100px;
-    }
-
-    /*Accordian*/
-    .accordion .card {
-        padding: 16px 0px !important;
-    }
-
-    .accordion .card .card-body {
-        padding: 8px 0px 0px !important;
-    }
-
-    .accordion .card .card-header a {
-        font-size: 14px !important;
-        line-height: 20px !important;
-    }
-
-    .accordionCardHeader {
-        font-size: 14px !important;
-        line-height: 20px !important;
-    }
-
-    .accordion .card .card-body p,
-    ol,
-    ul,
-    table,
-    strong {
-        font-size: 12px !important;
-        line-height: var(--body-line-height) !important;
-    }
-
-    .cardLinks {
-        font-size: 12px !important;
-        line-height: var(--body-line-height) !important;
-    }
-
-    /* FAQ */
-    .moreFaqs {
-        padding: 16px 0px;
-        margin: 0px;
-        font-size: 14px !important;
-        line-height: 20px;
-    }
-
-    .accordion .card .card-body .FaqContent {
-        margin-bottom: 12px;
-    }
-
-    .benefitsMargin {
-        margin-block: 40px !important;
-    }
-}
-
-@media screen and (min-width: 280px) and (max-width: 480px) {
-    section {
-        align-items: unset;
-    }
-
-    .sectionTitle {
-        font-size: 28px;
-        line-height: 36px;
-        margin-bottom: 24px;
-        /*check this*/
-        font-weight: var(--font-weight-bold);
-    }
-
-    /*Slider Section*/
-    .sliderSectionContainer {
-        margin-top: 66px;
-    }
-
-    .loanDetails {
-        box-shadow: 4px 4px 72px 0px rgba(165, 167, 195, 0.4);
-        background: rgba(255, 255, 255, 1);
-        border-radius: 20px;
-        width: 100%;
-        padding: 24px 16px 16px;
-        margin-bottom: 28px;
-    }
-
-    .emiText {
-        font-size: 16px;
-        font-weight: var(--font-weight-semibold);
-        line-height: 22px;
-        margin-bottom: 2px;
-    }
-
-    .emiAmount {
-        font-size: 24px;
-        font-weight: var(--font-weight-bold);
-        line-height: 34px;
-        margin-bottom: 2px;
-    }
-
-    .emiContent {
-        font-size: 14px;
-        font-weight: var(--font-weight-regular);
-        line-height: 20px;
-        margin-bottom: 16px;
-    }
-
-    .sliderSection {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .inputContainer {
-        height: 32px;
-    }
-
-    .roundedList li::before {
-        width: 32px !important;
-        height: 32px !important;
-        font-size: 14px !important;
-        font-weight: var(--font-weight-semibold);
-    }
-
-    .roundedList li {
-        position: relative;
-        padding-left: 48px !important;
-        counter-increment: item;
-        margin-bottom: 8px !important;
-        min-height: 32px !important;
-    }
-
-    .applyNowButton {
-        font-size: 16px;
-    }
-
-    /*EMI Table*/
-    .emiTable th {
-        font-size: 12px;
-        font-weight: var(--font-weight-semibold);
-        line-height: 24px;
-        padding-block: 4px;
-    }
-
-    .emiTable td {
-        font-size: 12px;
-        font-weight: var(--font-weight-regular);
-        line-height: 20px;
-        padding-block: 6px;
-    }
-
-    th:last-child,
-    td:last-child {
-        display: none;
-    }
-
-    .viewButton {
-        font-size: 16px;
-    }
-
-    /* what makes mv better section */
-    .cardMarginTop {
-        margin-top: 24px;
-    }
-
-    .paddingDiv {
-        padding: 36px 28px 28px 28px;
-    }
-
-    .betterCard {
-        width: 100%;
-        border-radius: 12px;
-    }
-
-    .cardTitle {
-        font-size: 20px;
-        line-height: 32px;
-        margin-bottom: 16px;
-        width: 100%;
-    }
-
-    .removeBr br {
-        display: none;
-    }
-
-    .cardDescription {
-        font-size: 14px;
-        line-height: var(--body-line-height);
-        width: 256px;
-        min-height: 0px;
-    }
-
-    .cardAnimation {
-        width: 100%;
-        margin-top: 8px;
-    }
-
-    /*Steps to apply*/
-    .loanSteps {
-        font-size: 14px !important;
-        font-weight: var(--font-weight-regular);
-        line-height: 24px !important;
-        padding-block: 0px !important;
-    }
-
-    .sliderButton {
-        width: 100% !important;
-        margin-top: 24px;
-    }
-
-    /*Interlinks*/
-    .calculatorInterlinks {
-        margin-bottom: 16px;
-    }
-
-    .interlinksContent {
-        font-size: 14px;
-        line-height: 20px;
-        font-weight: var(--font-weight-regular);
-    }
-
-    .interlinksImageContainer {
-        width: 48px;
-        height: 48px;
-        margin: auto;
-    }
-
-    /*FAQ*/
-    .faqSection {
-        margin-bottom: 100px;
-    }
-
-    /*Accordian*/
-    .accordion .card {
-        padding: 16px 0px !important;
-    }
-
-    .accordion .card .card-body {
-        padding: 8px 0px 0px !important;
-    }
-
-    .accordion .card .card-header a {
-        font-size: 14px !important;
-        line-height: 20px !important;
-    }
-
-    .accordionCardHeader {
-        font-size: 14px !important;
-        line-height: 20px !important;
-    }
-
-    .accordion .card .card-body p,
-    ol,
-    ul,
-    table,
-    strong {
-        font-size: 12px !important;
-        line-height: var(--body-line-height) !important;
-    }
-
-    .cardLinks {
-        font-size: 12px !important;
-        line-height: var(--body-line-height) !important;
-    }
-
-    /* FAQ */
-    .moreFaqs {
-        padding: 16px 0px;
-        margin: 0px;
-        font-size: 14px !important;
-        line-height: 20px;
-    }
-
-    .accordion .card .card-body .FaqContent {
-        margin-bottom: 12px;
-    }
-
-    .benefitsMargin {
-        margin-block: 40px !important;
-    }
-}
-</style>

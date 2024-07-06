@@ -1,0 +1,1160 @@
+#business_loan_page {
+    /* Banner section */
+    /*OTP Modal*/
+    /*Feature Cards*/
+    /*Loan Steps*/
+    /*Trust Marker*/
+}
+
+#business_loan_page .input-error {
+    outline: none;
+    border: 2px solid red !important;
+}
+
+#business_loan_page .marginTop0 {
+    margin-top: 0 !important;
+}
+
+#business_loan_page section {
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#business_loan_page .header_banner {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 79.37%, #fff 100%), linear-gradient(109deg, rgba(20, 72, 53, 0.16) 37.69%, rgba(20, 72, 53, 0.08) 86.94%);
+    background-clip: border-box;
+    position: relative;
+}
+
+#business_loan_page .headerBannerTextContainer {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: span 6;
+    align-self: center;
+}
+
+#business_loan_page .headerBannerTitle {
+    font-size: 32px;
+    font-weight: var(--font-weight-bold);
+    line-height: 42px;
+    color: var(--grey09);
+    margin-bottom: 16px;
+}
+
+#business_loan_page .headerBannerSubTitle {
+    font-size: 16px;
+    font-weight: var(--font-weight-regular);
+    line-height: 24px;
+    color: var(--grey07);
+    margin-bottom: 18px;
+}
+
+#business_loan_page .headerIllustration {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: span 6;
+    grid-row-start: 1;
+}
+
+#business_loan_page .header_generate_otp_message {
+    font-weight: var(--font-weight-regular);
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin-left: 20px;
+}
+
+#business_loan_page .header_generate_otp_input_container {
+    position: relative;
+}
+
+#business_loan_page .header_generate_otp_input_container .country_code {
+    position: absolute;
+    color: var(--grey05);
+    font-size: 16px;
+    font-weight: var(--font-weight-regular);
+    line-height: 24px;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+#business_loan_page .lead_gen_section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#business_loan_page .header_generate_otp_consent_text {
+    font-weight: var(--font-weight-regular);
+    font-size: 11px;
+    line-height: 20px;
+    align-self: center;
+    color: var(--grey07);
+    padding-bottom: 16px;
+    padding-bottom: 0px;
+    margin-bottom: 0px !important;
+}
+
+#business_loan_page .header_generate_otp_consent_text a {
+    font-weight: var(--font-weight-semibold);
+    margin-left: 0px;
+    text-decoration: underline !important;
+}
+
+#business_loan_page .header_generate_otp_input {
+    background: var(--white-color) !important;
+    color: var(--black-color);
+    border: 1px solid var(--grey05);
+    padding: 16px 16px 16px 54px;
+    border-radius: 4px;
+    height: 56px;
+    width: 100%;
+    font-size: 14px !important;
+    line-height: 22px !important;
+}
+
+#business_loan_page .header_generate_otp_input:focus {
+    border: 2px solid rgba(16, 16, 18, 1);
+}
+
+#business_loan_page .verify_otp_lead_gen_input {
+    align-items: center;
+    padding: 18px;
+    gap: 8px;
+    height: 56px !important;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 4px;
+    border: 1px solid rgba(185, 186, 189, 1);
+    width: 100%;
+    font-size: 16px;
+    font-weight: var(--font-weight-regular);
+    line-height: 24px;
+}
+
+#business_loan_page .verify_otp_lead_gen_input:focus {
+    border: 2px solid rgba(16, 16, 18, 1);
+}
+
+#business_loan_page .header_generate_otp_apply_loan_btn {
+    background: var(--primary-color);
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    color: var(--white-color) !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    height: 56px;
+    padding: 16px 20px !important;
+    font-weight: var(--font-weight-regular);
+    font-size: var(--body-font-size) !important;
+    line-height: var(--body-line-height);
+    gap: 8px;
+}
+
+#business_loan_page .header_generate_otp_apply_loan_btn:disabled {
+    background: var(--primary-color) !important;
+    opacity: 0.6 !important;
+    color: var(--white-color) !important;
+}
+
+#business_loan_page .header_generate_otp_apply_loan_btn:hover {
+    cursor: pointer;
+}
+
+#business_loan_page .verify_otp_lead_gen_btn {
+    height: 56px;
+    background: var(--primary-color);
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    color: var(--white-color);
+    padding: 16px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    font-weight: var(--font-weight-regular);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#business_loan_page .verify_otp_lead_gen_btn:disabled {
+    background: var(--primary-color) !important;
+    opacity: 0.6 !important;
+    color: var(--white-color) !important;
+}
+
+#business_loan_page .header_generate_otp_container {
+    display: flex;
+    flex-direction: column;
+}
+
+#business_loan_page .verify_otp_wrap_container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: fit-content;
+}
+
+#business_loan_page .verify_otp_wrap {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+#business_loan_page .header_consent_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#business_loan_page .header_generate_otp_consent_container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+#business_loan_page .header_generate_otp_consent {
+    width: 24px;
+    height: 24px;
+    margin-left: 0px !important;
+}
+
+#business_loan_page .verify_otp_message_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0px 0px;
+}
+
+#business_loan_page .verify_otp_mobile_number_container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#business_loan_page .edit_mobile_number_text {
+    font-weight: var(--font-weight-regular);
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: var(--grey07);
+}
+
+#business_loan_page .edit_mobile_number {
+    font-weight: var(--font-weight-regular);
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    padding-inline: 0px !important;
+    color: var(--primary-color);
+}
+
+#business_loan_page .text-button-link {
+    width: fit-content;
+    outline: none !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+#business_loan_page .text-button-link:disabled {
+    background-color: transparent !important;
+    border: none !important;
+    color: var(--grey05) !important;
+}
+
+#business_loan_page .header_resend_otp {
+    position: absolute;
+    right: 18px;
+    padding-block: 18px;
+}
+
+#business_loan_page ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--grey07);
+}
+
+#business_loan_page :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--grey07);
+}
+
+#business_loan_page ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--grey07);
+}
+
+#business_loan_page button:focus {
+    outline: 0 !important;
+}
+
+#business_loan_page .modal-btn-close {
+    opacity: 1 !important;
+    margin-top: -20px !important;
+}
+
+#business_loan_page .featureCardHeading {
+    color: var(--grey09);
+    font-size: 28px;
+    font-weight: var(--font-weight-bold);
+    line-height: 42px;
+}
+
+#business_loan_page .featureSection {
+    margin-bottom: 24px;
+}
+
+#business_loan_page .featureCard {
+    background-color: var(--grey01);
+    border-radius: 8px;
+    padding: 32px;
+    margin-bottom: 20px;
+    align-content: space-between;
+}
+
+#business_loan_page .featureCardTitle {
+    color: var(--grey09);
+    font-size: 20px;
+    font-weight: var(--font-weight-semibold);
+    line-height: 28px;
+    margin-bottom: 12px;
+}
+
+#business_loan_page .featureCardDesc {
+    color: var(--grey07);
+    font-size: 16px;
+    font-weight: var(--font-weight-regular);
+    line-height: 28px;
+    margin-bottom: 0px;
+}
+
+#business_loan_page .featureCardImage {
+    width: 120px;
+    height: 96px;
+}
+
+#business_loan_page .resetColSpan {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 12;
+}
+
+#business_loan_page .businessLoanFeatureCard {
+    gap: 16px;
+}
+
+#business_loan_page .businessLoan-col-span-xs-1-6 {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: span 6;
+}
+
+#business_loan_page .businessLoanStep {
+    background: #f5f2f8;
+    gap: 16px;
+}
+
+#business_loan_page .trustMarker {
+    background: var(--orange06);
+}
+
+#business_loan_page .display-flex {
+    display: flex !important;
+}
+
+#business_loan_page .trust-marker-title {
+    font-weight: var(--font-weight-semibold);
+    color: var(--white-color);
+}
+
+#business_loan_page .trust-marker-content {
+    font-weight: var(--font-weight-regular);
+    color: var(--white-color);
+}
+
+#business_loan_page .trust-marker-heading {
+    font-weight: var(--font-weight-semibold);
+    color: var(--white-color);
+}
+
+#business_loan_page .trust-marker-subheading {
+    font-weight: var(--font-weight-regular);
+    color: var(--white-color);
+}
+
+#business_loan_page .trustclass {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 24px;
+}
+
+#business_loan_page .trustRowClass {
+    display: grid;
+    grid-column-end: span 8;
+}
+
+#business_loan_page .text-1:after {
+    content: "+";
+    display: inline-block;
+    white-space: pre;
+}
+
+#business_loan_page .text-2:after {
+    content: " Cr+";
+    display: inline-block;
+    white-space: pre;
+}
+
+#business_loan_page .text-3:after {
+    content: "+";
+    display: inline-block;
+}
+
+@media screen and (min-width: 1440px) {
+    #business_loan_page {
+        /*Feature Cards*/
+        /* trust marker*/
+    }
+
+    #business_loan_page .loginSectionWidth {
+        max-width: 343px;
+    }
+
+    #business_loan_page .lead_gen_section {
+        gap: 16px;
+    }
+
+    #business_loan_page .headerSectionMainContainer {
+        margin-top: 80px;
+    }
+
+    #business_loan_page .headerBannerTextContainer {
+        padding-block: 72px 64px;
+    }
+
+    #business_loan_page .headerBannerTitle {
+        font-size: 48px;
+        line-height: 62px;
+    }
+
+    #business_loan_page .headerBannerSubTitle {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 24px;
+    }
+
+    #business_loan_page .headerIllustration {
+        grid-column-start: 7;
+        grid-column-end: span 6;
+    }
+
+    #business_loan_page .header_generate_otp_container {
+        gap: 12px;
+    }
+
+    #business_loan_page #banner_image {
+        width: 580px;
+        aspect-ratio: 1.1364678899;
+    }
+
+    #business_loan_page .resend_otp {
+        font-weight: var(--font-weight-regular);
+        font-size: 12px;
+        line-height: var(--primary-color);
+        color: var(--primary-color);
+        padding-right: 0px !important;
+    }
+
+    #business_loan_page .featureCardHeading {
+        font-size: 44px;
+        line-height: 66px;
+    }
+
+    #business_loan_page .featureSection {
+        margin-bottom: 32px;
+    }
+
+    #business_loan_page .featureCard {
+        padding: 32px;
+        margin-bottom: 20px;
+    }
+
+    #business_loan_page .featureCardTitle {
+        font-size: 32px;
+        line-height: 44px;
+        margin-bottom: 12px;
+    }
+
+    #business_loan_page .featureCardDesc {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    #business_loan_page .businessLoanFeatureCard {
+        gap: 20px;
+    }
+
+    #business_loan_page .businessLoan-col-span-xl-1-6 {
+        grid-column-start: 1;
+        grid-column-end: span 6;
+    }
+
+    #business_loan_page .businessLoan-col-span-xl-7-12 {
+        grid-column-start: 7;
+        grid-column-end: span 6;
+    }
+
+    #business_loan_page .businessLoan-col-span-xl-1-3 {
+        grid-column-start: 1;
+        grid-column-end: span 3;
+    }
+
+    #business_loan_page .businessLoan-col-span-xl-4-6 {
+        grid-column-start: 4;
+        grid-column-end: span 3;
+    }
+
+    #business_loan_page .businessLoan-col-span-xl-7-9 {
+        grid-column-start: 7;
+        grid-column-end: span 3;
+    }
+
+    #business_loan_page .businessLoan-col-span-xl-10-12 {
+        grid-column-start: 10;
+        grid-column-end: span 3;
+    }
+
+    #business_loan_page .trustMarker {
+        margin-top: 96px;
+    }
+
+    #business_loan_page .trust-marker-1 {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: span 8;
+    }
+
+    #business_loan_page .trust-marker-2 {
+        display: grid;
+        grid-column-start: 9;
+        grid-column-end: span 4;
+    }
+
+    #business_loan_page .trust-marker-image {
+        width: 32px;
+        height: 32px;
+    }
+
+    #business_loan_page .trust-marker-container {
+        padding: 0px 0px 0px 12px;
+    }
+
+    #business_loan_page .trust-marker-title {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 4px;
+    }
+
+    #business_loan_page .trust-marker-content {
+        height: 28px;
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+    }
+
+    #business_loan_page .trust-marker-heading {
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 12px;
+    }
+
+    #business_loan_page .trust-marker-subheading {
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+        margin-bottom: 40px;
+    }
+
+    #business_loan_page .trust-marker-col-1 {
+        padding: 50px 0px 56px 0px;
+    }
+
+    #business_loan_page .trustclass {
+        column-gap: 20px;
+    }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1439px) {
+    #business_loan_page {
+        /*Feature Cards*/
+        /* trust marker*/
+    }
+
+    #business_loan_page .loginSectionWidth {
+        max-width: 343px;
+    }
+
+    #business_loan_page .lead_gen_section {
+        gap: 16px;
+    }
+
+    #business_loan_page .headerSectionMainContainer {
+        margin-top: 64px;
+    }
+
+    #business_loan_page .headerBannerTextContainer {
+        padding-block: 48px 0px;
+    }
+
+    #business_loan_page .headerBannerTitle {
+        font-size: 44px;
+        line-height: 58px;
+    }
+
+    #business_loan_page .headerBannerSubTitle {
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 24px;
+    }
+
+    #business_loan_page .headerIllustration {
+        grid-column-start: 7;
+        grid-column-end: span 6;
+    }
+
+    #business_loan_page .header_banner_heading {
+        font-weight: var(--font-weight-regular);
+        font-size: 20px;
+        line-height: 30px;
+        padding-bottom: 15px;
+        margin-bottom: 0px;
+    }
+
+    #business_loan_page .header_generate_otp_container {
+        width: 100%;
+        gap: 12px;
+    }
+
+    #business_loan_page .header_generate_otp_consent_text {
+        font-size: 8px;
+        line-height: 14px;
+    }
+
+    #business_loan_page #banner_image {
+        width: 414px;
+        aspect-ratio: 1.1364678899;
+    }
+
+    #business_loan_page .resend_otp {
+        font-weight: var(--font-weight-regular);
+        font-size: 12px;
+        line-height: var(--body-line-height);
+        color: var(--primary-color);
+        padding-right: 0px !important;
+    }
+
+    #business_loan_page .featureCardHeading {
+        font-size: 44px;
+        line-height: 66px;
+    }
+
+    #business_loan_page .businessLoan-col-span-xl-1-6 {
+        grid-column-start: 1;
+        grid-column-end: span 6;
+    }
+
+    #business_loan_page .businessLoan-col-span-xl-7-12 {
+        grid-column-start: 7;
+        grid-column-end: span 6;
+    }
+
+    #business_loan_page .businessLoan-col-span-xl-1-3 {
+        grid-column-start: 1;
+        grid-column-end: span 3;
+    }
+
+    #business_loan_page .businessLoan-col-span-xl-4-6 {
+        grid-column-start: 4;
+        grid-column-end: span 3;
+    }
+
+    #business_loan_page .businessLoan-col-span-xl-7-9 {
+        grid-column-start: 7;
+        grid-column-end: span 3;
+    }
+
+    #business_loan_page .businessLoan-col-span-xl-10-12 {
+        grid-column-start: 10;
+        grid-column-end: span 3;
+    }
+
+    #business_loan_page .trustMarker {
+        margin-top: 64px;
+    }
+
+    #business_loan_page .trust-marker-1 {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: span 8;
+    }
+
+    #business_loan_page .trust-marker-2 {
+        display: grid;
+        grid-column-start: 9;
+        grid-column-end: span 4;
+    }
+
+    #business_loan_page .trust-marker-image {
+        width: 24px;
+        height: 24px;
+    }
+
+    #business_loan_page .trust-marker-container {
+        padding: 0px 0px 0px 8px;
+    }
+
+    #business_loan_page .trust-marker-title {
+        font-size: 18px;
+        line-height: var(--body-line-height);
+        margin-bottom: 2px;
+    }
+
+    #business_loan_page .trust-marker-content {
+        height: 48px;
+        font-size: 14px;
+        line-height: var(--body-line-height);
+    }
+
+    #business_loan_page .trust-marker-heading {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 8px;
+    }
+
+    #business_loan_page .trust-marker-subheading {
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+        margin-bottom: 28px;
+    }
+
+    #business_loan_page .trust-marker-col-1 {
+        padding: 50px 0px 56px 0px;
+    }
+
+    #business_loan_page .trustclass {
+        column-gap: 12px;
+    }
+
+    #business_loan_page .trust_marker_model_image {
+        align-self: end;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    #business_loan_page {
+        /*Feature Cards*/
+        /* trust marker*/
+    }
+
+    #business_loan_page .loginSectionWidth {
+        max-width: 288px;
+    }
+
+    #business_loan_page .lead_gen_section {
+        gap: 16px;
+    }
+
+    #business_loan_page .headerSectionMainContainer {
+        margin-top: 62px;
+        grid-template-columns: repeat(12, 1fr) !important;
+    }
+
+    #business_loan_page .headerBannerTextContainer {
+        padding-block: 36px 0px;
+    }
+
+    #business_loan_page .headerBannerSubTitle {
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 24px;
+    }
+
+    #business_loan_page .headerIllustration {
+        grid-column-start: 7;
+        grid-column-end: span 6;
+    }
+
+    #business_loan_page .headerBannerTitle {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    #business_loan_page .header_generate_otp_container {
+        width: 100%;
+        gap: 12px;
+    }
+
+    #business_loan_page #banner_image {
+        width: 348px;
+        aspect-ratio: 1.1364678899;
+    }
+
+    #business_loan_page .resend_otp {
+        font-weight: var(--font-weight-regular);
+        font-size: 14px;
+        line-height: 22px;
+        color: var(--primary-color);
+        padding-right: 0px !important;
+    }
+
+    #business_loan_page .businessLoan-col-span-xl-1-6 {
+        grid-column-start: 1;
+        grid-column-end: span 6;
+    }
+
+    #business_loan_page .businessLoan-col-span-xl-7-12 {
+        grid-column-start: 7;
+        grid-column-end: span 6;
+    }
+
+    #business_loan_page .businessLoan-col-span-xl-1-3 {
+        grid-column-start: 1;
+        grid-column-end: span 3;
+    }
+
+    #business_loan_page .businessLoan-col-span-xl-4-6 {
+        grid-column-start: 4;
+        grid-column-end: span 3;
+    }
+
+    #business_loan_page .businessLoan-col-span-xl-7-9 {
+        grid-column-start: 7;
+        grid-column-end: span 3;
+    }
+
+    #business_loan_page .businessLoan-col-span-xl-10-12 {
+        grid-column-start: 10;
+        grid-column-end: span 3;
+    }
+
+    #business_loan_page .trustMarker {
+        margin-top: 64px;
+    }
+
+    #business_loan_page .trust-marker-1 {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: span 8;
+    }
+
+    #business_loan_page .trust-marker-2 {
+        display: grid;
+        grid-column-start: 9;
+        grid-column-end: span 4;
+    }
+
+    #business_loan_page .trust-marker-image {
+        width: 24px;
+        height: 24px;
+    }
+
+    #business_loan_page .trust-marker-container {
+        padding: 0px 0px 0px 8px;
+    }
+
+    #business_loan_page .trust-marker-title {
+        font-size: 18px;
+        line-height: var(--body-line-height);
+        margin-bottom: 2px;
+    }
+
+    #business_loan_page .trust-marker-content {
+        height: 48px;
+        font-size: 14px;
+        line-height: var(--body-line-height);
+    }
+
+    #business_loan_page .trust-marker-heading {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 8px;
+    }
+
+    #business_loan_page .trust-marker-subheading {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 40px;
+    }
+
+    #business_loan_page .trust-marker-col-1 {
+        padding: 50px 0px 56px 0px;
+    }
+
+    #business_loan_page .trustclass {
+        column-gap: 12px;
+    }
+
+    #business_loan_page .trustMarkerMargin {
+        margin-bottom: 16px;
+    }
+
+    #business_loan_page .trust_marker_model_image {
+        position: absolute;
+        left: -72px;
+        align-self: end;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    #business_loan_page {
+        /* Header-Banner */
+        /* trust marker */
+    }
+
+    #business_loan_page section {
+        align-items: unset;
+    }
+
+    #business_loan_page .headerSectionMainContainer {
+        margin-top: 62px;
+    }
+
+    #business_loan_page .headerBannerTitle {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    #business_loan_page .headerBannerSubTitle {
+        margin-bottom: 24px;
+    }
+
+    #business_loan_page .header_generate_otp_container {
+        width: 100%;
+        gap: 8px;
+    }
+
+    #business_loan_page #banner_image {
+        width: 435px;
+        aspect-ratio: 1.1364678899;
+    }
+
+    #business_loan_page .resend_otp {
+        font-weight: var(--font-weight-regular);
+        font-size: 14px;
+        line-height: 22px;
+        color: var(--primary-color);
+        padding-right: 0px !important;
+    }
+
+    #business_loan_page .header_generate_otp_consent {
+        width: 16px;
+        height: 16px;
+    }
+
+    #business_loan_page .header_generate_otp_consent:checked {
+        background-size: 12px !important;
+    }
+
+    #business_loan_page .trustMarker {
+        margin-top: 72px;
+    }
+
+    #business_loan_page .trust-marker-1 {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: span 6;
+    }
+
+    #business_loan_page .trust-marker-2 {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: span 6;
+    }
+
+    #business_loan_page .trust-marker-image {
+        width: 24px;
+        height: 24px;
+    }
+
+    #business_loan_page .trust-marker-container {
+        padding: 0px 0px 0px 12px;
+    }
+
+    #business_loan_page .trust-marker-title {
+        font-size: 18px;
+        line-height: var(--body-line-height);
+        margin-bottom: 4px;
+    }
+
+    #business_loan_page .trust-marker-content {
+        height: 40px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #business_loan_page .trust-marker-heading {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 12px;
+    }
+
+    #business_loan_page .trust-marker-subheading {
+        font-size: 14px;
+        line-height: var(--body-line-height);
+        margin-bottom: 22px;
+    }
+
+    #business_loan_page .trustMarkerMargin {
+        margin-bottom: 16px;
+    }
+
+    #business_loan_page .trust-marker-col-1 {
+        padding: 56px 0px 0px;
+    }
+
+    #business_loan_page .trustclass {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 12px;
+    }
+
+    #business_loan_page .trustRowClass {
+        display: grid;
+        grid-column-end: span 6;
+    }
+
+    #business_loan_page .trust_marker_model_image {
+        width: auto;
+        align-self: end;
+        margin-top: 0px;
+        height: 295px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 280px) and (max-width: 479px) {
+    #business_loan_page {
+        /* Header-Banner */
+        /* trust marker */
+    }
+
+    #business_loan_page section {
+        align-items: unset;
+    }
+
+    #business_loan_page .headerSectionMainContainer {
+        margin-top: 62px;
+    }
+
+    #business_loan_page .header_generate_otp_container {
+        width: 100%;
+        gap: 8px;
+    }
+
+    #business_loan_page .header_generate_otp_consent {
+        width: 16px;
+        height: 16px;
+    }
+
+    #business_loan_page .header_generate_otp_consent:checked {
+        background-size: 12px !important;
+    }
+
+    #business_loan_page .header_generate_otp_consent_text {
+        font-size: 7px;
+        line-height: 12px;
+    }
+
+    #business_loan_page #banner_image {
+        min-width: 285px;
+        width: 100%;
+        aspect-ratio: 1.1364678899;
+    }
+
+    #business_loan_page .resend_otp {
+        font-weight: var(--font-weight-regular);
+        font-size: 14px;
+        line-height: 22px;
+        color: var(--primary-color);
+        padding-right: 0px !important;
+    }
+
+    #business_loan_page .trustMarker {
+        margin-top: 72px;
+    }
+
+    #business_loan_page .trust-marker-1 {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: span 6;
+    }
+
+    #business_loan_page .trust-marker-2 {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: span 6;
+    }
+
+    #business_loan_page .trust-marker-image {
+        width: 24px;
+        height: 24px;
+    }
+
+    #business_loan_page .trust-marker-container {
+        padding: 0px 0px 0px 12px;
+    }
+
+    #business_loan_page .trust-marker-title {
+        font-size: 18px;
+        line-height: var(--body-line-height);
+        margin-bottom: 4px;
+    }
+
+    #business_loan_page .trust-marker-content {
+        height: 40px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #business_loan_page .trust-marker-heading {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 12px;
+    }
+
+    #business_loan_page .trust-marker-subheading {
+        font-size: 14px;
+        line-height: var(--body-line-height);
+        margin-bottom: 22px;
+    }
+
+    #business_loan_page .trustMarkerMargin {
+        margin-bottom: 16px;
+    }
+
+    #business_loan_page .trust-marker-col-1 {
+        padding: 56px 0px 0px;
+    }
+
+    #business_loan_page .trustclass {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 12px;
+    }
+
+    #business_loan_page .trustRowClass {
+        display: grid;
+        grid-column-end: span 6;
+    }
+
+    #business_loan_page .trust_marker_model_image {
+        width: 100%;
+        align-self: end;
+        margin-top: -80px;
+    }
+}

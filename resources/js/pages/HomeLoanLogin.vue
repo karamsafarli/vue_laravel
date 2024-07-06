@@ -61,7 +61,7 @@
                                 <div class="header_generate_otp_input_wrap">
                                     <input maxlength="10" type="text" v-model="phoneNumber" class="header_generate_otp_input generate_otp_input" :class="{ 'input-error': phoneError }" placeholder="Enter Mobile Number" />
                                     
-                                    <p v-if="phoneError"id="header_generate_otp_message" class="header_generaate_otp_message generate_otp_message input_error_text" style="display: grid; color: rgb(214, 39, 60);">Please enter valid mobile number</p>
+                                    <p v-if="phoneError" id="header_generate_otp_message" class="header_generaate_otp_message generate_otp_message input_error_text" style="display: grid; color: rgb(214, 39, 60);">Please enter valid mobile number</p>
                                     <p v-else id="header_generate_otp_message" class="header_generate_otp_message generate_otp_message">
                                         An OTP will be sent for verification
                                     </p>

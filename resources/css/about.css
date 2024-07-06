@@ -1,0 +1,1042 @@
+#about_us_page {
+    .paddingInline0 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .marginInline0 {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    @media screen and (min-width: 360px) {
+        .our-mission {
+            width: 100%;
+            height: 180px;
+            margin-top: 32px;
+            background-image: url('https://moneyview.in/images/home_banner_mobile.png');
+            background-color: #453456;
+            background-position: right;
+            background-repeat: no-repeat;
+            padding: 24px 24px 48px 24px;
+        }
+
+        .our-mission .heading {
+            width: 148px;
+            margin-bottom: 16px !important;
+            font-weight: 350;
+            font-size: 26px;
+            line-height: 32px;
+            color: #FFFFFF;
+        }
+
+        .our-mission .content {
+            width: 224px;
+            height: 88px;
+
+            font-weight: 350;
+            font-size: 14px;
+            line-height: 20px;
+            color: #FFFFFF;
+            opacity: 0.4;
+        }
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        .our-mission .content {
+            height: 60px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 960px) {
+        .our-mission {
+            padding: 24px 32px 48px 32px;
+        }
+
+        .our-mission .content {
+            height: 60px;
+        }
+    }
+
+    @media screen and (min-width: 960px) and (max-width: 1440px) {
+        .our-mission {
+            padding: 24px 40px 48px 40px;
+        }
+
+        .our-mission .content {
+            height: 60px;
+        }
+    }
+
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        .our-mission {
+            width: 100%;
+            height: 352px;
+            margin-top: 62px;
+            background-image: url('https://moneyview.in/images/header_banner.png');
+            background-color: #453456;
+            padding: 100px 0px 80px 100px;
+        }
+
+        .our-mission .heading {
+            width: 273px;
+            height: 56px;
+            font-weight: 350;
+            font-size: 48px;
+            line-height: 56px;
+            color: #FFFFFF;
+            margin-bottom: 24px !important;
+        }
+
+        .our-mission .content {
+            width: 596px;
+            height: 72px;
+            font-weight: 350;
+            font-size: 24px;
+            line-height: 36px;
+            color: #FFFFFF;
+            opacity: 0.4;
+        }
+    }
+
+    @media screen and (min-width: 1920px) {
+        .our-mission {
+            width: 100%;
+            height: 352px;
+            margin-top: 62px;
+            background-image: url('https://moneyview.in/images/header_banner.png');
+            background-color: #453456;
+            padding: 82px 0px 82px 120px;
+        }
+
+        .our-mission .heading {
+            width: 319px;
+            height: 68px;
+            font-weight: 350;
+            font-size: 56px;
+            line-height: 68px;
+            color: #FFFFFF;
+            margin-bottom: 32px !important;
+        }
+
+        .our-mission .content {
+            width: 795px;
+            height: 88px;
+            font-weight: 350;
+            font-size: 32px;
+            line-height: 44px;
+            color: #FFFFFF;
+            opacity: 0.4;
+        }
+    }
+
+    @media screen and (min-width: 360px) {
+        .section-2 {
+            width: 100%;
+            padding: 24px;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .section-2 .key-principles {
+            width: 100%;
+        }
+
+        .section-2 .key-principles .heading {
+            width: 195px;
+            font-weight: 350;
+            font-size: 26px;
+            line-height: 32px;
+        }
+
+        .section-2 .key-principles .content {
+            display: flex;
+            flex-direction: column;
+            margin-top: 24px;
+        }
+
+        .section-2 .key-principles .content .principle {
+            display: flex;
+        }
+
+        .section-2 .key-principles .content .principle img {
+            height: 64px;
+            width: 64px;
+            margin-right: 24px;
+        }
+
+        .section-2 .key-principles .content .principle h2 {
+            font-weight: 350;
+            font-size: 18px;
+            line-height: 24px;
+            color: #000000;
+            padding-bottom: 0px;
+            margin-bottom: 8px;
+        }
+
+        .section-2 .key-principles .content .principle p {
+            width: 93%;
+            font-weight: 350;
+            font-size: 14px;
+            line-height: 20px;
+            color: #565378;
+            padding-bottom: 0px;
+            margin-bottom: 36px;
+        }
+
+        .section-2 .key-principles .content .principle:nth-child(1) h2 {
+            width: 158px;
+        }
+
+        .section-2 .key-principles .content .principle:nth-child(2) h2 {
+            width: 225px;
+        }
+
+        .section-2 .key-principles .content .principle:nth-child(3) h2 {
+            width: 225px;
+        }
+
+        .section-2 .key-principles .content .principle:nth-child(3) p {
+            margin-bottom: 0px;
+        }
+
+        .section-2 .content {
+            width: 100%;
+            margin-top: 24px;
+        }
+
+        .section-2 .content p {
+            font-weight: 350;
+            font-size: 14px;
+            line-height: 20px;
+            color: #565378;
+            margin-bottom: 36px;
+        }
+
+        .sectionHeading {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+            color: #000000;
+            padding-bottom: 0px;
+            margin-bottom: 8px;
+        }
+
+        .sectionContent {
+            font-weight: 350;
+            font-size: 14px;
+            line-height: 20px;
+            color: #565378;
+            padding-bottom: 0px;
+            margin-bottom: 36px;
+        }
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        .section-2 .key-principles .content .principle p {
+            max-width: 344px;
+        }
+
+        .section-2 .key-principles .content .principle:nth-child(2) h2 {
+            width: 158px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 900px) {
+        .section-2 {
+            padding: 32px;
+        }
+
+        .section-2 .key-principles .content .principle p {
+            max-width: 364px;
+        }
+
+        .section-2 .key-principles .content .principle:nth-child(2) h2 {
+            width: 158px;
+        }
+    }
+
+    @media screen and (min-width: 960px) and (max-width: 1440px) {
+        .section-2 {
+            padding: 40px;
+        }
+
+        .section-2 .key-principles .content .principle p {
+            max-width: 364px;
+        }
+
+        .section-2 .key-principles .content .principle:nth-child(2) h2 {
+            width: 158px;
+        }
+    }
+
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        .section-2 {
+            width: 100%;
+            padding: 120px 80px 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .section-2 .key-principles {
+            width: calc(60vw - 96px);
+        }
+
+        .section-2 .key-principles .heading {
+            width: 360px;
+            font-weight: 350;
+            font-size: 48px;
+            line-height: 56px;
+            color: #000000;
+        }
+
+        .section-2 .key-principles .content {
+            display: flex;
+            flex-direction: row;
+            margin-top: 64px;
+        }
+
+        .section-2 .key-principles .content .principle {
+            display: block;
+        }
+
+        .section-2 .key-principles .content .principle img {
+            height: 72px;
+            width: 72px;
+            margin-bottom: 24px;
+        }
+
+        .section-2 .key-principles .content .principle:nth-child(1) h2 {
+            width: 113px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+            color: #000000;
+            padding-bottom: 0px;
+            margin-bottom: 8px;
+        }
+
+        .section-2 .key-principles .content .principle:nth-child(1) p {
+            width: 15vw;
+            font-weight: 350;
+            font-size: 14px;
+            line-height: 20px;
+            color: #565378;
+        }
+
+        .section-2 .key-principles .content .principle:nth-child(2) {
+            padding-inline: 32px;
+        }
+
+        .section-2 .key-principles .content .principle:nth-child(2) h2 {
+            width: 193px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+            color: #000000;
+            padding-bottom: 0px;
+            margin-bottom: 8px;
+        }
+
+        .section-2 .key-principles .content .principle:nth-child(2) p {
+            width: 15vw;
+            font-weight: 350;
+            font-size: 14px;
+            line-height: 20px;
+            color: #565378;
+        }
+
+        .section-2 .key-principles .content .principle:nth-child(3) h2 {
+            width: 135px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+            color: #000000;
+            padding-bottom: 0px;
+            margin-bottom: 8px;
+        }
+
+        .section-2 .key-principles .content .principle:nth-child(3) p {
+            width: 17vw;
+            font-weight: 350;
+            font-size: 14px;
+            line-height: 20px;
+            color: #565378;
+        }
+
+        .section-2 .content {
+            width: calc(40vw - 96px);
+        }
+
+        .section-2 .content p {
+            font-weight: 350;
+            font-size: 16px;
+            line-height: 24px;
+            color: #565378;
+        }
+    }
+
+    @media screen and (min-width: 1920px) {
+        .section-2 {
+            width: 100%;
+            padding: 120px 120px 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .section-2 .key-principles {
+            width: calc(60vw - 96px);
+        }
+
+        .section-2 .key-principles .heading {
+            width: 420px;
+            font-weight: 350;
+            font-size: 56px;
+            line-height: 68px;
+            color: #000000;
+        }
+
+        .section-2 .key-principles .content {
+            display: flex;
+            flex-direction: row;
+            margin-top: 32px;
+        }
+
+        .section-2 .key-principles .content .principle {
+            display: block;
+        }
+
+        .section-2 .key-principles .content .principle img {
+            height: 94px;
+            width: 94px;
+            margin-bottom: 24px;
+        }
+
+        .section-2 .key-principles .content .principle:nth-child(1) h2 {
+            width: 138px;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 24px;
+            color: #000000;
+            padding-bottom: 0px;
+            margin-bottom: 12px;
+        }
+
+        .section-2 .key-principles .content .principle:nth-child(1) p {
+            width: 12vw;
+            font-weight: 350;
+            font-size: 16px;
+            line-height: 24px;
+            color: #565378;
+        }
+
+        .section-2 .key-principles .content .principle:nth-child(2) {
+            padding-inline: 76px;
+        }
+
+        .section-2 .key-principles .content .principle:nth-child(2) h2 {
+            width: 193px;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 24px;
+            color: #000000;
+            padding-bottom: 0px;
+            margin-bottom: 12px;
+        }
+
+        .section-2 .key-principles .content .principle:nth-child(2) p {
+            width: 11vw;
+            font-weight: 350;
+            font-size: 16px;
+            line-height: 24px;
+            color: #565378;
+        }
+
+        .section-2 .key-principles .content .principle:nth-child(3) h2 {
+            width: 135px;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 24px;
+            color: #000000;
+            padding-bottom: 0px;
+            margin-bottom: 12px;
+        }
+
+        .section-2 .key-principles .content .principle:nth-child(3) p {
+            width: 19vw;
+            font-weight: 350;
+            font-size: 16px;
+            line-height: 24px;
+            color: #565378;
+        }
+
+        .section-2 .content {
+            width: calc(40vw - 96px);
+            margin-top: 35px;
+        }
+
+        .section-2 .content p {
+            font-weight: 350;
+            font-size: 22px;
+            line-height: 32px;
+            color: #565378;
+        }
+    }
+
+    .about-us-section-image {
+        padding: 0px;
+        flex: 0;
+    }
+
+    @media screen and (min-width: 360px) {
+        .about-us-section {
+            background-image: url(https://moneyview.in/images/about_us_mobile.png);
+            background-repeat: no-repeat;
+            background-position: right 0% top 120px;
+            padding: 0px 24px 48px;
+            background-size: 216px;
+        }
+
+        .about-us-section-title {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+            color: #000000;
+            margin-bottom: 4px;
+        }
+
+        .about-us-section-content {
+            width: 74px;
+            height: 40px;
+            font-weight: 350;
+            font-size: 14px;
+            line-height: 20px;
+            color: #434061;
+            margin-bottom: 36px;
+        }
+
+        .about-us-section-paragraph {
+            font-weight: 350;
+            font-size: 20px;
+            line-height: 26px;
+            color: #000000;
+            padding-block: 24px 36px;
+            margin-bottom: 0px;
+        }
+
+        .about-us-section-image-container {
+            width: 24px;
+            height: 24px;
+        }
+
+        .about-us-section-container {
+            padding-left: 12px;
+        }
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        .about-us-section-paragraph {
+            padding-block: 12px 36px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 960px) {
+        .about-us-section {
+            background-image: url(https://moneyview.in/images/mobile_images_tablet.png);
+            background-repeat: no-repeat;
+            background-position: right 14% top 20px;
+            padding: 0px 32px 60px;
+            background-size: 300px 410px;
+        }
+
+        .about-us-section-paragraph {
+            padding-block: 20px 36px;
+        }
+    }
+
+    @media screen and (min-width: 960px) and (max-width: 1440px) {
+        .about-us-section {
+            background-image: url(https://moneyview.in/images/mobile_images_tablet.png);
+            background-repeat: no-repeat;
+            background-position: right 19% top 20px;
+            padding: 0px 40px 60px;
+            background-size: 300px 410px;
+        }
+    }
+
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        .about-us-section-display {
+            display: flex;
+        }
+
+        .about-us-section {
+            background-image: url(https://moneyview.in/images/about_us_desktop.png);
+            background-repeat: no-repeat;
+            background-position: right 0% top 80px;
+            padding: 0px 80px 110px;
+            background-size: 621px 443px;
+        }
+
+        .about-us-section-title {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 36px;
+            color: #000000;
+            margin-bottom: 8px;
+        }
+
+        .about-us-section-content {
+            width: 96px;
+            height: 56px;
+            font-weight: 350;
+            font-size: 20px;
+            line-height: 28px;
+            color: #434061;
+            margin-bottom: 0px;
+        }
+
+        .about-us-section-paragraph {
+            font-weight: 350;
+            font-size: 28px;
+            line-height: 36px;
+            color: #000000;
+            padding-block: 120px 80px;
+            margin-bottom: 0px;
+        }
+
+        .about-us-section-image-container {
+            width: 32px;
+            height: 32px;
+        }
+
+        .about-us-section-container {
+            padding: 0px 0px 0px 8px;
+        }
+
+        .section-padding {
+            padding-right: 80px;
+        }
+    }
+
+    @media screen and (min-width: 1920px) {
+        .about-us-section-display {
+            display: flex;
+        }
+
+        .about-us-section {
+            height: 628px;
+            background-image: url(https://moneyview.in/images/about_us_desktop.png);
+            background-repeat: no-repeat;
+            background-position: right 0% top 80px;
+            padding: 0px 120px 168px;
+            background-size: 865px 498px;
+        }
+
+        .about-us-section-title {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 36px;
+            color: #000000;
+            margin-bottom: 12px;
+        }
+
+        .about-us-section-content {
+            width: 96px;
+            height: 56px;
+            font-weight: 350;
+            font-size: 24px;
+            line-height: 32px;
+            color: #434061;
+            margin-bottom: 0px;
+        }
+
+        .about-us-section-paragraph {
+            font-weight: 350;
+            font-size: 36px;
+            line-height: 48px;
+            color: #000000;
+            padding-block: 120px 80px;
+            margin-bottom: 0px;
+        }
+
+        .about-us-section-image-container {
+            width: 40px;
+            height: 40px;
+        }
+
+        .about-us-section-container {
+            padding: 0px 0px 0px 12px;
+        }
+
+        .section-padding {
+            padding-right: 85px;
+        }
+    }
+
+    .margin0 {
+        margin: 0px !important;
+    }
+
+    .display-flex {
+        display: flex;
+    }
+
+    .investor-class {
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    @media screen and (min-width: 360px) {
+        .section-heading {
+            font-weight: 350;
+            font-size: 26px;
+            line-height: 32px;
+            color: #000000;
+            margin-bottom: 24px;
+        }
+
+        .investor-section {
+            background: #E4F1EA;
+            padding: 48px 24px 8px 24px;
+        }
+
+        .investors-container {
+            width: 138px;
+            height: 50px;
+            padding: 0px;
+            flex: 0;
+        }
+
+        .investors-logo {
+            width: 138px;
+            height: 50px;
+        }
+
+        .investor-class div:nth-child(odd) {
+            margin: 0px 16px 16px 0px;
+        }
+
+        .investor-class div:nth-child(even) {
+            margin: 0px 16px 16px 0px;
+        }
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        .investor-class div:nth-child(odd) {
+            margin: 0px 24px 16px 0px;
+        }
+
+        .investor-class div:nth-child(even) {
+            margin: 0px 24px 16px 0px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 960px) {
+        .investor-class div:nth-child(odd) {
+            margin: 0px 60px 16px 0px;
+        }
+
+        .investor-class div:nth-child(even) {
+            margin: 0px 60px 16px 0px;
+        }
+    }
+
+    @media screen and (min-width: 960px) and (max-width: 1440px) {
+        .investor-section {
+            height: 158px;
+            background: #E4F1EA;
+            padding: 20px 40px 32px;
+            margin: 0px;
+        }
+
+        .investors-container {
+            margin: 0px 40px 0px 0px !important;
+            padding: 0px;
+            flex: 0;
+        }
+
+        .investor-class> :last-child {
+            margin: 0px !important
+        }
+    }
+
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        .investor-section {
+            height: 196px;
+            background: #E4F1EA;
+            padding: 20px 80px 52px;
+            margin: 0px;
+        }
+
+        .investors-container {
+            width: 176px;
+            height: 64px;
+            margin: 0px 100px 0px 0px !important;
+            padding: 0px;
+            flex: 0;
+        }
+
+        .investors-logo {
+            width: 176px;
+            height: 64px;
+        }
+
+        .investor-class div:nth-child(odd) {
+            margin: 0px;
+        }
+
+        .investor-class div:nth-child(even) {
+            margin: 0px;
+        }
+
+        .investor-class> :last-child {
+            margin: 0px !important;
+        }
+    }
+
+    @media screen and (min-width: 1920px) {
+        .section-heading {
+            font-weight: 350;
+            font-size: 56px;
+            line-height: 68px;
+            color: #000000;
+            margin-bottom: 32px;
+        }
+
+        .investor-section {
+            height: 355px;
+            background: #E4F1EA;
+            padding: 60px 120px 96px;
+            margin: 0px;
+        }
+
+        .investors-container {
+            width: 276px;
+            height: 100px;
+            margin: 0px 74px 0px 0px !important;
+            padding: 0px;
+            flex: 0;
+        }
+
+        .investors-logo {
+            width: 276px;
+            height: 100px;
+        }
+
+        .investor-class> :last-child {
+            margin: 0px !important;
+        }
+    }
+
+    .founders-details {
+        display: flex;
+    }
+
+    @media screen and (min-width: 360px) {
+        .founders-section {
+            padding: 48px 24px 20px;
+        }
+
+        .founders-border-box {
+            width: 98%;
+            background: #FFFFFF;
+            border: 1px solid #ACABBD;
+            border-radius: 16px;
+            box-shadow: 8px 8px #b6e7ec;
+            padding: 20px;
+            margin: 0px 0px 28px 0px;
+        }
+
+        .box-shadow-color {
+            box-shadow: 8px 8px #F5E4FF !important;
+        }
+
+        .founders-image {
+            width: 64px;
+            height: 64px;
+        }
+
+        .founders-class {
+            margin: auto 0px;
+            padding-left: 16px;
+        }
+
+        .founders-name {
+            font-weight: 350;
+            font-size: 18px;
+            line-height: 20px;
+            color: #000000;
+            margin-bottom: 4px;
+        }
+
+        .founders-title {
+            font-weight: 350;
+            font-size: 12px;
+            line-height: 20px;
+            color: #565378;
+            margin-bottom: 0px;
+        }
+
+        .founders-content {
+            font-weight: 350;
+            font-size: 14px;
+            line-height: 20px;
+            color: #565378;
+            margin: 20px 0px 0px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 960px) {
+        .founders-section {
+            padding: 40px 32px 22px;
+        }
+
+        .founders-border-box {
+            width: 99%;
+        }
+    }
+
+    @media screen and (min-width: 960px) and (max-width: 1440px) {
+        .founders-section-display {
+            display: flex
+        }
+
+        .founders-section-display>div:nth-child(1) {
+            margin: 0px 24px 20px 0px;
+        }
+
+        .founders-section {
+            padding: 40px 40px 10px;
+        }
+
+        .founders-border-box {
+            width: 98%px;
+            height: 304px;
+        }
+    }
+
+    @media screen and (min-width: 1440px) and (max-width: 1920px) {
+        .founders-section-display {
+            display: flex
+        }
+
+        .founders-section-display>div:nth-child(1) {
+            margin: 0px 40px 20px 0px;
+        }
+
+        .founders-section {
+            padding: 80px 80px 60px;
+        }
+
+        .founders-border-box {
+            width: 98%;
+            height: 244px;
+            background: #FFFFFF;
+            border: 1px solid #ACABBD;
+            border-radius: 16px;
+            box-shadow: 8px 8px #b6e7ec;
+            padding: 20px 20px 20px 20px;
+            margin: 0px 0px 20px 0px;
+        }
+
+        .box-shadow-color {
+            box-shadow: 8px 10px #F5E4FF !important;
+        }
+
+        .founders-image {
+            width: 64px;
+            height: 64px;
+        }
+
+        .founders-name {
+            font-weight: 350;
+            font-size: 18px;
+            line-height: 20px;
+            color: #000000;
+            margin-bottom: 4px;
+        }
+
+        .founders-class {
+            margin: auto 0px;
+            padding-left: 16px;
+        }
+
+        .founders-title {
+            font-weight: 350;
+            font-size: 12px;
+            line-height: 20px;
+            color: #565378;
+            margin-bottom: 0px;
+        }
+
+        .founders-content {
+            font-weight: 350;
+            font-size: 14px;
+            line-height: 20px;
+            color: #565378;
+            margin: 20px 0px 0px;
+        }
+    }
+
+    @media screen and (min-width: 1920px) {
+        .founders-section-display {
+            display: flex
+        }
+
+        .founders-section-display>div:nth-child(1) {
+            margin: 0px 24px 20px 0px;
+        }
+
+        .founders-section {
+            padding: 120px 120px 60px;
+        }
+
+        .founders-border-box {
+            width: 828px;
+            height: 424px;
+            background: #FFFFFF;
+            border: 1px solid #ACABBD;
+            border-radius: 20px;
+            box-shadow: 10px 10px #b6e7ec;
+            padding: 40px 46px 40px 40px;
+            margin: 0px 0px 20px 0px;
+        }
+
+        .founders-image {
+            width: 96px;
+            height: 96px;
+        }
+
+        .founders-name {
+            font-weight: 350;
+            font-size: 24px;
+            line-height: 36px;
+            color: #000000;
+            margin-bottom: 4px;
+        }
+
+        .founders-class {
+            margin: auto 0px;
+            padding-left: 24px;
+        }
+
+        .founders-title {
+            font-weight: 350;
+            font-size: 16px;
+            line-height: 24px;
+            color: #565378;
+            margin-bottom: 0px;
+        }
+
+        .founders-content {
+            font-weight: 350;
+            font-size: 22px;
+            line-height: 32px;
+            color: #565378;
+            margin: 24px 0px 0px;
+        }
+    }
+
+}

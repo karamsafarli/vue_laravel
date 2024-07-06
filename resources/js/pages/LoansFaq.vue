@@ -1,5 +1,6 @@
 <template>
-<div class="main">
+<div id="loans_faq_page">
+    <div class="main">
     <div class="main_bg">
         <div class="container">
             <h1 class="mv-h1-text text-center p20-top space2">moneyview Loans FAQs</h1>
@@ -864,10 +865,12 @@
     </div>
     <div id="ele" class="no-result noResulText" style="display: none;">No Results. Please try with some other keyword!</div>
 </div>
+</div>
 </template>
 
 
 <script>
+import '../../css/loans_faq.css';
 export default {
   data() {
     return {
@@ -883,7 +886,7 @@ export default {
 };
 </script>
 
-
+<!-- 
 <style scoped>
 
 
@@ -2442,4 +2445,4 @@ button:disabled {
         justify-content: space-between;
     }
 }
-</style>
+</style> -->
